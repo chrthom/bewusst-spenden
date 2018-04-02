@@ -1,0 +1,81 @@
+<ion-header><ion-navbar></ion-navbar></ion-header>
+
+<ion-content>
+  <ion-list no-lines>
+    <ion-item>
+      <ion-grid [ngSwitch]="nav" fixed>
+        <h2 *ngSwitchCase="'start'">Spend-O-Mat Fragebogen starten</h2>
+        <p *ngSwitchCase="'start'" text-wrap>
+          Dieser Fragebogen ist darauf ausgelegt eine grobe Einschätzung darüber zu erhalten, welche Zwecke du basierend
+          auf deinen moralischen Vorstellungen und deiner Weltsicht vermutlich unterstützen wolltest. Dieser Fragebogen
+          macht hierbei jedoch viele vereinfachte Annahmen, doch wir hoffen, dass er dir helfen wird, deine eigenen
+          Beweggründe für altruistisches Handeln zu verstehe sowie die Beweggründe anderer.
+        </p>
+        <h2 *ngSwitchCase="'specific reason'">Spezieller Zweck?</h2>
+        <p *ngSwitchCase="'specific reason'" text-wrap>
+          Empfindest du eine vorrangige Verpflichtung dich für einen bestimmten Zweck oder eine bestimmte Gruppe
+          einzusetzen?
+        </p>
+        <h2 *ngSwitchCase="'uncertain projects'">Risikoreiche Projekte?</h2>
+        <p *ngSwitchCase="'uncertain projects'" text-wrap>
+          Ist es ok für dich risikoreiche Projekte zu priorisieren, falls der potentielle Nutzen hoch genug ist?
+          Würdest du z.B. eher etwas tun, von dem du denkst, dass es eine 1%-ige Change hätte 1.000 Leben zu retten,
+          als ein Leben sicher zu bewahren.
+        </p>
+        <h2 *ngSwitchCase="'time scope'">Wann willst du helfen?</h2>
+        <p *ngSwitchCase="'time scope'" text-wrap>
+          Sollten wir unsere Aufmerksamkeit auf die nächsten Dekaden richten, vielleicht auf Grund unserer Pflicht
+          unserer Generation gegenüber oder einfach weil wir die Zukunft nicht zuverlässig beeinflussen können?
+          Oder ist es es wert sehr langfristige Ziele zu unterstützen?
+        </p>
+        <h2 *ngSwitchCase="'measurable goals'">Messbare Ziele?</h2>
+        <p *ngSwitchCase="'measurable goals'" text-wrap>
+          Sollten wir uns auf Projekte fokussieren, bei denen es möglich ist unseren Effekt zu messen und mit anderen
+          Projekten zu vergleichen? Es ist nicht möglich klar zu trennen welche Projekte hierunter fallen. Daher
+          empfehlen wir, dass du dir evtl. auch den von dir nicht gewählten Pfad nochmals ansiehst.
+        </p>
+      </ion-grid>
+    </ion-item>
+    <ion-item color="light" class="card-background-page">
+      <ion-grid fixed>
+        <ion-row [ngSwitch]="nav" justify-content-center>
+          <ion-col *ngSwitchCase="'start'" col-12 col-md-6 col-xl-4>
+            <ion-card (click)="this.nav='specific reason'" class="clickable" text-wrap>
+              <img src="https://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+              <div class="card-title">OK, verstanden</div>
+              <div class="card-subtitle">Ich will so viel Gutes tun wie möglich!</div>
+            </ion-card>
+          </ion-col>
+          <ion-col *ngSwitchCase="'specific reason'" col-12 col-md-6 col-xl-4>
+            <ion-card class="clickable" text-wrap>
+              <img src="../../assets/imgs/questionaire/specific_reason_yes.jpg"/>
+              <div class="card-title">Ja</div>
+              <div class="card-subtitle">Ich weiß bereits sehr genau was und wem ich helfen will.</div>
+            </ion-card>
+          </ion-col>
+          <ion-col *ngSwitchCase="'specific reason'" col-12 col-md-6 col-xl-4>
+            <ion-card (click)="this.nav='uncertain projects'" class="clickable" text-wrap>
+              <img src="../../assets/imgs/questionaire/specific_reason_no.jpg"/>
+              <div class="card-title">Nein</div>
+              <div class="card-subtitle">Ich habe höchstens eine wage Vorstellung davon, was und wen ich unterstützen sollte.</div>
+            </ion-card>
+          </ion-col>
+          <ion-col *ngSwitchCase="'uncertain projects'" col-12 col-md-6 col-xl-4>
+            <ion-card (click)="this.nav='time scope'" class="clickable" text-wrap>
+              <img src="https://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+              <div class="card-title">Ja</div>
+              <div class="card-subtitle">Wir sollten tun, was auch immer den größten Erwarteten Wert hat.</div>
+            </ion-card>
+          </ion-col>
+          <ion-col *ngSwitchCase="'uncertain projects'" col-12 col-md-6 col-xl-4>
+            <ion-card (click)="this.nav='measurable goals'" class="clickable" text-wrap>
+              <img src="https://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+              <div class="card-title">Nein</div>
+              <div class="card-subtitle">Wir sollten sicherstellen, dass wir einen Unterschied zu machen.</div>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>
