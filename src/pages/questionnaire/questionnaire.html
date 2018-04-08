@@ -178,7 +178,7 @@
           </ion-col>
           <ion-col *ngSwitchCase="'specific reason'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('uncertain projects')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/specific_reason_no.jpg"/>
+              <img src="../../assets/imgs/questionaire/unknown.jpg"/>
               <div class="card-title">Nein</div>
               <div class="card-subtitle">Ich habe höchstens eine wage Vorstellung davon, was und wen ich unterstützen sollte.</div>
             </ion-card>
@@ -199,7 +199,7 @@
           </ion-col>
           <ion-col *ngSwitchCase="'measurable goals'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('animals per human')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/measurable_goals_yes.png"/>
+              <img src="../../assets/imgs/questionaire/measurable_goals_yes.jpg"/>
               <div class="card-title">Ja</div>
               <div class="card-subtitle">Nur messbare Projekte ermöglichen uns, uns kontinuierlich zu verbessern.</div>
             </ion-card>
@@ -213,35 +213,35 @@
           </ion-col>
           <ion-col *ngSwitchCase="'time scope'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('more generations')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/time_scope_longterm.png"/>
+              <img src="../../assets/imgs/questionaire/time_scope_longterm.jpg"/>
               <div class="card-title">Langfristig</div>
               <div class="card-subtitle">Zukünftige Leben sind genauso wichtig wie heutige Leben, und wir können ihnen helfen.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'time scope'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('measurable goals')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/time_scope_lifetime_no.jpg"/>
+              <img src="../../assets/imgs/questionaire/time_scope_lifetime.jpg"/>
               <div class="card-title">Lebzeit</div>
               <div class="card-subtitle">Wir sollten uns auf die nächsten Jahrzehnte konzentrieren.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'more generations'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('existential risks')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/risk_yes.png"/>
+              <img src="../../assets/imgs/questionaire/more_generations_yes.jpg"/>
               <div class="card-title">Ja</div>
               <div class="card-subtitle">Es wäre ein Desaster, der Menschheit nicht die Möglichkeit einer lang andauernden Zukunft zu ermöglichen.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'more generations'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('improve society')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/uncertain_projects_no.jpg"/>
+              <img src="../../assets/imgs/questionaire/more_generations_no.jpg"/>
               <div class="card-title">Nein</div>
               <div class="card-subtitle">Sterben ist etwas schlimmes, aber nie geboren zu sein ist es nicht.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'existential risks'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer()" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/existential_risks_yes.png"/>
+              <img src="../../assets/imgs/questionaire/existential_risks_yes.jpg"/>
               <div class="card-title">Ja</div>
               <div class="card-subtitle">Wir können etwas tun, um unser Überleben langfristig wenigstens etwas wahrscheinlicher zu machen.</div>
             </ion-card>
@@ -255,14 +255,14 @@
           </ion-col>
           <ion-col *ngSwitchCase="'improve society'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('knowledge values institutions')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/improve_society_yes.png"/>
+              <img src="../../assets/imgs/questionaire/improve_society_yes.jpg"/>
               <div class="card-title">Ja</div>
               <div class="card-subtitle">Wir können Fortschritte erzielen, die lang andauern werden.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'improve society'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('knowledge values institutions')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/improve_society_maybe.png"/>
+              <img src="../../assets/imgs/questionaire/improve_society_maybe.jpg"/>
               <div class="card-title">Vielleicht</div>
               <div class="card-subtitle">Unsere Veränderungen könnten lange genug anhalten, um einen langfristigen Effekt zu haben.</div>
             </ion-card>
@@ -294,112 +294,112 @@
           </ion-col>
           <ion-col *ngSwitchCase="'environmental damage'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer()" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/risk_yes.png"/>
+              <img src="../../assets/imgs/questionaire/environmental_damage_yes.jpg"/>
               <div class="card-title">Ja</div>
               <div class="card-subtitle">Das Wohlergehen von hunderten Generationen ist beroht.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'environmental damage'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('measurable goals')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/uncertain_projects_no.jpg"/>
+              <img src="../../assets/imgs/questionaire/environmental_damage_no.jpg"/>
               <div class="card-title">Nein</div>
               <div class="card-subtitle">Die Wahrscheinlichkeit derart extremer Umweltbeeinflussung ist gering oder nur von kurzer Zeit.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'rights catastrophe knowledge'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer()" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/risk_yes.png"/>
+              <img src="../../assets/imgs/questionaire/human_rights.jpg"/>
               <div class="card-title">Menschenrechte</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'rights catastrophe knowledge'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer()" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/uncertain_projects_no.jpg"/>
+              <img src="../../assets/imgs/questionaire/catastrophe.jpg"/>
               <div class="card-title">Verhinderung globaler Katastrophen</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'rights catastrophe knowledge'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer()" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/uncertain_projects_no.jpg"/>
+              <img src="../../assets/imgs/questionaire/knowledge.jpg"/>
               <div class="card-title">Erweiterung des menschlichen Wissens</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'rights catastrophe knowledge'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('animals per human')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/uncertain_projects_no.jpg"/>
+              <img src="../../assets/imgs/questionaire/unknown.jpg"/>
               <div class="card-title">Etwas Anderes</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'animals per human'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('opportunity health')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/risk_yes.png"/>
+              <img src="../../assets/imgs/questionaire/animals_per_human_more.jpg"/>
               <div class="card-title">&gt;100</div>
               <div class="card-subtitle">Menschen zu helfen ist wichtiger, unter anderem weil es weitere indirekte Effekte hat.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'animals per human'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('farm life')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/uncertain_projects_no.jpg"/>
+              <img src="../../assets/imgs/questionaire/animals_per_human_less.jpg"/>
               <div class="card-title">&lt;100</div>
               <div class="card-subtitle">Tierleid ist so real wie Menschenleid und moralisch genauso relevant.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'farm life'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer()" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/risk_yes.png"/>
+              <img src="../../assets/imgs/questionaire/farm_life_yes.jpg"/>
               <div class="card-title">Ja</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'farm life'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer()" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/uncertain_projects_no.jpg"/>
+              <img src="../../assets/imgs/questionaire/farm_life_no.jpg"/>
               <div class="card-title">Nein</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'opportunity health'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('poverty education')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/risk_yes.png"/>
+              <img src="../../assets/imgs/questionaire/opportunities.jpg"/>
               <div class="card-title">Chancen</div>
               <div class="card-subtitle">Wir sollten Armut reduzieren und den ärmsten neue Chancen bieten.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'opportunity health'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('death suffering')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/uncertain_projects_no.jpg"/>
+              <img src="../../assets/imgs/questionaire/health.jpg"/>
               <div class="card-title">Gesundheit</div>
               <div class="card-subtitle">Wir sollten vor allem Leid verhindern.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'opportunity health'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer()" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/uncertain_projects_no.jpg"/>
+              <img src="../../assets/imgs/questionaire/unknown.jpg"/>
               <div class="card-title">Etwas Anderes</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'poverty education'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer()" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/risk_yes.png"/>
+              <img src="../../assets/imgs/questionaire/poverty.jpg"/>
               <div class="card-title">Armutsbekämpfung</div>
               <div class="card-subtitle">Das Einkommen von drei Familien für ein Jahr verdoppeln.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'poverty education'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer()" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/uncertain_projects_no.jpg"/>
+              <img src="../../assets/imgs/questionaire/education.jpg"/>
               <div class="card-title">Bildung</div>
               <div class="card-subtitle">10 Schuljahre für 3 Kinder ermöglichen.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'death suffering'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer()" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/risk_yes.png"/>
+              <img src="../../assets/imgs/questionaire/death.jpg"/>
               <div class="card-title">Tod</div>
               <div class="card-subtitle">Den Tod eines Kindes durch Malaria verhindern.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'death suffering'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer()" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/uncertain_projects_no.jpg"/>
+              <img src="../../assets/imgs/questionaire/suffering.jpg"/>
               <div class="card-title">Leid</div>
               <div class="card-subtitle">1000 Menschen 10 Jahre lang benötigte Vitamine verabreichen.</div>
             </ion-card>
