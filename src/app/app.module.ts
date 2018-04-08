@@ -10,6 +10,8 @@ import { QuestionnairePage } from '../pages/questionnaire/questionnaire';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     EADonationApp,
@@ -19,6 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     IonicModule.forRoot(EADonationApp)
   ],
   bootstrap: [IonicApp],
