@@ -41,7 +41,7 @@
         <ion-row [ngSwitch]="nav" justify-content-center>
           <ion-col *ngSwitchCase="'start'" col-12 col-md-6 col-xl-4>
             <ion-card (click)="this.nav='specific reason'" class="clickable" text-wrap>
-              <img src="https://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+              <img src="../../assets/imgs/questionaire/start.jpg"/>
               <div class="card-title">OK, verstanden</div>
               <div class="card-subtitle">Ich will so viel Gutes tun wie möglich!</div>
             </ion-card>
@@ -62,16 +62,16 @@
           </ion-col>
           <ion-col *ngSwitchCase="'uncertain projects'" col-12 col-md-6 col-xl-4>
             <ion-card (click)="this.nav='time scope'" class="clickable" text-wrap>
-              <img src="https://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+              <img src="../../assets/imgs/questionaire/risk_yes.png"/>
               <div class="card-title">Ja</div>
-              <div class="card-subtitle">Wir sollten tun, was auch immer den größten Erwarteten Wert hat.</div>
+              <div class="card-subtitle">Wir sollten tun, was auch immer den größten erwarteten Wert hat.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'uncertain projects'" col-12 col-md-6 col-xl-4>
             <ion-card (click)="this.nav='measurable goals'" class="clickable" text-wrap>
-              <img src="https://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+              <img src="../../assets/imgs/questionaire/risk_no.jpg"/>
               <div class="card-title">Nein</div>
-              <div class="card-subtitle">Wir sollten sicherstellen, dass wir einen Unterschied zu machen.</div>
+              <div class="card-subtitle">Wir sollten sicherstellen, dass wir einen Unterschied machen.</div>
             </ion-card>
           </ion-col>
         </ion-row>
