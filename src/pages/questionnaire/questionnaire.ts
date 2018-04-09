@@ -8,15 +8,15 @@ import { trigger, style, transition, animate, query, animateChild } from '@angul
   animations: [
     trigger('ngIfAnimation', [
       transition(':enter, :leave', [
-        query('@*', animateChild())
+        query('@*', animateChild(), {optional: true})
       ])
     ]),
     trigger('questionTrigger',[
       transition('void => *', [
         style({
-          left: -2000
+          left: -1500
         }),
-        animate("0.5s ease-in-out", style({
+        animate("0.4s ease-in-out", style({
           left: 0
         }))
       ]),
@@ -24,8 +24,8 @@ import { trigger, style, transition, animate, query, animateChild } from '@angul
         style({
           left: 0
         }),
-        animate("0.5s ease-in-out", style({
-          left: 2000
+        animate("0.4s ease-in-out", style({
+          left: 1500
         }))
       ])
     ])

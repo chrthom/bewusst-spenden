@@ -1,7 +1,8 @@
 <ion-header><ion-navbar></ion-navbar></ion-header>
 
 <ion-content>
-  <ion-list no-lines [ngSwitch]="nav" @ngIfAnimation>
+  <!-- QUESTIONS -->
+  <ion-list no-lines *ngIf="!nav.startsWith('result ->')" [ngSwitch]="nav" @ngIfAnimation>
     <ion-item *ngSwitchCase="'start'" @questionTrigger>
       <ion-grid fixed>
         <h2>Spend-O-Mat Fragebogen starten</h2>
@@ -159,6 +160,9 @@
         </p>
       </ion-grid>
     </ion-item>
+  </ion-list>
+  <!-- Answers -->
+  <ion-list no-lines *ngIf="!nav.startsWith('result ->')">
     <ion-item class="card-background-page">
       <ion-grid fixed>
         <ion-row [ngSwitch]="nav" justify-content-center>
@@ -240,7 +244,7 @@
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'existential risks'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer()" class="clickable" @questionTrigger text-wrap>
+            <ion-card (click)="answer('result -> existential risk')" class="clickable" @questionTrigger text-wrap>
               <img src="../../assets/imgs/questionaire/existential_risks_yes.jpg"/>
               <div class="card-title">Ja</div>
               <div class="card-subtitle">Wir können etwas tun, um unser Überleben langfristig wenigstens etwas wahrscheinlicher zu machen.</div>
@@ -405,6 +409,43 @@
             </ion-card>
           </ion-col>
         </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+  <!-- RESULTS -->
+  <ion-list no-lines [ngSwitch]="nav">
+    <ion-item *ngSwitchCase="'result -> existential risk'">
+      <ion-grid fixed>
+        <ion-card>
+          <ion-card-header>Dein Testresultat</ion-card-header>
+          <ion-card-content text-wrap>
+            <ion-card-title>Existentielle Risiken reduzieren</ion-card-title>
+            <p>
+              Da mehr Generationen besser sind und da Zivilisationen für Jahrtausende oder gar Jahrmillionen überdauern
+              könnten, ist der Wert der Zukunft gewaltig. Selbst eine minimale Reduzierung der Wahrscheinlichkeit der
+              gloabeln menschlichen Auslöschung, hat großen Wert. Dies kann durch verschiedene Maßnahmen erreicht werden:
+            </p>
+            <ul>
+              <li>Internationale Kooperationen verbessern, um die generelle Wahrnehmung von Risiken zu verbessern, um
+                besser auf unvorgesehende neue Technologien vorbereitet zu sein.</li>
+              <li>Schutz vor Bedrohungen, die diese Kooperationen auflösen könnten.</li>
+              <li>Arbeit daran den Klimawandel besser zu verstehen, um für den Menschen drastische Veränderungen zu
+                verhindern.</li>
+              <li>Die Aufmerksamkeit bzgl. Risiken künstlicher Intelligenzen erhöhen und an wegen Arbeiten, damit
+                KIs moralisch handeln.</li>
+            </ul>
+          </ion-card-content>
+          <img src="../../assets/imgs/results/existential_risks.jpg">
+          <ion-list>
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="../../assets/imgs/organizations/future_of_humanity_institute.png"/>
+              </ion-thumbnail>
+              <h2>Future of Humanity Institute</h2>
+              <p>Bla bla bla</p>
+            </ion-item>
+          </ion-list>
+        </ion-card>
       </ion-grid>
     </ion-item>
   </ion-list>
