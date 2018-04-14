@@ -9,6 +9,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { QuestionnairePage } from '../pages/questionnaire/questionnaire';
 import { SearchPage } from "../pages/search/search";
 
+import { DataService } from "./services/data";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -34,6 +35,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SearchPage
   ],
   providers: [
+    DataService,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

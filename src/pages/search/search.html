@@ -4,24 +4,32 @@
   <ion-grid fixed>
     <ion-searchbar (ionInput)="search($event)"></ion-searchbar>
     <ion-list>
-      <ion-item-sliding>
+      <ion-item-sliding *ngFor="let o of dataService.organizations">
         <ion-item text-wrap>
           <ion-thumbnail item-start>
-            <img src="../../assets/imgs/organizations/against_malaria_foundation.jpg"/>
+            <img src="../../assets/imgs/organizations/{{ o.thumbnail }}"/>
           </ion-thumbnail>
-          <h2>Against Malaria Foundation</h2>
-          <h3>Insecticide-treated nets to prevent malaria in sub-Saharan Africa.</h3>
-          <p>Malaria is one of the leading killers of children in Africa. Insecticide-treated nets prevent malaria and are inexpensive — about $5 per net.</p>
+          <h2>{{ o.name }}</h2>
+          <h3>{{ o.slogan }}</h3>
+          <p>{{ o.shortDescription }}</p>
         </ion-item>
         <ion-item-options side="right">
-          <button ion-button color="information-circled">
-            <ion-icon name="text"></ion-icon>
+          <button ion-button color="primary">
+            <ion-icon name="information-circle"></ion-icon>
             Mehr Info
           </button>
-          <button ion-button color="secondary">
-            <ion-icon name="browsers"></ion-icon>
-            Website
-          </button>
+          <a [href]="o.website">
+            <button ion-button color="secondary">
+              <ion-icon name="browsers"></ion-icon>
+              Website
+            </button>
+          </a>
+          <a [href]="o.donationLink">
+            <button ion-button color="danger">
+              <ion-icon name="cash"></ion-icon>
+              Spenden
+            </button>
+          </a>
         </ion-item-options>
       </ion-item-sliding>
     </ion-list>
