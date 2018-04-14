@@ -9,7 +9,7 @@ export class DataService {
       website: 'https://www.againstmalaria.com',
       donationLink: 'https://www.againstmalaria.com/Donation.aspx',
       topCharity: true,
-      interventions: [ 'Marlaria Netze' ],
+      interventions: [ 'Malaria Netze' ],
       questionaireResults: [],
       slogan: 'Insecticide-treated nets to prevent malaria in sub-Saharan Africa.',
       shortDescription: 'Malaria is one of the leading killers of children in Africa. Insecticide-treated nets prevent malaria and are inexpensive — about $5 per net.'
