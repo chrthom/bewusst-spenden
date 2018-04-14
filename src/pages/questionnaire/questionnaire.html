@@ -413,9 +413,9 @@
     </ion-item>
   </ion-list>
   <!-- RESULTS -->
-  <ion-grid fixed [ngSwitch]="nav">
+  <ion-grid fixed *ngIf="nav.startsWith('result ->')" [ngSwitch]="nav">
     <ion-row justify-content-center>
-      <ion-col *ngSwitchCase="'result -> existential risk'" col-12 col-md-6 col-xl-6 @ngIfAnimation>
+      <ion-col *ngSwitchCase="'result -> existential risk'" col-12 col-md-6 col-xl-6>
         <ion-card>
           <ion-card-header>Dein Testresultat</ion-card-header>
           <ion-card-content text-wrap>
@@ -437,7 +437,273 @@
           </ion-card-content>
         </ion-card>
       </ion-col>
-      <ion-col *ngSwitchCase="'result -> existential risk'" col-12 col-md-6 col-xl-6 @ngIfAnimation>
+      <ion-col *ngSwitchCase="'result -> specific responsibility'" col-12 col-md-6 col-xl-6>
+        <ion-card>
+          <ion-card-header>Dein Testresultat</ion-card-header>
+          <ion-card-content text-wrap>
+            <ion-card-title>Deine spezifische Verantwortung</ion-card-title>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+              <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>
+              <li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngSwitchCase="'result -> human knowledge'" col-12 col-md-6 col-xl-6>
+        <ion-card>
+          <ion-card-header>Dein Testresultat</ion-card-header>
+          <ion-card-content text-wrap>
+            <ion-card-title>Das menschliche Wissen erweitern</ion-card-title>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+              <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>
+              <li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngSwitchCase="'result -> values'" col-12 col-md-6 col-xl-6>
+        <ion-card>
+          <ion-card-header>Dein Testresultat</ion-card-header>
+          <ion-card-content text-wrap>
+            <ion-card-title>Werte und Moralvorstellungen</ion-card-title>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+              <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>
+              <li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngSwitchCase="'result -> institutions'" col-12 col-md-6 col-xl-6>
+        <ion-card>
+          <ion-card-header>Dein Testresultat</ion-card-header>
+          <ion-card-content text-wrap>
+            <ion-card-title>Institutionen verbessern</ion-card-title>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+              <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>
+              <li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngSwitchCase="'result -> environment'" col-12 col-md-6 col-xl-6>
+        <ion-card>
+          <ion-card-header>Dein Testresultat</ion-card-header>
+          <ion-card-content text-wrap>
+            <ion-card-title>Permanente Umweltschäden verhindern</ion-card-title>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+              <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>
+              <li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngSwitchCase="'result -> human rights'" col-12 col-md-6 col-xl-6>
+        <ion-card>
+          <ion-card-header>Dein Testresultat</ion-card-header>
+          <ion-card-content text-wrap>
+            <ion-card-title>Menschenrechte</ion-card-title>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+              <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>
+              <li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngSwitchCase="'result -> catastrophe'" col-12 col-md-6 col-xl-6>
+        <ion-card>
+          <ion-card-header>Dein Testresultat</ion-card-header>
+          <ion-card-content text-wrap>
+            <ion-card-title>Katastrophen verhindern</ion-card-title>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+              <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>
+              <li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngSwitchCase="'result -> animal suffering'" col-12 col-md-6 col-xl-6>
+        <ion-card>
+          <ion-card-header>Dein Testresultat</ion-card-header>
+          <ion-card-content text-wrap>
+            <ion-card-title>Tierleid mindern</ion-card-title>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+              <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>
+              <li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngSwitchCase="'result -> animal death'" col-12 col-md-6 col-xl-6>
+        <ion-card>
+          <ion-card-header>Dein Testresultat</ion-card-header>
+          <ion-card-content text-wrap>
+            <ion-card-title>Tierleben retten</ion-card-title>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+              <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>
+              <li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngSwitchCase="'result -> poverty'" col-12 col-md-6 col-xl-6>
+        <ion-card>
+          <ion-card-header>Dein Testresultat</ion-card-header>
+          <ion-card-content text-wrap>
+            <ion-card-title>Lebensstandards</ion-card-title>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+              <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>
+              <li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngSwitchCase="'result -> education'" col-12 col-md-6 col-xl-6>
+        <ion-card>
+          <ion-card-header>Dein Testresultat</ion-card-header>
+          <ion-card-content text-wrap>
+            <ion-card-title>Bildung</ion-card-title>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+              <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>
+              <li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngSwitchCase="'result -> human death'" col-12 col-md-6 col-xl-6>
+        <ion-card>
+          <ion-card-header>Dein Testresultat</ion-card-header>
+          <ion-card-content text-wrap>
+            <ion-card-title>Menschenleben retten</ion-card-title>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+              <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>
+              <li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngSwitchCase="'result -> human health'" col-12 col-md-6 col-xl-6>
+        <ion-card>
+          <ion-card-header>Dein Testresultat</ion-card-header>
+          <ion-card-content text-wrap>
+            <ion-card-title>Globale Gesundheit</ion-card-title>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+              <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>
+              <li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngSwitchCase="'result -> other'" col-12 col-md-6 col-xl-6>
+        <ion-card>
+          <ion-card-header>Dein Testresultat</ion-card-header>
+          <ion-card-content text-wrap>
+            <ion-card-title>Wir wissen es nicht</ion-card-title>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+              <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>
+              <li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col col-12 col-md-6 col-xl-6>
         <ion-list>
           <ion-item-sliding *ngFor="let o of dataService.organizations">
             <ion-item text-wrap>
@@ -469,52 +735,8 @@
             </ion-item-options>
           </ion-item-sliding>
         </ion-list>
+        <button ion-button block (click)="answer('start')">Test wiederholen</button>
       </ion-col>
     </ion-row>
   </ion-grid>
-
-  <!--
-    <ion-item *ngSwitchCase="'result -> specific responsibility'">
-
-    </ion-item>
-    <ion-item *ngSwitchCase="'result -> human knowledge'">
-
-    </ion-item>
-    <ion-item *ngSwitchCase="'result -> values'">
-
-    </ion-item>
-    <ion-item *ngSwitchCase="'result -> institutions'">
-
-    </ion-item>
-    <ion-item *ngSwitchCase="'result -> environment'">
-
-    </ion-item>
-    <ion-item *ngSwitchCase="'result -> human rights'">
-
-    </ion-item>
-    <ion-item *ngSwitchCase="'result -> catastrophe'">
-
-    </ion-item>
-    <ion-item *ngSwitchCase="'result -> animal suffering'">
-
-    </ion-item>
-    <ion-item *ngSwitchCase="'result -> animal death'">
-
-    </ion-item>
-    <ion-item *ngSwitchCase="'result -> poverty'">
-
-    </ion-item>
-    <ion-item *ngSwitchCase="'result -> education'">
-
-    </ion-item>
-    <ion-item *ngSwitchCase="'result -> human death'">
-
-    </ion-item>
-    <ion-item *ngSwitchCase="'result -> human health'">
-
-    </ion-item>
-    <ion-item *ngSwitchCase="'result -> other'">
-
-    </ion-item>
-  -->
 </ion-content>
