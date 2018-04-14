@@ -42,7 +42,7 @@ export class QuestionnairePage {
     let toResult = to.startsWith("result ->")
     function loadingTime() {
       if (toResult) return 2500;
-      else return 500;
+      else return 400;
     }
     setTimeout(() => {
       this.nav = to;
