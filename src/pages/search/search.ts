@@ -7,7 +7,7 @@ import { DataService } from "../../app/services/data";
   templateUrl: 'search.html'
 })
 export class SearchPage {
-  searchTerm: String = '';
+  searchTerm: string = '';
   organizations = null;
 
   constructor(public navCtrl: NavController, public dataService: DataService) {

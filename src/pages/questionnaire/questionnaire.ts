@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { LoadingController, NavController } from 'ionic-angular';
 import { trigger, style, transition, animate, query, animateChild } from '@angular/animations'
 import { DataService } from "../../app/services/data";
 
@@ -33,14 +33,26 @@ import { DataService } from "../../app/services/data";
   ]
 })
 export class QuestionnairePage {
-  public nav: String = 'start';
+  public nav: string = 'start';
 
-  constructor(public navCtrl: NavController, public dataService: DataService) { }
+  constructor(public navCtrl: NavController, public dataService: DataService, public loadingCtrl: LoadingController) { }
 
-  answer(to: String) {
+  answer(to: string) {
     this.nav = '';
+    let toResult = to.startsWith("result ->")
+    function loadingTime() {
+      if (toResult) return 2500;
+      else return 500;
+    }
     setTimeout(() => {
       this.nav = to;
-    }, 500);
+    }, loadingTime());
+    if (toResult) {
+      let loader = this.loadingCtrl.create({
+        content: "Ermittle Testresultat...",
+        duration: loadingTime()
+      });
+      loader.present();
+    }
   }
 }
