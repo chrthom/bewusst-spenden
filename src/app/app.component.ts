@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { QuestionnairePage } from '../pages/questionnaire/questionnaire';
+import { SearchPage } from '../pages/search/search';
 
 @Component({
   templateUrl: 'app.html'
@@ -14,8 +15,9 @@ export class EADonationApp {
   rootPage:any = QuestionnairePage;
 
   tab1Root = QuestionnairePage;
-  tab2Root = AboutPage;
-  tab3Root = ContactPage;
+  tab2Root = SearchPage;
+  tab3Root = AboutPage;
+  tab4Root = ContactPage;
 
   tabsPlacement: string = 'bottom';
   tabsLayout: string = 'icon-top';

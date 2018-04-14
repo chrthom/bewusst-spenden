@@ -7,6 +7,7 @@ import { EADonationApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { QuestionnairePage } from '../pages/questionnaire/questionnaire';
+import { SearchPage } from "../pages/search/search";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -16,7 +17,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     EADonationApp,
     AboutPage,
     ContactPage,
-    QuestionnairePage
+    QuestionnairePage,
+    SearchPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     EADonationApp,
     AboutPage,
     ContactPage,
-    QuestionnairePage
+    QuestionnairePage,
+    SearchPage
   ],
   providers: [
     StatusBar,
