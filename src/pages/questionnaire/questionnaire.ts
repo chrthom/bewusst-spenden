@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { trigger, style, transition, animate, query, animateChild } from '@angular/animations'
+import { DataService } from "../../app/services/data";
 
 @Component({
   selector: 'questionaire',
@@ -33,9 +34,8 @@ import { trigger, style, transition, animate, query, animateChild } from '@angul
 })
 export class QuestionnairePage {
   public nav: String = 'start';
-  result = null;
 
-  constructor(public navCtrl: NavController) { }
+  constructor(public navCtrl: NavController, public dataService: DataService) { }
 
   answer(to: String) {
     this.nav = '';
