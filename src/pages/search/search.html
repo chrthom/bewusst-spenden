@@ -2,9 +2,9 @@
 
 <ion-content>
   <ion-grid fixed>
-    <ion-searchbar (ionInput)="search($event)"></ion-searchbar>
+    <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="search()"></ion-searchbar>
     <ion-list>
-      <ion-item-sliding *ngFor="let o of dataService.organizations">
+      <ion-item-sliding *ngFor="let o of organizations">
         <ion-item text-wrap>
           <ion-thumbnail item-start>
             <img src="../../assets/imgs/organizations/{{ o.thumbnail }}"/>

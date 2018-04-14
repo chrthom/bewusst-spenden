@@ -8,10 +8,16 @@ import { DataService } from "../../app/services/data";
   templateUrl: 'search.html'
 })
 export class SearchPage {
+  searchTerm: String = '';
+  organizations = null;
 
-  constructor(public navCtrl: NavController, public dataService: DataService) { }
+  constructor(public navCtrl: NavController, public dataService: DataService) {
+    this.organizations = dataService.organizations;
+  }
 
-  search(event) {
-
+  search() {
+    this.organizations = this.dataService.organizations.filter((item) => {
+      return item.name.toLowerCase().indexOf(this.searchTerm.toLowerCase()) > -1;
+    });
   }
 }
