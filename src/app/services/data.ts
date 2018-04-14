@@ -12,6 +12,16 @@ export class DataService {
       intervention: 'Marlaria Netze',
       slogan: 'Insecticide-treated nets to prevent malaria in sub-Saharan Africa.',
       shortDescription: 'Malaria is one of the leading killers of children in Africa. Insecticide-treated nets prevent malaria and are inexpensive — about $5 per net.'
+    },
+    {
+      name: 'END Fund',
+      thumbnail: 'end_fund.jpg',
+      website: 'https://end.org/',
+      donationLink: 'https://end.org/engage/invest/',
+      topCharity: true,
+      intervention: 'Entwurmung',
+      slogan: 'Supporting deworming programs in low-income countries.',
+      shortDescription: 'The END Fund manages grants, raises funding and supports government programs for controlling and eliminating neglected tropical diseases, including deworming.'
     }
   ]
 
