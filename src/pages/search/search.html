@@ -15,7 +15,7 @@
           <ion-badge item-end *ngIf="o.topCharity" color="danger">Top</ion-badge>
         </ion-item>
         <ion-item-options side="right">
-          <button ion-button color="primary">
+          <button ion-button color="primary" (click)="openOrganizationModal({o: o})">
             <ion-icon name="information-circle"></ion-icon>
             Mehr Info
           </button>

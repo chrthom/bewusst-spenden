@@ -12,12 +12,14 @@ import { SearchPage } from "../pages/search/search";
 import { DataService } from "./services/data";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {OrganizationPage} from "../pages/organization/organization";
 
 @NgModule({
   declarations: [
     EADonationApp,
     AboutPage,
     ContactPage,
+    OrganizationPage,
     QuestionnairePage,
     SearchPage
   ],
@@ -31,6 +33,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     EADonationApp,
     AboutPage,
     ContactPage,
+    OrganizationPage,
     QuestionnairePage,
     SearchPage
   ],
