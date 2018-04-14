@@ -2,7 +2,24 @@
 
 <ion-content>
   <ion-grid fixed>
-    <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="search()"></ion-searchbar>
+    <ion-list>
+      <ion-searchbar placeholder="Fang hier an zu suchen..." [(ngModel)]="searchTerm" (ionInput)="search()"></ion-searchbar>
+      <ion-item>
+        <ion-label>Erweiterte Suche</ion-label>
+        <ion-toggle [(ngModel)]="advancedSearch" checked="false" (ionChange)="search()"></ion-toggle>
+      </ion-item>
+      <ion-item *ngIf="advancedSearch">
+        <ion-label>Interventionen</ion-label>
+        <ion-select [(ngModel)]="searchInterventions" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">
+          <ion-option value="Biotechnik">Biotechnik</ion-option>
+          <ion-option value="Entwurmung">Entwurmung</ion-option>
+          <ion-option value="KI">KI</ion-option>
+          <ion-option value="Klimaschutz">Klimaschutz</ion-option>
+          <ion-option value="Malaria Netze">Malaria Netze</ion-option>
+          <ion-option value="Nukleartechnologie">Nukleartechnologie</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
     <ion-list>
       <ion-item-sliding *ngFor="let o of organizations">
         <ion-item text-wrap>

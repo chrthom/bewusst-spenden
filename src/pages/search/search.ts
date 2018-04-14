@@ -8,8 +8,10 @@ import { OrganizationPage } from "../organization/organization";
   templateUrl: 'search.html'
 })
 export class SearchPage {
+  organizations;
   searchTerm: string = '';
-  organizations = null;
+  searchInterventions = [];
+  advancedSearch: boolean;
 
   constructor(public navCtrl: NavController, public dataService: DataService, public modalCtrl: ModalController) {
     this.organizations = dataService.organizations;
@@ -17,7 +19,14 @@ export class SearchPage {
 
   search() {
     this.organizations = this.dataService.organizations.filter((item) => {
-      for (let key in item) if (item[key].toString().toLowerCase().indexOf(this.searchTerm.toLowerCase()) > -1) return true;
+      if (this.advancedSearch) {
+        if (this.searchInterventions.length > 0
+          && item.interventions.filter(i1 => this.searchInterventions.filter(i2 => i1 == i2).length > 0).length == 0)
+          return false;
+      }
+      for (let key in item)
+        if (item[key].toString().toLowerCase().indexOf(this.searchTerm.toLowerCase()) > -1)
+          return true;
       return false;
     });
   }

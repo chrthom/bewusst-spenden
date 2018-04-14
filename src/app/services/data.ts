@@ -20,7 +20,7 @@ export class DataService {
       website: 'https://end.org/',
       donationLink: 'https://end.org/engage/invest/',
       topCharity: true,
-      intervention: [ 'Entwurmung' ],
+      interventions: [ 'Entwurmung' ],
       questionaireResults: [],
       slogan: 'Supporting deworming programs in low-income countries.',
       shortDescription: 'The END Fund manages grants, raises funding and supports government programs for controlling and eliminating neglected tropical diseases, including deworming.'
@@ -31,7 +31,7 @@ export class DataService {
       website: 'https://futureoflife.org/',
       donationLink: 'https://futureoflife.org/get-involved/',
       topCharity: false,
-      intervention: [ 'KI', 'Biotechnik', 'Nuklearwaffen', 'Klimaschutz' ],
+      interventions: [ 'KI', 'Biotechnik', 'Nukleartechnologie', 'Klimaschutz' ],
       questionaireResults: [],
       slogan: 'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
       shortDescription: 'orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
