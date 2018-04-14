@@ -17,7 +17,8 @@ export class SearchPage {
 
   search() {
     this.organizations = this.dataService.organizations.filter((item) => {
-      return item.name.toLowerCase().indexOf(this.searchTerm.toLowerCase()) > -1;
+      for (let key in item) if (item[key].toString().toLowerCase().indexOf(this.searchTerm.toLowerCase()) > -1) return true;
+      return false;
     });
   }
 }
