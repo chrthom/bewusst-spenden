@@ -86,6 +86,7 @@
           <h3>{{ o.slogan }}</h3>
           <p>{{ o.shortDescription }}</p>
           <ion-badge item-end *ngIf="o.topCharity" color="danger">Top</ion-badge>
+          <ion-badge *ngFor="let e of o.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
         </ion-item>
         <ion-item-options side="right">
           <button ion-button color="primary" (click)="openOrganizationModal({o: o})">
