@@ -104,7 +104,7 @@ export class DataService {
       category: [ 'Existenzrisiken' ],
       cause: [ 'Klimaschutz' ],
       impactDirection: 'reaktiv',
-      regions: [],
+      regions: ["Ozeanien", "Südamerika", "Afrika"],
       questionaireResults: ["environment"],
       slogan: 'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
       shortDescription: 'orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
