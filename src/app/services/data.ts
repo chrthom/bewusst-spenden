@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class DataService {
   organizations = [
+    // Armut
     {
       name: 'Against Malaria Foundation',
       thumbnail: 'against_malaria_foundation',
@@ -54,6 +55,7 @@ export class DataService {
         }
       ]
     },
+    // Existenzrisiken
     {
       name: 'Future of Life Institute',
       thumbnail: 'future_of_life',
@@ -62,7 +64,7 @@ export class DataService {
       category: [ 'Existenzrisiken' ],
       cause: [ 'Künstliche Intelligenz', 'Biotechnologie', "Nukleartechnologie", "Klimaschutz" ],
       impactDirection: 'proaktiv',
-      regions: ["Europa", "USA"],
+      regions: [],
       questionaireResults: ["existential risk"],
       slogan: 'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
       shortDescription: 'orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
@@ -76,7 +78,61 @@ export class DataService {
           top: false
         }
       ]
+    },
+    {
+      name: 'Machine Intelligence Research Institute',
+      thumbnail: 'miri',
+      website: 'https://intelligence.org',
+      donationLink: 'https://intelligence.org/donate/',
+      category: [ 'Existenzrisiken' ],
+      cause: [ 'Künstliche Intelligenz' ],
+      impactDirection: 'proaktiv',
+      regions: [],
+      questionaireResults: ["human knowledge"],
+      slogan: 'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      shortDescription: 'orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+      longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
+      impact1000: 'Was wird mit 1000€ erreicht? ...',
+      donationDeficit: null,
+      evaluators: []
+    },
+    {
+      name: 'Cool Earth',
+      thumbnail: 'cool-earth',
+      website: 'https://www.coolearth.org',
+      donationLink: 'https://www.coolearth.org/#donate',
+      category: [ 'Existenzrisiken' ],
+      cause: [ 'Klimaschutz' ],
+      impactDirection: 'reaktiv',
+      regions: [],
+      questionaireResults: ["environment"],
+      slogan: 'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      shortDescription: 'orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+      longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
+      impact1000: 'Was wird mit 1000€ erreicht? ...',
+      donationDeficit: null,
+      evaluators: []
+    },
+    {
+      name: 'Future of Humanity Institute',
+      thumbnail: 'future_of_humanity',
+      website: 'https://www.fhi.ox.ac.uk',
+      donationLink: '',
+      category: [ 'Existenzrisiken', "Meta" ],
+      cause: [ 'Künstliche Intelligenz', "Biotechnologie", "Strategie" ],
+      impactDirection: 'proaktiv',
+      regions: [],
+      questionaireResults: ["existential risk"],
+      slogan: 'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      shortDescription: 'orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+      longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
+      impact1000: 'Was wird mit 1000€ erreicht? ...',
+      donationDeficit: null,
+      evaluators: []
     }
+    // Meta
+    // Politik
+    // Tierleid
   ];
 
   constructor() { }
