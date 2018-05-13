@@ -9,8 +9,8 @@ export class DataService {
       website: 'https://www.againstmalaria.com',
       donationLink: 'https://www.againstmalaria.com/Donation.aspx',
       category: [ 'Armut' ],
-      cause: [ 'Lebenssicherung', 'Gesundheit' ],
-      impactDirection: 'reactive',
+      cause: [ 'Lebenssicherung' ],
+      impactDirection: 'reaktiv',
       regions: ['Afrika'],
       questionaireResults: [],
       slogan: 'Insecticide-treated nets to prevent malaria in sub-Saharan Africa.',
@@ -25,7 +25,7 @@ export class DataService {
           top: true
         },
         {
-          evaluator: 'The life you can save',
+          evaluator: 'The Life You Can Save',
           link: 'https://www.thelifeyoucansave.org/where-to-donate/against-malaria-foundation',
           top: false
         }
@@ -38,7 +38,7 @@ export class DataService {
       donationLink: 'https://end.org/engage/invest',
       category: [ 'Armut' ],
       cause: [ 'Gesundheit' ],
-      impactDirection: 'reactive',
+      impactDirection: 'reaktiv',
       regions: ['Afrika'],
       questionaireResults: [],
       slogan: 'Supporting deworming programs in low-income countries.',
@@ -61,8 +61,8 @@ export class DataService {
       donationLink: 'https://futureoflife.org/get-involved/',
       category: [ 'Existenzrisiken' ],
       cause: [ 'Künstliche Intelligenz', 'Biotechnologie', "Nukleartechnologie", "Klimaschutz" ],
-      impactDirection: 'proactive',
-      regions: ['Asien', "Europa", "USA"],
+      impactDirection: 'proaktiv',
+      regions: ["Europa", "USA"],
       questionaireResults: [],
       slogan: 'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
       shortDescription: 'orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
@@ -71,7 +71,7 @@ export class DataService {
       donationDeficit: null,
       evaluators: [
         {
-          evaluator: 'The life you can save',
+          evaluator: 'The Life You Can Save',
           link: 'https://www.thelifeyoucansave.org/where-to-donate/against-malaria-foundation',
           top: false
         }

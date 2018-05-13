@@ -24,33 +24,74 @@ var DataService = /** @class */ (function () {
                 thumbnail: 'against_malaria_foundation',
                 website: 'https://www.againstmalaria.com',
                 donationLink: 'https://www.againstmalaria.com/Donation.aspx',
-                topCharity: true,
-                interventions: ['Malaria Netze'],
+                category: ['Armut'],
+                cause: ['Lebenssicherung'],
+                impactDirection: 'reaktiv',
+                regions: ['Afrika'],
                 questionaireResults: [],
                 slogan: 'Insecticide-treated nets to prevent malaria in sub-Saharan Africa.',
-                shortDescription: 'Malaria is one of the leading killers of children in Africa. Insecticide-treated nets prevent malaria and are inexpensive — about $5 per net.'
+                shortDescription: 'Malaria is one of the leading killers of children in Africa. Insecticide-treated nets prevent malaria and are inexpensive — about $5 per net.',
+                longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
+                impact1000: 'Was wird mit 1000€ erreicht? ...',
+                donationDeficit: 20000000,
+                evaluators: [
+                    {
+                        evaluator: 'GiveWell',
+                        link: 'https://www.givewell.org/charities/AMF',
+                        top: true
+                    },
+                    {
+                        evaluator: 'The Life You Can Save',
+                        link: 'https://www.thelifeyoucansave.org/where-to-donate/against-malaria-foundation',
+                        top: false
+                    }
+                ]
             },
             {
                 name: 'END Fund',
                 thumbnail: 'end_fund',
                 website: 'https://end.org/',
-                donationLink: 'https://end.org/engage/invest/',
-                topCharity: true,
-                interventions: ['Entwurmung'],
+                donationLink: 'https://end.org/engage/invest',
+                category: ['Armut'],
+                cause: ['Gesundheit'],
+                impactDirection: 'reaktiv',
+                regions: ['Afrika'],
                 questionaireResults: [],
                 slogan: 'Supporting deworming programs in low-income countries.',
-                shortDescription: 'The END Fund manages grants, raises funding and supports government programs for controlling and eliminating neglected tropical diseases, including deworming.'
+                shortDescription: 'The END Fund manages grants, raises funding and supports government programs for controlling and eliminating neglected tropical diseases, including deworming.',
+                longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
+                impact1000: 'Was wird mit 1000€ erreicht? ...',
+                donationDeficit: 15000000,
+                evaluators: [
+                    {
+                        evaluator: 'GiveWell',
+                        link: 'https://www.givewell.org/charities/AMF',
+                        top: true
+                    }
+                ]
             },
             {
                 name: 'Future of Life Institute',
                 thumbnail: 'future_of_life',
-                website: 'https://futureoflife.org/',
+                website: 'https://futureoflife.org',
                 donationLink: 'https://futureoflife.org/get-involved/',
-                topCharity: false,
-                interventions: ['KI', 'Biotechnik', 'Nukleartechnologie', 'Klimaschutz'],
+                category: ['Existenzrisiken'],
+                cause: ['Künstliche Intelligenz', 'Biotechnologie', "Nukleartechnologie", "Klimaschutz"],
+                impactDirection: 'proaktiv',
+                regions: ["Europa", "USA"],
                 questionaireResults: [],
                 slogan: 'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-                shortDescription: 'orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
+                shortDescription: 'orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+                longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
+                impact1000: 'Was wird mit 1000€ erreicht? ...',
+                donationDeficit: null,
+                evaluators: [
+                    {
+                        evaluator: 'The Life You Can Save',
+                        link: 'https://www.thelifeyoucansave.org/where-to-donate/against-malaria-foundation',
+                        top: false
+                    }
+                ]
             }
         ];
     }
@@ -285,15 +326,34 @@ var SearchPage = /** @class */ (function () {
         this.dataService = dataService;
         this.modalCtrl = modalCtrl;
         this.searchTerm = '';
-        this.searchInterventions = [];
+        this.searchCategories = [];
+        this.searchCauses = [];
+        this.searchImpactDirection = [];
+        this.searchRegion = [];
+        this.searchRecommendedBy = [];
         this.organizations = dataService.organizations;
     }
+    SearchPage.prototype.listContains = function (list, find) {
+        return list.length == 0 || list.filter(function (i) { return i == find; }).length > 0;
+    };
     SearchPage.prototype.search = function () {
         var _this = this;
         this.organizations = this.dataService.organizations.filter(function (item) {
             if (_this.advancedSearch) {
-                if (_this.searchInterventions.length > 0
-                    && item.interventions.filter(function (i1) { return _this.searchInterventions.filter(function (i2) { return i1 == i2; }).length > 0; }).length == 0)
+                if (_this.searchCategories.length > 0
+                    && item.category.filter(function (i1) { return _this.searchCategories.filter(function (i2) { return i1 == i2; }).length > 0; }).length == 0)
+                    return false;
+                else if (_this.searchCauses.length > 0
+                    && item.cause.filter(function (i1) { return _this.searchCauses.filter(function (i2) { return i1 == i2; }).length > 0; }).length == 0)
+                    return false;
+                else if (_this.searchImpactDirection.length > 0
+                    && _this.searchImpactDirection.filter(function (i) { return item.impactDirection == i; }).length == 0)
+                    return false;
+                else if (_this.searchRegion.length > 0
+                    && item.regions.filter(function (i1) { return _this.searchRegion.filter(function (i2) { return i1 == i2; }).length > 0; }).length == 0)
+                    return false;
+                else if (_this.searchRecommendedBy.length > 0
+                    && item.evaluators.filter(function (i1) { return _this.searchRecommendedBy.filter(function (i2) { return i1.evaluator == i2; }).length > 0; }).length == 0)
                     return false;
             }
             for (var key in item)
@@ -308,11 +368,12 @@ var SearchPage = /** @class */ (function () {
     };
     SearchPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-search',template:/*ion-inline-start:"/home/thomsen/dev/ea/src/pages/search/search.html"*/'<ion-header><ion-navbar></ion-navbar></ion-header>\n\n<ion-content>\n  <ion-grid fixed>\n    <ion-list>\n      <ion-searchbar placeholder="Fang hier an zu suchen..." [(ngModel)]="searchTerm" (ionInput)="search()"></ion-searchbar>\n      <ion-item>\n        <ion-label>Erweiterte Suche</ion-label>\n        <ion-toggle [(ngModel)]="advancedSearch" checked="false" (ionChange)="search()"></ion-toggle>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Interventionen</ion-label>\n        <ion-select [(ngModel)]="searchInterventions" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="Biotechnik">Biotechnik</ion-option>\n          <ion-option value="Entwurmung">Entwurmung</ion-option>\n          <ion-option value="KI">KI</ion-option>\n          <ion-option value="Klimaschutz">Klimaschutz</ion-option>\n          <ion-option value="Malaria Netze">Malaria Netze</ion-option>\n          <ion-option value="Nukleartechnologie">Nukleartechnologie</ion-option>\n        </ion-select>\n      </ion-item>\n    </ion-list>\n    <ion-list>\n      <ion-item-sliding *ngFor="let o of organizations">\n        <ion-item text-wrap>\n          <ion-thumbnail item-start>\n            <img src="../../assets/imgs/organizations/{{ o.thumbnail }}.jpg"/>\n          </ion-thumbnail>\n          <h2>{{ o.name }}</h2>\n          <h3>{{ o.slogan }}</h3>\n          <p>{{ o.shortDescription }}</p>\n          <ion-badge item-end *ngIf="o.topCharity" color="danger">Top</ion-badge>\n        </ion-item>\n        <ion-item-options side="right">\n          <button ion-button color="primary" (click)="openOrganizationModal({o: o})">\n            <ion-icon name="information-circle"></ion-icon>\n            Mehr Info\n          </button>\n          <a [href]="o.website">\n            <button ion-button color="secondary">\n              <ion-icon name="browsers"></ion-icon>\n              Website\n            </button>\n          </a>\n          <a [href]="o.donationLink">\n            <button ion-button color="danger">\n              <ion-icon name="cash"></ion-icon>\n              Spenden\n            </button>\n          </a>\n        </ion-item-options>\n      </ion-item-sliding>\n    </ion-list>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/home/thomsen/dev/ea/src/pages/search/search.html"*/
+            selector: 'page-search',template:/*ion-inline-start:"/home/thomsen/dev/ea/src/pages/search/search.html"*/'<ion-header><ion-navbar></ion-navbar></ion-header>\n\n<ion-content>\n  <ion-grid fixed>\n    <ion-list>\n      <ion-searchbar placeholder="Fang hier an zu suchen..." [(ngModel)]="searchTerm" (ionInput)="search()"></ion-searchbar>\n      <ion-item>\n        <ion-label>Erweiterte Suche</ion-label>\n        <ion-toggle [(ngModel)]="advancedSearch" checked="false" (ionChange)="search()"></ion-toggle>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Kategorie</ion-label>\n        <ion-select [(ngModel)]="searchCategories" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="Armut">Armut</ion-option>\n          <ion-option value="Existenzrisiken">Existenzrisiken</ion-option>\n          <ion-option value="Meta">Meta</ion-option>\n          <ion-option value="Politik">Politik</ion-option>\n          <ion-option value="Tierleid">Tierleid</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Problemfeld</ion-label>\n        <ion-select [(ngModel)]="searchCauses" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Bildung">Bildung</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Biotechnologie">Biotechnologie</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Meta\')" value="Evaluation">Evaluation</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Tierleid\')" value="Haltungsbedingungen">Haltungsbedingungen</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Gesundheit">Gesundheit</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Politik\')" value="Institutionen">Institutionen</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Katastrophenschutz">Katastrophenschutz</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Klimaschutz">Klimaschutz</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Künstliche Intelligenz">Künstliche Intelligenz</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Lebensstandard">Lebensstandard</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Menschenleben">Menschenleben</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Politik\')" value="Menschenrechte">Menschenrechte</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Nukleartechnologie">Nukleartechnologie</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Meta\')" value="Öffentlichkeitsarbeit">Öffentlichkeitsarbeit</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Meta\')" value="Strategie">Stategie</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Tierleid\')" value="Tierleben">Tierleben</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Politik\')" value="Werte und Moral">Werte und Moral</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Wirkrichtung</ion-label>\n        <ion-select [(ngModel)]="searchImpactDirection" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="proaktiv">proaktiv</ion-option>\n          <ion-option value="reaktiv">reaktiv</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Region</ion-label>\n        <ion-select [(ngModel)]="searchRegion" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="Afrika">Afrika</ion-option>\n          <ion-option value="Asien">Asien</ion-option>\n          <ion-option value="Deutschland">Deutschland</ion-option>\n          <ion-option value="Europa">Deutschland</ion-option>\n          <ion-option value="Indien">Indien</ion-option>\n          <ion-option value="Naher Osten">Naher Osten</ion-option>\n          <ion-option value="Südamerika">Südamerika</ion-option>\n          <ion-option value="Südost Asien">Südost Asien</ion-option>\n          <ion-option value="USA">USA</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Empfohlen durch Evalutator</ion-label>\n        <ion-select [(ngModel)]="searchRecommendedBy" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="80.000 hours">80.000 hours</ion-option>\n          <ion-option value="Animal Charity Evalutators">Animal Charity Evalutators</ion-option>\n          <ion-option value="Charity Science">Charity Science</ion-option>\n          <ion-option value="GiveWell">GiveWell</ion-option>\n          <ion-option value="ImpactM">ImpactM</ion-option>\n          <ion-option value="Open Philantrophy Project">Open Philantrophy Project</ion-option>\n          <ion-option value="Phineo">Phineo</ion-option>\n          <ion-option value="Stiftung für Effektiven Altruismus">Stiftung für Effektiven Altruismus</ion-option>\n          <ion-option value="The Life You Can Save">The Life You Can Save</ion-option>\n        </ion-select>\n      </ion-item>\n    </ion-list>\n    <ion-list>\n      <ion-item-sliding *ngFor="let o of organizations">\n        <ion-item text-wrap>\n          <ion-thumbnail item-start>\n            <img src="../../assets/imgs/organizations/{{ o.thumbnail }}.jpg"/>\n          </ion-thumbnail>\n          <h2>{{ o.name }}</h2>\n          <h3>{{ o.slogan }}</h3>\n          <p>{{ o.shortDescription }}</p>\n          <ion-badge item-end *ngIf="o.topCharity" color="danger">Top</ion-badge>\n        </ion-item>\n        <ion-item-options side="right">\n          <button ion-button color="primary" (click)="openOrganizationModal({o: o})">\n            <ion-icon name="information-circle"></ion-icon>\n            Mehr Info\n          </button>\n          <a [href]="o.website">\n            <button ion-button color="secondary">\n              <ion-icon name="browsers"></ion-icon>\n              Website\n            </button>\n          </a>\n          <a [href]="o.donationLink">\n            <button ion-button color="danger">\n              <ion-icon name="cash"></ion-icon>\n              Spenden\n            </button>\n          </a>\n        </ion-item-options>\n      </ion-item-sliding>\n    </ion-list>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/home/thomsen/dev/ea/src/pages/search/search.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__app_services_data__["a" /* DataService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__app_services_data__["a" /* DataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__app_services_data__["a" /* DataService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]) === "function" && _c || Object])
     ], SearchPage);
     return SearchPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=search.js.map

@@ -9,14 +9,70 @@
         <ion-toggle [(ngModel)]="advancedSearch" checked="false" (ionChange)="search()"></ion-toggle>
       </ion-item>
       <ion-item *ngIf="advancedSearch">
-        <ion-label>Interventionen</ion-label>
-        <ion-select [(ngModel)]="searchInterventions" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">
-          <ion-option value="Biotechnik">Biotechnik</ion-option>
-          <ion-option value="Entwurmung">Entwurmung</ion-option>
-          <ion-option value="KI">KI</ion-option>
-          <ion-option value="Klimaschutz">Klimaschutz</ion-option>
-          <ion-option value="Malaria Netze">Malaria Netze</ion-option>
-          <ion-option value="Nukleartechnologie">Nukleartechnologie</ion-option>
+        <ion-label>Kategorie</ion-label>
+        <ion-select [(ngModel)]="searchCategories" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">
+          <ion-option value="Armut">Armut</ion-option>
+          <ion-option value="Existenzrisiken">Existenzrisiken</ion-option>
+          <ion-option value="Meta">Meta</ion-option>
+          <ion-option value="Politik">Politik</ion-option>
+          <ion-option value="Tierleid">Tierleid</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item *ngIf="advancedSearch">
+        <ion-label>Problemfeld</ion-label>
+        <ion-select [(ngModel)]="searchCauses" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">
+          <ion-option *ngIf="listContains(searchCategories, 'Armut')" value="Bildung">Bildung</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Existenzrisiken')" value="Biotechnologie">Biotechnologie</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Meta')" value="Evaluation">Evaluation</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Tierleid')" value="Haltungsbedingungen">Haltungsbedingungen</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Armut')" value="Gesundheit">Gesundheit</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Politik')" value="Institutionen">Institutionen</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Existenzrisiken')" value="Katastrophenschutz">Katastrophenschutz</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Existenzrisiken')" value="Klimaschutz">Klimaschutz</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Existenzrisiken')" value="Künstliche Intelligenz">Künstliche Intelligenz</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Armut')" value="Lebensstandard">Lebensstandard</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Armut')" value="Menschenleben">Menschenleben</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Politik')" value="Menschenrechte">Menschenrechte</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Existenzrisiken')" value="Nukleartechnologie">Nukleartechnologie</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Meta')" value="Öffentlichkeitsarbeit">Öffentlichkeitsarbeit</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Meta')" value="Strategie">Stategie</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Tierleid')" value="Tierleben">Tierleben</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Politik')" value="Werte und Moral">Werte und Moral</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item *ngIf="advancedSearch">
+        <ion-label>Wirkrichtung</ion-label>
+        <ion-select [(ngModel)]="searchImpactDirection" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">
+          <ion-option value="proaktiv">proaktiv</ion-option>
+          <ion-option value="reaktiv">reaktiv</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item *ngIf="advancedSearch">
+        <ion-label>Region</ion-label>
+        <ion-select [(ngModel)]="searchRegion" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">
+          <ion-option value="Afrika">Afrika</ion-option>
+          <ion-option value="Asien">Asien</ion-option>
+          <ion-option value="Deutschland">Deutschland</ion-option>
+          <ion-option value="Europa">Deutschland</ion-option>
+          <ion-option value="Indien">Indien</ion-option>
+          <ion-option value="Naher Osten">Naher Osten</ion-option>
+          <ion-option value="Südamerika">Südamerika</ion-option>
+          <ion-option value="Südost Asien">Südost Asien</ion-option>
+          <ion-option value="USA">USA</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item *ngIf="advancedSearch">
+        <ion-label>Empfohlen durch Evalutator</ion-label>
+        <ion-select [(ngModel)]="searchRecommendedBy" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">
+          <ion-option value="80.000 hours">80.000 hours</ion-option>
+          <ion-option value="Animal Charity Evalutators">Animal Charity Evalutators</ion-option>
+          <ion-option value="Charity Science">Charity Science</ion-option>
+          <ion-option value="GiveWell">GiveWell</ion-option>
+          <ion-option value="ImpactM">ImpactM</ion-option>
+          <ion-option value="Open Philantrophy Project">Open Philantrophy Project</ion-option>
+          <ion-option value="Phineo">Phineo</ion-option>
+          <ion-option value="Stiftung für Effektiven Altruismus">Stiftung für Effektiven Altruismus</ion-option>
+          <ion-option value="The Life You Can Save">The Life You Can Save</ion-option>
         </ion-select>
       </ion-item>
     </ion-list>
