@@ -98,7 +98,7 @@ export class DataService {
     },
     {
       name: 'Cool Earth',
-      thumbnail: 'cool-earth',
+      thumbnail: 'cool_earth',
       website: 'https://www.coolearth.org',
       donationLink: 'https://www.coolearth.org/#donate',
       category: [ 'Existenzrisiken' ],
