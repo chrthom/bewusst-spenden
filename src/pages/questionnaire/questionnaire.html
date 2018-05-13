@@ -705,7 +705,7 @@
       </ion-col>
       <ion-col col-12 col-md-6 col-xl-6>
         <ion-list>
-          <ion-item-sliding *ngFor="let o of dataService.organizations">
+          <ion-item-sliding *ngFor="let o of organizations">
             <ion-item text-wrap>
               <ion-thumbnail item-start>
                 <img src="../../assets/imgs/organizations/{{ o.thumbnail }}.jpg"/>
@@ -713,7 +713,7 @@
               <h2>{{ o.name }}</h2>
               <h3>{{ o.slogan }}</h3>
               <p>{{ o.shortDescription }}</p>
-              <ion-badge item-end *ngIf="o.topCharity" color="danger">Top</ion-badge>
+              <ion-badge *ngFor="let e of o.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
             </ion-item>
             <ion-item-options side="right">
               <button ion-button color="primary">

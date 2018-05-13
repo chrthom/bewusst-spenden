@@ -34,12 +34,13 @@ import { DataService } from "../../app/services/data";
 })
 export class QuestionnairePage {
   public nav: string = 'start';
+  organizations = [];
 
   constructor(public navCtrl: NavController, public dataService: DataService, public loadingCtrl: LoadingController) { }
 
   answer(to: string) {
     this.nav = '';
-    let toResult = to.startsWith("result ->")
+    let toResult = to.startsWith("result ->");
     function loadingTime() {
       if (toResult) return 2500;
       else return 400;
@@ -48,6 +49,9 @@ export class QuestionnairePage {
       this.nav = to;
     }, loadingTime());
     if (toResult) {
+      this.organizations = this.dataService.organizations.filter( item => {
+        return item.questionaireResults.indexOf(to.replace("result -> ", "")) >= 0;
+      });
       let loader = this.loadingCtrl.create({
         content: "Ermittle Testresultat...",
         duration: loadingTime()

@@ -26,7 +26,7 @@ export class SearchPage {
   }
 
   search() {
-    this.organizations = this.dataService.organizations.filter((item) => {
+    this.organizations = this.dataService.organizations.filter(item => {
       if (this.advancedSearch) {
         if (this.searchCategories.length > 0
           && item.category.filter(i1 => this.searchCategories.filter(i2 => i1 == i2).length > 0).length == 0)
