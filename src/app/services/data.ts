@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 export class DataService {
   organizations = [
     // Armut
+
     {
       name: 'Against Malaria Foundation',
       thumbnail: 'against_malaria_foundation',
@@ -16,9 +17,36 @@ export class DataService {
       questionaireResults: ["human death"],
       slogan: 'Insecticide-treated nets to prevent malaria in sub-Saharan Africa.',
       shortDescription: 'Malaria is one of the leading killers of children in Africa. Insecticide-treated nets prevent malaria and are inexpensive — about $5 per net.',
-      longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
-      impact1000: 'Was wird mit 1000€ erreicht? ...',
+      longDescription: 'The Against Malaria Foundation (AMF) is a United Kingdom-based charity that provides long-lasting insecticidal nets (LLINs) to populations at high risk of malaria, primarily in Africa. Nets are distributed through partnerships with the International Red Cross, the Malaria Consortium, and others, with partners responsible for costs of distribution. Distributions include malaria education for the local population, and they are documented through reports, photos, and video. Post-distribution check-ups are carried out 6, 12, 18, 24, and 30 months to assess net usage and conditions.',
+      impact1000: 'Was wird mit 1000€ erreicht? Ungefähr 250 Netze werden verteilt: grob geschätzt reicht die Verteilung von 900 Netze, um ein Leben zu retten.',
       donationDeficit: 20000000,
+      evaluators: [
+        {
+          evaluator: 'GiveWell',
+          link: 'https://www.givewell.org/charities/AMF',
+          top: true
+        },
+        {
+          evaluator: 'The Life You Can Save',
+          link: 'https://www.thelifeyoucansave.org/where-to-donate/against-malaria-foundation',
+          top: false
+        }
+      ]
+    },    {
+      name: 'Schistosomiasis Control Initiative',
+      thumbnail: 'schistosomiasis_control_initiative',
+      website: 'http://www.imperial.ac.uk/schistosomiasis-control-initiative',
+      donationLink: 'http://www.imperial.ac.uk/schistosomiasis-control-initiative/donate/',
+      category: [ 'Armut' ],
+      cause: [ 'Globale Gesundheit' ],
+      impactDirection: 'reaktiv',
+      regions: ['Afrika'],
+      questionaireResults: ["human death"],
+      slogan: 'Treating neglected tropical diseases in sub-Saharan Africa.',
+      shortDescription: 'SCI treats children and at risk adults for schistosomiasis and soil transmitted helminths (whipworm, hookworm, and roundworm), preventing anaemia, impaired growth and development in children and the development of life-threatening conditions of bladder cancer, kidney malfunction or liver and spleen damage.',
+      longDescription: 'SCI assists Ministries of Health across sub-Saharan Africa to control and then eliminate schistosomiasis and soil transmitted helminths from their population utilising the World Health Organization’s Drug Donation Programme for praziquantel and albendazole. 230 million people, one-third of the total population of Africa, need a regular annual treatment of praziquantel, and 400 million people need a regular annual treatment of albendazole, to eliminate these parasitic diseases from their bodies.',
+      impact1000: 'Was wird mit 1000€ erreicht? Ungefähr 2000 Menschen werden behandelt.',
+      donationDeficit: 30000000,
       evaluators: [
         {
           evaluator: 'GiveWell',
