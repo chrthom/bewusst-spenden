@@ -159,6 +159,20 @@ export class DataService {
       evaluators: []
     }
     // Meta
+    {
+      name: 'GiveWell',
+      thumbnail: 'givewell',
+      website: 'https://www.givewell.org',
+      donationLink: 'https://secure.givewell.org/support-givewell',
+      category: [ 'Meta' ],
+      cause: [ 'Evaluation' ],
+      impactDirection: 'aktiv',
+      regions: ['Weltweit, hauptsächlich Afrika'],
+      questionaireResults: ["evaluation"],
+      slogan: 'High impact giving opportunities that are supported by in-depth charity research.',
+      shortDescription: 'GiveWell is a nonprofit dedicated to finding outstanding giving opportunities and publishing the full details of their analysis to help donors decide where to give. Their current primary focus is on improving life in the developing world.',
+      longDescription: 'Unlike charity evaluators that focus solely on financials, assessing administrative or fundraising costs, GiveWell conduct in-depth research aiming to determine how much good a given program accomplishes (in terms of lives saved, lives improved, etc.) per dollar spent. Rather than try to rate as many charities as possible, they focus on the few charities that stand out most in order to find and confidently recommend high-impact giving opportunities.',
+    }
     // Politik
     // Tierleid
   ];
