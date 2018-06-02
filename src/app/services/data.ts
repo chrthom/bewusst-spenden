@@ -157,7 +157,7 @@ export class DataService {
       impact1000: 'Was wird mit 1000€ erreicht? ...',
       donationDeficit: null,
       evaluators: []
-    }
+    },
     // Meta
     {
       name: 'GiveWell',
@@ -172,7 +172,48 @@ export class DataService {
       slogan: 'High impact giving opportunities that are supported by in-depth charity research.',
       shortDescription: 'GiveWell is a nonprofit dedicated to finding outstanding giving opportunities and publishing the full details of their analysis to help donors decide where to give. Their current primary focus is on improving life in the developing world.',
       longDescription: 'Unlike charity evaluators that focus solely on financials, assessing administrative or fundraising costs, GiveWell conduct in-depth research aiming to determine how much good a given program accomplishes (in terms of lives saved, lives improved, etc.) per dollar spent. Rather than try to rate as many charities as possible, they focus on the few charities that stand out most in order to find and confidently recommend high-impact giving opportunities.',
-    }
+    },
+       {
+      name: 'ImpactMatters',
+      thumbnail: 'impactmatters',
+      website: 'https://www.impactm.org',
+      category: [ 'Meta' ],
+      cause: [ 'Evaluation' ],
+      impactDirection: 'aktiv',
+      regions: ['Weltweit'],
+      questionaireResults: ["evaluation"],
+      slogan: 'Auditing nonprofits to rigorously estimate their philanthropic impact',
+      shortDescription: 'ImpactMatters conducts “impact audits” of nonprofits to rigorously estimate their philanthropic impact, compelling them and their funders to make evidence-based decisions.',
+      longDescription: 'Even the best run nonprofits can benefit from an outside perspective on how to increase their accountability and impact. ImpactMatters provide an objective, independent estimate of the impact and cost of the nonprofit, and then provide the nonprofit with specific, actionable guidance on how to improve evaluation and data systems. If the nonprofit agrees to publication, ImpactMatters issues a report, which includes estimates of impact and cost, ratings of the quality of evidence undergirding those estimates and ratings of monitoring systems and data protocols. The impact audit team then issues a private management letter outlining ways that the auditee can improve its effectiveness.',
+    },
+    {
+      name: 'Innovations for Poverty Action',
+      thumbnail: 'innovations_for_poverty_action',
+      website: 'https://www.poverty-action.org',
+      donationLink: 'https://www.poverty-action.org/monthly-donation',
+      category: [ 'Meta' ],
+      cause: [ 'Evaluation' ],
+      impactDirection: 'aktiv',
+      regions: ['Weltweit'],
+      questionaireResults: ["evaluation"],
+      slogan: 'Randomised controlled trials of programs and policies for the poor.',
+      shortDescription: 'Innovations for Poverty Action conducts controlled, randomized studies of aid programs. Their studies are conducted in much the same matter as scientific studies to determine the impact of such programs and find effective methods for reducing poverty',
+      longDescription: 'Innovations for Poverty Action (IPA) is a research and policy nonprofit that discovers and promotes effective solutions to global poverty problems. IPA brings together researchers and decision-makers to design, rigorously evaluate, and refine these solutions and their applications, ensuring that the evidence created is used to improve the lives of the world’s poor.',
+      impact1000: 'Was wird mit 1000€ erreicht? Eine Studie wird teilweise unterstützt (Eine Studie kostet normalerweise zwischen 50 000 und 500 000 euro).',
+      donationDeficit: 2000000,
+      evaluators: [
+        {
+          evaluator: 'GiveWell',
+          link: 'https://www.givewell.org/international/charities/ipa',
+          top: false
+        },
+        {
+          evaluator: 'The Life You Can Save',
+          link: 'https://www.thelifeyoucansave.org/where-to-donate/innovations-for-poverty-action',
+          top: false
+        }
+      ]
+}
     // Politik
     // Tierleid
   ];
