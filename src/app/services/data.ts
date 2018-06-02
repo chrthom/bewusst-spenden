@@ -50,12 +50,12 @@ export class DataService {
       evaluators: [
         {
           evaluator: 'GiveWell',
-          link: 'https://www.givewell.org/charities/AMF',
+          link: 'https://www.givewell.org/charities/Schistosomiasis-Control-Initiative',
           top: true
         },
         {
           evaluator: 'The Life You Can Save',
-          link: 'https://www.thelifeyoucansave.org/where-to-donate/against-malaria-foundation',
+          link: 'https://www.thelifeyoucansave.org/where-to-donate/schistosomiasis-control-initiative',
           top: false
         }
       ]
