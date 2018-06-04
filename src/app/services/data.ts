@@ -4,7 +4,6 @@ import { Injectable } from '@angular/core';
 export class DataService {
   organizations = [
     // Armut
-
     {
       name: 'Against Malaria Foundation',
       thumbnail: 'against_malaria_foundation',
@@ -79,6 +78,35 @@ export class DataService {
         {
           evaluator: 'GiveWell',
           link: 'https://www.givewell.org/charities/AMF',
+          top: true
+        }
+      ]
+    },
+    {
+      name: 'Evidence Action\'s No Lean Season',
+      thumbnail: 'evidence_action',
+      website: 'https://www.evidenceaction.org/beta-no-lean-season/#intro-no-lean-season',
+      donationLink: 'https://effektiveraltruismus.de/spenden/',
+      donationLinkDirect: '',
+      category: ['Armut'],
+      cause: ['Gesundheit', 'Lebensstandard'],
+      impactDirection: 'reactive',
+      regions: ['Asien'],
+      questionaireResults: ['poverty'],
+      slogan: 'Eine einfache Fahrkarte genügt, um saisonale Armut zu vermindern.',
+      shortDescription: 'No Lean Season verringert saisionale Armut in ländlichen Region, indem sie Arbeitsmobilität ermöglicht und so Einkommen erhöht.',
+      longDescription: 'Saisonale Armut ensteht in der Zeit zwischen Saat und Ernte in denen es wenig Jobs gibt, die Nahrungvorräte ausgehen und es so zu Mangelernährung insbesondere von Schwangeren und kleinen Kindern kommt. No Lean Season unterstützt teilnehmende Haushalte mit $20, um eine Reise zu städtischen Gebieten in der Umgebung möglich zu machen, die in dieser Zeit mehr Jobs bieten.',
+      impact1000: 'Studien der Universität Yale haben ergeben, dass diese saisonalen Arbeitsmöglichkeiten in jedem Haushalt durschnittlich eine Mahlzeit pro Kopf mehr an Tag möglich machen.',
+      donationDeficit: '??? pro Jahr?',
+      evaluators: [
+        {
+          evaluator: 'GiveWell',
+          link: 'https://www.givewell.org/charities/no-lean-season',
+          top: true
+        },
+        {
+          evaluator: 'The Life You Can Save',
+          link: 'https://www.thelifeyoucansave.org/where-to-donate/evidence-action',
           top: true
         }
       ]
@@ -213,8 +241,8 @@ export class DataService {
           top: false
         }
       ]
-},
-{
+  },
+  {
       name: 'Future of Humanity Institute',
       thumbnail: 'future_of_humanity_institute',
       website: 'https://www.fhi.ox.ac.uk',
@@ -227,8 +255,8 @@ export class DataService {
       slogan: 'Investigating what we can do now to ensure a long flourishing future.',
       shortDescription: 'The Future of Humanity Institute is a multidisciplinary research institute at the University of Oxford. Academics at FHI bring the tools of mathematics, philosophy and social sciences to bear on big-picture questions about humanity and its prospects.',
       longDescription: 'The Future of Humanity Institute is a research institute at the university of Oxford. Using tools from mathematics, philosophy and social sciences, the researchers try to identify and understand potential major threats to humanity and strategies for avoiding them. Such threats include drastic climate change, nuclear warfare and nuclear terrorism, molecular nanotechnology, and artificial general intelligence ',
-},
-{
+  },
+  {
       name: 'Copenhagen Consensus Center',
       thumbnail: 'copenhagen_consensus_center',
       website: 'http://www.copenhagenconsensus.com',
@@ -241,8 +269,8 @@ export class DataService {
       slogan: 'Expert advice to do the most good.',
       shortDescription: 'The Copenhagen Consensus Center is a think tank that researches the smartest solutions for the biggest problems facing the world, advising policy-makers and philanthropists how to spend their money most effectively.',
       longDescription: 'The Copenhagen Consensus Center is a US non-profit think tank, founded and headed by Bjørn Lomborg.[2] The Center organizes the Copenhagen Consensus, a conference of prominent economists held every four years, where potential solutions to global issues are examined and prioritized using cost-benefit analysis. Recently, the Copenhagen Consensus Center has refocused its efforts into nationally oriented research, and is currently working extensively in Haiti and Bangladesh, while also planning expansion to India, where it is partnering with high profile and influential organisations.',
-},
-{
+  },
+  {
       name: 'Centre for Effective Altruism',
       thumbnail: 'centre_for_effective_altruism',
       website: 'https://www.centreforeffectivealtruism.org',
@@ -255,8 +283,8 @@ export class DataService {
       slogan: 'Growing and maintaining the Effective Altruism movement',
       shortDescription: 'The Centre for Effective Altruism acts as a springboard for the effective altruism community. It aims to promote and strengthen effective altruism as an idea and a community, help figure out how best to advance the wellbeing of all, and inspire people to take action based on that knowledge.',
       longDescription: 'The Centre for Effective Altruism runs and coordinates a variety of projects aimed at supporting and growing the effective altruism community. It supports local groups, funds research, runs conferences, produces a newsletter and collates and produces effective altruism-related content online. It also provides grants to new projects within that community, together with organisational support to help them grow and develop quickly. ',
-},
-{
+  },
+  {
       name: '80,000 hours',
       thumbnail: '80000_hours',
       website: 'https://80000hours.org',
@@ -269,8 +297,8 @@ export class DataService {
       slogan: 'Helping as many people as possible lead high-impact careers',
       shortDescription: '80,000 hours provides career advice for talented young people who want to have a social impact.',
       longDescription: '80,000 hours does in-depth research into how graduates can make the biggest difference possible with their careers, both through overall career choice and within a given field. Based on this, they provide an online career guide with supporting articles and tools; in-person advice including a workshop and one-on-one follow up; and links to a global community of people who want to work together to have the greatest possible positive impact.',
-},
-{
+  },
+  {
       name: 'Stiftung für Effektiven Altruismus',
       thumbnail: 'ea_stiftung',
       website: 'https://ea-stiftung.org',
@@ -283,7 +311,7 @@ export class DataService {
       slogan: 'Die Philosophie des Effektiven Altruismus weiterentwickeln, verbreiten und umsetzen',
       shortDescription: 'Die Stiftung für Effektiven Altruismus trägt zum nachhaltigen Wachstum der Bewegung des Effektiven Altruismus bei. Dabei streben sie eine Welt ohne extremes Leid an. Um die Philosophie des Effektiven Altruismus weiterzuentwickeln, zu verbreiten und umzusetzen, verfolgen sie Projekte in drei Bereichen: Forschung, Community und Philanthropie.',
       longDescription: 'Die Stiftung für Effektiven Altruismus versucht eine Gemeinschaft von außerordentlich engagierten Menschen aufzubauen, die ihr Leben für andere einsetzen wollen und sich der Komplexität der Herausforderung bewusst sind. Sie stellen Infrastruktur in Form von Veranstaltungen und Lokalgruppen bereit, damit die Bewegung nachhaltig wachsen kann und die Kernideen des Effektiven Altruismus erhalten bleiben. In der Öffentlichkeit wollen sie den Effektiven Altruismus in all seinen Nuancen darstellen, um eine konstruktive Diskussion darüber zu ermöglichen.',
-}
+  }
 
     // Politik
     // Tierleid
