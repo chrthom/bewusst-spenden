@@ -213,6 +213,20 @@ export class DataService {
           top: false
         }
       ]
+},
+{
+      name: 'Future of Humanity Institute',
+      thumbnail: 'future_of_humanity_institute',
+      website: 'https://www.fhi.ox.ac.uk',
+      donationLink: 'https://www.campaign.ox.ac.uk/page.aspx?pid=2698&id=c53701e8-0645-489a-828d-e709be7c7e2f',
+      category: [ 'Meta' ],
+      cause: [ 'Strategie' ],
+      impactDirection: 'aktiv',
+      regions: ['Weltweit'],
+      questionaireResults: ["strategy"],
+      slogan: 'Investigating what we can do now to ensure a long flourishing future.',
+      shortDescription: 'The Future of Humanity Institute is a multidisciplinary research institute at the University of Oxford. Academics at FHI bring the tools of mathematics, philosophy and social sciences to bear on big-picture questions about humanity and its prospects.',
+      longDescription: 'The Future of Humanity Institute is a research institute at the university of Oxford. Using tools from mathematics, philosophy and social sciences, the researchers try to identify and understand potential major threats to humanity and strategies for avoiding them. Such threats include drastic climate change, nuclear warfare and nuclear terrorism, molecular nanotechnology, and artificial general intelligence ',
 }
     // Politik
     // Tierleid
