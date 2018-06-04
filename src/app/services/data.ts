@@ -269,6 +269,20 @@ export class DataService {
       slogan: 'Helping as many people as possible lead high-impact careers',
       shortDescription: '80,000 hours provides career advice for talented young people who want to have a social impact.',
       longDescription: '80,000 hours does in-depth research into how graduates can make the biggest difference possible with their careers, both through overall career choice and within a given field. Based on this, they provide an online career guide with supporting articles and tools; in-person advice including a workshop and one-on-one follow up; and links to a global community of people who want to work together to have the greatest possible positive impact.',
+},
+{
+      name: 'Stiftung für Effektiven Altruismus',
+      thumbnail: 'ea_stiftung',
+      website: 'https://ea-stiftung.org',
+      donationLink: 'https://ea-stiftung.org/spenden/',
+      category: [ 'Meta' ],
+      cause: [ 'Outreach' ],
+      impactDirection: 'aktiv',
+      regions: ['Deutschland'],
+      questionaireResults: ["outreach"],
+      slogan: 'Die Philosophie des Effektiven Altruismus weiterentwickeln, verbreiten und umsetzen',
+      shortDescription: 'Die Stiftung für Effektiven Altruismus trägt zum nachhaltigen Wachstum der Bewegung des Effektiven Altruismus bei. Dabei streben sie eine Welt ohne extremes Leid an. Um die Philosophie des Effektiven Altruismus weiterzuentwickeln, zu verbreiten und umzusetzen, verfolgen sie Projekte in drei Bereichen: Forschung, Community und Philanthropie.',
+      longDescription: 'Die Stiftung für Effektiven Altruismus versucht eine Gemeinschaft von außerordentlich engagierten Menschen aufzubauen, die ihr Leben für andere einsetzen wollen und sich der Komplexität der Herausforderung bewusst sind. Sie stellen Infrastruktur in Form von Veranstaltungen und Lokalgruppen bereit, damit die Bewegung nachhaltig wachsen kann und die Kernideen des Effektiven Altruismus erhalten bleiben. In der Öffentlichkeit wollen sie den Effektiven Altruismus in all seinen Nuancen darstellen, um eine konstruktive Diskussion darüber zu ermöglichen.',
 }
 
     // Politik
