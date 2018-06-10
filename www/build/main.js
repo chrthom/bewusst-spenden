@@ -29,7 +29,7 @@ var DataService = /** @class */ (function () {
                 cause: ['Lebenssicherung'],
                 impactDirection: 'reaktiv',
                 regions: ['Afrika'],
-                questionaireResults: ["human death"],
+                questionaireResults: ['human death'],
                 slogan: 'Insecticide-treated nets to prevent malaria in sub-Saharan Africa.',
                 shortDescription: 'Malaria is one of the leading killers of children in Africa. Insecticide-treated nets prevent malaria and are inexpensive — about $5 per net.',
                 longDescription: 'The Against Malaria Foundation (AMF) is a United Kingdom-based charity that provides long-lasting insecticidal nets (LLINs) to populations at high risk of malaria, primarily in Africa. Nets are distributed through partnerships with the International Red Cross, the Malaria Consortium, and others, with partners responsible for costs of distribution. Distributions include malaria education for the local population, and they are documented through reports, photos, and video. Post-distribution check-ups are carried out 6, 12, 18, 24, and 30 months to assess net usage and conditions.',
@@ -57,7 +57,7 @@ var DataService = /** @class */ (function () {
                 cause: ['Globale Gesundheit'],
                 impactDirection: 'reaktiv',
                 regions: ['Afrika'],
-                questionaireResults: ["human death"],
+                questionaireResults: ['human death'],
                 slogan: 'Treating neglected tropical diseases in sub-Saharan Africa.',
                 shortDescription: 'SCI treats children and at risk adults for schistosomiasis and soil transmitted helminths (whipworm, hookworm, and roundworm), preventing anaemia, impaired growth and development in children and the development of life-threatening conditions of bladder cancer, kidney malfunction or liver and spleen damage.',
                 longDescription: 'SCI assists Ministries of Health across sub-Saharan Africa to control and then eliminate schistosomiasis and soil transmitted helminths from their population utilising the World Health Organization’s Drug Donation Programme for praziquantel and albendazole. 230 million people, one-third of the total population of Africa, need a regular annual treatment of praziquantel, and 400 million people need a regular annual treatment of albendazole, to eliminate these parasitic diseases from their bodies.',
@@ -85,7 +85,7 @@ var DataService = /** @class */ (function () {
                 cause: ['Gesundheit'],
                 impactDirection: 'reaktiv',
                 regions: ['Afrika'],
-                questionaireResults: ["human health"],
+                questionaireResults: ['human health'],
                 slogan: 'Supporting deworming programs in low-income countries.',
                 shortDescription: 'The END Fund manages grants, raises funding and supports government programs for controlling and eliminating neglected tropical diseases, including deworming.',
                 longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
@@ -104,7 +104,6 @@ var DataService = /** @class */ (function () {
                 thumbnail: 'evidence_action',
                 website: 'https://www.evidenceaction.org/beta-no-lean-season/#intro-no-lean-season',
                 donationLink: 'https://effektiveraltruismus.de/spenden/',
-                donationLinkDirect: '',
                 category: ['Armut'],
                 cause: ['Gesundheit', 'Lebensstandard'],
                 impactDirection: 'reactive',
@@ -114,7 +113,7 @@ var DataService = /** @class */ (function () {
                 shortDescription: 'No Lean Season verringert saisionale Armut in ländlichen Region, indem sie Arbeitsmobilität ermöglicht und so Einkommen erhöht.',
                 longDescription: 'Saisonale Armut ensteht in der Zeit zwischen Saat und Ernte in denen es wenig Jobs gibt, die Nahrungvorräte ausgehen und es so zu Mangelernährung insbesondere von Schwangeren und kleinen Kindern kommt. No Lean Season unterstützt teilnehmende Haushalte mit $20, um eine Reise zu städtischen Gebieten in der Umgebung möglich zu machen, die in dieser Zeit mehr Jobs bieten.',
                 impact1000: 'Studien der Universität Yale haben ergeben, dass diese saisonalen Arbeitsmöglichkeiten in jedem Haushalt durschnittlich eine Mahlzeit pro Kopf mehr an Tag möglich machen.',
-                donationDeficit: '??? pro Jahr?',
+                donationDeficit: null,
                 evaluators: [
                     {
                         evaluator: 'GiveWell',
@@ -135,10 +134,10 @@ var DataService = /** @class */ (function () {
                 website: 'https://futureoflife.org',
                 donationLink: 'https://futureoflife.org/get-involved/',
                 category: ['Existenzrisiken'],
-                cause: ['Künstliche Intelligenz', 'Biotechnologie', "Nukleartechnologie", "Klimaschutz"],
+                cause: ['Künstliche Intelligenz', 'Biotechnologie', 'Nukleartechnologie', 'Klimaschutz'],
                 impactDirection: 'proaktiv',
                 regions: [],
-                questionaireResults: ["existential risk"],
+                questionaireResults: ['existential risk'],
                 slogan: 'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
                 shortDescription: 'orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
                 longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
@@ -161,7 +160,7 @@ var DataService = /** @class */ (function () {
                 cause: ['Künstliche Intelligenz'],
                 impactDirection: 'proaktiv',
                 regions: [],
-                questionaireResults: ["human knowledge"],
+                questionaireResults: ['human knowledge'],
                 slogan: 'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
                 shortDescription: 'orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
                 longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
@@ -177,8 +176,8 @@ var DataService = /** @class */ (function () {
                 category: ['Existenzrisiken'],
                 cause: ['Klimaschutz'],
                 impactDirection: 'reaktiv',
-                regions: ["Ozeanien", "Südamerika", "Afrika"],
-                questionaireResults: ["environment"],
+                regions: ['Ozeanien', 'Südamerika', 'Afrika'],
+                questionaireResults: ['environment'],
                 slogan: 'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
                 shortDescription: 'orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
                 longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
@@ -191,11 +190,11 @@ var DataService = /** @class */ (function () {
                 thumbnail: 'future_of_humanity',
                 website: 'https://www.fhi.ox.ac.uk',
                 donationLink: '',
-                category: ['Existenzrisiken', "Meta"],
-                cause: ['Künstliche Intelligenz', "Biotechnologie", "Strategie"],
+                category: ['Existenzrisiken', 'Meta'],
+                cause: ['Künstliche Intelligenz', 'Biotechnologie', 'Strategie'],
                 impactDirection: 'proaktiv',
                 regions: [],
-                questionaireResults: ["existential risk"],
+                questionaireResults: ['existential risk'],
                 slogan: 'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
                 shortDescription: 'orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
                 longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
@@ -212,25 +211,30 @@ var DataService = /** @class */ (function () {
                 category: ['Meta'],
                 cause: ['Evaluation'],
                 impactDirection: 'aktiv',
-                regions: ['Weltweit, hauptsächlich Afrika'],
-                questionaireResults: ["evaluation"],
+                regions: [],
+                questionaireResults: ['evaluation'],
                 slogan: 'High impact giving opportunities that are supported by in-depth charity research.',
                 shortDescription: 'GiveWell is a nonprofit dedicated to finding outstanding giving opportunities and publishing the full details of their analysis to help donors decide where to give. Their current primary focus is on improving life in the developing world.',
                 longDescription: 'Unlike charity evaluators that focus solely on financials, assessing administrative or fundraising costs, GiveWell conduct in-depth research aiming to determine how much good a given program accomplishes (in terms of lives saved, lives improved, etc.) per dollar spent. Rather than try to rate as many charities as possible, they focus on the few charities that stand out most in order to find and confidently recommend high-impact giving opportunities.',
+                impact1000: null,
+                donationDeficit: null,
                 evaluators: []
             },
             {
                 name: 'ImpactMatters',
                 thumbnail: 'impactmatters',
                 website: 'https://www.impactm.org',
+                donationLink: null,
                 category: ['Meta'],
                 cause: ['Evaluation'],
                 impactDirection: 'aktiv',
                 regions: ['Weltweit'],
-                questionaireResults: ["evaluation"],
+                questionaireResults: ['evaluation'],
                 slogan: 'Auditing nonprofits to rigorously estimate their philanthropic impact',
                 shortDescription: 'ImpactMatters conducts “impact audits” of nonprofits to rigorously estimate their philanthropic impact, compelling them and their funders to make evidence-based decisions.',
                 longDescription: 'Even the best run nonprofits can benefit from an outside perspective on how to increase their accountability and impact. ImpactMatters provide an objective, independent estimate of the impact and cost of the nonprofit, and then provide the nonprofit with specific, actionable guidance on how to improve evaluation and data systems. If the nonprofit agrees to publication, ImpactMatters issues a report, which includes estimates of impact and cost, ratings of the quality of evidence undergirding those estimates and ratings of monitoring systems and data protocols. The impact audit team then issues a private management letter outlining ways that the auditee can improve its effectiveness.',
+                impact1000: null,
+                donationDeficit: null,
                 evaluators: []
             },
             {
@@ -242,7 +246,7 @@ var DataService = /** @class */ (function () {
                 cause: ['Evaluation'],
                 impactDirection: 'aktiv',
                 regions: ['Weltweit'],
-                questionaireResults: ["evaluation"],
+                questionaireResults: ['evaluation'],
                 slogan: 'Randomised controlled trials of programs and policies for the poor.',
                 shortDescription: 'Innovations for Poverty Action conducts controlled, randomized studies of aid programs. Their studies are conducted in much the same matter as scientific studies to determine the impact of such programs and find effective methods for reducing poverty',
                 longDescription: 'Innovations for Poverty Action (IPA) is a research and policy nonprofit that discovers and promotes effective solutions to global poverty problems. IPA brings together researchers and decision-makers to design, rigorously evaluate, and refine these solutions and their applications, ensuring that the evidence created is used to improve the lives of the world’s poor.',
@@ -270,10 +274,12 @@ var DataService = /** @class */ (function () {
                 cause: ['Strategie'],
                 impactDirection: 'aktiv',
                 regions: ['Weltweit'],
-                questionaireResults: ["strategy"],
+                questionaireResults: ['strategy'],
                 slogan: 'Investigating what we can do now to ensure a long flourishing future.',
                 shortDescription: 'The Future of Humanity Institute is a multidisciplinary research institute at the University of Oxford. Academics at FHI bring the tools of mathematics, philosophy and social sciences to bear on big-picture questions about humanity and its prospects.',
                 longDescription: 'The Future of Humanity Institute is a research institute at the university of Oxford. Using tools from mathematics, philosophy and social sciences, the researchers try to identify and understand potential major threats to humanity and strategies for avoiding them. Such threats include drastic climate change, nuclear warfare and nuclear terrorism, molecular nanotechnology, and artificial general intelligence ',
+                impact1000: null,
+                donationDeficit: null,
                 evaluators: []
             },
             {
@@ -285,10 +291,12 @@ var DataService = /** @class */ (function () {
                 cause: ['Strategie'],
                 impactDirection: 'aktiv',
                 regions: ['Weltweit'],
-                questionaireResults: ["strategy"],
+                questionaireResults: ['strategy'],
                 slogan: 'Expert advice to do the most good.',
                 shortDescription: 'The Copenhagen Consensus Center is a think tank that researches the smartest solutions for the biggest problems facing the world, advising policy-makers and philanthropists how to spend their money most effectively.',
                 longDescription: 'The Copenhagen Consensus Center is a US non-profit think tank, founded and headed by Bjørn Lomborg.[2] The Center organizes the Copenhagen Consensus, a conference of prominent economists held every four years, where potential solutions to global issues are examined and prioritized using cost-benefit analysis. Recently, the Copenhagen Consensus Center has refocused its efforts into nationally oriented research, and is currently working extensively in Haiti and Bangladesh, while also planning expansion to India, where it is partnering with high profile and influential organisations.',
+                impact1000: null,
+                donationDeficit: null,
                 evaluators: []
             },
             {
@@ -300,10 +308,12 @@ var DataService = /** @class */ (function () {
                 cause: ['Outreach'],
                 impactDirection: 'aktiv',
                 regions: ['Weltweit'],
-                questionaireResults: ["outreach"],
+                questionaireResults: ['outreach'],
                 slogan: 'Growing and maintaining the Effective Altruism movement',
                 shortDescription: 'The Centre for Effective Altruism acts as a springboard for the effective altruism community. It aims to promote and strengthen effective altruism as an idea and a community, help figure out how best to advance the wellbeing of all, and inspire people to take action based on that knowledge.',
                 longDescription: 'The Centre for Effective Altruism runs and coordinates a variety of projects aimed at supporting and growing the effective altruism community. It supports local groups, funds research, runs conferences, produces a newsletter and collates and produces effective altruism-related content online. It also provides grants to new projects within that community, together with organisational support to help them grow and develop quickly. ',
+                impact1000: null,
+                donationDeficit: null,
                 evaluators: []
             },
             {
@@ -315,10 +325,12 @@ var DataService = /** @class */ (function () {
                 cause: ['Outreach'],
                 impactDirection: 'aktiv',
                 regions: ['Weltweit'],
-                questionaireResults: ["outreach"],
+                questionaireResults: ['outreach'],
                 slogan: 'Helping as many people as possible lead high-impact careers',
                 shortDescription: '80,000 hours provides career advice for talented young people who want to have a social impact.',
                 longDescription: '80,000 hours does in-depth research into how graduates can make the biggest difference possible with their careers, both through overall career choice and within a given field. Based on this, they provide an online career guide with supporting articles and tools; in-person advice including a workshop and one-on-one follow up; and links to a global community of people who want to work together to have the greatest possible positive impact.',
+                impact1000: null,
+                donationDeficit: null,
                 evaluators: []
             },
             {
@@ -330,10 +342,12 @@ var DataService = /** @class */ (function () {
                 cause: ['Outreach'],
                 impactDirection: 'aktiv',
                 regions: ['Deutschland'],
-                questionaireResults: ["outreach"],
+                questionaireResults: ['outreach'],
                 slogan: 'Die Philosophie des Effektiven Altruismus weiterentwickeln, verbreiten und umsetzen',
                 shortDescription: 'Die Stiftung für Effektiven Altruismus trägt zum nachhaltigen Wachstum der Bewegung des Effektiven Altruismus bei. Dabei streben sie eine Welt ohne extremes Leid an. Um die Philosophie des Effektiven Altruismus weiterzuentwickeln, zu verbreiten und umzusetzen, verfolgen sie Projekte in drei Bereichen: Forschung, Community und Philanthropie.',
                 longDescription: 'Die Stiftung für Effektiven Altruismus versucht eine Gemeinschaft von außerordentlich engagierten Menschen aufzubauen, die ihr Leben für andere einsetzen wollen und sich der Komplexität der Herausforderung bewusst sind. Sie stellen Infrastruktur in Form von Veranstaltungen und Lokalgruppen bereit, damit die Bewegung nachhaltig wachsen kann und die Kernideen des Effektiven Altruismus erhalten bleiben. In der Öffentlichkeit wollen sie den Effektiven Altruismus in all seinen Nuancen darstellen, um eine konstruktive Diskussion darüber zu ermöglichen.',
+                impact1000: null,
+                donationDeficit: null,
                 evaluators: []
             }
             // Politik
@@ -478,8 +492,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var QuestionnairePage = /** @class */ (function () {
-    function QuestionnairePage(navCtrl, dataService, loadingCtrl) {
-        this.navCtrl = navCtrl;
+    function QuestionnairePage(dataService, loadingCtrl) {
         this.dataService = dataService;
         this.loadingCtrl = loadingCtrl;
         this.nav = 'start';
@@ -538,9 +551,10 @@ var QuestionnairePage = /** @class */ (function () {
                 ])
             ]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__app_services_data__["a" /* DataService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__app_services_data__["a" /* DataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__app_services_data__["a" /* DataService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */]) === "function" && _b || Object])
     ], QuestionnairePage);
     return QuestionnairePage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=questionnaire.js.map
@@ -570,8 +584,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var SearchPage = /** @class */ (function () {
-    function SearchPage(navCtrl, dataService, modalCtrl) {
-        this.navCtrl = navCtrl;
+    function SearchPage(dataService, modalCtrl) {
         this.dataService = dataService;
         this.modalCtrl = modalCtrl;
         this.searchTerm = '';
@@ -619,9 +632,10 @@ var SearchPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-search',template:/*ion-inline-start:"/home/thomsen/dev/effective-giving/src/pages/search/search.html"*/'<ion-header><ion-navbar></ion-navbar></ion-header>\n\n<ion-content>\n  <ion-grid fixed>\n    <ion-list>\n      <ion-searchbar placeholder="Fang hier an zu suchen..." [(ngModel)]="searchTerm" (ionInput)="search()"></ion-searchbar>\n      <ion-item>\n        <ion-label>Erweiterte Suche</ion-label>\n        <ion-toggle [(ngModel)]="advancedSearch" checked="false" (ionChange)="search()"></ion-toggle>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Kategorie</ion-label>\n        <ion-select [(ngModel)]="searchCategories" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="Armut">Armut</ion-option>\n          <ion-option value="Existenzrisiken">Existenzrisiken</ion-option>\n          <ion-option value="Meta">Meta</ion-option>\n          <ion-option value="Politik">Politik</ion-option>\n          <ion-option value="Tierleid">Tierleid</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Problemfeld</ion-label>\n        <ion-select [(ngModel)]="searchCauses" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Bildung">Bildung</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Biotechnologie">Biotechnologie</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Meta\')" value="Evaluation">Evaluation</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Tierleid\')" value="Haltungsbedingungen">Haltungsbedingungen</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Gesundheit">Gesundheit</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Politik\')" value="Institutionen">Institutionen</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Katastrophenschutz">Katastrophenschutz</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Klimaschutz">Klimaschutz</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Künstliche Intelligenz">Künstliche Intelligenz</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Lebensstandard">Lebensstandard</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Menschenleben">Menschenleben</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Politik\')" value="Menschenrechte">Menschenrechte</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Nukleartechnologie">Nukleartechnologie</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Meta\')" value="Öffentlichkeitsarbeit">Öffentlichkeitsarbeit</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Meta\')" value="Strategie">Stategie</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Tierleid\')" value="Tierleben">Tierleben</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Politik\')" value="Werte und Moral">Werte und Moral</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Wirkrichtung</ion-label>\n        <ion-select [(ngModel)]="searchImpactDirection" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="proaktiv">proaktiv</ion-option>\n          <ion-option value="reaktiv">reaktiv</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Region</ion-label>\n        <ion-select [(ngModel)]="searchRegion" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="Afrika">Afrika</ion-option>\n          <ion-option value="Asien">Asien</ion-option>\n          <ion-option value="Deutschland">Deutschland</ion-option>\n          <ion-option value="Europa">Europa</ion-option>\n          <ion-option value="Indien">Indien</ion-option>\n          <ion-option value="Naher Osten">Naher Osten</ion-option>\n          <ion-option value="Ozeanien">Ozeanien</ion-option>\n          <ion-option value="Südamerika">Südamerika</ion-option>\n          <ion-option value="Südost Asien">Südost Asien</ion-option>\n          <ion-option value="USA">USA</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Empfohlen durch Evalutator</ion-label>\n        <ion-select [(ngModel)]="searchRecommendedBy" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="80.000 hours">80.000 hours</ion-option>\n          <ion-option value="Animal Charity Evalutators">Animal Charity Evalutators</ion-option>\n          <ion-option value="Charity Science">Charity Science</ion-option>\n          <ion-option value="GiveWell">GiveWell</ion-option>\n          <ion-option value="ImpactM">ImpactM</ion-option>\n          <ion-option value="Open Philantrophy Project">Open Philantrophy Project</ion-option>\n          <ion-option value="Phineo">Phineo</ion-option>\n          <ion-option value="Stiftung für Effektiven Altruismus">Stiftung für Effektiven Altruismus</ion-option>\n          <ion-option value="The Life You Can Save">The Life You Can Save</ion-option>\n        </ion-select>\n      </ion-item>\n    </ion-list>\n    <ion-list>\n      <ion-item-sliding *ngFor="let o of organizations">\n        <ion-item text-wrap>\n          <ion-thumbnail item-start>\n            <img src="../../assets/imgs/organizations/{{ o.thumbnail }}.jpg"/>\n          </ion-thumbnail>\n          <h2>{{ o.name }}</h2>\n          <h3>{{ o.slogan }}</h3>\n          <p>{{ o.shortDescription }}</p>\n          <ion-badge *ngFor="let e of o.evaluators" color="{{ e.top && \'danger\' || \'secondary\' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>\n        </ion-item>\n        <ion-item-options side="right">\n          <button ion-button color="primary" (click)="openOrganizationModal({o: o})">\n            <ion-icon name="information-circle"></ion-icon>\n            Mehr Info\n          </button>\n          <a [href]="o.website">\n            <button ion-button color="secondary">\n              <ion-icon name="browsers"></ion-icon>\n              Website\n            </button>\n          </a>\n          <a [href]="o.donationLink">\n            <button ion-button color="danger">\n              <ion-icon name="cash"></ion-icon>\n              Spenden\n            </button>\n          </a>\n        </ion-item-options>\n      </ion-item-sliding>\n    </ion-list>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/home/thomsen/dev/effective-giving/src/pages/search/search.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__app_services_data__["a" /* DataService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__app_services_data__["a" /* DataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__app_services_data__["a" /* DataService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]) === "function" && _b || Object])
     ], SearchPage);
     return SearchPage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=search.js.map

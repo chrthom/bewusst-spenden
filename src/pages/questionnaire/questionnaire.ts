@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { LoadingController, NavController } from 'ionic-angular';
+import { LoadingController } from 'ionic-angular';
 import { trigger, style, transition, animate, query, animateChild } from '@angular/animations'
 import { DataService } from "../../app/services/data";
+import { Organization } from "../../app/model/organization";
 
 @Component({
   selector: 'questionaire',
@@ -33,10 +34,10 @@ import { DataService } from "../../app/services/data";
   ]
 })
 export class QuestionnairePage {
-  public nav: string = 'start';
-  organizations = [];
+  nav: string = 'start';
+  organizations: Organization[] = [];
 
-  constructor(public navCtrl: NavController, public dataService: DataService, public loadingCtrl: LoadingController) { }
+  constructor(private dataService: DataService, private loadingCtrl: LoadingController) { }
 
   answer(to: string) {
     this.nav = '';

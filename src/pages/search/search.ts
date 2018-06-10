@@ -1,23 +1,24 @@
 import { Component } from '@angular/core';
-import { ModalController, NavController } from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
 import { DataService } from "../../app/services/data";
 import { OrganizationPage } from "../organization/organization";
+import { Organization } from "../../app/model/organization";
 
 @Component({
   selector: 'page-search',
   templateUrl: 'search.html'
 })
 export class SearchPage {
-  organizations;
+  organizations: Organization[];
   searchTerm: string = '';
-  searchCategories = [];
-  searchCauses = [];
-  searchImpactDirection = [];
-  searchRegion = [];
-  searchRecommendedBy = [];
+  searchCategories: string[] = [];
+  searchCauses: string[] = [];
+  searchImpactDirection: string[] = [];
+  searchRegion: string[] = [];
+  searchRecommendedBy: string[] = [];
   advancedSearch: boolean;
 
-  constructor(public navCtrl: NavController, public dataService: DataService, public modalCtrl: ModalController) {
+  constructor(private dataService: DataService, private modalCtrl: ModalController) {
     this.organizations = dataService.organizations;
   }
 
