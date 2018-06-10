@@ -10,10 +10,21 @@ export class Organization {
   website: string;
   donationLink: string;
   // donationLinkDirect: string;
+  // Allowed values for category: Armut, Existenzrisiken, Meta, Politik, Tierleid
   category: string[];
+  // Allowed values for cause by category:
+  // Armut -> Bildung, Gesundheit, Lebensstandard, Menschenleben
+  // Existenzrisiken -> Biotechnologie, Katastrophenschutz, Klimaschutz, Künstliche Intelligenz, Nukleartechnologie
+  // Meta -> Evaluation, Öffentlichkeitsarbeit, Strategie
+  // Politik -> Institutionen, Menschenrechte, Werte und Moral
+  // Tierleid -> Haltungsbedingungen, Tierleben
   cause: string[];
+  // Allowed values for impactDirection: proaktiv, reaktiv
   impactDirection: string;
+  // Please to not put "Weltweit" as region
   regions: string[];
+  // Allowed values: animal death, animal suffering, catastrophe, environment, existential risks, human death,
+  // human health, human knowledge, human rights, institutions, values
   questionaireResults: string[];
   slogan: string;
   shortDescription: string;

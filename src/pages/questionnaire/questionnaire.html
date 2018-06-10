@@ -244,7 +244,7 @@
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'existential risks'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> existential risk')" class="clickable" @questionTrigger text-wrap>
+            <ion-card (click)="answer('result -> existential risks')" class="clickable" @questionTrigger text-wrap>
               <img src="../../assets/imgs/questionaire/existential_risks_yes.jpg"/>
               <div class="card-title">Ja</div>
               <div class="card-subtitle">Wir können etwas tun, um unser Überleben langfristig wenigstens etwas wahrscheinlicher zu machen.</div>
@@ -415,7 +415,7 @@
   <!-- RESULTS -->
   <ion-grid fixed *ngIf="nav.startsWith('result ->')" [ngSwitch]="nav">
     <ion-row justify-content-center>
-      <ion-col *ngSwitchCase="'result -> existential risk'" col-12 col-md-6 col-xl-6>
+      <ion-col *ngSwitchCase="'result -> existential risks'" col-12 col-md-6 col-xl-6>
         <ion-card>
           <ion-card-header>Dein Testresultat</ion-card-header>
           <ion-card-content text-wrap>
