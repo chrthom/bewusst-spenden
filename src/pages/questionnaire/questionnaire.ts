@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LoadingController } from 'ionic-angular';
+import { LoadingController, NavController } from 'ionic-angular';
 import { trigger, style, transition, animate, query, animateChild } from '@angular/animations'
 import { DataService } from "../../app/services/data";
 import { Organization } from "../../app/model/organization";
@@ -37,7 +37,7 @@ export class QuestionnairePage {
   nav: string = 'start';
   organizations: Organization[] = [];
 
-  constructor(private dataService: DataService, private loadingCtrl: LoadingController) { }
+  constructor(private navCtrl: NavController, private dataService: DataService, private loadingCtrl: LoadingController) { }
 
   answer(to: string) {
     this.nav = '';
@@ -59,5 +59,9 @@ export class QuestionnairePage {
       });
       loader.present();
     }
+  }
+
+  gotoTabSearch() {
+    this.navCtrl.parent.select(1);
   }
 }
