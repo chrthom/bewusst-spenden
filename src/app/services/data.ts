@@ -85,7 +85,7 @@ export class DataService {
       ]
     },
     {
-      name: 'Evidence Action\'s No Lean Season',
+      name: 'Evidence Action\'s - No Lean Season',
       thumbnail: 'evidence_action_nls',
       website: 'https://www.evidenceaction.org/beta-no-lean-season/#intro-no-lean-season',
       donationLink: 'https://effektiveraltruismus.de/spenden/',
@@ -96,9 +96,9 @@ export class DataService {
       questionaireResults: [ 'poverty' ],
       slogan: 'Eine einfache Fahrkarte genügt, um saisonale Armut zu vermindern.',
       shortDescription: 'No Lean Season verringert saisionale Armut in ländlichen Region, indem sie Arbeitsmobilität ermöglicht und so Einkommen erhöht.',
-      longDescription: 'Saisonale Armut ensteht in der Zeit zwischen Saat und Ernte in denen es wenig Jobs gibt, die Nahrungvorräte ausgehen und es so zu Mangelernährung insbesondere von Schwangeren und kleinen Kindern kommt. No Lean Season unterstützt teilnehmende Haushalte mit $20, um eine Reise zu städtischen Gebieten in der Umgebung möglich zu machen, die in dieser Zeit mehr Jobs bieten.',
-      impact1000: 'Studien der Universität Yale haben ergeben, dass diese saisonalen Arbeitsmöglichkeiten in jedem Haushalt durschnittlich eine Mahlzeit pro Kopf mehr an Tag möglich machen.',
-      donationDeficit: null,
+      longDescription: 'Sasionale Armut ensteht in der Zeit zwischen Saat und Ernte in denen es wenig Jobs gibt, die Nahrungvorräte ausgehen und es so zu Mangelernährung insbesondere von Schwangeren und kleinen Kindern kommt. No Lean Season unterstützt teilnehmende Haushalte mit $20, um eine Reise zu städtischen Gebieten in der Umgebung möglich zu machen, die in dieser Zeit mehr Jobs bieten. Studien der Universität Yale haben ergeben, dass diese saisonalen Arbeitsmöglichkeiten in jedem Haushalt durschnittlich eine Mahlzeit pro Kopf mehr an Tag möglich machen.',
+      impact1000: 'In Haushalt, die an dem Programm teilnehmen, konnte ein Drittel mehr für Nahrung und andere Notwendigkeiten ausgeben werden, pro Person wurden ca. 600 Kalorien mehr am Tag konsumiert.',
+      donationDeficit: null, // Im Dezember 2017 wurde von Good Ventures 11,5 Millionen Dollar zum No Lean Season Programm gegeben, welches das Programm für die nächsten drei Jahre im Wesentlichen finanziert. Zusätzliche Spenden können für Forschung und Erweiterung des Programms genutzt werden.
       evaluators: [
         {
           evaluator: 'GiveWell',
