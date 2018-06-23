@@ -34,6 +34,29 @@ export class DataService {
       ]
     },
     {
+      name: 'Malaria Consortium',
+      thumbnail: 'malaria_consortium',
+      website: 'https://www.malariaconsortium.org',
+      donationLink: 'https://www.malariaconsortium.org/support/donate.htm',
+      category: [ 'Armut' ],
+      cause: [ 'Menschenleben' ],
+      impactDirection: 'reaktiv',
+      regions: [ 'Afrika' ],
+      questionaireResults: [ 'human death' ],
+      slogan: 'Improving prevention, diagnosis and treatment for neglected tropical diseases.',
+      shortDescription: 'Malaria Consortium is one of the world’s leading non-profit organisations specialising in the prevention, control and treatment of malaria and other communicable diseases among vulnerable populations.',
+      longDescription: 'Malaria Consortium is one of the world’s leading non-profit organisations specialising in the prevention, control and treatment of malaria and other communicable diseases among vulnerable populations. They create tailored, evidence-based solutions that have a positive impact on the wider health system and economy. It is this combination of activities and the depth of their expertise that sets them apart from others.',
+      impact1000: 'Was wird mit 1000€ erreicht? Ungefähr 150 Netze könnten gekauft werden, oder 15000 Malaria Diagnostic tests gemacht, oder 250 Kinder könnten von Malaria durch Chemoprevention geschützt werden.',
+      donationDeficit: 20000000,
+      evaluators: [
+        {
+          evaluator: 'GiveWell',
+          link: 'https://www.givewell.org/charities/malaria-consortium',
+          top: true
+        }
+      ]
+    },
+    {
       name: 'Schistosomiasis Control Initiative',
       thumbnail: 'sci',
       website: 'http://www.imperial.ac.uk/schistosomiasis-control-initiative',
