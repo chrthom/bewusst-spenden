@@ -140,6 +140,7 @@ export class DataService {
       thumbnail: 'evidence_action_nls',
       website: 'https://www.evidenceaction.org/beta-no-lean-season/#intro-no-lean-season',
       donationLink: 'https://effektiveraltruismus.de/spenden/',
+      // donationLinkDirect: 'https://donate.evidenceaction.org/campaign/general-fundraising-page/c139764',
       category: [ 'Armut' ],
       cause: [ 'Gesundheit', 'Lebensstandard' ],
       impactDirection: 'reactive',
@@ -163,6 +164,40 @@ export class DataService {
         }
       ]
     },
+    {
+      name: 'GiveDirectly',
+      thumbnail: 'give_directly',
+      website: 'https://givedirectly.org/',
+      donationLink: 'https://givedirectly.org/give-now',
+      category: [ 'Armut' ],
+      cause: [ 'Lebensstandard' ],
+      impactDirection: 'reactive',
+      regions: [ 'Afrika' ],
+      questionaireResults: [ 'poverty' ],
+      slogan: 'Geld direkt an extrem arme Menschen spenden.',
+      shortDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfinding, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1000 Dollar für ein Jahr an besonders bedürftige Haushalte.',
+      longDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfinding, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1000 Dollar für ein Jahr an besonders bedürftige Haushalte. GiveDirectly forscht intensiv daran festzustellen, welche Auswirkungen die Geld-Tranfers auf teilnehmende Haushalte haben. Auf der Website https://live.givedirectly.org/ lässt sich nachvollziehen, was einzelne Individuen mit dem Geld gemacht haben.',
+      impact1000: 'GiveDirectly gibt 83% der Spenden direkt an bedürftige Haushalte weiter. Eine Untersuchung zeigt, dass dieses Geld die Nahrungsversorgung, Finanzierung von Bildung und Gesundheit verbessert und nicht für Alkohol oder Tabak ausgegeben wurde. Nach der Eintschätzung von GiveWell hat GiveDirectly verglichen mit anderen besonders effektiven Interventionen wahrscheinlich eine geringere Effektivität. Dafür ist GiveDirectly außerordentlich transparent und hat den direkten Nutzen die Armut zu reduzieren und ist somit in dieser Hinsicht wenig mit Unischerheiten behaftet.',
+      donationDeficit: 200000000, //'Nach der Einschätzung von GiveWell könnte GiveDirectly 2018-2020 noch weiter 200 Millionen Dollar sinnvoll verwenden.',
+      evaluators: [
+        {
+          evaluator: 'GiveWell',
+          link: 'https://www.givewell.org/charities/give-directly',
+          top: true
+        },
+        {
+          evaluator: 'The Life You Can Save',
+          link: 'https://www.thelifeyoucansave.org/where-to-donate/givedirectly',
+          top: true
+        },
+        {
+          evaluator: 'Giving What We Can',
+          link: 'https://www.givingwhatwecan.org/charity/givedirectly/',
+          top: true
+        }
+      ]
+    },
+
     // Existenzrisiken
     {
       name: 'Future of Life Institute',
@@ -238,6 +273,7 @@ export class DataService {
       donationDeficit: null,
       evaluators: []
     },
+
     // Meta
     {
       name: 'GiveWell',
@@ -328,7 +364,7 @@ export class DataService {
       impactDirection: 'proaktiv',
       regions: [],
       questionaireResults: [],
-      slogan: 'Growing and maintaining the Effective Altruism movement',
+      slogan: 'Growing and maintaining the Effective Altruism movement.',
       shortDescription: 'The Centre for Effective Altruism acts as a springboard for the effective altruism community. It aims to promote and strengthen effective altruism as an idea and a community, help figure out how best to advance the wellbeing of all, and inspire people to take action based on that knowledge.',
       longDescription: 'The Centre for Effective Altruism runs and coordinates a variety of projects aimed at supporting and growing the effective altruism community. It supports local groups, funds research, runs conferences, produces a newsletter and collates and produces effective altruism-related content online. It also provides grants to new projects within that community, together with organisational support to help them grow and develop quickly. ',
       impact1000: null,
@@ -345,7 +381,7 @@ export class DataService {
       impactDirection: 'proaktiv',
       regions: [],
       questionaireResults: [ 'values' ],
-      slogan: 'Helping as many people as possible lead high-impact careers',
+      slogan: 'Helping as many people as possible lead high-impact careers.',
       shortDescription: '80,000 hours provides career advice for talented young people who want to have a social impact.',
       longDescription: '80,000 hours does in-depth research into how graduates can make the biggest difference possible with their careers, both through overall career choice and within a given field. Based on this, they provide an online career guide with supporting articles and tools; in-person advice including a workshop and one-on-one follow up; and links to a global community of people who want to work together to have the greatest possible positive impact.',
       impact1000: null,
@@ -362,16 +398,110 @@ export class DataService {
       impactDirection: 'proaktiv',
       regions: [ 'Deutschland' ],
       questionaireResults: [ 'values' ],
-      slogan: 'Die Philosophie des Effektiven Altruismus weiterentwickeln, verbreiten und umsetzen',
+      slogan: 'Die Philosophie des Effektiven Altruismus weiterentwickeln, verbreiten und umsetzen.',
       shortDescription: 'Die Stiftung für Effektiven Altruismus trägt zum nachhaltigen Wachstum der Bewegung des Effektiven Altruismus bei. Dabei streben sie eine Welt ohne extremes Leid an. Um die Philosophie des Effektiven Altruismus weiterzuentwickeln, zu verbreiten und umzusetzen, verfolgen sie Projekte in drei Bereichen: Forschung, Community und Philanthropie.',
       longDescription: 'Die Stiftung für Effektiven Altruismus versucht eine Gemeinschaft von außerordentlich engagierten Menschen aufzubauen, die ihr Leben für andere einsetzen wollen und sich der Komplexität der Herausforderung bewusst sind. Sie stellen Infrastruktur in Form von Veranstaltungen und Lokalgruppen bereit, damit die Bewegung nachhaltig wachsen kann und die Kernideen des Effektiven Altruismus erhalten bleiben. In der Öffentlichkeit wollen sie den Effektiven Altruismus in all seinen Nuancen darstellen, um eine konstruktive Diskussion darüber zu ermöglichen.',
       impact1000: null,
       donationDeficit: null,
       evaluators: []
-    }
+    },
 
     // Politik
+
+
     // Tierleid
+    {
+      name: 'Animal Equality International - Zur Verteidigung aller Tiere',
+      thumbnail: 'animal_equality',
+      website: 'https://www.animalequality.de/',
+      donationLink: 'https://www.animalequality.de/spenden',
+      category: [ 'Tierleid' ],
+      cause: [ 'Tierleben', 'Haltungsbedingungen' ],
+      impactDirection: 'reaktiv',
+      regions: [ 'Deutschland', 'USA', 'Europa', 'Mittelamerika', 'Südamerika', 'Indien' ],
+      questionaireResults: [ 'animal suffering' ],
+      slogan: 'Wir arbeiten für eine bessere Welt für alle Tiere.',
+      shortDescription: 'Animal Equality ist eine internationale Organisation, die gemeinsam mit Gesellschaft, Politik und Unternehmen daran arbeitet, Grausamkeit in der Massentierhaltung zu beenden.',
+      longDescription: 'Animal Equality arbeitet für eine gerechtere und bessere Welt für alle Lebewesen, die diesen Planeten bewohnen. Die Organisation setzt sich für die Verringerung von Ungerechtigkeiten gegenüber Tieren ein, mit der Vision jedem Tier ein Leben ohne Schmerzen und Leiden zu ermöglichen. Durch groß angelegte Bildungsprogramme, Undercover-Recherchen, medienwirksame Aktionen sowie Unternehmenskampagnen will Animal Equality einen langfristigen sozialen Wandel herbeiführen und eine Welt schaffen, in der alle Tiere Respekt und Schutz erfahren. Dabei liegt der Fokus ihrer Arbeit auf der sogenannten Nutztierindustrie, da sie international für das größte Tierleid verantwortlich ist.',
+      impact1000: 'Hilft dabei: Durchschnittliche 5000 Tiere in der Massentierhaltung vor Leid zu bewahren; oder durch Online-Kampagnen mehr als 900.000 Menschen über die Zustände in der Massentierhaltung zu informieren; oder finanziert 26 iAnimal Aktionen innerhalb des Virtual-Reality-Projects, durch das zahlreiche Menschen einen authentischen Einblick in das Leben der Tiere in der Massentierhaltung bekommen - Widerspruch zu ACE Aussage',
+      donationDeficit: 4200000, //'Animal Charity Evalutors schätzt das Potential für zusätzliche finanzielle Förderung auf 2 Millionen bis 4.2 Millionen Dollar. Sie würden zusätzliche Mittel für die Bereitstellung von Infrastrukturinvestitionen (in Bereichen wie Betrieb, Personalwesen und IT) sowie für die Ausweitung ihrer Programme im Allgemeinen und die Durchführung von Unternehmenseinsätzen in Deutschland und den USA verwenden.',
+      evaluators: [
+        {
+          evaluator: 'Animal Charity Evaluators',
+          link: 'https://animalcharityevaluators.org/charity-review/animal-equality/',
+          top: true
+        }
+      ]
+    },
+    {
+      name: 'The Good Food Institut',
+      thumbnail: 'good_food_institute',
+      website: 'https://www.gfi.org/',
+      donationLink: 'https://www.gfi.org/donate',
+      category: [ 'Tierleid' ],
+      cause: [ 'Tierleben' ],
+      impactDirection: 'proaktiv',
+      regions: [],
+      questionaireResults: [ 'animal death' ],
+      slogan: 'Erzeugung eines gesunden, tiergerechten und nachhaltigen Nahrungsangebots',
+      shortDescription: 'The Good Food Institut arbeitet mit Wissenschaftlern, Investoren und Entrepreneuren zusammen, mit dem Fokus auf "clean meat" und pflanzliche Nahrungsalternativen zu tierischen Produkten.',
+      longDescription: 'Das Good Food Institute (GFI) arbeitet daran, die Tierzuchtbranche zu verändern, indem es die Entwicklung von wettbewerbsfähigen Alternativen zu tierischem Fleisch, Milchprodukten und Eiern fördert. GFI sucht nach Unternehmern und Wissenschaftlern, die Start-ups in dem Marktsektor pflanzlichen und kultivierten Fleisches fördern oder beitreten. Sie bieten geschäftliche, rechtliche, wissenschaftliche und strategische Leitlinien für Unternehmen und betreiben politische (regulatorische und gesetzliche) Arbeit, um das Feld für pflanzliche und zelluläre Produkte auf dem Markt zu ebnen. GFI baut Beziehungen zu Restaurantketten, Lebensmittelgeschäfte und Foodservice-Unternehmen auf, um pflanzliche Alternativen zu Tierprodukten zu verbessern und zu fördern. Schließlich arbeitet GFI mit Fördereinrichtungen, Unternehmen und Regierungen zusammen, um Ressourcen für die Forschung in der synthetischen und pflanzlichen Biologie und Gewebetechnologie zu mobilisieren.',
+      impact1000: 'Eine Spende unterstützt GFI-Programme und hilft beim Aufbau ihrer Rücklagen für den Betriebsablauf, die für die Aufrechterhaltung der Betriebskontinuität benötigt werden. Von einer durchschnittlichen Spende von 1.000 US-Dollar, würde GFI etwa 220 US-Dollar für sein Wissenschafts- und Technologieprogramm und etwa 200 US-Dollar für den Aufbau seiner Rücklagen für den Betriebsablauf ausgeben. GFI würde außerdem 200 US-Dollar für internationales Engagement, 160 US-Dollar für ihr Innovationsprogramm, 120 US-Dollar für ihr politisches Programm und etwa 90 US-Dollar für unternehmerisches Engagement ausgeben. Die Auswirkungen von Spenden für Zuchttiere sind spekulativer und langfristiger als der Einfluss von Spenden für andere Oranisation wie Animal Equality. Angesichts des spekulativen Charakters der Auswirkungen von GFI auf Nutztiere, gibt es derzeit keine Kosten-Effektivitäts-Schätzung. Die Meinung von Animal Charity Evaluators ist dennoch, dass Spenden an GFI einen hohen Erwartungswert haben.',
+      donationDeficit: 4400000, //'Animal Charity Evalutors schätzt das Potential für zusätzliche finanzielle Förderung auf 1.5 Millionen bis 4.4 Millionen US-Dollar. Zusätzliche Mittel werden verwendet, um weiter zu expandieren, was die Einstellung von Personal in jedem ihrer Programmgebiete und die Erhöhung ihrer Rücklagen einschließt',
+      evaluators: [
+        {
+          evaluator: 'Animal Charity Evaluators',
+          link: 'https://animalcharityevaluators.org/charity-review/the-good-food-institute/',
+          top: true
+        }
+      ]
+    },
+    {
+      name: 'ProVeg International',
+      thumbnail: 'proveg_international',
+      website: 'https://www.proveg.com/',
+      donationLink: 'https://www.proveg.com/de/spenden/',
+      category: [ 'Tierleid' ],
+      cause: [ 'Tierleben' ],
+      impactDirection: 'proaktiv',
+      regions: [ 'Deutschland', 'Europa' ],
+      questionaireResults: [ 'animal death' ],
+      slogan: 'Appetite for a better world',
+      shortDescription: 'ProVeg motiviert Menschen zu einem pflanzlichen Lebensstil und vernetzt bestehende Organisationen weltweit, um Gesundheit zu fördern, Tierleiden zu vermindern, die Umwelt zu schützen und eine gerechtere Verteilung von Nahrungsmitteln zu ermöglichen.',
+      longDescription: 'Viele der weltweit dringendsten Probleme haben die individuelle Ernährungsweise eines jeden Einzelnen zur Ursache. ProVeg International motiviert die Bevölkerung durch Aufklärung und Bereitstellung praktischer Informationen zum Umstieg auf eine Ernährung unter Verwendung tierfreier Alternativen. Ziel ist, den Konsum von Tieren als Nahrungsmittel bis 2040 um 50 % zu reduzieren. Damit soll die Gesundheit der Bevölkerung gefördert und gleichzeitig das durch die Nahrungsmittelproduktion entstehende Tierleiden vermindert werden. Neben dem Umweltschutz steht dabei zudem die faire Verteilung der weltweiten Nahrungsmittelressourcen im Fokus. Dazu arbeitet ProVeg mit einflussreichen Multiplikatoren aus Politik, Wirtschaft und Medien zusammen.',
+      impact1000: 'Für 1000 Euro kann eine Aufklärungsveranstaltung in einer Schule mit gesunden Snacks und Getränken ausgestattet, ein Sprecher für einen von ProVeg International organisierten Kongress eingeladen und Informationsmaterial für 30 bis 40 Informationsveranstaltungen beschafft werden.',
+      donationDeficit: null,
+      evaluators: [
+        {
+          evaluator: 'Animal Charity Evaluators',
+          link: 'https://animalcharityevaluators.org/charity-review/proveg/',
+          top: true
+        }
+      ]
+    },
+    {
+      name: 'The Humane League',
+      thumbnail: 'the_humane_league',
+      website: 'https://www.thehumaneleague.org/',
+      donationLink: 'https://www.thehumaneleague.org/donate/',
+      category: [ 'Tierleid' ],
+      cause: [ 'Haltungsbedingungen', 'Tierleben' ],
+      impactDirection: 'proaktiv',
+      regions: [ 'Japan', 'Mittelamerika', 'USA', 'Europa' ],
+      questionaireResults: [ 'animal suffering' ],
+      slogan: 'Empowering Change. Driving Progress.',
+      shortDescription: 'The Humane League will Tierleiden möglichst weitreichend verhindern. Dazu werden mit Humane League Labs die effektivsten Methoden ermittelt. Neben konkreten Kampagnen wird Aufklärungsarbeit in der Bevölkerung betrieben sowie das Wissen um den Tierschutz an Universitäten verbreitet.',
+      longDescription: 'Weltweit werden unzählige Tiere für die Nahrungsmittelproduktion unter unnatürlichen und unwürden Bedingungen gehalten, misshandelt und verletzt. Um die Haltungsbedingungen der Tiere zu verbessern und so Schmerzen, Leid, frühzeitiges Sterben, Angst und Schmerz zu verhindern, will The Humane League die Bevölkerung über die Umstände in der industriellen Tierhaltung aufklären. Neben der Bereitstellung von Informationsmaterial und Kampagnen will The Humane League insbesondere auch an Universitäten das Wissen um den Tierschutz verbreiten. Mit Humane League Labs wird untersucht, welche Methoden die effektivsten für die Einflussnahme zur Verbesserung der Haltungsbedingen sind.',
+      impact1000: null,
+      donationDeficit: null,
+      evaluators: [
+        {
+          evaluator: 'Animal Charity Evaluators',
+          link: 'https://animalcharityevaluators.org/charity-review/the-humane-league/',
+          top: true
+        }
+      ]
+    }
   ];
 
   constructor() { }

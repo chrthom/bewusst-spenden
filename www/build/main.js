@@ -155,6 +155,7 @@ var DataService = /** @class */ (function () {
                 thumbnail: 'evidence_action_nls',
                 website: 'https://www.evidenceaction.org/beta-no-lean-season/#intro-no-lean-season',
                 donationLink: 'https://effektiveraltruismus.de/spenden/',
+                // donationLinkDirect: 'https://donate.evidenceaction.org/campaign/general-fundraising-page/c139764',
                 category: ['Armut'],
                 cause: ['Gesundheit', 'Lebensstandard'],
                 impactDirection: 'reactive',
@@ -174,6 +175,39 @@ var DataService = /** @class */ (function () {
                     {
                         evaluator: 'The Life You Can Save',
                         link: 'https://www.thelifeyoucansave.org/where-to-donate/evidence-action',
+                        top: true
+                    }
+                ]
+            },
+            {
+                name: 'GiveDirectly',
+                thumbnail: 'give_directly',
+                website: 'https://givedirectly.org/',
+                donationLink: 'https://givedirectly.org/give-now',
+                category: ['Armut'],
+                cause: ['Lebensstandard'],
+                impactDirection: 'reactive',
+                regions: ['Afrika'],
+                questionaireResults: ['poverty'],
+                slogan: 'Geld direkt an extrem arme Menschen spenden.',
+                shortDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfinding, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1000 Dollar für ein Jahr an besonders bedürftige Haushalte.',
+                longDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfinding, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1000 Dollar für ein Jahr an besonders bedürftige Haushalte. GiveDirectly forscht intensiv daran festzustellen, welche Auswirkungen die Geld-Tranfers auf teilnehmende Haushalte haben. Auf der Website https://live.givedirectly.org/ lässt sich nachvollziehen, was einzelne Individuen mit dem Geld gemacht haben.',
+                impact1000: 'GiveDirectly gibt 83% der Spenden direkt an bedürftige Haushalte weiter. Eine Untersuchung zeigt, dass dieses Geld die Nahrungsversorgung, Finanzierung von Bildung und Gesundheit verbessert und nicht für Alkohol oder Tabak ausgegeben wurde. Nach der Eintschätzung von GiveWell hat GiveDirectly verglichen mit anderen besonders effektiven Interventionen wahrscheinlich eine geringere Effektivität. Dafür ist GiveDirectly außerordentlich transparent und hat den direkten Nutzen die Armut zu reduzieren und ist somit in dieser Hinsicht wenig mit Unischerheiten behaftet.',
+                donationDeficit: 200000000,
+                evaluators: [
+                    {
+                        evaluator: 'GiveWell',
+                        link: 'https://www.givewell.org/charities/give-directly',
+                        top: true
+                    },
+                    {
+                        evaluator: 'The Life You Can Save',
+                        link: 'https://www.thelifeyoucansave.org/where-to-donate/givedirectly',
+                        top: true
+                    },
+                    {
+                        evaluator: 'Giving What We Can',
+                        link: 'https://www.givingwhatwecan.org/charity/givedirectly/',
                         top: true
                     }
                 ]
@@ -343,7 +377,7 @@ var DataService = /** @class */ (function () {
                 impactDirection: 'proaktiv',
                 regions: [],
                 questionaireResults: [],
-                slogan: 'Growing and maintaining the Effective Altruism movement',
+                slogan: 'Growing and maintaining the Effective Altruism movement.',
                 shortDescription: 'The Centre for Effective Altruism acts as a springboard for the effective altruism community. It aims to promote and strengthen effective altruism as an idea and a community, help figure out how best to advance the wellbeing of all, and inspire people to take action based on that knowledge.',
                 longDescription: 'The Centre for Effective Altruism runs and coordinates a variety of projects aimed at supporting and growing the effective altruism community. It supports local groups, funds research, runs conferences, produces a newsletter and collates and produces effective altruism-related content online. It also provides grants to new projects within that community, together with organisational support to help them grow and develop quickly. ',
                 impact1000: null,
@@ -360,7 +394,7 @@ var DataService = /** @class */ (function () {
                 impactDirection: 'proaktiv',
                 regions: [],
                 questionaireResults: ['values'],
-                slogan: 'Helping as many people as possible lead high-impact careers',
+                slogan: 'Helping as many people as possible lead high-impact careers.',
                 shortDescription: '80,000 hours provides career advice for talented young people who want to have a social impact.',
                 longDescription: '80,000 hours does in-depth research into how graduates can make the biggest difference possible with their careers, both through overall career choice and within a given field. Based on this, they provide an online career guide with supporting articles and tools; in-person advice including a workshop and one-on-one follow up; and links to a global community of people who want to work together to have the greatest possible positive impact.',
                 impact1000: null,
@@ -377,15 +411,107 @@ var DataService = /** @class */ (function () {
                 impactDirection: 'proaktiv',
                 regions: ['Deutschland'],
                 questionaireResults: ['values'],
-                slogan: 'Die Philosophie des Effektiven Altruismus weiterentwickeln, verbreiten und umsetzen',
+                slogan: 'Die Philosophie des Effektiven Altruismus weiterentwickeln, verbreiten und umsetzen.',
                 shortDescription: 'Die Stiftung für Effektiven Altruismus trägt zum nachhaltigen Wachstum der Bewegung des Effektiven Altruismus bei. Dabei streben sie eine Welt ohne extremes Leid an. Um die Philosophie des Effektiven Altruismus weiterzuentwickeln, zu verbreiten und umzusetzen, verfolgen sie Projekte in drei Bereichen: Forschung, Community und Philanthropie.',
                 longDescription: 'Die Stiftung für Effektiven Altruismus versucht eine Gemeinschaft von außerordentlich engagierten Menschen aufzubauen, die ihr Leben für andere einsetzen wollen und sich der Komplexität der Herausforderung bewusst sind. Sie stellen Infrastruktur in Form von Veranstaltungen und Lokalgruppen bereit, damit die Bewegung nachhaltig wachsen kann und die Kernideen des Effektiven Altruismus erhalten bleiben. In der Öffentlichkeit wollen sie den Effektiven Altruismus in all seinen Nuancen darstellen, um eine konstruktive Diskussion darüber zu ermöglichen.',
                 impact1000: null,
                 donationDeficit: null,
                 evaluators: []
-            }
+            },
             // Politik
             // Tierleid
+            {
+                name: 'Animal Equality International - Zur Verteidigung aller Tiere',
+                thumbnail: 'animal_equality',
+                website: 'https://www.animalequality.de/',
+                donationLink: 'https://www.animalequality.de/spenden',
+                category: ['Tierleid'],
+                cause: ['Tierleben', 'Haltungsbedingungen'],
+                impactDirection: 'reaktiv',
+                regions: ['Deutschland', 'USA', 'Europa', 'Mittelamerika', 'Südamerika', 'Indien'],
+                questionaireResults: ['animal suffering'],
+                slogan: 'Wir arbeiten für eine bessere Welt für alle Tiere.',
+                shortDescription: 'Animal Equality ist eine internationale Organisation, die gemeinsam mit Gesellschaft, Politik und Unternehmen daran arbeitet, Grausamkeit in der Massentierhaltung zu beenden.',
+                longDescription: 'Animal Equality arbeitet für eine gerechtere und bessere Welt für alle Lebewesen, die diesen Planeten bewohnen. Die Organisation setzt sich für die Verringerung von Ungerechtigkeiten gegenüber Tieren ein, mit der Vision jedem Tier ein Leben ohne Schmerzen und Leiden zu ermöglichen. Durch groß angelegte Bildungsprogramme, Undercover-Recherchen, medienwirksame Aktionen sowie Unternehmenskampagnen will Animal Equality einen langfristigen sozialen Wandel herbeiführen und eine Welt schaffen, in der alle Tiere Respekt und Schutz erfahren. Dabei liegt der Fokus ihrer Arbeit auf der sogenannten Nutztierindustrie, da sie international für das größte Tierleid verantwortlich ist.',
+                impact1000: 'Hilft dabei: Durchschnittliche 5000 Tiere in der Massentierhaltung vor Leid zu bewahren; oder durch Online-Kampagnen mehr als 900.000 Menschen über die Zustände in der Massentierhaltung zu informieren; oder finanziert 26 iAnimal Aktionen innerhalb des Virtual-Reality-Projects, durch das zahlreiche Menschen einen authentischen Einblick in das Leben der Tiere in der Massentierhaltung bekommen - Widerspruch zu ACE Aussage',
+                donationDeficit: 4200000,
+                evaluators: [
+                    {
+                        evaluator: 'Animal Charity Evaluators',
+                        link: 'https://animalcharityevaluators.org/charity-review/animal-equality/',
+                        top: true
+                    }
+                ]
+            },
+            {
+                name: 'The Good Food Institut',
+                thumbnail: 'good_food_institute',
+                website: 'https://www.gfi.org/',
+                donationLink: 'https://www.gfi.org/donate',
+                category: ['Tierleid'],
+                cause: ['Tierleben'],
+                impactDirection: 'proaktiv',
+                regions: [],
+                questionaireResults: ['animal death'],
+                slogan: 'Erzeugung eines gesunden, tiergerechten und nachhaltigen Nahrungsangebots',
+                shortDescription: 'The Good Food Institut arbeitet mit Wissenschaftlern, Investoren und Entrepreneuren zusammen, mit dem Fokus auf "clean meat" und pflanzliche Nahrungsalternativen zu tierischen Produkten.',
+                longDescription: 'Das Good Food Institute (GFI) arbeitet daran, die Tierzuchtbranche zu verändern, indem es die Entwicklung von wettbewerbsfähigen Alternativen zu tierischem Fleisch, Milchprodukten und Eiern fördert. GFI sucht nach Unternehmern und Wissenschaftlern, die Start-ups in dem Marktsektor pflanzlichen und kultivierten Fleisches fördern oder beitreten. Sie bieten geschäftliche, rechtliche, wissenschaftliche und strategische Leitlinien für Unternehmen und betreiben politische (regulatorische und gesetzliche) Arbeit, um das Feld für pflanzliche und zelluläre Produkte auf dem Markt zu ebnen. GFI baut Beziehungen zu Restaurantketten, Lebensmittelgeschäfte und Foodservice-Unternehmen auf, um pflanzliche Alternativen zu Tierprodukten zu verbessern und zu fördern. Schließlich arbeitet GFI mit Fördereinrichtungen, Unternehmen und Regierungen zusammen, um Ressourcen für die Forschung in der synthetischen und pflanzlichen Biologie und Gewebetechnologie zu mobilisieren.',
+                impact1000: 'Eine Spende unterstützt GFI-Programme und hilft beim Aufbau ihrer Rücklagen für den Betriebsablauf, die für die Aufrechterhaltung der Betriebskontinuität benötigt werden. Von einer durchschnittlichen Spende von 1.000 US-Dollar, würde GFI etwa 220 US-Dollar für sein Wissenschafts- und Technologieprogramm und etwa 200 US-Dollar für den Aufbau seiner Rücklagen für den Betriebsablauf ausgeben. GFI würde außerdem 200 US-Dollar für internationales Engagement, 160 US-Dollar für ihr Innovationsprogramm, 120 US-Dollar für ihr politisches Programm und etwa 90 US-Dollar für unternehmerisches Engagement ausgeben. Die Auswirkungen von Spenden für Zuchttiere sind spekulativer und langfristiger als der Einfluss von Spenden für andere Oranisation wie Animal Equality. Angesichts des spekulativen Charakters der Auswirkungen von GFI auf Nutztiere, gibt es derzeit keine Kosten-Effektivitäts-Schätzung. Die Meinung von Animal Charity Evaluators ist dennoch, dass Spenden an GFI einen hohen Erwartungswert haben.',
+                donationDeficit: 4400000,
+                evaluators: [
+                    {
+                        evaluator: 'Animal Charity Evaluators',
+                        link: 'https://animalcharityevaluators.org/charity-review/the-good-food-institute/',
+                        top: true
+                    }
+                ]
+            },
+            {
+                name: 'ProVeg International',
+                thumbnail: 'proveg_international',
+                website: 'https://www.proveg.com/',
+                donationLink: 'https://www.proveg.com/de/spenden/',
+                category: ['Tierleid'],
+                cause: ['Tierleben'],
+                impactDirection: 'proaktiv',
+                regions: ['Deutschland', 'Europa'],
+                questionaireResults: ['animal death'],
+                slogan: 'Appetite for a better world',
+                shortDescription: 'ProVeg motiviert Menschen zu einem pflanzlichen Lebensstil und vernetzt bestehende Organisationen weltweit, um Gesundheit zu fördern, Tierleiden zu vermindern, die Umwelt zu schützen und eine gerechtere Verteilung von Nahrungsmitteln zu ermöglichen.',
+                longDescription: 'Viele der weltweit dringendsten Probleme haben die individuelle Ernährungsweise eines jeden Einzelnen zur Ursache. ProVeg International motiviert die Bevölkerung durch Aufklärung und Bereitstellung praktischer Informationen zum Umstieg auf eine Ernährung unter Verwendung tierfreier Alternativen. Ziel ist, den Konsum von Tieren als Nahrungsmittel bis 2040 um 50 % zu reduzieren. Damit soll die Gesundheit der Bevölkerung gefördert und gleichzeitig das durch die Nahrungsmittelproduktion entstehende Tierleiden vermindert werden. Neben dem Umweltschutz steht dabei zudem die faire Verteilung der weltweiten Nahrungsmittelressourcen im Fokus. Dazu arbeitet ProVeg mit einflussreichen Multiplikatoren aus Politik, Wirtschaft und Medien zusammen.',
+                impact1000: 'Für 1000 Euro kann eine Aufklärungsveranstaltung in einer Schule mit gesunden Snacks und Getränken ausgestattet, ein Sprecher für einen von ProVeg International organisierten Kongress eingeladen und Informationsmaterial für 30 bis 40 Informationsveranstaltungen beschafft werden.',
+                donationDeficit: null,
+                evaluators: [
+                    {
+                        evaluator: 'Animal Charity Evaluators',
+                        link: 'https://animalcharityevaluators.org/charity-review/proveg/',
+                        top: true
+                    }
+                ]
+            },
+            {
+                name: 'The Humane League',
+                thumbnail: 'the_humane_league',
+                website: 'https://www.thehumaneleague.org/',
+                donationLink: 'https://www.thehumaneleague.org/donate/',
+                category: ['Tierleid'],
+                cause: ['Haltungsbedingungen', 'Tierleben'],
+                impactDirection: 'proaktiv',
+                regions: ['Japan', 'Mittelamerika', 'USA', 'Europa'],
+                questionaireResults: ['animal suffering'],
+                slogan: 'Empowering Change. Driving Progress.',
+                shortDescription: 'The Humane League will Tierleiden möglichst weitreichend verhindern. Dazu werden mit Humane League Labs die effektivsten Methoden ermittelt. Neben konkreten Kampagnen wird Aufklärungsarbeit in der Bevölkerung betrieben sowie das Wissen um den Tierschutz an Universitäten verbreitet.',
+                longDescription: 'Weltweit werden unzählige Tiere für die Nahrungsmittelproduktion unter unnatürlichen und unwürden Bedingungen gehalten, misshandelt und verletzt. Um die Haltungsbedingungen der Tiere zu verbessern und so Schmerzen, Leid, frühzeitiges Sterben, Angst und Schmerz zu verhindern, will The Humane League die Bevölkerung über die Umstände in der industriellen Tierhaltung aufklären. Neben der Bereitstellung von Informationsmaterial und Kampagnen will The Humane League insbesondere auch an Universitäten das Wissen um den Tierschutz verbreiten. Mit Humane League Labs wird untersucht, welche Methoden die effektivsten für die Einflussnahme zur Verbesserung der Haltungsbedingen sind.',
+                impact1000: null,
+                donationDeficit: null,
+                evaluators: [
+                    {
+                        evaluator: 'Animal Charity Evaluators',
+                        link: 'https://animalcharityevaluators.org/charity-review/the-humane-league/',
+                        top: true
+                    }
+                ]
+            }
         ];
     }
     DataService = __decorate([
@@ -469,82 +595,6 @@ var AboutPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PrivacyPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var PrivacyPage = /** @class */ (function () {
-    function PrivacyPage(viewCtrl) {
-        this.viewCtrl = viewCtrl;
-    }
-    PrivacyPage.prototype.dismiss = function () {
-        this.viewCtrl.dismiss();
-    };
-    PrivacyPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/thomsen/dev/ea/src/pages/privacy/privacy.html"*/'<ion-header>\n  <ion-toolbar>\n    <ion-title>Datenschutzerkl&auml;rung</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <ion-icon name="close"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-item text-wrap>\n      <p>Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:</p>\n      <p><b>Abcdef</b></p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>Ihre Betroffenenrechte</h2>\n      <p>Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:</p>\n      <ul>\n        <li>Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),</li>\n        <li>Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),</li>\n        <li>Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),</li>\n        <li>Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen (Art. 18 DSGVO),</li>\n        <li>Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO) und</li>\n        <li>Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben (Art. 20 DSGVO).</li>\n      </ul>\n      <p>Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.</p>\n      <p>Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde.</p>\n      <p>Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" target="_blank" rel="nofollow noopener">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>Erfassung allgemeiner Informationen beim Besuch unserer Website</h2>\n      <h3>Art und Zweck der Verarbeitung:</h3>\n      <p>Wenn Sie auf unsere Website zugreifen, d.h., wenn Sie sich nicht registrieren oder anderweitig Informationen übermitteln, werden automatisch Informationen allgemeiner Natur erfasst. Diese Informationen (Server-Logfiles) beinhalten etwa die Art des Webbrowsers, das verwendete Betriebssystem, den Domainnamen Ihres Internet-Service-Providers, Ihre IP-Adresse und ähnliches. Hierbei handelt es sich ausschließlich um Informationen, welche keine Rückschlüsse auf Ihre Person zulassen.</p>\n      <p>Sie werden insbesondere zu folgenden Zwecken verarbeitet:</p>\n      <ul>\n        <li>Sicherstellung eines problemlosen Verbindungsaufbaus der Website,</li>\n        <li>Sicherstellung einer reibungslosen Nutzung unserer Website,</li>\n        <li>Auswertung der Systemsicherheit und -stabilität sowie</li>\n        <li>zu weiteren administrativen Zwecken.</li>\n      </ul>\n      <p>Wir verwenden Ihre Daten nicht, um Rückschlüsse auf Ihre Person zu ziehen. Informationen dieser Art werden von uns ggfs. statistisch ausgewertet, um unseren Internetauftritt und die dahinterstehende Technik zu optimieren.</p>\n      <h3>Rechtsgrundlage:</h3>\n      <p>Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an der Verbesserung der Stabilität und Funktionalität unserer Website.</p>\n      <h3>Empfänger:</h3>\n      <p>Empfänger der Daten sind ggf. technische Dienstleister, die für den Betrieb und die Wartung unserer Webseite als Auftragsverarbeiter tätig werden.</p>\n      <h3>Speicherdauer:</h3>\n      <p>Die Daten werden gelöscht, sobald diese für den Zweck der Erhebung nicht mehr erforderlich sind. Dies ist für die Daten, die der Bereitstellung der Webseite dienen, grundsätzlich der Fall, wenn die jeweilige Sitzung beendet ist.</p>\n      <h3>Bereitstellung vorgeschrieben oder erforderlich:</h3>\n      <p>Die Bereitstellung der vorgenannten personenbezogenen Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Ohne die IP-Adresse ist jedoch der Dienst und die Funktionsfähigkeit unserer Website nicht gewährleistet. Zudem können einzelne Dienste und Services nicht verfügbar oder eingeschränkt sein. Aus diesem Grund ist ein Widerspruch ausgeschlossen. </p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>Newsletter</h2>\n      <h3>Art und Zweck der Verarbeitung:</h3>\n      <p>Ihre Daten werden ausschließlich dazu verwendet, Ihnen den abonnierten Newsletter per E-Mail zuzustellen. Die Angabe Ihres Namens erfolgt, um Sie im Newsletter persönlich ansprechen zu können und ggf. zu identifizieren, falls Sie von Ihren Rechten als Betroffener Gebrauch machen wollen.</p>\n      <p>Für den Empfang des Newsletters ist die Angabe Ihrer E-Mail-Adresse ausreichend. Bei der Anmeldung zum Bezug unseres Newsletters werden die von Ihnen angegebenen Daten ausschließlich für diesen Zweck verwendet. Abonnenten können auch über Umstände per E-Mail informiert werden, die für den Dienst oder die Registrierung relevant sind (bspw. Änderungen des Newsletterangebots oder technische Gegebenheiten).</p>\n      <p>Für eine wirksame Registrierung benötigen wir eine valide E-Mail-Adresse. Um zu überprüfen, dass eine Anmeldung tatsächlich durch den Inhaber einer E-Mail-Adresse erfolgt, setzen wir das „Double-opt-in“-Verfahren ein. Hierzu protokollieren wir die Bestellung des Newsletters, den Versand einer Bestätigungsmail und den Eingang der hiermit angeforderten Antwort. Weitere Daten werden nicht erhoben. Die Daten werden ausschließlich für den Newsletterversand verwendet und nicht an Dritte weitergegeben.</p>\n      <h3>Rechtsgrundlage:</h3>\n      <p>Auf Grundlage Ihrer ausdrücklich erteilten Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), übersenden wir Ihnen regelmäßig unseren Newsletter bzw. vergleichbare Informationen per E-Mail an Ihre angegebene E-Mail-Adresse. </p>\n      <p>Die Einwilligung zur Speicherung Ihrer persönlichen Daten und ihrer Nutzung für den Newsletterversand können Sie jederzeit mit Wirkung für die Zukunft widerrufen. In jedem Newsletter findet sich dazu ein entsprechender Link. Außerdem können Sie sich jederzeit auch direkt auf dieser Website abmelden oder uns Ihren Widerruf über die am Ende dieser Datenschutzhinweise angegebene Kontaktmöglichkeit mitteilen.</p>\n      <h3>Empfänger:</h3>\n      <p>Empfänger der Daten sind ggf. Auftragsverarbeiter.</p>\n      <h3>Speicherdauer:</h3>\n      <p>Die Daten werden in diesem Zusammenhang nur verarbeitet, solange die entsprechende Einwilligung vorliegt. Danach werden sie gelöscht.</p>\n      <h3>Bereitstellung vorgeschrieben oder erforderlich:</h3>\n      <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig, allein auf Basis Ihrer Einwilligung. Ohne bestehende Einwilligung können wir Ihnen unseren Newsletter leider nicht zusenden.</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>Kontaktformular</h2>\n      <h3>Art und Zweck der Verarbeitung:</h3>\n      <p>Die von Ihnen eingegebenen Daten werden zum Zweck der individuellen Kommunikation mit Ihnen gespeichert. Hierfür ist die Angabe einer validen E-Mail-Adresse sowie Ihres Namens erforderlich. Diese dient der Zuordnung der Anfrage und der anschließenden Beantwortung derselben. Die Angabe weiterer Daten ist optional.</p>\n      <h3>Rechtsgrundlage:</h3>\n      <p>Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt auf der Grundlage eines berechtigten Interesses (Art 6 Abs. 1 lit. f DSGVO).</p>\n      <p>Durch Bereitstellung des Kontaktformulars möchten wir Ihnen eine unkomplizierte Kontaktaufnahme ermöglichen. Ihre gemachten Angaben werden zum Zwecke der Bearbeitung der Anfrage sowie für mögliche Anschlussfragen gespeichert.</p>\n      <p>Sofern Sie mit uns Kontakt aufnehmen, um ein Angebot zu erfragen, erfolgt die Verarbeitung der in das Kontaktformular eingegebenen Daten zur Durchführung vorvertraglicher Maßnahmen (Art 6 Abs. 1 lit. b DSGVO).</p>\n      <h3>Empfänger:</h3>\n      <p>Empfänger der Daten sind ggf. Auftragsverarbeiter.</p>\n      <h3>Speicherdauer:</h3>\n      <p>Daten werden spätestens 6 Monate nach Bearbeitung der Anfrage gelöscht.</p>\n      <p>Sofern es zu einem Vertragsverhältnis kommt, unterliegen wir den gesetzlichen Aufbewahrungsfristen nach HGB und löschen Ihre Daten nach Ablauf dieser Fristen. </p>\n      <h3>Bereitstellung vorgeschrieben oder erforderlich:</h3>\n      <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig. Wir können Ihre Anfrage jedoch nur bearbeiten, sofern Sie uns Ihren Namen, Ihre E-Mail-Adresse und den Grund der Anfrage mitteilen.</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>SSL-Verschlüsselung</h2>\n      <p>Um die Sicherheit Ihrer Daten bei der Übertragung zu schützen, verwenden wir dem aktuellen Stand der Technik entsprechende Verschlüsselungsverfahren (z. B. SSL) über HTTPS.</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>Änderung unserer Datenschutzbestimmungen</h2>\n      <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>Fragen an den Datenschutzbeauftragten</h2>\n      <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation:</p>\n      <p>abcdef@xyz123.com</p>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/home/thomsen/dev/ea/src/pages/privacy/privacy.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */]])
-    ], PrivacyPage);
-    return PrivacyPage;
-}());
-
-//# sourceMappingURL=privacy.js.map
-
-/***/ }),
-
-/***/ 198:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OrganizationPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var OrganizationPage = /** @class */ (function () {
-    function OrganizationPage(viewCtrl, params) {
-        this.viewCtrl = viewCtrl;
-        this.params = params;
-        this.organization = this.params.get('o');
-    }
-    OrganizationPage.prototype.dismiss = function () {
-        this.viewCtrl.dismiss();
-    };
-    OrganizationPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/thomsen/dev/ea/src/pages/organization/organization.html"*/'<ion-header>\n  <ion-toolbar>\n    <ion-title>{{ organization.name }}</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <ion-icon name="close"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-item text-wrap>\n    <h2>{{ organization.slogan }}</h2>\n    <h3>{{ organization.shortDescription }}</h3>\n    <p>\n      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et\n      dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet\n      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,\n      consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,\n      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea\n      takimata sanctus est Lorem ipsum dolor sit amet.\n    </p>\n  </ion-item>\n</ion-content>\n'/*ion-inline-end:"/home/thomsen/dev/ea/src/pages/organization/organization.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], OrganizationPage);
-    return OrganizationPage;
-}());
-
-//# sourceMappingURL=organization.js.map
-
-/***/ }),
-
-/***/ 199:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -573,7 +623,7 @@ var ContactPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 200:
+/***/ 198:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -582,7 +632,7 @@ var ContactPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_animations__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_services_data__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_services_modal__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_services_modal__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -675,6 +725,82 @@ var QuestionnairePage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 199:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PrivacyPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var PrivacyPage = /** @class */ (function () {
+    function PrivacyPage(viewCtrl) {
+        this.viewCtrl = viewCtrl;
+    }
+    PrivacyPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    PrivacyPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/thomsen/dev/ea/src/pages/privacy/privacy.html"*/'<ion-header>\n  <ion-toolbar>\n    <ion-title>Datenschutzerkl&auml;rung</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <ion-icon name="close"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-item text-wrap>\n      <p>Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:</p>\n      <p><b>Abcdef</b></p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>Ihre Betroffenenrechte</h2>\n      <p>Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:</p>\n      <ul>\n        <li>Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),</li>\n        <li>Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),</li>\n        <li>Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),</li>\n        <li>Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen (Art. 18 DSGVO),</li>\n        <li>Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO) und</li>\n        <li>Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben (Art. 20 DSGVO).</li>\n      </ul>\n      <p>Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.</p>\n      <p>Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde.</p>\n      <p>Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" target="_blank" rel="nofollow noopener">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>Erfassung allgemeiner Informationen beim Besuch unserer Website</h2>\n      <h3>Art und Zweck der Verarbeitung:</h3>\n      <p>Wenn Sie auf unsere Website zugreifen, d.h., wenn Sie sich nicht registrieren oder anderweitig Informationen übermitteln, werden automatisch Informationen allgemeiner Natur erfasst. Diese Informationen (Server-Logfiles) beinhalten etwa die Art des Webbrowsers, das verwendete Betriebssystem, den Domainnamen Ihres Internet-Service-Providers, Ihre IP-Adresse und ähnliches. Hierbei handelt es sich ausschließlich um Informationen, welche keine Rückschlüsse auf Ihre Person zulassen.</p>\n      <p>Sie werden insbesondere zu folgenden Zwecken verarbeitet:</p>\n      <ul>\n        <li>Sicherstellung eines problemlosen Verbindungsaufbaus der Website,</li>\n        <li>Sicherstellung einer reibungslosen Nutzung unserer Website,</li>\n        <li>Auswertung der Systemsicherheit und -stabilität sowie</li>\n        <li>zu weiteren administrativen Zwecken.</li>\n      </ul>\n      <p>Wir verwenden Ihre Daten nicht, um Rückschlüsse auf Ihre Person zu ziehen. Informationen dieser Art werden von uns ggfs. statistisch ausgewertet, um unseren Internetauftritt und die dahinterstehende Technik zu optimieren.</p>\n      <h3>Rechtsgrundlage:</h3>\n      <p>Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an der Verbesserung der Stabilität und Funktionalität unserer Website.</p>\n      <h3>Empfänger:</h3>\n      <p>Empfänger der Daten sind ggf. technische Dienstleister, die für den Betrieb und die Wartung unserer Webseite als Auftragsverarbeiter tätig werden.</p>\n      <h3>Speicherdauer:</h3>\n      <p>Die Daten werden gelöscht, sobald diese für den Zweck der Erhebung nicht mehr erforderlich sind. Dies ist für die Daten, die der Bereitstellung der Webseite dienen, grundsätzlich der Fall, wenn die jeweilige Sitzung beendet ist.</p>\n      <h3>Bereitstellung vorgeschrieben oder erforderlich:</h3>\n      <p>Die Bereitstellung der vorgenannten personenbezogenen Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Ohne die IP-Adresse ist jedoch der Dienst und die Funktionsfähigkeit unserer Website nicht gewährleistet. Zudem können einzelne Dienste und Services nicht verfügbar oder eingeschränkt sein. Aus diesem Grund ist ein Widerspruch ausgeschlossen. </p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>Newsletter</h2>\n      <h3>Art und Zweck der Verarbeitung:</h3>\n      <p>Ihre Daten werden ausschließlich dazu verwendet, Ihnen den abonnierten Newsletter per E-Mail zuzustellen. Die Angabe Ihres Namens erfolgt, um Sie im Newsletter persönlich ansprechen zu können und ggf. zu identifizieren, falls Sie von Ihren Rechten als Betroffener Gebrauch machen wollen.</p>\n      <p>Für den Empfang des Newsletters ist die Angabe Ihrer E-Mail-Adresse ausreichend. Bei der Anmeldung zum Bezug unseres Newsletters werden die von Ihnen angegebenen Daten ausschließlich für diesen Zweck verwendet. Abonnenten können auch über Umstände per E-Mail informiert werden, die für den Dienst oder die Registrierung relevant sind (bspw. Änderungen des Newsletterangebots oder technische Gegebenheiten).</p>\n      <p>Für eine wirksame Registrierung benötigen wir eine valide E-Mail-Adresse. Um zu überprüfen, dass eine Anmeldung tatsächlich durch den Inhaber einer E-Mail-Adresse erfolgt, setzen wir das „Double-opt-in“-Verfahren ein. Hierzu protokollieren wir die Bestellung des Newsletters, den Versand einer Bestätigungsmail und den Eingang der hiermit angeforderten Antwort. Weitere Daten werden nicht erhoben. Die Daten werden ausschließlich für den Newsletterversand verwendet und nicht an Dritte weitergegeben.</p>\n      <h3>Rechtsgrundlage:</h3>\n      <p>Auf Grundlage Ihrer ausdrücklich erteilten Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), übersenden wir Ihnen regelmäßig unseren Newsletter bzw. vergleichbare Informationen per E-Mail an Ihre angegebene E-Mail-Adresse. </p>\n      <p>Die Einwilligung zur Speicherung Ihrer persönlichen Daten und ihrer Nutzung für den Newsletterversand können Sie jederzeit mit Wirkung für die Zukunft widerrufen. In jedem Newsletter findet sich dazu ein entsprechender Link. Außerdem können Sie sich jederzeit auch direkt auf dieser Website abmelden oder uns Ihren Widerruf über die am Ende dieser Datenschutzhinweise angegebene Kontaktmöglichkeit mitteilen.</p>\n      <h3>Empfänger:</h3>\n      <p>Empfänger der Daten sind ggf. Auftragsverarbeiter.</p>\n      <h3>Speicherdauer:</h3>\n      <p>Die Daten werden in diesem Zusammenhang nur verarbeitet, solange die entsprechende Einwilligung vorliegt. Danach werden sie gelöscht.</p>\n      <h3>Bereitstellung vorgeschrieben oder erforderlich:</h3>\n      <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig, allein auf Basis Ihrer Einwilligung. Ohne bestehende Einwilligung können wir Ihnen unseren Newsletter leider nicht zusenden.</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>Kontaktformular</h2>\n      <h3>Art und Zweck der Verarbeitung:</h3>\n      <p>Die von Ihnen eingegebenen Daten werden zum Zweck der individuellen Kommunikation mit Ihnen gespeichert. Hierfür ist die Angabe einer validen E-Mail-Adresse sowie Ihres Namens erforderlich. Diese dient der Zuordnung der Anfrage und der anschließenden Beantwortung derselben. Die Angabe weiterer Daten ist optional.</p>\n      <h3>Rechtsgrundlage:</h3>\n      <p>Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt auf der Grundlage eines berechtigten Interesses (Art 6 Abs. 1 lit. f DSGVO).</p>\n      <p>Durch Bereitstellung des Kontaktformulars möchten wir Ihnen eine unkomplizierte Kontaktaufnahme ermöglichen. Ihre gemachten Angaben werden zum Zwecke der Bearbeitung der Anfrage sowie für mögliche Anschlussfragen gespeichert.</p>\n      <p>Sofern Sie mit uns Kontakt aufnehmen, um ein Angebot zu erfragen, erfolgt die Verarbeitung der in das Kontaktformular eingegebenen Daten zur Durchführung vorvertraglicher Maßnahmen (Art 6 Abs. 1 lit. b DSGVO).</p>\n      <h3>Empfänger:</h3>\n      <p>Empfänger der Daten sind ggf. Auftragsverarbeiter.</p>\n      <h3>Speicherdauer:</h3>\n      <p>Daten werden spätestens 6 Monate nach Bearbeitung der Anfrage gelöscht.</p>\n      <p>Sofern es zu einem Vertragsverhältnis kommt, unterliegen wir den gesetzlichen Aufbewahrungsfristen nach HGB und löschen Ihre Daten nach Ablauf dieser Fristen. </p>\n      <h3>Bereitstellung vorgeschrieben oder erforderlich:</h3>\n      <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig. Wir können Ihre Anfrage jedoch nur bearbeiten, sofern Sie uns Ihren Namen, Ihre E-Mail-Adresse und den Grund der Anfrage mitteilen.</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>SSL-Verschlüsselung</h2>\n      <p>Um die Sicherheit Ihrer Daten bei der Übertragung zu schützen, verwenden wir dem aktuellen Stand der Technik entsprechende Verschlüsselungsverfahren (z. B. SSL) über HTTPS.</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>Änderung unserer Datenschutzbestimmungen</h2>\n      <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>Fragen an den Datenschutzbeauftragten</h2>\n      <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation:</p>\n      <p>abcdef@xyz123.com</p>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/home/thomsen/dev/ea/src/pages/privacy/privacy.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */]])
+    ], PrivacyPage);
+    return PrivacyPage;
+}());
+
+//# sourceMappingURL=privacy.js.map
+
+/***/ }),
+
+/***/ 200:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OrganizationPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var OrganizationPage = /** @class */ (function () {
+    function OrganizationPage(viewCtrl, params) {
+        this.viewCtrl = viewCtrl;
+        this.params = params;
+        this.organization = this.params.get('o');
+    }
+    OrganizationPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    OrganizationPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/thomsen/dev/ea/src/pages/organization/organization.html"*/'<ion-header>\n  <ion-toolbar>\n    <ion-title>{{ organization.name }}</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <ion-icon name="close"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-item text-wrap>\n    <h2>{{ organization.slogan }}</h2>\n    <h3>{{ organization.shortDescription }}</h3>\n    <p>\n      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et\n      dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet\n      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,\n      consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,\n      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea\n      takimata sanctus est Lorem ipsum dolor sit amet.\n    </p>\n  </ion-item>\n</ion-content>\n'/*ion-inline-end:"/home/thomsen/dev/ea/src/pages/organization/organization.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    ], OrganizationPage);
+    return OrganizationPage;
+}());
+
+//# sourceMappingURL=organization.js.map
+
+/***/ }),
+
 /***/ 201:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -682,7 +808,7 @@ var QuestionnairePage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_services_data__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_services_modal__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_services_modal__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -739,7 +865,7 @@ var SearchPage = /** @class */ (function () {
     };
     SearchPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-search',template:/*ion-inline-start:"/home/thomsen/dev/ea/src/pages/search/search.html"*/'<ion-header><ion-navbar></ion-navbar></ion-header>\n\n<ion-content>\n  <ion-grid fixed>\n    <ion-list>\n      <ion-searchbar placeholder="Fang hier an zu suchen..." [(ngModel)]="searchTerm" (ionInput)="search()"></ion-searchbar>\n      <ion-item>\n        <ion-label>Erweiterte Suche</ion-label>\n        <ion-toggle [(ngModel)]="advancedSearch" checked="false" (ionChange)="search()"></ion-toggle>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Kategorie</ion-label>\n        <ion-select [(ngModel)]="searchCategories" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="Armut">Armut</ion-option>\n          <ion-option value="Existenzrisiken">Existenzrisiken</ion-option>\n          <ion-option value="Meta">Meta</ion-option>\n          <ion-option value="Politik">Politik</ion-option>\n          <ion-option value="Tierleid">Tierleid</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Problemfeld</ion-label>\n        <ion-select [(ngModel)]="searchCauses" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Bildung">Bildung</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Biotechnologie">Biotechnologie</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Meta\')" value="Evaluation">Evaluation</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Tierleid\')" value="Haltungsbedingungen">Haltungsbedingungen</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Gesundheit">Gesundheit</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Politik\')" value="Institutionen">Institutionen</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Katastrophenschutz">Katastrophenschutz</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Klimaschutz">Klimaschutz</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Künstliche Intelligenz">Künstliche Intelligenz</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Lebensstandard">Lebensstandard</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Menschenleben">Menschenleben</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Politik\')" value="Menschenrechte">Menschenrechte</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Nukleartechnologie">Nukleartechnologie</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Meta\')" value="Öffentlichkeitsarbeit">Öffentlichkeitsarbeit</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Meta\')" value="Strategie">Stategie</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Tierleid\')" value="Tierleben">Tierleben</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Politik\')" value="Werte und Moral">Werte und Moral</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Wirkrichtung</ion-label>\n        <ion-select [(ngModel)]="searchImpactDirection" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="proaktiv">proaktiv</ion-option>\n          <ion-option value="reaktiv">reaktiv</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Region</ion-label>\n        <ion-select [(ngModel)]="searchRegion" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="Afrika">Afrika</ion-option>\n          <ion-option value="Asien">Asien</ion-option>\n          <ion-option value="Deutschland">Deutschland</ion-option>\n          <ion-option value="Europa">Europa</ion-option>\n          <ion-option value="Indien">Indien</ion-option>\n          <ion-option value="Naher Osten">Naher Osten</ion-option>\n          <ion-option value="Ozeanien">Ozeanien</ion-option>\n          <ion-option value="Südamerika">Südamerika</ion-option>\n          <ion-option value="Südost Asien">Südost Asien</ion-option>\n          <ion-option value="USA">USA</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Empfohlen durch Evalutator</ion-label>\n        <ion-select [(ngModel)]="searchRecommendedBy" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="80.000 hours">80.000 hours</ion-option>\n          <ion-option value="Animal Charity Evalutators">Animal Charity Evalutators</ion-option>\n          <ion-option value="Charity Science">Charity Science</ion-option>\n          <ion-option value="GiveWell">GiveWell</ion-option>\n          <ion-option value="ImpactM">ImpactM</ion-option>\n          <ion-option value="Open Philantrophy Project">Open Philantrophy Project</ion-option>\n          <ion-option value="Phineo">Phineo</ion-option>\n          <ion-option value="Stiftung für Effektiven Altruismus">Stiftung für Effektiven Altruismus</ion-option>\n          <ion-option value="The Life You Can Save">The Life You Can Save</ion-option>\n        </ion-select>\n      </ion-item>\n    </ion-list>\n    <ion-list>\n      <ion-item-sliding *ngFor="let o of organizations">\n        <ion-item text-wrap>\n          <ion-thumbnail item-start>\n            <img src="../../assets/imgs/organizations/{{ o.thumbnail }}.jpg"/>\n          </ion-thumbnail>\n          <h2>{{ o.name }}</h2>\n          <h3>{{ o.slogan }}</h3>\n          <p>{{ o.shortDescription }}</p>\n          <ion-badge *ngFor="let e of o.evaluators" color="{{ e.top && \'danger\' || \'secondary\' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>\n        </ion-item>\n        <ion-item-options side="right">\n          <button ion-button color="primary" (click)="modalService.openOrganizationModal({o: o})">\n            <ion-icon name="information-circle"></ion-icon>\n            Mehr Info\n          </button>\n          <a [href]="o.website">\n            <button ion-button color="secondary">\n              <ion-icon name="browsers"></ion-icon>\n              Website\n            </button>\n          </a>\n          <a [href]="o.donationLink">\n            <button ion-button color="danger">\n              <ion-icon name="cash"></ion-icon>\n              Spenden\n            </button>\n          </a>\n        </ion-item-options>\n      </ion-item-sliding>\n    </ion-list>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/home/thomsen/dev/ea/src/pages/search/search.html"*/
+            selector: 'page-search',template:/*ion-inline-start:"/home/thomsen/dev/ea/src/pages/search/search.html"*/'<ion-header><ion-navbar></ion-navbar></ion-header>\n\n<ion-content>\n  <ion-grid fixed>\n    <ion-list>\n      <ion-searchbar placeholder="Fang hier an zu suchen..." [(ngModel)]="searchTerm" (ionInput)="search()"></ion-searchbar>\n      <ion-item>\n        <ion-label>Erweiterte Suche</ion-label>\n        <ion-toggle [(ngModel)]="advancedSearch" checked="false" (ionChange)="search()"></ion-toggle>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Kategorie</ion-label>\n        <ion-select [(ngModel)]="searchCategories" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="Armut">Armut</ion-option>\n          <ion-option value="Existenzrisiken">Existenzrisiken</ion-option>\n          <ion-option value="Meta">Meta</ion-option>\n          <ion-option value="Politik">Politik</ion-option>\n          <ion-option value="Tierleid">Tierleid</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Problemfeld</ion-label>\n        <ion-select [(ngModel)]="searchCauses" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Bildung">Bildung</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Biotechnologie">Biotechnologie</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Meta\')" value="Evaluation">Evaluation</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Tierleid\')" value="Haltungsbedingungen">Haltungsbedingungen</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Gesundheit">Gesundheit</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Politik\')" value="Institutionen">Institutionen</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Katastrophenschutz">Katastrophenschutz</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Klimaschutz">Klimaschutz</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Künstliche Intelligenz">Künstliche Intelligenz</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Lebensstandard">Lebensstandard</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Armut\')" value="Menschenleben">Menschenleben</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Politik\')" value="Menschenrechte">Menschenrechte</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Existenzrisiken\')" value="Nukleartechnologie">Nukleartechnologie</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Meta\')" value="Öffentlichkeitsarbeit">Öffentlichkeitsarbeit</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Meta\')" value="Strategie">Stategie</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Tierleid\')" value="Tierleben">Tierleben</ion-option>\n          <ion-option *ngIf="listContains(searchCategories, \'Politik\')" value="Werte und Moral">Werte und Moral</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Wirkrichtung</ion-label>\n        <ion-select [(ngModel)]="searchImpactDirection" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="proaktiv">proaktiv</ion-option>\n          <ion-option value="reaktiv">reaktiv</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Region</ion-label>\n        <ion-select [(ngModel)]="searchRegion" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="Afrika">Afrika</ion-option>\n          <ion-option value="Asien">Asien</ion-option>\n          <ion-option value="Deutschland">Deutschland</ion-option>\n          <ion-option value="Europa">Europa</ion-option>\n          <ion-option value="Indien">Indien</ion-option>\n          <ion-option value="Japan">Japan</ion-option>\n          <ion-option value="Mittelamerika">Mittelamerika</ion-option>\n          <ion-option value="Naher Osten">Naher Osten</ion-option>\n          <ion-option value="Ozeanien">Ozeanien</ion-option>\n          <ion-option value="Südamerika">Südamerika</ion-option>\n          <ion-option value="Südost Asien">Südost Asien</ion-option>\n          <ion-option value="USA">USA</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item *ngIf="advancedSearch">\n        <ion-label>Empfohlen durch Evalutator</ion-label>\n        <ion-select [(ngModel)]="searchRecommendedBy" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">\n          <ion-option value="80.000 hours">80.000 hours</ion-option>\n          <ion-option value="Animal Charity Evalutators">Animal Charity Evalutators</ion-option>\n          <ion-option value="Charity Science">Charity Science</ion-option>\n          <ion-option value="GiveWell">GiveWell</ion-option>\n          <ion-option value="ImpactM">ImpactM</ion-option>\n          <ion-option value="Open Philantrophy Project">Open Philantrophy Project</ion-option>\n          <ion-option value="Phineo">Phineo</ion-option>\n          <ion-option value="Stiftung für Effektiven Altruismus">Stiftung für Effektiven Altruismus</ion-option>\n          <ion-option value="The Life You Can Save">The Life You Can Save</ion-option>\n        </ion-select>\n      </ion-item>\n    </ion-list>\n    <ion-list>\n      <ion-item-sliding *ngFor="let o of organizations">\n        <ion-item text-wrap>\n          <ion-thumbnail item-start>\n            <img src="../../assets/imgs/organizations/{{ o.thumbnail }}.jpg"/>\n          </ion-thumbnail>\n          <h2>{{ o.name }}</h2>\n          <h3>{{ o.slogan }}</h3>\n          <p>{{ o.shortDescription }}</p>\n          <ion-badge *ngFor="let e of o.evaluators" color="{{ e.top && \'danger\' || \'secondary\' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>\n        </ion-item>\n        <ion-item-options side="right">\n          <button ion-button color="primary" (click)="modalService.openOrganizationModal({o: o})">\n            <ion-icon name="information-circle"></ion-icon>\n            Mehr Info\n          </button>\n          <a [href]="o.website">\n            <button ion-button color="secondary">\n              <ion-icon name="browsers"></ion-icon>\n              Website\n            </button>\n          </a>\n          <a [href]="o.donationLink">\n            <button ion-button color="danger">\n              <ion-icon name="cash"></ion-icon>\n              Spenden\n            </button>\n          </a>\n        </ion-item-options>\n      </ion-item-sliding>\n    </ion-list>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/home/thomsen/dev/ea/src/pages/search/search.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__app_services_data__["a" /* DataService */], __WEBPACK_IMPORTED_MODULE_2__app_services_modal__["a" /* ModalService */]])
     ], SearchPage);
@@ -775,15 +901,15 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(270);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_about_about__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_contact_contact__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_questionnaire_questionnaire__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_contact_contact__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_questionnaire_questionnaire__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_search_search__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_data__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_modal__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_modal__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_splash_screen__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_organization_organization__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_privacy_privacy__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_organization_organization__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_privacy_privacy__ = __webpack_require__(199);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -862,10 +988,10 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_about_about__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_questionnaire_questionnaire__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_questionnaire_questionnaire__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_search_search__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_modal__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_modal__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -907,24 +1033,23 @@ var EADonationApp = /** @class */ (function () {
     EADonationApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/thomsen/dev/ea/src/app/app.html"*/'<ion-header no-border>\n  <ion-toolbar fixed color="primary">\n    <ion-title>\n      <img id="logo" alt="logo" height="40" src="../assets/icon/logo.png"/>\n      <span id="title">{{title}}</span>\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-tabs color="primary" [tabsPlacement]="tabsPlacement" [tabsLayout]="tabsLayout">\n  <ion-tab [root]="tab1Root" tabTitle="Spend-O-Mat" (ionSelect)="this.title =\'Spend-O-Mat\'" tabIcon="list-box"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Suche" (ionSelect)="this.title =\'Hilfsorganisationen\'" tabIcon="search"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="EA" (ionSelect)="this.title =\'Effektiver Altruismus\'" tabIcon="school"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Kontakt" (ionSelect)="this.title =\'Kontakt\'" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n\n<ion-footer no-border>\n  <ion-toolbar fixed color="dark">\n    <span class="clickable" (click)="modalService.openImprintModal()">Impressum</span>\n    |\n    <span class="clickable" (click)="modalService.openPrivacyModal()">Datenschutzerkl&auml;rung</span>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/home/thomsen/dev/ea/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_8__services_modal__["a" /* ModalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_8__services_modal__["a" /* ModalService */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_8__services_modal__["a" /* ModalService */]])
     ], EADonationApp);
     return EADonationApp;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
 
-/***/ 33:
+/***/ 50:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_privacy_privacy__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_organization_organization__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_privacy_privacy__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_organization_organization__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -955,10 +1080,9 @@ var ModalService = /** @class */ (function () {
     };
     ModalService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* ModalController */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* ModalController */]])
     ], ModalService);
     return ModalService;
-    var _a;
 }());
 
 //# sourceMappingURL=modal.js.map
