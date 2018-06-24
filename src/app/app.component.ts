@@ -7,6 +7,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { QuestionnairePage } from '../pages/questionnaire/questionnaire';
 import { SearchPage } from '../pages/search/search';
+import { ModalService } from "./services/modal";
 
 @Component({
   templateUrl: 'app.html'
@@ -22,7 +23,7 @@ export class EADonationApp {
   tabsPlacement: string = 'bottom';
   tabsLayout: string = 'icon-top';
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private modalService: ModalService) {
     if (!platform.is('mobile')) {
       this.tabsPlacement = 'top';
       this.tabsLayout = 'icon-left';
@@ -31,5 +32,6 @@ export class EADonationApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
+    modalService;
   }
 }

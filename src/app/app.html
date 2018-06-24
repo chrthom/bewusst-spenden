@@ -13,3 +13,13 @@
   <ion-tab [root]="tab3Root" tabTitle="EA" (ionSelect)="this.title ='Effektiver Altruismus'" tabIcon="school"></ion-tab>
   <ion-tab [root]="tab4Root" tabTitle="Kontakt" (ionSelect)="this.title ='Kontakt'" tabIcon="contacts"></ion-tab>
 </ion-tabs>
+
+<ion-footer color="dark">
+  <ion-list>
+    <ion-item color="dark">
+      <p>
+        <span class="clickable" (click)="modalService.openPrivacyModal()">Datenschutzerkl&auml;rung</span>
+      </p>
+    </ion-item>
+  </ion-list>
+</ion-footer>
