@@ -49,6 +49,29 @@ var DataService = /** @class */ (function () {
                 ]
             },
             {
+                name: 'Malaria Consortium',
+                thumbnail: 'malaria_consortium',
+                website: 'https://www.malariaconsortium.org',
+                donationLink: 'https://www.malariaconsortium.org/support/donate.htm',
+                category: ['Armut'],
+                cause: ['Menschenleben'],
+                impactDirection: 'reaktiv',
+                regions: ['Afrika'],
+                questionaireResults: ['human death'],
+                slogan: 'Improving prevention, diagnosis and treatment for neglected tropical diseases.',
+                shortDescription: 'Malaria Consortium is one of the world’s leading non-profit organisations specialising in the prevention, control and treatment of malaria and other communicable diseases among vulnerable populations.',
+                longDescription: 'Malaria Consortium is one of the world’s leading non-profit organisations specialising in the prevention, control and treatment of malaria and other communicable diseases among vulnerable populations. They create tailored, evidence-based solutions that have a positive impact on the wider health system and economy. It is this combination of activities and the depth of their expertise that sets them apart from others.',
+                impact1000: 'Was wird mit 1000€ erreicht? Ungefähr 150 Netze könnten gekauft werden, oder 15000 Malaria Diagnostic tests gemacht, oder 250 Kinder könnten von Malaria durch Chemoprevention geschützt werden.',
+                donationDeficit: 10000000,
+                evaluators: [
+                    {
+                        evaluator: 'GiveWell',
+                        link: 'https://www.givewell.org/charities/malaria-consortium',
+                        top: true
+                    }
+                ]
+            },
+            {
                 name: 'Schistosomiasis Control Initiative',
                 thumbnail: 'sci',
                 website: 'http://www.imperial.ac.uk/schistosomiasis-control-initiative',
@@ -73,6 +96,34 @@ var DataService = /** @class */ (function () {
                         evaluator: 'The Life You Can Save',
                         link: 'https://www.thelifeyoucansave.org/where-to-donate/schistosomiasis-control-initiative',
                         top: false
+                    }
+                ]
+            },
+            {
+                name: 'Helen Keller International',
+                thumbnail: 'helen_keller_international',
+                website: 'http://www.hki.org',
+                donationLink: 'http://hekein.convio.net/site/Donation2?df_id=1860&mfc_pref=T&1860.donation=form1&_ga=2.184512229.218491984.1529773877-1415190627.1529773877',
+                category: ['Armut'],
+                cause: ['Gesundheit'],
+                impactDirection: 'reaktiv',
+                regions: ['Weltweit'],
+                questionaireResults: ['human health'],
+                slogan: 'Helping stop blindness and malnutrition',
+                shortDescription: 'Helen Keller International (HKI) combats the causes and consequences of blindness and malnutrition by establishing programs based on evidence and research in vision, health and nutrition.',
+                longDescription: 'Helen Keller International is dedicated to saving the sight and lives of the most vulnerable and disadvantaged. They combat the causes and consequences of blindness and malnutrition by establishing programs based on evidence and research in vision, health and nutrition. They currently have more than 100 programs in 20 African and Asian countries, as well as in the United States.',
+                impact1000: 'Was wird mit 1000€ erreicht? About 1500 Vitamin A supplements will be distributed.',
+                donationDeficit: 40000000,
+                evaluators: [
+                    {
+                        evaluator: 'GiveWell',
+                        link: 'https://www.givewell.org/charities/helen-keller-international',
+                        top: true
+                    },
+                    {
+                        evaluator: 'The Life You Can Save',
+                        link: 'https://www.thelifeyoucansave.org/where-to-donate/helen-keller-internationals-vitamin-a-supplementation',
+                        top: true
                     }
                 ]
             },
@@ -854,7 +905,7 @@ var EADonationApp = /** @class */ (function () {
         modalService;
     }
     EADonationApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/thomsen/dev/ea/src/app/app.html"*/'<ion-header no-border>\n  <ion-toolbar fixed color="primary">\n    <ion-title>\n      <img id="logo" alt="logo" height="40" src="../assets/icon/logo.png"/>\n      <span id="title">{{title}}</span>\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-tabs color="primary" [tabsPlacement]="tabsPlacement" [tabsLayout]="tabsLayout">\n  <ion-tab [root]="tab1Root" tabTitle="Spend-O-Mat" (ionSelect)="this.title =\'Spend-O-Mat\'" tabIcon="list-box"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Suche" (ionSelect)="this.title =\'Hilfsorganisationen\'" tabIcon="search"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="EA" (ionSelect)="this.title =\'Effektiver Altruismus\'" tabIcon="school"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Kontakt" (ionSelect)="this.title =\'Kontakt\'" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n\n<ion-footer color="dark">\n  <ion-list>\n    <ion-item color="dark">\n      <p>\n        <span class="clickable" (click)="modalService.openPrivacyModal()">Datenschutzerkl&auml;rung</span>\n      </p>\n    </ion-item>\n  </ion-list>\n</ion-footer>\n'/*ion-inline-end:"/home/thomsen/dev/ea/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/thomsen/dev/ea/src/app/app.html"*/'<ion-header no-border>\n  <ion-toolbar fixed color="primary">\n    <ion-title>\n      <img id="logo" alt="logo" height="40" src="../assets/icon/logo.png"/>\n      <span id="title">{{title}}</span>\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-tabs color="primary" [tabsPlacement]="tabsPlacement" [tabsLayout]="tabsLayout">\n  <ion-tab [root]="tab1Root" tabTitle="Spend-O-Mat" (ionSelect)="this.title =\'Spend-O-Mat\'" tabIcon="list-box"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Suche" (ionSelect)="this.title =\'Hilfsorganisationen\'" tabIcon="search"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="EA" (ionSelect)="this.title =\'Effektiver Altruismus\'" tabIcon="school"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Kontakt" (ionSelect)="this.title =\'Kontakt\'" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n\n<ion-footer no-border>\n  <ion-toolbar fixed color="dark">\n    <span class="clickable" (click)="modalService.openImprintModal()">Impressum</span>\n    |\n    <span class="clickable" (click)="modalService.openPrivacyModal()">Datenschutzerkl&auml;rung</span>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/home/thomsen/dev/ea/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_8__services_modal__["a" /* ModalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_8__services_modal__["a" /* ModalService */]) === "function" && _d || Object])
     ], EADonationApp);
@@ -900,11 +951,14 @@ var ModalService = /** @class */ (function () {
         var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_1__pages_privacy_privacy__["a" /* PrivacyPage */]);
         modal.present();
     };
+    ModalService.prototype.openImprintModal = function () {
+    };
     ModalService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* ModalController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* ModalController */]) === "function" && _a || Object])
     ], ModalService);
     return ModalService;
+    var _a;
 }());
 
 //# sourceMappingURL=modal.js.map

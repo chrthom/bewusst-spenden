@@ -17,4 +17,8 @@ export class ModalService {
     let modal = this.modalCtrl.create(PrivacyPage);
     modal.present();
   }
+
+  openImprintModal() {
+
+  }
 }

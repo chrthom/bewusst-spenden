@@ -25709,8 +25709,8 @@ ion-header .toolbar .toolbar-title #title {
   transform: translateY(-50%);
 }
 
-ion-footer .list {
-  margin-bottom: 0;
+ion-footer {
+  color: #f4f4f4;
 }
 
 @media (min-width: 992px) {
