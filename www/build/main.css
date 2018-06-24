@@ -25709,6 +25709,10 @@ ion-header .toolbar .toolbar-title #title {
   transform: translateY(-50%);
 }
 
+ion-footer .list {
+  margin-bottom: 0;
+}
+
 @media (min-width: 992px) {
   ion-navbar.toolbar,
   ion-header .toolbar[fixed],

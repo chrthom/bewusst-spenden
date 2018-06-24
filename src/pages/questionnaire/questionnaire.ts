@@ -3,6 +3,7 @@ import { LoadingController, NavController } from 'ionic-angular';
 import { trigger, style, transition, animate, query, animateChild } from '@angular/animations'
 import { DataService } from "../../app/services/data";
 import { Organization } from "../../app/model/organization";
+import { ModalService } from "../../app/services/modal";
 
 @Component({
   selector: 'questionaire',
@@ -37,7 +38,12 @@ export class QuestionnairePage {
   nav: string = 'start';
   organizations: Organization[] = [];
 
-  constructor(private navCtrl: NavController, private dataService: DataService, private loadingCtrl: LoadingController) { }
+  constructor(private navCtrl: NavController,
+              private loadingCtrl: LoadingController,
+              private dataService: DataService,
+              private modalService: ModalService) {
+    this.modalService;
+  }
 
   answer(to: string) {
     this.nav = '';

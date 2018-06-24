@@ -42,6 +42,10 @@ ion-header .toolbar {
   }
 }
 
+ion-footer .list {
+  margin-bottom: 0;
+}
+
 @media (min-width: map-get($grid-breakpoints, lg)) {
   ion-navbar.toolbar,
   ion-header .toolbar[fixed],

@@ -89,7 +89,7 @@
           <ion-badge *ngFor="let e of o.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
         </ion-item>
         <ion-item-options side="right">
-          <button ion-button color="primary" (click)="openOrganizationModal({o: o})">
+          <button ion-button color="primary" (click)="modalService.openOrganizationModal({o: o})">
             <ion-icon name="information-circle"></ion-icon>
             Mehr Info
           </button>
@@ -110,3 +110,13 @@
     </ion-list>
   </ion-grid>
 </ion-content>
+
+<ion-footer color="dark">
+  <ion-list>
+    <ion-item color="dark">
+      <p>
+        <span class="clickable" (click)="modalService.openPrivacyModal()">Datenschutzerkl&auml;rung</span>
+      </p>
+    </ion-item>
+  </ion-list>
+</ion-footer>

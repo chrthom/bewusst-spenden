@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { ModalController } from 'ionic-angular';
 import { DataService } from "../../app/services/data";
-import { OrganizationPage } from "../organization/organization";
+import { ModalService } from "../../app/services/modal";
 import { Organization } from "../../app/model/organization";
 
 @Component({
@@ -18,8 +17,9 @@ export class SearchPage {
   searchRecommendedBy: string[] = [];
   advancedSearch: boolean;
 
-  constructor(private dataService: DataService, private modalCtrl: ModalController) {
+  constructor(private dataService: DataService, private modalService: ModalService) {
     this.organizations = dataService.organizations;
+    this.modalService;
   }
 
   listContains(list: string[], find: string) {
@@ -50,10 +50,5 @@ export class SearchPage {
           return true;
       return false;
     });
-  }
-
-  openOrganizationModal(organization) {
-    let modal = this.modalCtrl.create(OrganizationPage, organization);
-    modal.present();
   }
 }
