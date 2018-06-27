@@ -25711,6 +25711,15 @@ ion-header .toolbar .toolbar-title #title {
 
 ion-footer {
   color: #f4f4f4;
+  bottom: 56px;
+}
+
+ion-footer.tabs-top {
+  bottom: 0;
+}
+
+ion-footer .toolbar {
+  padding: 0 20px !important;
 }
 
 @media (min-width: 992px) {

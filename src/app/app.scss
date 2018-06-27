@@ -44,6 +44,15 @@ ion-header .toolbar {
 
 ion-footer {
   color: map-get($colors, light);
+  bottom: 56px;
+}
+
+ion-footer.tabs-top {
+  bottom: 0;
+}
+
+ion-footer .toolbar {
+  padding: 0 20px !important;
 }
 
 @media (min-width: map-get($grid-breakpoints, lg)) {

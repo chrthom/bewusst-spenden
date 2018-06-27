@@ -14,7 +14,7 @@
   <ion-tab [root]="tab4Root" tabTitle="Kontakt" (ionSelect)="this.title ='Kontakt'" tabIcon="contacts"></ion-tab>
 </ion-tabs>
 
-<ion-footer no-border>
+<ion-footer no-border [ngClass]="'tabs-' + tabsPlacement">
   <ion-toolbar fixed color="dark">
     <span class="clickable" (click)="modalService.openImprintModal()">Impressum</span>
     |

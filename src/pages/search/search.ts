@@ -45,10 +45,9 @@ export class SearchPage {
           && item.evaluators.filter(i1 => this.searchRecommendedBy.filter(i2 => i1.evaluator == i2).length > 0).length == 0)
           return false;
       }
-      for (let key in item) {
+      for (let key in item)
         if (item[key] && item[key].toString().toLowerCase().indexOf(this.searchTerm.toLowerCase()) > -1)
           return true;
-      }
       return false;
     });
   }
