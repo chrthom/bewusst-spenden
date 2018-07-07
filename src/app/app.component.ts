@@ -23,7 +23,9 @@ export class EADonationApp {
   tabsPlacement: string = 'bottom';
   tabsLayout: string = 'icon-top';
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private modalService: ModalService) {
+  modalService: ModalService;
+
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, modalService: ModalService) {
     if (!platform.is('mobile')) {
       this.tabsPlacement = 'top';
       this.tabsLayout = 'icon-left';
@@ -32,6 +34,6 @@ export class EADonationApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
-    modalService;
+    this.modalService = modalService;
   }
 }
