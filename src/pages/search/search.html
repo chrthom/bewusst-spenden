@@ -22,7 +22,7 @@
         <ion-label>Problemfeld</ion-label>
         <ion-select [(ngModel)]="searchCauses" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">
           <ion-option *ngIf="listContains(searchCategories, 'Armut')" value="Bildung">Bildung</ion-option>
-          <ion-option *ngIf="listContains(searchCategories, 'Existenzrisiken')" value="Biotechnologie">Biosicherheit</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Existenzrisiken')" value="Biosicherheit">Biosicherheit</ion-option>
           <ion-option *ngIf="listContains(searchCategories, 'Meta')" value="Evaluation">Evaluation</ion-option>
           <ion-option *ngIf="listContains(searchCategories, 'Tierleid')" value="Haltungsbedingungen">Haltungsbedingungen</ion-option>
           <ion-option *ngIf="listContains(searchCategories, 'Armut')" value="Gesundheit">Gesundheit</ion-option>
@@ -32,7 +32,7 @@
           <ion-option *ngIf="listContains(searchCategories, 'Armut')" value="Lebensstandard">Lebensstandard</ion-option>
           <ion-option *ngIf="listContains(searchCategories, 'Armut')" value="Menschenleben">Menschenleben</ion-option>
           <ion-option *ngIf="listContains(searchCategories, 'Politik')" value="Menschenrechte">Menschenrechte</ion-option>
-          <ion-option *ngIf="listContains(searchCategories, 'Existenzrisiken')" value="Nukleartechnologie">Nuklearsicherheit</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Existenzrisiken')" value="Nuklearsicherheit">Nuklearsicherheit</ion-option>
           <ion-option *ngIf="listContains(searchCategories, 'Meta')" value="Öffentlichkeitsarbeit">Öffentlichkeitsarbeit</ion-option>
           <ion-option *ngIf="listContains(searchCategories, 'Meta')" value="Strategie">Stategie</ion-option>
           <ion-option *ngIf="listContains(searchCategories, 'Tierleid')" value="Tierleben">Tierleben</ion-option>
