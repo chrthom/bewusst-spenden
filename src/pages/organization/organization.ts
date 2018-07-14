@@ -3,32 +3,63 @@ import { NavController, NavParams } from "ionic-angular";
 import { Organization } from "../../app/model/organization";
 import { Chart, MapChart } from "angular-highcharts";
 import { MapsService } from "../../app/services/maps";
+import { DataService } from "../../app/services/data";
 
 @Component({
   templateUrl: 'organization.html'
 })
 export class OrganizationPage {
   organization: Organization;
+  chart: Chart;
+  worldmap: MapChart;
 
-  chart = new Chart({
-    chart: {
-      type: 'line'
-    },
-    title: {
-      text: 'Linechart'
-    },
-    credits: {
-      enabled: false
-    },
-    series: [
-      {
-        name: 'Line 1',
-        data: [1, 2, 3]
+  constructor(private navCtrl: NavController,
+              private params: NavParams,
+              private mapsService: MapsService,
+              private dataService: DataService) {
+    this.organization = this.params.get('o');
+    let organizationsOfSameCategory = dataService.organizations
+      .filter(o => o.donationDeficit)
+      .filter(o => o.category.filter(c => c == this.organization.category[0]).length)
+      .sort((a, b) => a.name > b.name ? 1 : -1);
+    this.chart = new Chart({
+      chart: {
+        type: 'bar'
+      },
+      colors: ['#0c869b', '#9b0c4a'],
+      title: {
+        text: 'Spendendefizit'
+      },
+      subtitle: {
+        text: 'aller empfohlenden NGOs aus der Kategorie ' + this.organization.category[0]
+      },
+      credits: {
+        enabled: false
+      },
+      legend: {
+        enabled: false
+      },
+      plotOptions: {
+        series: {
+          stacking: 'normal'
+        }
+      },
+      series: [
+        {
+          data: organizationsOfSameCategory.map(o => o.name == this.organization. name ? 0 : o.donationDeficit)
+        },
+        {
+          data: organizationsOfSameCategory.map(o => o.name == this.organization. name ? o.donationDeficit: 0)
+        }
+      ],
+      xAxis: {
+        categories: organizationsOfSameCategory.map(o => o.name),
+        title: {
+          text: null
+        }
       }
-    ]
-  });
-
-  worldmap = new MapChart({
+    });
+    this.worldmap = new MapChart({
     chart: {
       borderWidth: 1
     },
@@ -53,9 +84,6 @@ export class OrganizationPage {
       mapData: this.mapsService.worldmap
     }]
   });
-
-  constructor(private navCtrl: NavController, private params: NavParams, private mapsService: MapsService) {
-    this.organization = this.params.get('o');
   }
 
   dismiss() {

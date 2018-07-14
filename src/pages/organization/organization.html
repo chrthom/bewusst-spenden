@@ -19,14 +19,14 @@
       <ion-icon name="list-box" item-start></ion-icon>
       {{ organization.longDescription }}
     </ion-item>
-    <ion-item>
+    <ion-item *ngIf="organization.regions.length > 0">
       <div [chart]="worldmap"></div>
     </ion-item>
     <ion-item text-wrap *ngIf="organization.impact1000">
       <ion-icon name="medkit" item-start></ion-icon>
       {{ organization.impact1000 }}
     </ion-item>
-    <ion-item>
+    <ion-item *ngIf="organization.donationDeficit">
       <div [chart]="chart"></div>
     </ion-item>
     <ion-item *ngIf="organization.evaluators.length > 0">
