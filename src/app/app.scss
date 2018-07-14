@@ -65,3 +65,7 @@ ion-footer .toolbar {
     padding-left: calc((100% - #{map-get($grid-max-widths, lg)}) / 2);
   }
 }
+
+.bottom-space {
+  height: 45px;
+}

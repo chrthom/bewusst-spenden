@@ -25733,6 +25733,10 @@ ion-footer .toolbar {
   }
 }
 
+.bottom-space {
+  height: 45px;
+}
+
 questionaire h2 {
   margin-bottom: 10px !important;
 }
