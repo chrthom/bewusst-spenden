@@ -566,14 +566,14 @@ var OrganizationPage = /** @class */ (function () {
                 type: 'bar'
             },
             colors: ['#0c869b', '#9b0c4a'],
+            credits: {
+                enabled: false
+            },
             title: {
                 text: 'Spendendefizit'
             },
             subtitle: {
                 text: 'aller empfohlenden NGOs aus der Kategorie ' + this.organization.category[0]
-            },
-            credits: {
-                enabled: false
             },
             legend: {
                 enabled: false
@@ -585,12 +585,17 @@ var OrganizationPage = /** @class */ (function () {
             },
             series: [
                 {
+                    name: 'Spendendefizit',
                     data: organizationsOfSameCategory.map(function (o) { return o.name == _this.organization.name ? 0 : o.donationDeficit; })
                 },
                 {
+                    name: 'Spendendefizit',
                     data: organizationsOfSameCategory.map(function (o) { return o.name == _this.organization.name ? o.donationDeficit : 0; })
                 }
             ],
+            tooltip: {
+                valueSuffix: ' €'
+            },
             xAxis: {
                 categories: organizationsOfSameCategory.map(function (o) { return o.name; }),
                 title: {
@@ -599,20 +604,20 @@ var OrganizationPage = /** @class */ (function () {
             }
         });
         this.worldmap = new __WEBPACK_IMPORTED_MODULE_2_angular_highcharts__["d" /* MapChart */]({
-            chart: {
-                borderWidth: 1
+            credits: {
+                enabled: false
             },
             title: {
                 text: 'Aktionsgebiete'
             },
             subtitle: {
-                text: 'Demo of drawing all areas in the map, only highlighting partial data'
+                text: 'in denen ' + this.organization.name + ' tätig ist'
             },
             legend: {
                 enabled: false
             },
             series: [{
-                    name: 'Land',
+                    name: 'Aktionsgebiet',
                     data: [
                         ['is', 1],
                         ['no', 1],

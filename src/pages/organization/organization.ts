@@ -27,14 +27,14 @@ export class OrganizationPage {
         type: 'bar'
       },
       colors: ['#0c869b', '#9b0c4a'],
+      credits: {
+        enabled: false
+      },
       title: {
         text: 'Spendendefizit'
       },
       subtitle: {
         text: 'aller empfohlenden NGOs aus der Kategorie ' + this.organization.category[0]
-      },
-      credits: {
-        enabled: false
       },
       legend: {
         enabled: false
@@ -46,12 +46,17 @@ export class OrganizationPage {
       },
       series: [
         {
+          name: 'Spendendefizit',
           data: organizationsOfSameCategory.map(o => o.name == this.organization. name ? 0 : o.donationDeficit)
         },
         {
+          name: 'Spendendefizit',
           data: organizationsOfSameCategory.map(o => o.name == this.organization. name ? o.donationDeficit: 0)
         }
       ],
+      tooltip: {
+        valueSuffix: ' €'
+      },
       xAxis: {
         categories: organizationsOfSameCategory.map(o => o.name),
         title: {
@@ -60,30 +65,30 @@ export class OrganizationPage {
       }
     });
     this.worldmap = new MapChart({
-    chart: {
-      borderWidth: 1
-    },
-    title: {
-      text: 'Aktionsgebiete'
-    },
-    subtitle: {
-      text: 'Demo of drawing all areas in the map, only highlighting partial data'
-    },
-    legend: {
-      enabled: false
-    },
-    series: [{
-      name: 'Land',
-      data: [
-        ['is', 1],
-        ['no', 1],
-        ['se', 1],
-        ['dk', 1],
-        ['fi', 1]
-      ],
-      mapData: this.mapsService.worldmap
-    }]
-  });
+      credits: {
+        enabled: false
+      },
+      title: {
+        text: 'Aktionsgebiete'
+      },
+      subtitle: {
+        text: 'in denen ' + this.organization.name + ' tätig ist'
+      },
+      legend: {
+        enabled: false
+      },
+      series: [{
+        name: 'Aktionsgebiet',
+        data: [
+          ['is', 1],
+          ['no', 1],
+          ['se', 1],
+          ['dk', 1],
+          ['fi', 1]
+        ],
+        mapData: this.mapsService.worldmap
+      }]
+    });
   }
 
   dismiss() {
