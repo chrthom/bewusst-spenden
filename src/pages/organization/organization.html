@@ -36,16 +36,20 @@
     <ion-item>
       <ion-row>
         <ion-col>
-          <button ion-button icon-start clear small>
-            <ion-icon name="browsers"></ion-icon>
-            <div>Website</div>
-          </button>
+          <a [href]="organization.website" target="_blank">
+            <button ion-button icon-start clear small>
+              <ion-icon name="browsers"></ion-icon>
+              <div>Website</div>
+            </button>
+          </a>
         </ion-col>
         <ion-col>
-          <button ion-button icon-start clear small>
-            <ion-icon name="cash"></ion-icon>
-            <div>Spenden</div>
-          </button>
+          <a [href]="organization.donationLink" target="_blank">
+            <button ion-button icon-start clear small>
+              <ion-icon name="cash"></ion-icon>
+              <div>Spenden</div>
+            </button>
+          </a>
         </ion-col>
       </ion-row>
     </ion-item>
