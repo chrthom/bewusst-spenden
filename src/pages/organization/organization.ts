@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavParams, ViewController } from "ionic-angular";
+import { NavController, NavParams } from "ionic-angular";
 import { Organization } from "../../app/model/organization";
 import { Chart, MapChart } from "angular-highcharts";
 import { MapsService } from "../../app/services/maps";
@@ -54,11 +54,11 @@ export class OrganizationPage {
     }]
   });
 
-  constructor(public viewCtrl: ViewController, public params: NavParams, private mapsService: MapsService) {
+  constructor(private navCtrl: NavController, private params: NavParams, private mapsService: MapsService) {
     this.organization = this.params.get('o');
   }
 
   dismiss() {
-    this.viewCtrl.dismiss();
+    this.navCtrl.pop();
   }
 }

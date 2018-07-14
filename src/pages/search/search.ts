@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { DataService } from "../../app/services/data";
 import { ModalService } from "../../app/services/modal";
 import { Organization } from "../../app/model/organization";
+import {OrganizationPage} from "../organization/organization";
+import {NavController} from "ionic-angular";
 
 @Component({
   selector: 'page-search',
@@ -17,7 +19,7 @@ export class SearchPage {
   searchRecommendedBy: string[] = [];
   advancedSearch: boolean;
 
-  constructor(private dataService: DataService, private modalService: ModalService) {
+  constructor(private dataService: DataService, private modalService: ModalService, private navCtrl: NavController) {
     this.organizations = dataService.organizations;
     this.modalService;
   }
@@ -50,5 +52,9 @@ export class SearchPage {
           return true;
       return false;
     });
+  }
+
+  openOrganizationPage(organization: Organization) {
+    this.navCtrl.push(OrganizationPage, organization);
   }
 }

@@ -4,6 +4,7 @@ import { trigger, style, transition, animate, query, animateChild } from '@angul
 import { DataService } from "../../app/services/data";
 import { Organization } from "../../app/model/organization";
 import { ModalService } from "../../app/services/modal";
+import {OrganizationPage} from "../organization/organization";
 
 @Component({
   selector: 'questionaire',
@@ -69,5 +70,9 @@ export class QuestionnairePage {
 
   gotoTabSearch() {
     this.navCtrl.parent.select(1);
+  }
+
+  openOrganizationPage(organization: Organization) {
+    this.navCtrl.push(OrganizationPage, organization);
   }
 }

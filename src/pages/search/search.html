@@ -89,7 +89,7 @@
           <ion-badge *ngFor="let e of o.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
         </ion-item>
         <ion-item-options side="right">
-          <button ion-button color="primary" (click)="modalService.openOrganizationModal({o: o})">
+          <button ion-button color="primary" (click)="openOrganizationPage({o: o})">
             <ion-icon name="information-circle"></ion-icon>
             Mehr Info
           </button>

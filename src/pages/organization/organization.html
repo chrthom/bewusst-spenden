@@ -1,31 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>{{ organization.name }}</ion-title>
-    <ion-buttons start>
+<ion-header><ion-navbar></ion-navbar></ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
       <button ion-button (click)="dismiss()">
         <ion-icon name="close"></ion-icon>
       </button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-  <ion-item text-wrap>
-    <h2>{{ organization.slogan }}</h2>
-    <h3>{{ organization.shortDescription }}</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-      dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-      consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-      takimata sanctus est Lorem ipsum dolor sit amet.
-    </p>
-  </ion-item>
-  <ion-item>
-    <div [chart]="worldmap"></div>
-  </ion-item>
-  <ion-item>
-    <div [chart]="chart"></div>
-  </ion-item>
+      <h2>{{ organization.name }}</h2>
+    </ion-item>
+    <ion-item text-wrap>
+      <h2>{{ organization.slogan }}</h2>
+      <h3>{{ organization.shortDescription }}</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+      </p>
+    </ion-item>
+    <ion-item>
+      <div [chart]="worldmap"></div>
+    </ion-item>
+    <ion-item>
+      <div [chart]="chart"></div>
+    </ion-item>
+  </ion-list>
 </ion-content>
