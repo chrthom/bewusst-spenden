@@ -25737,16 +25737,25 @@ ion-footer .toolbar {
   height: 45px;
 }
 
-questionaire h2 {
+page-organization h2 {
+  color: #1f90a3;
+}
+
+page-organization .stockphoto {
+  margin: auto !important;
+  display: block !important;
+}
+
+page-questionaire h2 {
   margin-bottom: 10px !important;
 }
 
-questionaire .card-background-page ion-card {
+page-questionaire .card-background-page ion-card {
   position: relative;
   text-align: center;
 }
 
-questionaire .card-background-page .card-title {
+page-questionaire .card-background-page .card-title {
   position: absolute;
   top: 36%;
   font-size: 2.0em;
@@ -25755,7 +25764,7 @@ questionaire .card-background-page .card-title {
   color: #fff;
 }
 
-questionaire .card-background-page .card-subtitle {
+page-questionaire .card-background-page .card-subtitle {
   font-size: 1.0em;
   position: absolute;
   top: 52%;
@@ -25764,10 +25773,6 @@ questionaire .card-background-page .card-subtitle {
   padding: 0 3px;
 }
 
-questionaire .card-background-page .bright .card-title, questionaire .card-background-page .bright .card-subtitle {
+page-questionaire .card-background-page .bright .card-title, page-questionaire .card-background-page .bright .card-subtitle {
   color: #222;
-}
-
-page-search .aligned-with-searchbar {
-  margin: 10px;
 }

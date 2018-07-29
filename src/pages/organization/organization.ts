@@ -6,6 +6,7 @@ import { MapsService } from "../../app/services/maps";
 import { DataService } from "../../app/services/data";
 
 @Component({
+  selector: 'page-organization',
   templateUrl: 'organization.html'
 })
 export class OrganizationPage {

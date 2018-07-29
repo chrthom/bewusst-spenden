@@ -7,7 +7,7 @@ import { ModalService } from "../../app/services/modal";
 import {OrganizationPage} from "../organization/organization";
 
 @Component({
-  selector: 'questionaire',
+  selector: 'page-questionaire',
   templateUrl: 'questionnaire.html',
   animations: [
     trigger('ngIfAnimation', [
