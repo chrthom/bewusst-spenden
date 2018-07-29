@@ -26,13 +26,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var OrganizationPage = /** @class */ (function () {
     function OrganizationPage(navCtrl, params, mapsService, dataService) {
-        var _this = this;
         this.navCtrl = navCtrl;
         this.params = params;
         this.mapsService = mapsService;
         this.dataService = dataService;
         this.organization = this.params.get('o');
-        var organizationsOfSameCategory = dataService.organizations
+    }
+    OrganizationPage.prototype.ngOnInit = function () {
+        var _this = this;
+        var organizationsOfSameCategory = this.dataService.organizations
             .filter(function (o) { return o.donationDeficit; })
             .filter(function (o) { return o.category.filter(function (c) { return c == _this.organization.category[0]; }).length; })
             .sort(function (a, b) { return a.name > b.name ? 1 : -1; });
@@ -108,7 +110,7 @@ var OrganizationPage = /** @class */ (function () {
                     mapData: this.mapsService.worldmap
                 }]
         });
-    }
+    };
     OrganizationPage.prototype.dismiss = function () {
         this.navCtrl.pop();
     };

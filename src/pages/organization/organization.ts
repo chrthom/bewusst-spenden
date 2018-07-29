@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { NavController, NavParams } from "ionic-angular";
 import { Organization } from "../../app/model/organization";
 import { Chart, MapChart } from "angular-highcharts";
@@ -9,7 +9,7 @@ import { DataService } from "../../app/services/data";
   selector: 'page-organization',
   templateUrl: 'organization.html'
 })
-export class OrganizationPage {
+export class OrganizationPage implements OnInit {
   organization: Organization;
   chart: Chart;
   worldmap: MapChart;
@@ -19,7 +19,10 @@ export class OrganizationPage {
               private mapsService: MapsService,
               private dataService: DataService) {
     this.organization = this.params.get('o');
-    let organizationsOfSameCategory = dataService.organizations
+  }
+
+  ngOnInit() {
+    let organizationsOfSameCategory = this.dataService.organizations
       .filter(o => o.donationDeficit)
       .filter(o => o.category.filter(c => c == this.organization.category[0]).length)
       .sort((a, b) => a.name > b.name ? 1 : -1);
