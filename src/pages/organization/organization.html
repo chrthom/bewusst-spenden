@@ -1,58 +1,60 @@
 <ion-header><ion-navbar></ion-navbar></ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item text-wrap>
-      <ion-avatar item-start>
-        <img src="../../assets/imgs/organizations/{{ organization.thumbnail }}.jpg" />
-      </ion-avatar>
-      <h2>{{ organization.name }}</h2>
-      <p>{{ organization.slogan }}</p>
-      <button ion-button item-end (click)="dismiss()">
-        <ion-icon name="close"></ion-icon>
-      </button>
-    </ion-item>
-    <ion-item>
-      <img src="../../assets/imgs/stockphoto/{{ organization.thumbnail }}.jpg" class="stockphoto" />
-    </ion-item>
-    <ion-item text-wrap>
-      <ion-icon name="list-box" item-start></ion-icon>
-      {{ organization.longDescription }}
-    </ion-item>
-    <ion-item *ngIf="organization.regions.length > 0">
-      <div [chart]="worldmap"></div>
-    </ion-item>
-    <ion-item text-wrap *ngIf="organization.impact1000">
-      <ion-icon name="medkit" item-start></ion-icon>
-      {{ organization.impact1000 }}
-    </ion-item>
-    <ion-item *ngIf="organization.donationDeficit">
-      <div [chart]="chart"></div>
-    </ion-item>
-    <ion-item *ngIf="organization.evaluators.length > 0">
-      <h3>Empfohlen durch</h3>
-      <ion-badge *ngFor="let e of organization.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
-    </ion-item>
-    <ion-item>
-      <ion-row>
-        <ion-col>
-          <a [href]="organization.website" target="_blank">
-            <button ion-button icon-start clear small>
-              <ion-icon name="browsers"></ion-icon>
-              <div>Website</div>
-            </button>
-          </a>
-        </ion-col>
-        <ion-col>
-          <a [href]="organization.donationLink" target="_blank">
-            <button ion-button icon-start clear small>
-              <ion-icon name="cash"></ion-icon>
-              <div>Spenden</div>
-            </button>
-          </a>
-        </ion-col>
-      </ion-row>
-    </ion-item>
-  </ion-list>
-  <div class="bottom-space"></div>
+  <ion-grid fixed>
+    <ion-list>
+      <ion-item text-wrap>
+        <ion-avatar item-start>
+          <img src="../../assets/imgs/organizations/{{ organization.thumbnail }}.jpg" />
+        </ion-avatar>
+        <h2>{{ organization.name }}</h2>
+        <p>{{ organization.slogan }}</p>
+        <button ion-button item-end (click)="dismiss()">
+          <ion-icon name="close"></ion-icon>
+        </button>
+      </ion-item>
+      <ion-item>
+        <img src="../../assets/imgs/stockphoto/{{ organization.thumbnail }}.jpg" class="stockphoto" />
+      </ion-item>
+      <ion-item text-wrap>
+        <ion-icon name="list-box" item-start></ion-icon>
+        {{ organization.longDescription }}
+      </ion-item>
+      <ion-item *ngIf="organization.regions.length > 0">
+        <div [chart]="worldmap"></div>
+      </ion-item>
+      <ion-item text-wrap *ngIf="organization.impact1000">
+        <ion-icon name="medkit" item-start></ion-icon>
+        {{ organization.impact1000 }}
+      </ion-item>
+      <ion-item *ngIf="organization.donationDeficit">
+        <div [chart]="chart"></div>
+      </ion-item>
+      <ion-item *ngIf="organization.evaluators.length > 0">
+        <h3>Empfohlen durch</h3>
+        <ion-badge *ngFor="let e of organization.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            <a [href]="organization.website" target="_blank">
+              <button ion-button icon-start clear small>
+                <ion-icon name="browsers"></ion-icon>
+                <div>Website</div>
+              </button>
+            </a>
+          </ion-col>
+          <ion-col>
+            <a [href]="organization.donationLink" target="_blank">
+              <button ion-button icon-start clear small>
+                <ion-icon name="cash"></ion-icon>
+                <div>Spenden</div>
+              </button>
+            </a>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-list>
+    <div class="bottom-space"></div>
+  </ion-grid>
 </ion-content>
