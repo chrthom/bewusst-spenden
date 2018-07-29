@@ -76,6 +76,11 @@ var OrganizationPage = /** @class */ (function () {
                 title: {
                     text: null
                 }
+            },
+            yAxis: {
+                title: {
+                    text: 'Spendendefizit in €'
+                }
             }
         });
         this.worldmap = new __WEBPACK_IMPORTED_MODULE_2_angular_highcharts__["d" /* MapChart */]({

@@ -63,6 +63,11 @@ export class OrganizationPage {
         title: {
           text: null
         }
+      },
+      yAxis: {
+        title: {
+          text: 'Spendendefizit in €'
+        }
       }
     });
     this.worldmap = new MapChart({
