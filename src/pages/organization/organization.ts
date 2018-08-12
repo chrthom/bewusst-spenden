@@ -73,6 +73,11 @@ export class OrganizationPage implements OnInit {
         }
       }
     });
+
+    let countriesOfRegions = [].concat.apply([], this.organization.regions.map(r => this.mapsService.regionMapping[r])).filter(function(item, pos, self) {
+      return self.indexOf(item) == pos;
+    }).map(c => [c.toLowerCase(), 1]);
+    console.log(JSON.stringify(countriesOfRegions)); //
     this.worldmap = new MapChart({
       credits: {
         enabled: false
@@ -88,13 +93,7 @@ export class OrganizationPage implements OnInit {
       },
       series: [{
         name: 'Aktionsgebiet',
-        data: [
-          ['is', 1],
-          ['no', 1],
-          ['se', 1],
-          ['dk', 1],
-          ['fi', 1]
-        ],
+        data: countriesOfRegions,
         mapData: this.mapsService.worldmap
       }]
     });

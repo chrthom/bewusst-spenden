@@ -2,6 +2,30 @@ import { Injectable } from "@angular/core";
 
 @Injectable()
 export class MapsService {
+  regionMapping = {
+    'Afrika': ['DZ', 'AO', 'SH', 'BJ', 'BW', 'BF', 'BI', 'CM', 'CV', 'CF', 'TD', 'KM', 'CG', 'CD', 'DJ', 'EG', 'GQ',
+      'ER', 'SZ', 'ET', 'GA', 'GM', 'GH', 'GN', 'GW', 'CI', 'KE', 'LS', 'LR', 'LY', 'MG', 'MW', 'ML', 'MR', 'MU', 'YT',
+      'MA', 'MZ', 'NA', 'NE', 'NG', 'ST', 'RE', 'RW', 'SN', 'SC', 'SL', 'SO', 'ZA', 'SS', 'SH', 'SD', 'SZ', 'TZ', 'TG',
+      'TN', 'UG', 'CD', 'ZM', 'TZ', 'ZW'],
+    'Deutschland': ['DE'],
+    'Europa': ['AL', 'AD', 'AT', 'BY', 'BE', 'BA', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FO', 'FI', 'FR',
+      'GB', 'GI', 'GR', 'HU', 'HR', 'IE', 'IS', 'IT', 'IM', 'LI', 'LT', 'LU', 'LV', 'MC', 'MD', 'ME', 'MK', 'MT', 'NO',
+      'NL', 'PL', 'PT', 'RO', 'RS', 'RU', 'SE', 'SI', 'SK', 'SM', 'UA', 'VA'],
+    'Indien': ['IN'],
+    'Japan': ['JP'],
+    'Mittelamerika': ['AI', 'AG', 'AW', 'BS', 'BB', 'BZ', 'BM', 'BQ', 'VG', 'KY', 'CR', 'CU', 'CW', 'CM', 'DO', 'SV',
+      'GD', 'DP', 'GT', 'HT', 'HN', 'JM', 'MQ', 'MX', 'PM', 'MS', 'CW', 'KN', 'NI', 'PA', 'PR', 'SX', 'LC', 'PM', 'VC',
+      'TT', 'TC,'],
+    'Naher Osten': ['AF', 'AM', 'AZ', 'BH', 'GE', 'IQ', 'IL', 'JO', 'KZ', 'KW', 'KG', 'LB', 'OM', 'PL', 'QA', 'SA',
+      'SY', 'TJ', 'TR', 'TM', 'AE', 'UZ', 'YE'],
+    'Ozeanien': ['AS', 'AU', 'NZ', 'CK', 'TL', 'FM', 'FJ', 'PF', 'GU', 'KI', 'MP', 'MH', 'UM', 'NR', 'NC', 'NZ', 'NU',
+      'NF', 'PW', 'PG', 'MP', 'WS', 'SB', 'TK', 'TO', 'TV', 'VU', 'UM', 'WF'],
+    'Südamerika': ['AR', 'BO', 'BR', 'CL', 'CO', 'EC', 'FK', 'GF', 'GY', 'PY', 'PE', 'SR', 'UY', 'VE'],
+    'Südostasien': ['CC', 'CN', 'CX', 'BD', 'BN', 'HK', 'KH', 'KP', 'KR', 'ID', 'IO', 'IN', 'JP', 'LA', 'LK', 'MY',
+      'MM', 'MN', 'MO', 'MV', 'NP', 'PH', 'PK', 'SG', 'TH', 'TW', 'VN'],
+    'USA': ['US', 'VI']
+  };
+
   worldmap = {
     "title":"World, Miller projection, medium resolution",
     "version":"1.1.2",
