@@ -197,6 +197,43 @@ export class DataService {
         }
       ]
     },
+    {
+      name: 'Paajaf Foundation',
+      thumbnail: 'paajaf_foundation',
+      website: 'https://paajaf.org',
+      donationLink: 'https://paajaf.org/generosity/',
+      category: [ 'Armut' ],
+      cause: [ 'Bildung' ],
+      impactDirection: 'reactive',
+      regions: [ 'Afrika' ],
+      questionaireResults: [],
+      slogan: 'Fighting poverty and illiteracy in Ghana.',
+      shortDescription: 'PAAJAF Foundation works to end poverty and illiteracy in Gbawe in rural Ghana, through quality scholarship education, health services and community support.',
+      longDescription: 'PAAJAF Foundation works to end poverty and illiteracy in Gbawe in rural Ghana, through quality scholarship education, health services and community support. They are supported by a global team of volunteers who share their vision of a better world and seek to bring progress to  children in Ghana. They create collaborative solutions for urgent social challenges in Ghana.  They work to end poverty and illiteracy among underprivileged children, youth and women in the community. They focus on the following core areas of work: Education, Child Welfare, Youth Resilience and Health',
+      impact1000: '',
+      donationDeficit: null,
+      evaluators: []
+    },
+{
+      name: 'Paajaf Foundation',
+      thumbnail: 'paajaf_foundation',
+      website: 'https://paajaf.org',
+      donationLink: 'https://paajaf.org/generosity/',
+      category: [ 'Armut' ],
+      cause: [ 'Bildung' ],
+      impactDirection: 'reactive',
+      regions: [ 'Afrika' ],
+      questionaireResults: [],
+      slogan: 'Fighting poverty and illiteracy in Ghana.',
+      shortDescription: 'PAAJAF Foundation works to end poverty and illiteracy in Gbawe in rural Ghana, through quality scholarship education, health services and community support.',
+      longDescription: 'PAAJAF Foundation works to end poverty and illiteracy in Gbawe in rural Ghana, through quality scholarship education, health services and community support. They are supported by a global team of volunteers who share their vision of a better world and seek to bring progress to  children in Ghana. They create collaborative solutions for urgent social challenges in Ghana.  They work to end poverty and illiteracy among underprivileged children, youth and women in the community. They focus on the following core areas of work: Education, Child Welfare, Youth Resilience and Health',
+      impact1000: '',
+      donationDeficit: null,
+      evaluators: []
+    },
+
+
+
 
     // Existenzrisiken
     {
