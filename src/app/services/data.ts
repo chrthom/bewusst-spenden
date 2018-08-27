@@ -444,7 +444,23 @@ export class DataService {
     },
 
     // Politik
-
+{
+      name: 'Carnegie Council for Ethics in International Affairs',
+      thumbnail: 'carnegie_council_for_ethics_in_international_affairs',
+      website: 'https://www.carnegiecouncil.org',
+      donationLink: 'https://www.carnegiecouncil.org/join_us/donate',
+      category: [ 'Politik' ],
+      cause: [ 'Werte und Moral' ],
+      impactDirection: 'reaktiv',
+      regions: [  ],
+      questionaireResults: [ 'values' ],
+      slogan: 'Spreading the message that ethics matter.',
+      shortDescription: 'The Carnegie Council is an independent and nonpartisan institution, aiming to be the foremost voice of ethics in international affairs. The Council focuses on, Ethics, War and Peace, Global Social Justice, and Religion in Politics as its three main themes.',
+      longDescription: 'Carnegie Council is an independent and nonpartisan institution, aiming to be the foremost voice of ethics in international affairs. The Council focuses on, Ethics, War and Peace, Global Social Justice, and Religion in Politics as its three main themes. It is separate and independent from all other Carnegie philanthropies. The Council convenes agenda-setting forums and creates educational opportunities and information resources for a worldwide audience of teachers and students, journalists, international affairs professionals, and concerned citizens. Its flagship publication is a quarterly scholarly journal, Ethics & International Affairs, which was launched in 1987. As an operating, rather than a grant-making foundation, the Council supports programs that it initiates and also works with partner organizations.',
+      impact1000: null,
+      donationDeficit: null,
+      evaluators: []
+    },
 
     // Tierleid
     {
