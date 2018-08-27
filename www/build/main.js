@@ -34,80 +34,83 @@ var OrganizationPage = /** @class */ (function () {
     }
     OrganizationPage.prototype.ngOnInit = function () {
         var _this = this;
-        var organizationsOfSameCategory = this.dataService.organizations
-            .filter(function (o) { return o.donationDeficit; })
-            .filter(function (o) { return o.category.filter(function (c) { return c == _this.organization.category[0]; }).length; })
-            .sort(function (a, b) { return a.name > b.name ? 1 : -1; });
-        this.chart = new __WEBPACK_IMPORTED_MODULE_2_angular_highcharts__["a" /* Chart */]({
-            chart: {
-                type: 'bar'
-            },
-            colors: ['#0c869b', '#9b0c4a'],
-            credits: {
-                enabled: false
-            },
-            title: {
-                text: 'Spendendefizit'
-            },
-            subtitle: {
-                text: 'aller empfohlenden NGOs aus der Kategorie ' + this.organization.category[0]
-            },
-            legend: {
-                enabled: false
-            },
-            plotOptions: {
-                series: {
-                    stacking: 'normal'
-                }
-            },
-            series: [
-                {
-                    name: 'Spendendefizit',
-                    data: organizationsOfSameCategory.map(function (o) { return o.name == _this.organization.name ? 0 : o.donationDeficit; })
+        setTimeout(function () {
+            var organizationsOfSameCategory = _this.dataService.organizations
+                .filter(function (o) { return o.donationDeficit; })
+                .filter(function (o) { return o.category.filter(function (c) { return c == _this.organization.category[0]; }).length; })
+                .sort(function (a, b) { return a.name > b.name ? 1 : -1; });
+            _this.chart = new __WEBPACK_IMPORTED_MODULE_2_angular_highcharts__["a" /* Chart */]({
+                chart: {
+                    type: 'bar'
                 },
-                {
-                    name: 'Spendendefizit',
-                    data: organizationsOfSameCategory.map(function (o) { return o.name == _this.organization.name ? o.donationDeficit : 0; })
-                }
-            ],
-            tooltip: {
-                valueSuffix: ' €'
-            },
-            xAxis: {
-                categories: organizationsOfSameCategory.map(function (o) { return o.name; }),
+                colors: ['#0c869b', '#9b0c4a'],
+                credits: {
+                    enabled: false
+                },
                 title: {
-                    text: null
+                    text: 'Spendendefizit'
+                },
+                subtitle: {
+                    text: 'aller empfohlenden NGOs aus der Kategorie ' + _this.organization.category[0]
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    series: {
+                        stacking: 'normal'
+                    }
+                },
+                series: [
+                    {
+                        name: 'Spendendefizit',
+                        data: organizationsOfSameCategory.map(function (o) { return o.name == _this.organization.name ? 0 : o.donationDeficit; })
+                    },
+                    {
+                        name: 'Spendendefizit',
+                        data: organizationsOfSameCategory.map(function (o) { return o.name == _this.organization.name ? o.donationDeficit : 0; })
+                    }
+                ],
+                tooltip: {
+                    valueSuffix: ' €'
+                },
+                xAxis: {
+                    categories: organizationsOfSameCategory.map(function (o) { return o.name; }),
+                    title: {
+                        text: null
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: 'Spendendefizit in €'
+                    }
                 }
-            },
-            yAxis: {
+            });
+            var countriesOfRegions = [].concat.apply([], _this.organization.regions.map(function (r) { return _this.mapsService.regionMapping[r]; })).filter(function (item, pos, self) {
+                return self.indexOf(item) == pos;
+            }).map(function (c) { return [c.toLowerCase(), 1]; });
+            console.log(JSON.stringify(countriesOfRegions)); //
+            _this.worldmap = new __WEBPACK_IMPORTED_MODULE_2_angular_highcharts__["d" /* MapChart */]({
+                credits: {
+                    enabled: false
+                },
                 title: {
-                    text: 'Spendendefizit in €'
-                }
-            }
-        });
-        var countriesOfRegions = [].concat.apply([], this.organization.regions.map(function (r) { return _this.mapsService.regionMapping[r]; })).filter(function (item, pos, self) {
-            return self.indexOf(item) == pos;
-        }).map(function (c) { return [c.toLowerCase(), 1]; });
-        console.log(JSON.stringify(countriesOfRegions)); //
-        this.worldmap = new __WEBPACK_IMPORTED_MODULE_2_angular_highcharts__["d" /* MapChart */]({
-            credits: {
-                enabled: false
-            },
-            title: {
-                text: 'Aktionsgebiete'
-            },
-            subtitle: {
-                text: 'in denen ' + this.organization.name + ' tätig ist'
-            },
-            legend: {
-                enabled: false
-            },
-            series: [{
-                    name: 'Aktionsgebiet',
-                    data: countriesOfRegions,
-                    mapData: this.mapsService.worldmap
-                }]
-        });
+                    text: 'Aktionsgebiete'
+                },
+                subtitle: {
+                    text: 'in denen ' + _this.organization.name + ' tätig ist'
+                },
+                legend: {
+                    enabled: false
+                },
+                series: [{
+                        animation: true,
+                        name: 'Aktionsgebiet',
+                        data: countriesOfRegions,
+                        mapData: _this.mapsService.worldmap
+                    }]
+            });
+        }, 300);
     };
     OrganizationPage.prototype.dismiss = function () {
         this.navCtrl.pop();
@@ -116,12 +119,10 @@ var OrganizationPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-organization',template:/*ion-inline-start:"/home/thomsen/dev/effective-giving/src/pages/organization/organization.html"*/'<ion-header><ion-navbar></ion-navbar></ion-header>\n\n<ion-content>\n  <ion-grid fixed>\n    <ion-list>\n      <ion-item text-wrap>\n        <ion-avatar item-start>\n          <img src="../../assets/imgs/organizations/{{ organization.thumbnail }}.jpg" />\n        </ion-avatar>\n        <h2>{{ organization.name }}</h2>\n        <p>{{ organization.slogan }}</p>\n        <button ion-button item-end (click)="dismiss()">\n          <ion-icon name="close"></ion-icon>\n        </button>\n      </ion-item>\n      <ion-item>\n        <img src="../../assets/imgs/stockphoto/{{ organization.thumbnail }}.jpg" class="stockphoto" />\n      </ion-item>\n      <ion-item text-wrap>\n        <ion-icon name="list-box" item-start></ion-icon>\n        {{ organization.longDescription }}\n      </ion-item>\n      <ion-item *ngIf="organization.regions.length > 0">\n        <div [chart]="worldmap"></div>\n      </ion-item>\n      <ion-item text-wrap *ngIf="organization.impact1000">\n        <ion-icon name="medkit" item-start></ion-icon>\n        {{ organization.impact1000 }}\n      </ion-item>\n      <ion-item *ngIf="organization.donationDeficit">\n        <div [chart]="chart"></div>\n      </ion-item>\n      <ion-item *ngIf="organization.evaluators.length > 0">\n        <h3>Empfohlen durch</h3>\n        <ion-badge *ngFor="let e of organization.evaluators" color="{{ e.top && \'danger\' || \'secondary\' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>\n      </ion-item>\n      <ion-item>\n        <ion-row>\n          <ion-col>\n            <a [href]="organization.website" target="_blank">\n              <button ion-button icon-start clear small>\n                <ion-icon name="browsers"></ion-icon>\n                <div>Website</div>\n              </button>\n            </a>\n          </ion-col>\n          <ion-col>\n            <a [href]="organization.donationLink" target="_blank">\n              <button ion-button icon-start clear small>\n                <ion-icon name="cash"></ion-icon>\n                <div>Spenden</div>\n              </button>\n            </a>\n          </ion-col>\n        </ion-row>\n      </ion-item>\n    </ion-list>\n    <div class="bottom-space"></div>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/home/thomsen/dev/effective-giving/src/pages/organization/organization.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_3__app_services_maps__["a" /* MapsService */],
-            __WEBPACK_IMPORTED_MODULE_4__app_services_data__["a" /* DataService */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__app_services_maps__["a" /* MapsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__app_services_maps__["a" /* MapsService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__app_services_data__["a" /* DataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__app_services_data__["a" /* DataService */]) === "function" && _d || Object])
     ], OrganizationPage);
     return OrganizationPage;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=organization.js.map
