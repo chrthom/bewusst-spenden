@@ -25685,6 +25685,10 @@ body {
   user-select: text;
 }
 
+a {
+  text-decoration: none;
+}
+
 .clickable {
   cursor: pointer;
 }

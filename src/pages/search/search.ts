@@ -3,7 +3,7 @@ import { DataService } from "../../app/services/data";
 import { ModalService } from "../../app/services/modal";
 import { Organization } from "../../app/model/organization";
 import {OrganizationPage} from "../organization/organization";
-import {NavController} from "ionic-angular";
+import {NavController, Platform} from "ionic-angular";
 
 @Component({
   selector: 'page-search',
@@ -19,9 +19,13 @@ export class SearchPage {
   searchRecommendedBy: string[] = [];
   advancedSearch: boolean;
 
-  constructor(private dataService: DataService, private modalService: ModalService, private navCtrl: NavController) {
+  constructor(private dataService: DataService,
+              private modalService: ModalService,
+              private navCtrl: NavController,
+              private platform: Platform, ) {
     this.organizations = dataService.organizations;
     this.modalService;
+    this.platform;
   }
 
   listContains(list: string[], find: string) {
@@ -56,5 +60,9 @@ export class SearchPage {
 
   openOrganizationPage(organization: Organization) {
     this.navCtrl.push(OrganizationPage, organization);
+  }
+
+  isMobile() {
+    return this.platform.is('mobile');
   }
 }
