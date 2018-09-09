@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { DataService } from "../../app/services/data";
 import { ModalService } from "../../app/services/modal";
 import { Organization } from "../../app/model/organization";
-import {OrganizationPage} from "../organization/organization";
-import {NavController, Platform} from "ionic-angular";
+import { OrganizationPage } from "../organization/organization";
+import { NavController, Platform } from "ionic-angular";
 
 @Component({
   selector: 'page-search',

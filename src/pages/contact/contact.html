@@ -2,12 +2,44 @@
 
 <ion-content>
   <ion-grid fixed>
-    <ion-list>
-      <ion-list-header>Spendenberatung</ion-list-header>
+    <ion-list *ngIf="!showResponsePage">
+      <ion-list-header>Du hast Fragen oder Feedback?</ion-list-header>
       <ion-item>
-        <ion-icon name="contact" item-start></ion-icon>
-        @ea
+        <ion-icon name="person" item-start></ion-icon>
+        <ion-label floating>Dein Name</ion-label>
+        <ion-input type="text" pattern=".{3,}" [(ngModel)]="message.name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="mail" item-start></ion-icon>
+        <ion-label floating>Dein E-Mail Adresse</ion-label>
+        <ion-input type="email" [(ngModel)]="message.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="text" item-start></ion-icon>
+        <ion-label floating>Dein Nachricht an uns</ion-label>
+        <ion-textarea pattern=".{5,}" [(ngModel)]="message.text"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label>Ich habe die Datenschutzerkl&auml;rung gelesen und stimme dieser zu</ion-label>
+        <ion-checkbox color="primary" [(ngModel)]="message.accept"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Ich möchte den Newsletter der Stiftung für Effektiven Altruismus erhalten</ion-label>
+        <ion-checkbox color="primary" [(ngModel)]="message.subscribe"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <button ion-button block large (click)="send()" [disabled]="!message.accept || !message.name || !message.email || !message.text">
+          <ion-icon name="send" item-start></ion-icon>
+          Nachricht abschicken
+        </button>
       </ion-item>
     </ion-list>
+    <ion-list *ngIf="showResponsePage">
+      <ion-card>
+        <ion-card-header>Danke für dein Feedback an uns! <ion-icon name="heart"></ion-icon></ion-card-header>
+        <ion-card-content>Wir werden uns schnellstmöglich deinem Anliegen widmen.</ion-card-content>
+      </ion-card>
+    </ion-list>
+    <div class="bottom-space"></div>
   </ion-grid>
 </ion-content>
