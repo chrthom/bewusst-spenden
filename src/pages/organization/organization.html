@@ -18,6 +18,7 @@
       </ion-item>
       <ion-item text-wrap>
         <ion-icon name="list-box" item-start></ion-icon>
+        <h2>Was macht {{ organization.name }}?</h2>
         {{ organization.longDescription }}
       </ion-item>
       <ion-item *ngIf="organization.regions.length > 0">
@@ -25,6 +26,7 @@
       </ion-item>
       <ion-item text-wrap *ngIf="organization.impact1000">
         <ion-icon name="medkit" item-start></ion-icon>
+        <h2>Was bewirkt {{ organization.name }} mit 1.000 €?</h2>
         {{ organization.impact1000 }}
       </ion-item>
       <ion-item *ngIf="organization.donationDeficit">

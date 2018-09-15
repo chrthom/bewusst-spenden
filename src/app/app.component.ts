@@ -24,6 +24,7 @@ export class EADonationApp {
   tabsLayout: string = 'icon-top';
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private modalService: ModalService) {
+    this.modalService;
     if (!platform.is('mobile')) {
       this.tabsPlacement = 'top';
       this.tabsLayout = 'icon-left';

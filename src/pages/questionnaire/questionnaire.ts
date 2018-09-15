@@ -44,6 +44,24 @@ export class QuestionnairePage {
               private dataService: DataService,
               private modalService: ModalService) {
     this.modalService;
+
+    function onlyUnique(value, index, self) {
+      return self.indexOf(value) === index;
+    }
+    function printUnique(a) {
+      let flattened = [].concat.apply([], a);
+      flattened.filter(onlyUnique).forEach(o => console.log(o));
+    }
+    /*
+    console.log("\nKategorien:");
+    printUnique(this.dataService.organizations.map(o => o.category));
+    console.log("\nProblemfelder:");
+    printUnique(this.dataService.organizations.map(o => o.cause));
+    console.log("\nRegionen:");
+    printUnique(this.dataService.organizations.map(o => o.regions));
+    console.log("\nFragebogenresultat:");
+    printUnique(this.dataService.organizations.map(o => o.questionaireResults));
+    */
   }
 
   answer(to: string) {
