@@ -46,7 +46,7 @@ export class DataService {
       slogan: 'Verbesserung der Prävention, Diagnose und Behandlung von vernachlässigten Tropenkrankheiten',
       shortDescription: 'Malaria Consortium ist eine der weltweit führenden Non-Profit-Organisationen, die sich auf die Prävention, Kontrolle und Behandlung von Malaria und anderen übertragbaren Krankheiten in gefährdeten Bevölkerungsgruppen spezialisiert hat.',
       longDescription: 'Malaria Consortium ist eine der weltweit führenden Non-Profit-Organisationen, die sich auf die Prävention, Kontrolle und Behandlung von Malaria und anderen übertragbaren Krankheiten in gefährdeten Bevölkerungsgruppen spezialisiert hat. Sie schaffen maßgeschneiderte, evidenzbasierte Lösungen, die sich positiv auf das Gesundheitssystem und die Wirtschaft insgesamt auswirken. Es ist diese Kombination von Aktivitäten und die Tiefe ihrer Expertise, die sie von anderen unterscheidet.',
-      impact1000: 'Was wird mit 1000€ erreicht? Ungefähr 150 Netze könnten gekauft werden, oder 15000 Malaria Diagnostic tests gemacht, oder 250 Kinder könnten von Malaria durch Chemoprevention geschützt werden.',
+      impact1000: 'Ungefähr 150 Netze könnten gekauft werden, oder 15000 Malaria Diagnostic tests gemacht, oder 250 Kinder könnten von Malaria durch Chemoprevention geschützt werden.',
       donationDeficit: 10000000,
       evaluators: [
         {
@@ -125,7 +125,7 @@ export class DataService {
       slogan: 'Unterstützung von Entwurmungsprogrammen in Ländern mit niedrigem Einkommen',
       shortDescription: 'Der END-Fonds verwaltet Zuschüsse, stellt Finanzmittel bereit und unterstützt staatliche Programme zur Kontrolle und Beseitigung vernachlässigter Tropenkrankheiten, einschließlich der Entwurmung.',
       longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
-      impact1000: 'Was wird mit 1000€ erreicht? ...',
+      impact1000: null,
       donationDeficit: 15000000,
       evaluators: [
         {
@@ -164,7 +164,6 @@ export class DataService {
         }
       ]
     },
-
     {
       name: 'GiveDirectly',
       thumbnail: 'give_directly',
@@ -215,7 +214,7 @@ export class DataService {
       donationDeficit: null,
       evaluators: []
     },
-{
+    {
       name: 'Ghana Scholarship Fund',
       thumbnail: 'ghana_scholarship_fund',
       website: 'http://ghanascholarships.org',
@@ -244,18 +243,12 @@ export class DataService {
       impactDirection: 'proaktiv',
       regions: [],
       questionaireResults: [ 'existential risks', 'catastrophe' ],
-      slogan: 'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet',
-      shortDescription: 'orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
-      longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
-      impact1000: 'Was wird mit 1000€ erreicht? ...',
+      slogan: 'Technologie kann die Menschheit in ein neues führen oder zur Zerstörung führen.',
+      shortDescription: 'Future of Life Institute hat sich als Ziel gesetzt, Forschung und andere Initiativen zum Thema Sicherung des Lebens und der Menschheit zu fördern. Dazu gehört das Entwickeln einer positiven Zukunftsvision in Betracht neuer Technologien und großen globalen Herausforderungen.',
+      longDescription: 'Future of Life Institute hat sich als Ziel gesetzt, Forschung und andere Initiativen zum Thema Sicherung des Lebens und der Menschheit zu fördern. Dazu gehört das Entwickeln einer positiven Zukunftsvision in Betracht neuer Technologien und großen globalen Herausforderungen. Momentaner Fokus ist die Sicherheit von Technologien im Bereich künstliche Intelligenz, zudem die Minimierung von Risiken durch nukleare Waffen und Biotechnologie.',
+      impact1000: null,
       donationDeficit: null,
-      evaluators: [
-        {
-          evaluator: 'The Life You Can Save',
-          link: 'https://www.thelifeyoucansave.org/where-to-donate/against-malaria-foundation',
-          top: false
-        }
-      ]
+      evaluators: []
     },
     {
       name: 'Machine Intelligence Research Institute',
@@ -266,11 +259,11 @@ export class DataService {
       cause: [ 'Künstliche Intelligenz' ],
       impactDirection: 'proaktiv',
       regions: [],
-      questionaireResults: [ 'existential risks' ],
-      slogan: 'Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet',
-      shortDescription: 'orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
-      longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
-      impact1000: 'Was wird mit 1000€ erreicht? ...',
+      questionaireResults: [ 'existential risks', 'human knowledge' ],
+      slogan: 'Mathematische Grundsatzforschung um sicherzustellen, dass mögliche künstliche Superintelligenz eine positive Auswirkung auf die Menschheit hat',
+      shortDescription: 'Wenn die Entwicklung künstlicher Intelligenz so schnell wie bisher voranschreitet, könnte künstliche Intelligenz eines Tages Menschen in jedem Bereich an Intelligenz übertreffen. Das Ziel von MIRI ist es, die Grundlagen zu legen, sichere und verlässliche Systeme im Bereich künstlicher Intelligenz zu entwickeln.',
+      longDescription: 'Wenn die Entwicklung künstlicher Intelligenz so schnell wie bisher voranschreitet, könnte künstliche Intelligenz eines Tages Menschen in jedem Bereich an Intelligenz übertreffen. Die meisten AI-Forscher erwarten diese Entwicklung schon in diesem Jahrhundert. Das Ziel von MIRI ist es, die Grundlagen zu legen, sichere und verlässliche Systeme im Bereich künstlicher Intelligenz zu entwickeln. Wichtige Aspekte dieser Forschung sind zum Beispiel Entscheidungstheorie, das Erlernen von Werten und der Umgang mit Unsicherheit.',
+      impact1000: null,
       donationDeficit: null,
       evaluators: []
     },
@@ -287,7 +280,7 @@ export class DataService {
       slogan: 'Schutz der Welt vor den schlimmsten Auswirkungen des Klimawandels',
       shortDescription: 'Die Clean Air Task Force leistet einen Beitrag zum Schutz vor den schlimmsten Auswirkungen des Klimawandels, indem sie die rasche globale Entwicklung und den Einsatz von CO2-armer Energie und anderen klimaschutzenden Technologien durch Forschung und Analyse, öffentliche Lobbyarbeit und Partnerschaft mit dem Privatsektor beschleunigen.',
       longDescription: 'Die Clean Air Task Force (CATF) ist eine in den USA ansässige Nichtregierungsorganisation, die sich für die Reduzierung von klimaschädlichen und nicht-klimaschädlichen Schadstoffen durch Forschung und Analyse, öffentliche Interessenvertretung und Partnerschaft mit dem Privatsektor einsetzt. Es wurde 1996 mit dem Ziel gegründet, eine föderale Politik zur Verringerung der durch amerikanische Kohlekraftwerke verursachten Luftverschmutzung einzuführen. Diese Kampagne war sehr erfolgreich und trug dazu bei, dass ein großer Teil der US-Kohleflotte in den Ruhestand ging. Sie haben zahlreiche andere erfolgreiche Kampagnen konzipiert und mitgestaltet, die beim Aufbau von CO2-Kontrollen für den US-amerikanischen Energiesektor helfen; Vorschriften für Dieselemissionen; Vorschriften für Schiffsemissionen; und Vorschriften für Methanemissionen aus der Öl- und Gasproduktion.',
-      impact1000: 'Was wird mit 1000€ erreicht? ...',
+      impact1000: null,
       donationDeficit: 2000000,
       evaluators: []
     },
@@ -321,7 +314,7 @@ export class DataService {
       slogan: 'Untersuchen, was wir jetzt tun können, um eine lange blühende Zukunft zu sichern',
       shortDescription: 'Das Future of Humanity Institute ist ein multidisziplinäres Forschungsinstitut an der Universität Oxford. Akademiker am FHI nutzen die Werkzeuge der Mathematik, Philosophie und Sozialwissenschaften in Zusammenhang mit großen Fragen über die Menschheit und ihre Perspektive.',
       longDescription: 'Das Future of Humanity Institute ist ein Forschungsinstitut an der Universität Oxford. Mithilfe von Instrumenten aus Mathematik, Philosophie und Sozialwissenschaften versuchen die Forscher potentielle Hauptbedrohungen für die Menschheit und entsprechende Strategien zu ihrer Vermeidung zu identifizieren. Zu diesen Bedrohungen gehören drastische Klimaänderungen, Atomkrieg und Nuklearterrorismus, molekulare Nanotechnologie und künstliche Intelligenz.',
-      impact1000: 'Was wird mit 1000€ erreicht? ...',
+      impact1000: null,
       donationDeficit: null,
       evaluators: []
     },
@@ -374,7 +367,7 @@ export class DataService {
       slogan: 'Randomisierte kontrollierte Studien von Programmen und Politik für die Armen',
       shortDescription: 'Innovations for Poverty Action führt kontrollierte, stichprobenartig ausgewählte Studien zu Hilfsprogrammen durch. Ihre Studien werden in ähnlicher Weise wie wissenschaftliche Studien druchgeführt, um die Auswirkungen der getesteten Programme zu ermitteln und wirksame Methoden zur Verringerung der Armut zu finden.',
       longDescription: 'Innovations for Poverty Action (IPA) ist eine gemeinnützige Forschungs- und Politikinitiative, die effektive Lösungen für globale Armutsprobleme entdeckt und fördert. Die IPA bringt Forscher und Entscheidungsträger zusammen, um Lösungen und ihre Anwendungen zu entwerfen, diese exakt zu bewerten und zu verfeinern und sicherzustellen, dass die gewonnenen Erkenntnisse dazu genutzt werden, das Leben der Armen in der Welt zu verbessern.',
-      impact1000: 'Was wird mit 1000€ erreicht? Eine Studie wird teilweise unterstützt (Eine Studie kostet normalerweise zwischen 50 000 und 500 000 euro).',
+      impact1000: 'Eine Studie wird teilweise unterstützt (Eine Studie kostet normalerweise zwischen 50 000 und 500 000 euro).',
       donationDeficit: 2000000,
       evaluators: [
         {
@@ -459,7 +452,7 @@ export class DataService {
     },
 
     // Politik
-{
+    {
       name: 'Carnegie Council for Ethics in International Affairs',
       thumbnail: 'carnegie_council',
       website: 'https://www.carnegiecouncil.org',
@@ -469,9 +462,9 @@ export class DataService {
       impactDirection: 'reaktiv',
       regions: [],
       questionaireResults: [ 'values' ],
-      slogan: 'Spreading the message that ethics matter',
-      shortDescription: 'The Carnegie Council is an independent and nonpartisan institution, aiming to be the foremost voice of ethics in international affairs. The Council focuses on, Ethics, War and Peace, Global Social Justice, and Religion in Politics as its three main themes.',
-      longDescription: 'Carnegie Council is an independent and nonpartisan institution, aiming to be the foremost voice of ethics in international affairs. The Council focuses on, Ethics, War and Peace, Global Social Justice, and Religion in Politics as its three main themes. It is separate and independent from all other Carnegie philanthropies. The Council convenes agenda-setting forums and creates educational opportunities and information resources for a worldwide audience of teachers and students, journalists, international affairs professionals, and concerned citizens. Its flagship publication is a quarterly scholarly journal, Ethics & International Affairs, which was launched in 1987. As an operating, rather than a grant-making foundation, the Council supports programs that it initiates and also works with partner organizations.',
+      slogan: 'Ethik in internationalen Angelegenheiten',
+      shortDescription: 'Carnegie Council ist eine unabhängige und überparteiliche Organisation, welche das Ziel verfolgt eine der stärksten Stimmen zum Thema "Ethik in international Angelegenheiten" zu sein. Ihr Fokus liegt auf den Themen "Krieg und Frieden", "globale soziale Gerechtigkeit" und "Religion in der Politik".',
+      longDescription: 'Carnegie Council ist eine unabhängige und überparteiliche Organisation, welche das Ziel verfolgt eine der stärksten Stimmen zum Thema "Ethik in international Angelegenheiten" zu sein. Ihr Fokus liegt auf den Themen "Krieg and Frieden", "globale soziale Gerechtigkeit" und "Religion in der Politik". Die Organisation veranstaltet themenorientierte öffentliche Diskussionen und schafft weltweit Möglichkeiten zur Bildung und Informierung für Lehrer, Schüler, Studenten, Journalisten, Menschen die im Bereich intertionale Beziehungen tätig sind, und interessierte Bürger. Ihre wichtigste Publikation ist die vierteljährlich erscheinende wissenschaftliche Zeitschrift Ethics & International Affairs, welche seit 1987 publiziert wird.',
       impact1000: null,
       donationDeficit: null,
       evaluators: []
