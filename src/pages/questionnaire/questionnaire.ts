@@ -45,6 +45,7 @@ export class QuestionnairePage {
               private modalService: ModalService) {
     this.modalService;
 
+    /*
     function onlyUnique(value, index, self) {
       return self.indexOf(value) === index;
     }
@@ -52,7 +53,6 @@ export class QuestionnairePage {
       let flattened = [].concat.apply([], a);
       flattened.filter(onlyUnique).forEach(o => console.log(o));
     }
-    /*
     console.log("\nKategorien:");
     printUnique(this.dataService.organizations.map(o => o.category));
     console.log("\nProblemfelder:");
