@@ -12,7 +12,7 @@ export class MapsService {
       'GB', 'GI', 'GR', 'HU', 'HR', 'IE', 'IS', 'IT', 'IM', 'LI', 'LT', 'LU', 'LV', 'MC', 'MD', 'ME', 'MK', 'MT', 'NO',
       'NL', 'PL', 'PT', 'RO', 'RS', 'RU', 'SE', 'SI', 'SK', 'SM', 'UA', 'VA'],
     'Indien': ['IN'],
-    'Japan': ['JP'],
+    'Japan und Korea': ['JP', 'KP'],
     'Mittelamerika': ['AI', 'AG', 'AW', 'BS', 'BB', 'BZ', 'BM', 'BQ', 'VG', 'KY', 'CR', 'CU', 'CW', 'CM', 'DO', 'SV',
       'GD', 'DP', 'GT', 'HT', 'HN', 'JM', 'MQ', 'MX', 'PM', 'MS', 'CW', 'KN', 'NI', 'PA', 'PR', 'SX', 'LC', 'PM', 'VC',
       'TT', 'TC,'],

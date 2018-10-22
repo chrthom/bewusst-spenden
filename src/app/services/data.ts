@@ -490,6 +490,24 @@ export class DataService {
       donationDeficit: null,
       evaluators: []
     },
+    {
+      name: 'International Coalition to Stop Crimes against Humanity in North Korea',
+      thumbnail: 'icnk',
+      website: 'http://stopnkcrimes.org/',
+      donationLink: 'http://stopnkcrimes.org/donation.php',
+      donationKeyEAS: null,
+      category: [ 'Politik' ],
+      cause: [ 'Menschenrechte' ],
+      impactDirection: 'reactive',
+      regions: ['Japan und Korea'],
+      questionaireResults: [ 'human rights' ],
+      slogan: 'ICNK setzt sich für die Menschenrechte in Nordkorea ein.',
+      shortDescription: 'Das Ziel des ICNK ist es öffentliches und politsches Bewusstsein über die Meschenrechtslage in Nordkorea zu schaffen, so dass gemeinsam gezielt gegen die Menschenrechtverletzungen in Nordkorea vorgegangen wird. Um dies zu erreichen, arbeitet der ICNK eng mit über 40 Organisationen zusammen.',
+      longDescription: 'Das Ziel des ICNK ist es öffentliches und politsches Bewusstsein über die Meschenrechtslage in Nordkorea zu schaffen, so dass gemeinsam gezielt gegen die Menschenrechtverletzungen in Nordkorea vorgegangen wird. Ursprünglich war das Ziel der Organisation eine Komission in der UN zu etablieren, welche die Menschrechtsverletzungen in Nordkorea untersucht. 2013 gelang dies, seitdem arbeitet der ICNK weiterhin an der Aufklärung über die Menschrechtsverletzungen in Nordkorea und die Vernetzung seiner Mitgliederorganisationen (z.B. mit der Organisation von Koferenzen). Über 40 Organisationen arbeiten eng mit dem ICNK zusammen, so z.B. Human Rights Watch.',
+      impact1000: 'Genaue Abschätzungen über die Effektivität der Arbeit des ICNK sind aufgrund der politischen und gesellschaftlichen Unabwägbarkeiten nicht möglich. Für die Effektivität des ICNK spricht, dass in Nordkorea extrem schwerwiegende Meschensrechtsverletzungen begangen werden, und somit durch seine Arbeit besonderes schwerwiegendes Leid verhindert werden kann. Als globale Koordinationsplattform hat der ICNK gute Möglichkeiten die Effektivität der Interventionen seiner Mitgliederorganisationen durch verbesserte Zusammenarbeit zu erhöhen.',
+      donationDeficit: null,
+      evaluators: []
+    },
 
     // Tierleid
     {
@@ -573,7 +591,7 @@ export class DataService {
       category: [ 'Tierleid' ],
       cause: [ 'Haltungsbedingungen', 'Tierleben' ],
       impactDirection: 'proaktiv',
-      regions: [ 'Japan', 'Mittelamerika', 'USA', 'Europa' ],
+      regions: [ 'Japan und Korea', 'Mittelamerika', 'USA', 'Europa' ],
       questionaireResults: [ 'animal suffering' ],
       slogan: 'Empowering Change - Driving Progress',
       shortDescription: 'The Humane League will Tierleiden möglichst weitreichend verhindern. Dazu werden mit Humane League Labs die effektivsten Methoden ermittelt. Neben konkreten Kampagnen wird Aufklärungsarbeit in der Bevölkerung betrieben sowie das Wissen um den Tierschutz an Universitäten verbreitet.',
@@ -597,7 +615,7 @@ export class DataService {
       category: [ 'Politik' ],
       cause: [ 'Institutionen' ],
       impactDirection: 'proaktiv',
-      regions: ['Afrika', 'Europa', 'Japan', 'Mittelamerika', 'Ozeanien', 'Südamerika'],
+      regions: ['Afrika', 'Europa', 'Japan und Korea', 'Mittelamerika', 'Ozeanien', 'Südamerika'],
       questionaireResults: [ 'institutions' ],
       slogan: 'Die globale Koalition gegen Korruption',
       shortDescription: 'Eine globale Bewegung, die eine Vision teilt: eine Welt, in der Regierung, Wirtschaft, Zivilgesellschaft und das tägliche Leben der Menschen frei von Korruption sind.',
