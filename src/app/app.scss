@@ -22,8 +22,10 @@ body {
   user-select: text;
 }
 
-a {
+a, a:hover {
   text-decoration: none;
+  color: inherit;
+  opacity: 1 !important;
 }
 
 .clickable {

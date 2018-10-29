@@ -5,6 +5,12 @@
     <ion-list *ngIf="!showResponsePage">
       <ion-list-header>Du hast Fragen oder Feedback?</ion-list-header>
       <ion-item>
+        Nutzt während der Beta-Test Phase bitte
+        <a href="https://bitbucket.org/_thomsen_/effective-giving/issues" target="_blank"><b><u>diesen Link</u></b></a>,
+        um Fehler (inhaltlich und technisch) sowie Ideen, Feedback und Anregungen an uns heranzutragen.
+        <br /><br />
+      </ion-item>
+      <ion-item>
         <ion-icon name="person" item-start></ion-icon>
         <ion-label floating>Dein Name</ion-label>
         <ion-input type="text" pattern=".{3,}" [(ngModel)]="message.name"></ion-input>
