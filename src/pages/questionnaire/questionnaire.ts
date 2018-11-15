@@ -93,4 +93,8 @@ export class QuestionnairePage {
   openOrganizationPage(organization: Organization) {
     this.navCtrl.push(OrganizationPage, organization);
   }
+
+  showBetaTestInfos() {
+    this.modalService.openBetaTestModal();
+  }
 }

@@ -16,6 +16,7 @@ import { QuestionnairePage } from '../pages/questionnaire/questionnaire';
 import { SearchPage } from "../pages/search/search";
 import { OrganizationPage } from "../pages/organization/organization";
 import { PrivacyPage } from "../pages/privacy/privacy";
+import { BetatestPage } from "../pages/betatest/betatest";
 
 import { DataService } from "./services/data";
 import { MapsService } from "./services/maps";
@@ -29,7 +30,8 @@ import { ModalService } from "./services/modal";
     OrganizationPage,
     PrivacyPage,
     QuestionnairePage,
-    SearchPage
+    SearchPage,
+    BetatestPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ import { ModalService } from "./services/modal";
     OrganizationPage,
     PrivacyPage,
     QuestionnairePage,
-    SearchPage
+    SearchPage,
+    BetatestPage
   ],
   providers: [
     DataService,

@@ -1,6 +1,26 @@
 <ion-header><ion-navbar></ion-navbar></ion-header>
 
 <ion-content>
+  <!-- BETA TEST -->
+  <ion-list no-lines>
+    <ion-item>
+      <ion-grid fixed>
+        <ion-card>
+          <ion-item>
+            <h2>Willkommen liebe Beta-User</h2>
+            <p>Schön das ihr euch für unser Projekt interessiert. Wir würden uns freuen, eure Meinung zu unserer Seite zu hören und generelles Feedback zu bekommen. </p>
+          </ion-item>
+          <ion-item>
+            <button ion-button color="primary" (click)="showBetaTestInfos()">
+              <ion-icon name="information-circle"></ion-icon>
+              &nbsp;
+              Mehr Informationen zum Betatest
+            </button>
+          </ion-item>
+        </ion-card>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
   <!-- QUESTIONS -->
   <ion-list no-lines *ngIf="!nav.startsWith('result ->')" [ngSwitch]="nav" @ngIfAnimation>
     <ion-item *ngSwitchCase="'start'" @questionTrigger>
