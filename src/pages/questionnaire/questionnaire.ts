@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LoadingController, NavController } from 'ionic-angular';
+import {LoadingController, NavController, Platform} from 'ionic-angular';
 import { trigger, style, transition, animate, query, animateChild } from '@angular/animations'
 import { DataService } from "../../app/services/data";
 import { Organization } from "../../app/model/organization";
@@ -42,9 +42,8 @@ export class QuestionnairePage {
   constructor(private navCtrl: NavController,
               private loadingCtrl: LoadingController,
               private dataService: DataService,
-              private modalService: ModalService) {
-    this.modalService;
-
+              private modalService: ModalService,
+              private platform: Platform) {
     /*
     function onlyUnique(value, index, self) {
       return self.indexOf(value) === index;
@@ -120,5 +119,9 @@ export class QuestionnairePage {
 
   openOrganizationPage(organization: Organization) {
     this.navCtrl.push(OrganizationPage, organization);
+  }
+
+  isMobile() {
+    return this.platform.is('mobile');
   }
 }

@@ -22,10 +22,9 @@ export class SearchPage {
   constructor(private dataService: DataService,
               private modalService: ModalService,
               private navCtrl: NavController,
-              private platform: Platform, ) {
+              private platform: Platform) {
     this.organizations = dataService.organizations;
     this.modalService;
-    this.platform;
   }
 
   listContains(list: string[], find: string) {
