@@ -16,6 +16,26 @@
       <ion-item>
         <img src="../../assets/imgs/stockphoto/{{ organization.thumbnail }}.jpg" class="stockphoto" />
       </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            <a [href]="organization.website" target="_blank">
+              <button ion-button icon-start clear large>
+                <ion-icon name="browsers"></ion-icon>
+                <div>Website</div>
+              </button>
+            </a>
+          </ion-col>
+          <ion-col>
+            <a [href]="organization.donationLink" target="_blank">
+              <button ion-button icon-start clear large>
+                <ion-icon name="cash"></ion-icon>
+                <div>Spenden</div>
+              </button>
+            </a>
+          </ion-col>
+        </ion-row>
+      </ion-item>
       <ion-item text-wrap>
         <ion-icon name="list-box" item-start></ion-icon>
         <h2>Was macht {{ organization.name }}?</h2>
@@ -24,37 +44,28 @@
       <ion-item *ngIf="organization.regions.length > 0">
         <div [chart]="worldmap"></div>
       </ion-item>
-      <ion-item text-wrap *ngIf="organization.impact1000">
+      <ion-item text-wrap *ngIf="organization.regions.length == 0">
+        <ion-icon name="globe" item-start></ion-icon>
+        <h2>Aktionsgebiete in denen {{organization.name}} t&auml;tig ist</h2>
+        Hierzu liegen uns leider keine Informationen vor oder aber "{{organization.name}}" hat kein begrenztes Aktionsgebiet.
+      </ion-item>
+      <ion-item text-wrap>
         <ion-icon name="medkit" item-start></ion-icon>
         <h2>Was bewirkt {{ organization.name }} mit 1.000 €?</h2>
-        {{ organization.impact1000 }}
+        <span *ngIf="organization.impact1000">{{ organization.impact1000 }}</span>
+        <span *ngIf="!organization.impact1000">Hierzu liegen uns leider keine Informationen vor.</span>
       </ion-item>
       <ion-item *ngIf="organization.donationDeficit">
         <div [chart]="chart"></div>
       </ion-item>
+      <ion-item *ngIf="!organization.donationDeficit">
+        <ion-icon name="help-buoy" item-start></ion-icon>
+        <h2>Spendendefizit</h2>
+        Hierzu liegen uns leider keine Informationen vor.
+      </ion-item>
       <ion-item *ngIf="organization.evaluators.length > 0">
         <h3>Empfohlen durch</h3>
         <ion-badge *ngFor="let e of organization.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
-      </ion-item>
-      <ion-item>
-        <ion-row>
-          <ion-col>
-            <a [href]="organization.website" target="_blank">
-              <button ion-button icon-start clear small>
-                <ion-icon name="browsers"></ion-icon>
-                <div>Website</div>
-              </button>
-            </a>
-          </ion-col>
-          <ion-col>
-            <a [href]="organization.donationLink" target="_blank">
-              <button ion-button icon-start clear small>
-                <ion-icon name="cash"></ion-icon>
-                <div>Spenden</div>
-              </button>
-            </a>
-          </ion-col>
-        </ion-row>
       </ion-item>
     </ion-list>
     <div class="bottom-space"></div>

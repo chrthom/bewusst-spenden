@@ -97,7 +97,10 @@ export class OrganizationPage implements OnInit {
           name: 'Aktionsgebiet',
           data: countriesOfRegions,
           mapData: this.mapsService.worldmap
-        }]
+        }],
+        tooltip: {
+          enabled: false
+        }
       });
     }, 300);
   }

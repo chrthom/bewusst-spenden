@@ -59,6 +59,7 @@ ion-footer.tabs-top {
 
 ion-footer .toolbar {
   padding: 0 20px !important;
+  height: 56px;
 }
 
 @media (min-width: map-get($grid-breakpoints, lg)) {
