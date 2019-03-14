@@ -5,6 +5,7 @@ import { DataService } from "../../app/services/data";
 import { Organization } from "../../app/model/organization";
 import { ModalService } from "../../app/services/modal";
 import { OrganizationPage } from "../organization/organization";
+import Stack from "ts-data.stack";
 
 @Component({
   selector: 'page-questionaire',
@@ -37,6 +38,7 @@ import { OrganizationPage } from "../organization/organization";
 })
 export class QuestionnairePage {
   nav: string = 'start';
+  navHistory: Stack<string> = new Stack<string>();
   organizations: Organization[] = [];
 
   constructor(private navCtrl: NavController,
@@ -92,6 +94,10 @@ export class QuestionnairePage {
   }
 
   answer(to: string) {
+    // Manipulate nav history
+    if (this.navHistory.isEmpty() || to != this.navHistory.peek()) this.navHistory.push(this.nav);
+    else this.navHistory.pop();
+    // Go to new page
     this.nav = '';
     let toResult = to.startsWith("result ->");
     function loadingTime() {
@@ -101,6 +107,7 @@ export class QuestionnairePage {
     setTimeout(() => {
       this.nav = to;
     }, loadingTime());
+    // Show loading screen for result
     if (toResult) {
       this.organizations = this.dataService.organizations.filter( item => {
         return item.questionaireResults.indexOf(to.replace("result -> ", "")) >= 0;
@@ -111,6 +118,10 @@ export class QuestionnairePage {
       });
       loader.present();
     }
+  }
+
+  goBack() {
+    this.answer(this.navHistory.peek());
   }
 
   gotoTabSearch() {

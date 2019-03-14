@@ -8,7 +8,7 @@
         <ion-card>
           <ion-item>
             <h2>Willkommen liebe Beta-User</h2>
-            <p>Schön das ihr euch für unser Projekt interessiert. Wir würden uns freuen, eure Meinung zu unserer Seite zu hören und generelles Feedback zu bekommen. </p>
+            <p>Sch&ouml;n das ihr euch f&uuml;r unser Projekt interessiert. Wir w&uuml;rden uns freuen, eure Meinung zu unserer Seite zu h&ouml;ren und generelles Feedback zu bekommen.</p>
           </ion-item>
           <ion-item>
             <button ion-button color="primary" (click)="showBetaTestInfos()">
@@ -432,6 +432,13 @@
             </ion-card>
           </ion-col>
         </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item *ngIf="nav != 'start'">
+      <ion-grid fixed>
+        <ion-item>
+          <p text-wrap class="clickable" (click)="goBack()">&lt; Zur&uuml;ck zur vorherigen Frage</p>
+        </ion-item>
       </ion-grid>
     </ion-item>
   </ion-list>
@@ -973,6 +980,6 @@
         <a ion-button block href="https://80000hours.org/2014/01/which-cause-is-most-effective-300/" color="dark" target="_blank">Mehr &uuml;ber Priorisierung erfahren</a>
       </ion-col>
     </ion-row>
-    <div class="bottom-space"></div>
   </ion-grid>
+  <div class="bottom-space"></div>
 </ion-content>
