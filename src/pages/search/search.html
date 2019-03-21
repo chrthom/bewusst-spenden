@@ -98,7 +98,7 @@
                 Website
               </button>
             </a>
-            <a [href]="o.donationLink" target="_blank">
+            <a *ngIf="o.donationLink" [href]="o.donationLink" target="_blank">
               <button ion-button color="danger">
                 <ion-icon name="cash"></ion-icon>
                 Spenden
@@ -131,7 +131,7 @@
                 </button>
               </a>
             </p>
-            <p>
+            <p *ngIf="o.donationLink">
               <a [href]="o.donationLink" target="_blank">
                 <button ion-button block color="danger">
                   <ion-icon name="cash"></ion-icon>

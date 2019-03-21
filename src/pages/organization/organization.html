@@ -26,7 +26,7 @@
               </button>
             </a>
           </ion-col>
-          <ion-col>
+          <ion-col *ngIf="organization.donationLink">
             <a [href]="organization.donationLink" target="_blank">
               <button ion-button icon-start clear large>
                 <ion-icon name="cash"></ion-icon>
