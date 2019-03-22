@@ -20,7 +20,7 @@
         <ion-row>
           <ion-col>
             <a [href]="organization.website" target="_blank">
-              <button ion-button icon-start clear large>
+              <button ion-button icon-start clear>
                 <ion-icon name="browsers"></ion-icon>
                 <div>Website</div>
               </button>
@@ -28,9 +28,17 @@
           </ion-col>
           <ion-col *ngIf="organization.donationLink">
             <a [href]="organization.donationLink" target="_blank">
-              <button ion-button icon-start clear large>
+              <button ion-button icon-start clear>
                 <ion-icon name="cash"></ion-icon>
                 <div>Spenden</div>
+              </button>
+            </a>
+          </ion-col>
+          <ion-col *ngIf="organization.donationKeyEAS">
+            <a [href]="'https://effektiveraltruismus.de/spenden/?purpose=' + organization.donationKeyEAS" target="_blank">
+              <button ion-button icon-start clear>
+                <ion-icon name="card"></ion-icon>
+                <div>Steuereffektiv Spenden</div>
               </button>
             </a>
           </ion-col>
