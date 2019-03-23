@@ -52,7 +52,7 @@ export class QuestionnairePage {
     }
     function printUnique(a) {
       let flattened = [].concat.apply([], a);
-      flattened.filter(onlyUnique).forEach(o => console.log(o));
+      flattened.filter(onlyUnique).sort().forEach(o => console.log(o));
     }
     console.log("\nKategorien:");
     printUnique(this.dataService.organizations.map(o => o.category));
@@ -62,6 +62,8 @@ export class QuestionnairePage {
     printUnique(this.dataService.organizations.map(o => o.regions));
     console.log("\nFragebogenresultat:");
     printUnique(this.dataService.organizations.map(o => o.questionaireResults));
+    console.log("\nEvaluatoren:");
+    printUnique([].concat(...this.dataService.organizations.map(o => o.evaluators.map(e => e.evaluator))));
     */
 
     // Only for beta test phase
