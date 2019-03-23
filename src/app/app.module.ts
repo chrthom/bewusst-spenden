@@ -22,6 +22,8 @@ import { DataService } from "./services/data";
 import { MapsService } from "./services/maps";
 import { ModalService } from "./services/modal";
 
+import { HttpClientModule} from "@angular/common/http";
+
 @NgModule({
   declarations: [
     EADonationApp,
@@ -37,6 +39,7 @@ import { ModalService } from "./services/modal";
     BrowserModule,
     BrowserAnimationsModule,
     ChartModule,
+    HttpClientModule,
     IonicModule.forRoot(EADonationApp)
   ],
   bootstrap: [IonicApp],
