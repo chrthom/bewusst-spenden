@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ContactMessage } from "../../app/model/contactmessage";
 import { LoadingController } from "ionic-angular";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 
 @Component({
   selector: 'page-contact',
@@ -16,16 +17,61 @@ export class ContactPage {
   };
   showResponsePage: Boolean = false;
 
-  constructor(private loadingCtrl: LoadingController) { }
+  constructor(private loadingCtrl: LoadingController, private http: HttpClient) { }
 
-  send() {
-    setTimeout(() => {
-      this.showResponsePage = true;
-    }, 1200);
+  send(message: ContactMessage) {
     let loader = this.loadingCtrl.create({
-      content: "Deine Nachricht wird gesendet...",
-      duration: 1200
+      content: 'Deine Nachricht wird gesendet...'
     });
     loader.present();
+    const slackWebhookUrl = 'https://hooks.slack.com/services/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';
+    let slackMessage: any = {
+      text: `Neue Kontaktaufnahme von ${message.person} (${message.mail}).`,
+      attachments: [
+        {
+          author_name: 'Effective Giving',
+          author_link: 'effective-giving.herokuapp.com',
+          author_icon: 'http://effective-giving.herokuapp.com/assets/icon/favicon.ico',
+          color: 'good',
+          text: message.message,
+          title: 'Inhalt der Nachricht'
+        }
+      ]
+    };
+    if (message.subscribe)
+      slackMessage.attachments.push(
+        {
+          color: 'warning',
+          fields: [
+            {
+              title: 'Name',
+              value: message.person,
+              short: true
+            },
+            {
+              title: 'E-Mail Addresse',
+              value: message.mail,
+              short: true
+            }
+          ],
+          text: 'Interessent in den Verteiler für den EA Newsletter aufnehmen',
+          title: 'Weitere erforderliche Aktionen'
+        }
+      );
+    const options = {
+      headers: new HttpHeaders(
+        {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        }
+      )
+    };
+    this.http.post(slackWebhookUrl, slackMessage, options).pipe().subscribe(
+      o => {
+        this.showResponsePage = true;
+        loader.dismissAll();
+      }, o => {
+        this.showResponsePage = true;
+        loader.dismissAll();
+      })
   }
 }
