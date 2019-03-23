@@ -24,8 +24,8 @@
           <ion-option *ngIf="listContains(searchCategories, 'Armut')" value="Bildung">Bildung</ion-option>
           <ion-option *ngIf="listContains(searchCategories, 'Existenzrisiken')" value="Biosicherheit">Biosicherheit</ion-option>
           <ion-option *ngIf="listContains(searchCategories, 'Meta')" value="Evaluation">Evaluation</ion-option>
-          <ion-option *ngIf="listContains(searchCategories, 'Tierleid')" value="Haltungsbedingungen">Haltungsbedingungen</ion-option>
           <ion-option *ngIf="listContains(searchCategories, 'Armut')" value="Gesundheit">Gesundheit</ion-option>
+          <ion-option *ngIf="listContains(searchCategories, 'Tierleid')" value="Haltungsbedingungen">Haltungsbedingungen</ion-option>
           <ion-option *ngIf="listContains(searchCategories, 'Politik')" value="Institutionen">Institutionen</ion-option>
           <ion-option *ngIf="listContains(searchCategories, 'Existenzrisiken')" value="Klimaschutz">Klimaschutz</ion-option>
           <ion-option *ngIf="listContains(searchCategories, 'Existenzrisiken')" value="Künstliche Intelligenz">Künstliche Intelligenz</ion-option>
@@ -55,7 +55,6 @@
           <ion-option value="Indien">Indien</ion-option>
           <ion-option value="Japan und Korea">Japan und Korea</ion-option>
           <ion-option value="Mittelamerika">Mittelamerika</ion-option>
-          <ion-option value="Naher Osten">Naher Osten</ion-option>
           <ion-option value="Ozeanien">Ozeanien</ion-option>
           <ion-option value="Südamerika">Südamerika</ion-option>
           <ion-option value="Südostasien">Südostasien</ion-option>
@@ -65,12 +64,12 @@
       <ion-item *ngIf="advancedSearch">
         <ion-label>Empfohlen durch Evalutator</ion-label>
         <ion-select [(ngModel)]="searchRecommendedBy" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">
-          <ion-option value="80.000 hours">80.000 hours</ion-option>
-          <ion-option value="Animal Charity Evalutators">Animal Charity Evalutators</ion-option>
-          <ion-option value="Charity Science">Charity Science</ion-option>
+          <!--<ion-option value="80.000 hours">80.000 hours</ion-option>-->
+          <ion-option value="Animal Charity Evaluators">Animal Charity Evalutators</ion-option>
+          <!--<ion-option value="Charity Science">Charity Science</ion-option>-->
           <ion-option value="Giving What We Can">Giving What We Can</ion-option>
           <ion-option value="GiveWell">GiveWell</ion-option>
-          <ion-option value="ImpactM">ImpactM</ion-option>
+          <!--<ion-option value="ImpactM">ImpactM</ion-option>-->
           <ion-option value="The Life You Can Save">The Life You Can Save</ion-option>
         </ion-select>
       </ion-item>
