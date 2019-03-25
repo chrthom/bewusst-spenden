@@ -11,10 +11,9 @@ build:
   ci:
     - npm install -g ionic
     - npm install
-    - ionic build
+    - if [ "$BRANCH" == "master" ]; then ionic build --prod; else ionic build; fi
   on_success:
-    - rm www/.gitignore
-    - git add www
-    - git commit -m "deployment build"
-    - git push -f git@heroku.com:$APP_NAME.git master
-
+    - if [ "$BRANCH" == "master" ]; then rm www/.gitignore; fi
+    - if [ "$BRANCH" == "master" ]; then git add www; fi
+    - if [ "$BRANCH" == "master" ]; then git commit -m "deployment build"; fi
+    - if [ "$BRANCH" == "master" ]; then git push -f git@heroku.com:$APP_NAME.git master; fi
