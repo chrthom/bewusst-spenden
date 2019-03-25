@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - 8.15.1
+
+env:
+  global:
+    - APP_NAME=effective-giving
+
+build:
+  ci:
+    - npm install -g ionic
+    - npm install
+    - if [ "$BRANCH" == "master" ]; then ionic build --prod; else ionic build; fi
+  on_success:
+    - if [ "$BRANCH" == "master" ]; then rm www/.gitignore; fi
+    - if [ "$BRANCH" == "master" ]; then git add www; fi
+    - if [ "$BRANCH" == "master" ]; then git commit -m "deployment build"; fi
+    - if [ "$BRANCH" == "master" ]; then git push -f git@heroku.com:$APP_NAME.git master; fi
