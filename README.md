@@ -3,9 +3,11 @@ Effective Giving
 
 *Eine Webanwendung vom EA Hamburg*
 
-Build Status: [![Run Status](https://api.shippable.com/projects/5c9888e45142dd0007ecab23/badge?branch=master)]()
+Build Status:
 
-Lokale Installation \& Setup
+[![Run Status](https://api.shippable.com/projects/5c9888e45142dd0007ecab23/badge?branch=master)]()
+
+Lokale Installation & Setup
 ------------------
 
 Einmaliges Installation:
