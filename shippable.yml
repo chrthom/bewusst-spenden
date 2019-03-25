@@ -11,7 +11,7 @@ build:
   ci:
     - npm install -g ionic
     - npm install
-    - ionic build --prod
+    - ionic build
   on_success:
     - rm www/.gitignore
     - git add www
