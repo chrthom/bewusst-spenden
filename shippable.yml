@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - 8.15.1
+
+env:
+  global:
+    - APP_NAME=effective-giving
+
+build:
+  ci:
+    - npm install -g ionic
+    - npm install
+    - ionic build --prod
+  on_success:
+    -
+    - git push -f git@heroku.com:$APP_NAME.git master
+
