@@ -11,7 +11,7 @@ build:
   ci:
     - npm install -g ionic
     - npm install
-    - if [ "$BRANCH" == "master" ]; then ionic build --prod; else ionic build; fi
+    - if [ "$BRANCH" == "master" ]; then ionic build; else ionic build; fi
   on_success:
     - if [ "$BRANCH" == "master" ]; then rm www/.gitignore; fi
     - if [ "$BRANCH" == "master" ]; then git add www; fi
