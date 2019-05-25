@@ -30,7 +30,7 @@ export class DataService {
         {
           evaluator: 'The Life You Can Save',
           link: 'https://www.thelifeyoucansave.org/where-to-donate/against-malaria-foundation',
-          top: false
+          top: true
         }
       ]
     },
@@ -83,7 +83,7 @@ export class DataService {
         {
           evaluator: 'The Life You Can Save',
           link: 'https://www.thelifeyoucansave.org/where-to-donate/schistosomiasis-control-initiative',
-          top: false
+          top: true
         }
       ]
     },
@@ -195,11 +195,6 @@ export class DataService {
           evaluator: 'The Life You Can Save',
           link: 'https://www.thelifeyoucansave.org/where-to-donate/givedirectly',
           top: true
-        },
-        {
-          evaluator: 'Giving What We Can',
-          link: 'https://www.givingwhatwecan.org/charity/givedirectly/',
-          top: true
         }
       ]
     },
@@ -219,7 +214,13 @@ export class DataService {
       longDescription: 'Die PAAJAF Foundation setzt sich dafür ein, Armut und Analphabetismus in Gbawe im ländlichen Ghana zu beenden, durch qualitativ hochwertige Stipendien, Gesundheitsdienste und Unterstützung der Gemeinschaft. Sie werden von einem globalen Team von Freiwilligen unterstützt, die ihre Vision einer besseren Welt teilen und versuchen Fortschritt zu den Kindern in Ghana zu bringen. Sie schaffen kollaborative Lösungen für dringende soziale Herausforderungen, indem sie Armut und Analphabetismus unter benachteiligten Kindern, Jugendlichen und Frauen in den Kommunen reduzieren. Sie konzentrieren sich auf folgende Kernarbeitsbereiche: Bildung, Kinderfürsorge, Jugendresilienz und Gesundheit.',
       impact1000: '',
       donationDeficit: null,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Bewusst Spenden',
+          link: 'http://bewusstspenden.de',
+          top: false
+        }
+      ]
     },
     {
       name: 'Ghana Scholarship Fund',
@@ -237,7 +238,13 @@ export class DataService {
       longDescription: 'Die Mission der Ghana Scholarship Fund Inc. besteht darin, Kinder im ländlichen Ghana, Westafrika, zu unterrichten, können sich deren Eltern die erforderlichen Studiengebühren nicht leisten. Sie stellen Stipendien für Gymnasien und Universitäten bereit und unterstützen eine lokale Vorschule, einen Kindergarten und eine Berufsschule für Mädchen. Darüber hinaus bieten sie Online-Lernprogramme für Schüler jeden Alters in allen Fächern an, indem sie Computerlabore aufbauen und Computer mit 178 Gigabyte an Online-Lernprogrammen zur Verfügung stellen. Dadurch wird das Lernen im Klassenzimmer und das Wissen über Computer und Technologie verbessert.',
       impact1000: '',
       donationDeficit: null,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Bewusst Spenden',
+          link: 'http://bewusstspenden.de',
+          top: false
+        }
+      ]
     },
 
     // Existenzrisiken
@@ -257,7 +264,13 @@ export class DataService {
       longDescription: 'Future of Life Institute hat sich als Ziel gesetzt, Forschung und andere Initiativen zum Thema Sicherung des Lebens und der Menschheit zu fördern. Dazu gehört das Entwickeln einer positiven Zukunftsvision in Betracht neuer Technologien und großen globalen Herausforderungen. Momentaner Fokus ist die Sicherheit von Technologien im Bereich künstliche Intelligenz, zudem die Minimierung von Risiken durch nukleare Waffen und Biotechnologie.',
       impact1000: null,
       donationDeficit: null,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Bewusst Spenden',
+          link: 'http://bewusstspenden.de',
+          top: false
+        }
+      ]
     },
     {
       name: 'Machine Intelligence Research Institute',
@@ -275,7 +288,13 @@ export class DataService {
       longDescription: 'Wenn die Entwicklung künstlicher Intelligenz so schnell wie bisher voranschreitet, könnte künstliche Intelligenz eines Tages Menschen in jedem Bereich an Intelligenz übertreffen. Die meisten AI-Forscher erwarten diese Entwicklung schon in diesem Jahrhundert. Das Ziel von MIRI ist es, die Grundlagen zu legen, sichere und verlässliche Systeme im Bereich künstlicher Intelligenz zu entwickeln. Wichtige Aspekte dieser Forschung sind zum Beispiel Entscheidungstheorie, das Erlernen von Werten und der Umgang mit Unsicherheit.',
       impact1000: null,
       donationDeficit: null,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Effektiver Altruismus',
+          link: 'https://effektiveraltruismus.de/organisationen/',
+          top: true
+        }
+      ]
     },
     {
       name: 'Clean Air Task Force',
@@ -293,7 +312,13 @@ export class DataService {
       longDescription: 'Die Clean Air Task Force (CATF) ist eine in den USA ansässige Nichtregierungsorganisation, die sich für die Reduzierung von klimaschädlichen und nicht-klimaschädlichen Schadstoffen durch Forschung und Analyse, öffentliche Interessenvertretung und Partnerschaft mit dem Privatsektor einsetzt. Es wurde 1996 mit dem Ziel gegründet, eine föderale Politik zur Verringerung der durch amerikanische Kohlekraftwerke verursachten Luftverschmutzung einzuführen. Diese Kampagne war sehr erfolgreich und trug dazu bei, dass ein großer Teil der US-Kohleflotte in den Ruhestand ging. Sie haben zahlreiche andere erfolgreiche Kampagnen konzipiert und mitgestaltet, die beim Aufbau von CO2-Kontrollen für den US-amerikanischen Energiesektor helfen; Vorschriften für Dieselemissionen; Vorschriften für Schiffsemissionen; und Vorschriften für Methanemissionen aus der Öl- und Gasproduktion.',
       impact1000: null,
       donationDeficit: 2000000,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Bewusst Spenden',
+          link: 'http://bewusstspenden.de',
+          top: false
+        }
+      ]
     },
     {
       name: 'Coalition for Rainforest Nations',
@@ -311,7 +336,13 @@ export class DataService {
       longDescription: 'Die CfRN ist eine zwischenstaatliche Organisation von mehr als 50 Regenwaldnationen, die sich für die Förderung der ökologischen Nachhaltigkeit einsetzt und gleichzeitig Möglichkeiten für wirtschaftlichen Fortschritt in den tropisch bewaldeten Entwicklungsländern schafft. Es wurde 2004 vom Premierminister von Papua-Neuguinea und dem Präsidenten von Costa Rica gegründet. Die CfRN-Teilnehmerländer arbeiten freiwillig in gemeinsam entwickelten Initiativen zusammen, die vom CfRN-Sekretariat mit Sitz in New York geleitet werden.',
       impact1000: 'Mit 1000€ kann die Freisetzung von 8500 Tonnen CO2 verhindert werden.',
       donationDeficit: 2000000,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Bewusst Spenden',
+          link: 'http://bewusstspenden.de',
+          top: false
+        }
+      ]
     },
     {
       name: 'Future of Humanity Institute',
@@ -329,7 +360,13 @@ export class DataService {
       longDescription: 'Das Future of Humanity Institute ist ein Forschungsinstitut an der Universität Oxford. Mithilfe von Instrumenten aus Mathematik, Philosophie und Sozialwissenschaften versuchen die Forscher potentielle Hauptbedrohungen für die Menschheit und entsprechende Strategien zu ihrer Vermeidung zu identifizieren. Zu diesen Bedrohungen gehören drastische Klimaänderungen, Atomkrieg und Nuklearterrorismus, molekulare Nanotechnologie und künstliche Intelligenz.',
       impact1000: null,
       donationDeficit: null,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Effektiver Altruismus',
+          link: 'https://effektiveraltruismus.de/organisationen/',
+          top: true
+        }
+      ]
     },
 
     // Meta
@@ -349,7 +386,13 @@ export class DataService {
       longDescription: 'Anders als Wohltätigkeitsgutachter die sich ausschließlich auf Finanzen konzentrieren und Verwaltungs- oder Fundraising-Kosten ermitteln, führt GiveWell eingehende Untersuchungen durch, um zu ermitteln, wie gut ein bestimmtes Programm (in Form von gerettet Leben, verbesserte Leben, etc.) pro ausgegebenem Dollar ist. Anstatt zu versuchen, so viele Wohltätigkeitsorganisationen wie möglich zu bewerten, konzentrieren sie sich auf die wenigen Wohltätigkeitsorganisationen, die am meisten herausstechen, um wirkungsvolle Spendengelegenheiten zu finden und empfehlen zu können.',
       impact1000: null,
       donationDeficit: null,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Effektiver Altruismus',
+          link: 'https://effektiveraltruismus.de/organisationen/',
+          top: true
+        }
+      ]
     },
     {
       name: 'ImpactMatters',
@@ -367,7 +410,13 @@ export class DataService {
       longDescription: 'Selbst die am besten geführten gemeinnützigen Organisationen können von einer externen Perspektive profitieren,um ihre Rechenschaftspflicht und ihre Wirkung zu verbessern. ImpactMatters liefern eine objektive, unabhängige Schätzung der Auswirkungen und Kosten der gemeinnützigen Organisation und stellen spezifische, umsetzbare Leitlinien zur Verbesserung der Bewertungs- und Datensysteme zur Verfügung. Wenn die gemeinnützige Organisation der Veröffentlichung zustimmt, erstellt ImpactMatters einen Bericht mit Einschätzungen zu Auswirkungen und Kosten, Einstufungen der Qualität der Nachweise dieser Schätzungen und Bewertungen der Überwachungssysteme und Datenprotokolle. Das Impact-Audit-Team gibt dann einen privaten Management-Brief heraus, in dem dargelegt wird, wie die geprüfte Organisation ihre Effektivität verbessern kann.',
       impact1000: null,
       donationDeficit: null,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Effektiver Altruismus',
+          link: 'https://effektiveraltruismus.de/organisationen/',
+          top: true
+        }
+      ]
     },
     {
       name: 'Innovations for Poverty Action',
@@ -389,12 +438,12 @@ export class DataService {
         {
           evaluator: 'GiveWell',
           link: 'https://www.givewell.org/international/charities/ipa',
-          top: false
+          top: true
         },
         {
           evaluator: 'The Life You Can Save',
           link: 'https://www.thelifeyoucansave.org/where-to-donate/innovations-for-poverty-action',
-          top: false
+          top: true
         }
       ]
     },
@@ -414,7 +463,13 @@ export class DataService {
       longDescription: 'Das Copenhagen Consensus Center ist ein US-amerikanischer Non-Profit-Think-Tank, der von Bjørn Lomborg gegründet und geleitet wird. Das Zentrum organisiert den Copenhagen Consensus, eine alle vier Jahre stattfindende Konferenz prominenter Ökonomen, in der potenzielle Lösungen für globale Probleme anhand von Kosten-Nutzen-Analysen untersucht und priorisiert werden. Kürzlich hat das Copenhagen Consensus Center seine Bemühungen auf national ausgerichtete Forschung konzentriert und arbeitet derzeit intensiv in Haiti und Bangladesch, plant aber auch die Expansion nach Indien, wo es mit hochkarätigen und einflussreichen Organisationen zusammenarbeitet.',
       impact1000: null,
       donationDeficit: null,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Bewusst Spenden',
+          link: 'http://bewusstspenden.de',
+          top: false
+        }
+      ]
     },
     {
       name: 'Centre for Effective Altruism',
@@ -432,7 +487,13 @@ export class DataService {
       longDescription: 'Das Zentrum für effektiven Altruismus leitet und koordiniert eine Vielzahl von Projekten, die darauf abzielen, die effektive altruistische Gemeinschaft zu unterstützen und zu fördern. Es unterstützt lokale Gruppen, recherchiert, führt Konferenzen durch, erstellt einen Newsletter und sammelt und produziert effektiv altruismusbezogene Inhalte online. Es bietet auch Zuschüsse für neue Projekte innerhalb dieser Gemeinschaft, zusammen mit organisatorischer Unterstützung, um ihnen bei Wachstum und Entwicklung zu helfen.',
       impact1000: null,
       donationDeficit: null,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Effektiver Altruismus',
+          link: 'https://effektiveraltruismus.de/organisationen/',
+          top: true
+        }
+      ]
     },
     {
       name: '80,000 hours',
@@ -450,7 +511,13 @@ export class DataService {
       longDescription: '80,000 Hours hat es sich zu der Aufgabe gemacht, möglichst viele Menschen darin zu unterstützen eine Karriere mit sehr positiver sozialer Wirkung zu gestalten. Die hauptsächliche Intervention um dies zu erreichen ist Karriereberatung für talentierte junge Leute, die solch eine Karriere anstreben. Diese Beratung gibt es sowohl für jeden online verfügbar als auch in der Form von Workshops, Einzelberatung und einer globalen Community.',
       impact1000: '80,000 Hours betreibt Aufklärungsarbeit, daher ist die Gesamtwirkung nicht besonders genau abzuschätzen. Die Selbstevaluierung von 80,000 Hours hat ergeben, dass mit etwa 7000 € die Umgestaltung eines Karriereplans dahingehend unterstützt werden konnte, dass eine Person einen sehr hohen positiven sozialen Einfluss hat (z.B. mit einer jährliche Spende von über 100.000 € im Jahr zu effektiven Organisationen).',
       donationDeficit: 500000,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Effektiver Altruismus',
+          link: 'https://effektiveraltruismus.de/organisationen/',
+          top: true
+        }
+      ]
     },
     {
       name: 'Stiftung für Effektiven Altruismus',
@@ -468,7 +535,13 @@ export class DataService {
       longDescription: 'Die Stiftung für Effektiven Altruismus versucht eine Gemeinschaft von außerordentlich engagierten Menschen aufzubauen, die ihr Leben für andere einsetzen wollen und sich der Komplexität der Herausforderung bewusst sind. Sie stellen Infrastruktur in Form von Veranstaltungen und Lokalgruppen bereit, damit die Bewegung nachhaltig wachsen kann und die Kernideen des Effektiven Altruismus erhalten bleiben. In der Öffentlichkeit wollen sie den Effektiven Altruismus in all seinen Nuancen darstellen, um eine konstruktive Diskussion darüber zu ermöglichen.',
       impact1000: null,
       donationDeficit: null,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Effektiver Altruismus',
+          link: 'https://effektiveraltruismus.de/organisationen/',
+          top: true
+        }
+      ]
     },
 
     // Politik
@@ -488,7 +561,13 @@ export class DataService {
       longDescription: 'Carnegie Council ist eine unabhängige und überparteiliche Organisation, welche das Ziel verfolgt eine der stärksten Stimmen zum Thema "Ethik in international Angelegenheiten" zu sein. Ihr Fokus liegt auf den Themen "Krieg and Frieden", "globale soziale Gerechtigkeit" und "Religion in der Politik". Die Organisation veranstaltet themenorientierte öffentliche Diskussionen und schafft weltweit Möglichkeiten zur Bildung und Informierung für Lehrer, Schüler, Studenten, Journalisten, Menschen die im Bereich intertionale Beziehungen tätig sind, und interessierte Bürger. Ihre wichtigste Publikation ist die vierteljährlich erscheinende wissenschaftliche Zeitschrift Ethics & International Affairs, welche seit 1987 publiziert wird.',
       impact1000: null,
       donationDeficit: null,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Bewusst Spenden',
+          link: 'http://bewusstspenden.de',
+          top: false
+        }
+      ]
     },
     {
       name: 'International Coalition to Stop Crimes against Humanity in North Korea',
@@ -506,7 +585,13 @@ export class DataService {
       longDescription: 'Das Ziel des ICNK ist es öffentliches und politsches Bewusstsein über die Meschenrechtslage in Nordkorea zu schaffen, so dass gemeinsam gezielt gegen die Menschenrechtverletzungen in Nordkorea vorgegangen wird. Ursprünglich war das Ziel der Organisation eine Komission in der UN zu etablieren, welche die Menschrechtsverletzungen in Nordkorea untersucht. 2013 gelang dies, seitdem arbeitet der ICNK weiterhin an der Aufklärung über die Menschrechtsverletzungen in Nordkorea und die Vernetzung seiner Mitgliederorganisationen (z.B. mit der Organisation von Koferenzen). Über 40 Organisationen arbeiten eng mit dem ICNK zusammen, so z.B. Human Rights Watch.',
       impact1000: 'Genaue Abschätzungen über die Effektivität der Arbeit des ICNK sind aufgrund der politischen und gesellschaftlichen Unabwägbarkeiten nicht möglich. Für die Effektivität des ICNK spricht, dass in Nordkorea extrem schwerwiegende Meschensrechtsverletzungen begangen werden, und somit durch seine Arbeit besonderes schwerwiegendes Leid verhindert werden kann. Als globale Koordinationsplattform hat der ICNK gute Möglichkeiten die Effektivität der Interventionen seiner Mitgliederorganisationen durch verbesserte Zusammenarbeit zu erhöhen.',
       donationDeficit: null,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Bewusst Spenden',
+          link: 'http://bewusstspenden.de',
+          top: false
+        }
+      ]
     },
 
     // Tierleid
@@ -622,7 +707,13 @@ export class DataService {
       longDescription: 'Gegründet in 1993, ist die Bewegung heute in über 100 Ländern präsent und arbeitet an einem kollektiven weltweiten Bewusstsein für Korruption und Veränderungen herbeizuführen. Es werden internatinale Antikorruptionskonventionen geschaffen, die Verfolgung korrupter Führer und die Beschlagnahmung ihrer unerlaubt erworbenen Reichtümer bewegt sowie Unternehmen für ihr handeln im In- und Ausland verantwortlich gemacht. In mehre als 100 Ländern arbeiten lokale Gruppen mit Partnern aus Politik, Wirtschaft und Zivilgesellschaft zusammen, um wirksame Maßnahmen gegen Korruption zu ergreifen. Politisch unparteiisch wird Wert auf Unanhängigkeit gelegt, sodass Programme und Aktivitäten allein von International Transparency festgelegt werden. Finanzierungsquellen und Ausgaben werden jährlich von einem unabhängigen Auditor transparent gemacht.',
       impact1000: 'Da Transparency International verschiedene Programme in den über 100 Ländern betreibt, ist eine genaue Beurteilung sehr schwierig.',
       donationDeficit: null,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Bewusst Spenden',
+          link: 'http://bewusstspenden.de',
+          top: false
+        }
+      ]
     },
     {
       name: 'International Institut for Strategic Studies',
@@ -640,7 +731,13 @@ export class DataService {
       longDescription: 'Das Internationale Institut für Strategische Studien (IISS) ist ein britisches Forschungsinstitut (oder Think Tank) auf dem Gebiet internationaler Angelegenheiten. Das Internationale Institut für Strategische Studien (IISS) ist die weltweit führende internationale Autorität in globalen Sicherheitsfragen und bietet Fakten und Analysen zu einer breiten Palette von internationalen Sicherheits- und politischen Risikofragen. Das IISS mit Hauptsitz in London hat Büros in Washington, Singapur und Bahrain. Gremium und Mitarbeiter des Instituts sind international und kommt aus mehr als 90 Ländern. Das IISS ist eine wichtige Quelle für genaue, objektive Informationen zu internationalen strategischen Fragen für Politiker, Diplomaten, Außenpolitiker, internationale Unternehmen, Ökonomen, Militärs, Verteidigungskommentatoren, Journalisten, Wissenschaftler und die informierte Öffentlichkeit. Das Institut ist unabhängig und keiner Regierung oder irgendeiner politischen bzw. anderen Organisation verpflichtet. Das IISS forscht mit einer zukunftsorientierten Politikorientierung und legt besonderen Wert darauf, neue Perspektiven in strategische Diskussionen zu bringen. Die Arbeit des Instituts beruht auf der Einschätzung verschiedener politischer, wirtschaftlicher und sozialer Probleme, die Instabilität verursachen, sowie auf Faktoren, die zu internationaler Zusammenarbeit führen können. Sie bringt jährlich Verteidigungsminister, Außenminister und nationale Sicherheitsberater in verschiedenen Formaten privat und öffentlich zusammen, um die internationale Sicherheitspolitik zu diskutieren und zu gestalten. Jedes Jahr finden in Europa, Nordamerika, dem Nahen Osten und Asien sowie in Lateinamerika und Afrika einflussreiche Veranstaltungen statt. IISS-Publikationen werden von wichtigen Entscheidungsträgern gelesen und werden innerhalb der Regierungen auf Kabinettsebene kommentiert. Die Bandbreite der IISS-Publikationen, ihre Gestaltungskraft und die starke internationale Politik des Instituts machen das IISS zu einem wichtigen Akteur in der globalen strategischen Debatte.',
       impact1000: 'Da das IISS verschiedene Programme in vielen verschiedenen Ländern betreibt, ist eine genaue Beurteilung sehr schwierig.',
       donationDeficit: 0,
-      evaluators: []
+      evaluators: [
+        {
+          evaluator: 'Bewusst Spenden',
+          link: 'http://bewusstspenden.de',
+          top: false
+        }
+      ]
     }
   ];
 
