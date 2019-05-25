@@ -16,7 +16,6 @@ import { QuestionnairePage } from '../pages/questionnaire/questionnaire';
 import { SearchPage } from "../pages/search/search";
 import { OrganizationPage } from "../pages/organization/organization";
 import { PrivacyPage } from "../pages/privacy/privacy";
-import { BetatestPage } from "../pages/betatest/betatest";
 
 import { DataService } from "./services/data";
 import { MapsService } from "./services/maps";
@@ -32,8 +31,7 @@ import { HttpClientModule} from "@angular/common/http";
     OrganizationPage,
     PrivacyPage,
     QuestionnairePage,
-    SearchPage,
-    BetatestPage
+    SearchPage
   ],
   imports: [
     BrowserModule,
@@ -50,8 +48,7 @@ import { HttpClientModule} from "@angular/common/http";
     OrganizationPage,
     PrivacyPage,
     QuestionnairePage,
-    SearchPage,
-    BetatestPage
+    SearchPage
   ],
   providers: [
     DataService,

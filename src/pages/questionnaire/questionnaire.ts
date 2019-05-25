@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {LoadingController, NavController, Platform} from 'ionic-angular';
+import { LoadingController, NavController, Platform } from 'ionic-angular';
 import { trigger, style, transition, animate, query, animateChild } from '@angular/animations'
 import { DataService } from "../../app/services/data";
 import { Organization } from "../../app/model/organization";
@@ -65,34 +65,6 @@ export class QuestionnairePage {
     console.log("\nEvaluatoren:");
     printUnique([].concat(...this.dataService.organizations.map(o => o.evaluators.map(e => e.evaluator))));
     */
-
-    // Only for beta test phase
-    if (!this.getCookie("betatest_intro")) {
-      document.cookie = "betatest_intro=1;expires=Sat, 01 Jun 2019 00:00:00 UTC";
-      this.showBetaTestInfos();
-    }
-  }
-
-  // Only for beta test phase
-  getCookie(cname) {
-    let name = cname + "=";
-    let decodedCookie = decodeURIComponent(document.cookie);
-    let ca = decodedCookie.split(';');
-    for(let i = 0; i <ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
-  }
-
-  // Only for beta test phase
-  showBetaTestInfos() {
-    this.modalService.openBetaTestModal();
   }
 
   answer(to: string) {
