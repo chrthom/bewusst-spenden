@@ -3,7 +3,6 @@ import { LoadingController, NavController, Platform } from 'ionic-angular';
 import { trigger, style, transition, animate, query, animateChild } from '@angular/animations'
 import { DataService } from "../../app/services/data";
 import { Organization } from "../../app/model/organization";
-import { ModalService } from "../../app/services/modal";
 import { OrganizationPage } from "../organization/organization";
 import Stack from "ts-data.stack";
 
@@ -44,7 +43,6 @@ export class QuestionnairePage {
   constructor(private navCtrl: NavController,
               private loadingCtrl: LoadingController,
               private dataService: DataService,
-              private modalService: ModalService,
               private platform: Platform) {
     /*
     function onlyUnique(value, index, self) {
@@ -100,6 +98,10 @@ export class QuestionnairePage {
 
   gotoTabSearch() {
     this.navCtrl.parent.select(1);
+  }
+
+  gotoTabAboutUs() {
+    this.navCtrl.parent.select(2);
   }
 
   openOrganizationPage(organization: Organization) {
