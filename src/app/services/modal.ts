@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { PrivacyPage } from "../../pages/privacy/privacy";
 import { ModalController } from "ionic-angular";
+import { ImpressumPage } from "../../pages/impressum/impressum";
 
 @Injectable()
 export class ModalService {
@@ -12,6 +13,7 @@ export class ModalService {
   }
 
   openImprintModal() {
-
+    let modal = this.modalCtrl.create(ImpressumPage);
+    modal.present();
   }
 }

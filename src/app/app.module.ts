@@ -12,6 +12,7 @@ import { EADonationApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
+import { ImpressumPage } from "../pages/impressum/impressum";
 import { QuestionnairePage } from '../pages/questionnaire/questionnaire';
 import { SearchPage } from "../pages/search/search";
 import { OrganizationPage } from "../pages/organization/organization";
@@ -28,6 +29,7 @@ import { HttpClientModule} from "@angular/common/http";
     EADonationApp,
     AboutPage,
     ContactPage,
+    ImpressumPage,
     OrganizationPage,
     PrivacyPage,
     QuestionnairePage,
@@ -45,6 +47,7 @@ import { HttpClientModule} from "@angular/common/http";
     EADonationApp,
     AboutPage,
     ContactPage,
+    ImpressumPage,
     OrganizationPage,
     PrivacyPage,
     QuestionnairePage,
