@@ -33,5 +33,6 @@ export class EADonationApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
+
   }
 }
