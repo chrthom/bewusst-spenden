@@ -57,7 +57,7 @@ export class SearchPage {
     });
   }
 
-  openOrganizationPage(organization: Organization) {
+  openOrganizationPage(organization: { o: Organization }) {
     this.navCtrl.push(OrganizationPage, organization);
   }
 

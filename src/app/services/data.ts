@@ -741,5 +741,11 @@ export class DataService {
     }
   ];
 
+  getByName(name: string): Organization {
+    let foundOrganisation = this.organizations.filter(o => o.thumbnail == name);
+    if (foundOrganisation.length == 1) return foundOrganisation[0];
+    else return null;
+  }
+
   constructor() { }
 }

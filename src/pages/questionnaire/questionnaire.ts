@@ -44,6 +44,10 @@ export class QuestionnairePage {
               private loadingCtrl: LoadingController,
               private dataService: DataService,
               private platform: Platform) {
+    let params = new URLSearchParams(window.location.search);
+    let directOrganization = this.dataService.getByName(params.get('o'));
+    if (directOrganization) this.openOrganizationPage({ o: directOrganization });
+
     /*
     function onlyUnique(value, index, self) {
       return self.indexOf(value) === index;
@@ -104,7 +108,7 @@ export class QuestionnairePage {
     this.navCtrl.parent.select(2);
   }
 
-  openOrganizationPage(organization: Organization) {
+  openOrganizationPage(organization: { o: Organization }) {
     this.navCtrl.push(OrganizationPage, organization);
   }
 
