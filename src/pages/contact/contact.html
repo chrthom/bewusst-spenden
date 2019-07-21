@@ -4,12 +4,6 @@
   <ion-grid fixed>
     <ion-list *ngIf="!showResponsePage">
       <ion-list-header>Du hast Fragen oder Feedback?</ion-list-header>
-      <ion-item text-wrap>
-        Nutzt während der Beta-Test Phase bitte
-        <a href="https://bitbucket.org/_thomsen_/effective-giving/issues" target="_blank"><b><u>diesen Link</u></b></a>,
-        um Fehler (inhaltlich und technisch) sowie Ideen, Feedback und Anregungen an uns heranzutragen.
-        <br /><br />
-      </ion-item>
       <ion-item>
         <ion-icon name="person" item-start></ion-icon>
         <ion-label floating>Dein Name</ion-label>
@@ -17,12 +11,12 @@
       </ion-item>
       <ion-item>
         <ion-icon name="mail" item-start></ion-icon>
-        <ion-label floating>Dein E-Mail Adresse</ion-label>
+        <ion-label floating>Deine E-Mail Adresse</ion-label>
         <ion-input type="email" [(ngModel)]="message.mail"></ion-input>
       </ion-item>
       <ion-item>
         <ion-icon name="text" item-start></ion-icon>
-        <ion-label floating>Dein Nachricht an uns</ion-label>
+        <ion-label floating>Deine Nachricht an uns</ion-label>
         <ion-textarea pattern=".{5,}" [(ngModel)]="message.message"></ion-textarea>
       </ion-item>
       <ion-item>
