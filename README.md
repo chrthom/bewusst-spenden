@@ -1,4 +1,4 @@
-Effective Giving
+Bewusst Spenden
 ==================
 
 *Eine Webanwendung vom EA Hamburg*

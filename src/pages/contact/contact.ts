@@ -29,9 +29,9 @@ export class ContactPage {
       text: `Neue Kontaktaufnahme von ${message.person} (${message.mail}).`,
       attachments: [
         {
-          author_name: 'Effective Giving',
-          author_link: 'effective-giving.herokuapp.com',
-          author_icon: 'http://effective-giving.herokuapp.com/assets/icon/favicon.ico',
+          author_name: 'Bewusst Spenden',
+          author_link: 'bewusstspenden.de',
+          author_icon: 'https://bewusstspenden.de/assets/icon/favicon.ico',
           color: 'good',
           text: message.message,
           title: 'Inhalt der Nachricht'

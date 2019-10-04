@@ -2,8 +2,8 @@
   "name": "ea",
   "version": "0.1.0",
   "author": "EA Hamburg",
-  "homepage": "http://effective-giving.herokuapps.com/",
-  "description": "Effective Giving",
+  "homepage": "https://bewusstspenden.de",
+  "description": "Bewusst Spenden",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
