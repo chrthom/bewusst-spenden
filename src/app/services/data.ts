@@ -19,7 +19,7 @@ export class DataService {
       slogan: 'Mit Moskitonetzen Malaria in Afrika bekämpfen.',
       shortDescription: 'Malaria ist eine der häufigsten Todesursachen von Kindern in Afrika. Mit Insektiziden behandelte Netze können Malaria wirksam verhindern und sind außerdem günstig — etwa 5 Dollar pro Netz.',
       longDescription: 'Die Against Malaria Foundation (AMF) ist eine Hilfsorganisation aus Großbritannien, die sogenannte "long-lasting insecticidal nets" (LLINs) an Bevölkerungsgruppen mit hohem Malaria-Risiko verteilt, hauptsächlich in Subsahara-Afrika. Die Verteilung der Netze geschieht in Partnerschaft mit anderen Organisationen wie z.B. dem Internationalen Roten Kreuz und Malaria Consortium. Zusätzlich zur Verteilung von Netzen erfolgt auch Aufklärungsarbeit zur Prävention von Malaria. Die Verteilung wird in Schriftform, Bild und Video dokumentiert. Es erfolgen ca. 3 Jahre lang halbjährlich Überprüfungen, um die Nutzung der Netze und andere lokale Gegebenheiten zu begutachten.',
-      impact1000: 'Mit 1000€ können ungefähr 250 Netze verteilt werden: Grob geschätzt reicht die Verteilung von 900 Netzen, um ein Leben zu retten.',
+      impact1000: 'Mit 1.000€ können ungefähr 250 Netze verteilt werden: Grob geschätzt reicht die Verteilung von 900 Netzen, um ein Leben zu retten.',
       donationDeficit: 20000000,
       evaluators: [
         {
@@ -72,7 +72,7 @@ export class DataService {
       slogan: 'Behandlung vernachlässigter Tropenkrankheiten in Subsahara-Afrika',
       shortDescription: 'SCI behandelt Kinder und Erwachsene mit Risiko für Schistosomiasis und durch den Boden übertragene Helminthen (Peitschenwurm, Hakenwurm und Spulwurm), verhindert Anämie, beeinträchtigtes Wachstum und Entwicklung bei Kindern und die Entwicklung von lebensbedrohlichen Zuständen von Blasenkrebs, Nierenfunktionsstörungen oder Leber- und Milzschäden.',
       longDescription: 'SCI unterstützt Gesundheitsministerien in Subsahara-Afrika bei der Bekämpfung und anschließenden Eliminierung von Schistosomiasis und durch den Boden übertragenen Helminthen aus ihrer Bevölkerung unter Verwendung des Medikamentenspendeprogramms der Weltgesundheitsorganisation (WHO) für Praziquantel und Albendazol. 230 Millionen Menschen, ein Drittel der Gesamtbevölkerung Afrikas, benötigen eine regelmäßige jährliche Behandlung von Praziquantel; 400 Millionen Menschen benötigen eine regelmäßige jährliche Behandlung von Albendazol, um diese parasitären Krankheiten aus ihrem Körper zu eliminieren.',
-      impact1000: 'Mit 1000€ können ca. 2000 Menschen behandelt werden.',
+      impact1000: 'Mit 1.000€ können ca. 2000 Menschen behandelt werden.',
       donationDeficit: 30000000,
       evaluators: [
         {
@@ -101,7 +101,7 @@ export class DataService {
       slogan: 'Hilfe zum verhindern von Blindheit und Unterernährung',
       shortDescription: 'Helen Keller International (HKI) bekämpft die Ursachen und Folgen von Blindheit und Mangelernährung durch Programme, die auf Evidenz und Forschung in den Bereichen Sehvermögen, Gesundheit und Ernährung basieren.',
       longDescription: 'Helen Keller International hat es sich zur Aufgabe gemacht, die Sehkraft und das Leben der Schwächsten und Benachteiligten zu retten. Sie bekämpfen die Ursachen und Folgen von Blindheit und Mangelernährung durch Programme, die auf Evidenz und Forschung in den Bereichen Sehvermögen, Gesundheit und Ernährung basieren. Derzeit laufen mehr als 100 Programme in 20 afrikanischen und asiatischen Ländern sowie in den Vereinigten Staaten.',
-      impact1000: 'Von 1000€ können derzeit ca. 1500 Vitamin A Ergänzungsmittel verteilt werden.',
+      impact1000: 'Von 1.000€ können derzeit ca. 1500 Vitamin A Ergänzungsmittel verteilt werden.',
       donationDeficit: 40000000,
       evaluators: [
         {
@@ -334,7 +334,7 @@ export class DataService {
       slogan: 'Verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt',
       shortDescription: 'Die Koalition für die Regenwaldnationen (Coalition for Rainforest Nations oder CfRN) bemühen sich um die verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt durch innovative Strategien, die soziale, ökonomische und wissenschaftliche Begründungen integrieren, mit dem Ziel ökologische Nachhaltigkeit zu erreichen.',
       longDescription: 'Die CfRN ist eine zwischenstaatliche Organisation von mehr als 50 Regenwaldnationen, die sich für die Förderung der ökologischen Nachhaltigkeit einsetzt und gleichzeitig Möglichkeiten für wirtschaftlichen Fortschritt in den tropisch bewaldeten Entwicklungsländern schafft. Es wurde 2004 vom Premierminister von Papua-Neuguinea und dem Präsidenten von Costa Rica gegründet. Die CfRN-Teilnehmerländer arbeiten freiwillig in gemeinsam entwickelten Initiativen zusammen, die vom CfRN-Sekretariat mit Sitz in New York geleitet werden.',
-      impact1000: 'Mit 1000€ kann die Freisetzung von 8500 Tonnen CO2 verhindert werden.',
+      impact1000: 'Mit 1.000€ kann die Freisetzung von 8500 Tonnen CO2 verhindert werden.',
       donationDeficit: 2000000,
       evaluators: [
         {
@@ -509,7 +509,7 @@ export class DataService {
       slogan: 'Du hast 80.000 Stunden in deiner Karrierelaufbahn, was bewirkst du damit?',
       shortDescription: 'Mit der Wahl der richtigen Karriere kann ein großer Beitrag zur Lösung der drängensten globalen Probleme geleistet werden. 80,000 hours unterstützt Menschen dabei, den richtigen Weg einzuschlagen.',
       longDescription: '80,000 Hours hat es sich zu der Aufgabe gemacht, möglichst viele Menschen darin zu unterstützen eine Karriere mit sehr positiver sozialer Wirkung zu gestalten. Die hauptsächliche Intervention um dies zu erreichen ist Karriereberatung für talentierte junge Leute, die solch eine Karriere anstreben. Diese Beratung gibt es sowohl für jeden online verfügbar als auch in der Form von Workshops, Einzelberatung und einer globalen Community.',
-      impact1000: '80,000 Hours betreibt Aufklärungsarbeit, daher ist die Gesamtwirkung nicht besonders genau abzuschätzen. Die Selbstevaluierung von 80,000 Hours hat ergeben, dass mit etwa 7000 € die Umgestaltung eines Karriereplans dahingehend unterstützt werden konnte, dass eine Person einen sehr hohen positiven sozialen Einfluss hat (z.B. mit einer jährliche Spende von über 100.000 € im Jahr zu effektiven Organisationen).',
+      impact1000: '80,000 Hours betreibt Aufklärungsarbeit, daher ist die Gesamtwirkung nicht besonders genau abzuschätzen. Die Selbstevaluierung von 80,000 Hours hat ergeben, dass mit etwa 7.000€ die Umgestaltung eines Karriereplans dahingehend unterstützt werden konnte, dass eine Person einen sehr hohen positiven sozialen Einfluss hat (z.B. mit einer jährliche Spende von über 100.000€ im Jahr zu effektiven Organisationen).',
       donationDeficit: 500000,
       evaluators: [
         {
