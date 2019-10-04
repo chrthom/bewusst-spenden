@@ -7,13 +7,8 @@
       <ion-grid fixed>
         <h2>Spend-O-Mat Fragebogen starten</h2>
         <p text-wrap>
-          Du m&ouml;chtest Gutes tun mit deinen Spenden? Hier findest du Hinweise, wie du gem&auml;&szlig; deinen Vorstellungen und
-          deiner pers&ouml;nlichen Weltsicht am meisten Impact haben kannst. Die Sache ist komplex, wir haben keine
-          definitiven Antworten, aber wir helfen dir, besser zu verstehen, was du unterst&uuml;tzen willst und warum.
-          Und das Ganze m&ouml;glichst wissenschaftlich und transparent. Moral ist nicht einfach und Intuition kann uns
-          bei zu wenig Erfahrung fehlleiten. Die Beantwortung der folgenden Fragen soll dir bei der Orientierung helfen.
-          Au&szlig;erdem bieten wir dir eine Auswahl an Organisationen, die in den Bereichen aktiv sind, die &uuml;ber den
-          Fragebogen erreicht werden k&ouml;nnen.
+          Du m&ouml;chtest Gutes tun mit deinen Spenden? Hier findest du Vorschläge, wie du gem&auml;&szlig; deinen Vorstellungen und
+          deiner pers&ouml;nlichen Weltsicht am meisten Impact haben kannst. Die Sache ist komplex, wir haben keine definitiven Antworten, aber vielleicht helfen wir dir, besser zu verstehen, was du unterst&uuml;tzen willst und warum.
         </p>
       </ion-grid>
     </ion-item>
@@ -41,7 +36,7 @@
         <h2>Wann willst du helfen?</h2>
         <p text-wrap>
           Sollten wir unsere Aufmerksamkeit auf die n&auml;chsten Jahrzehnte richten - vielleicht auf Grund unserer Pflicht
-          unserer Generation gegen&uuml;ber - oder weil wir die Zukunft nicht sicher beeinflussen k&ouml;nnen?
+          unserer Generation gegen&uuml;ber - oder weil wir die fernere Zukunft nicht sicher beeinflussen k&ouml;nnen?
           Oder ist es lohnenswert sehr langfristige Ziele zu unterst&uuml;tzen?
         </p>
       </ion-grid>
@@ -187,21 +182,21 @@
             <ion-card (click)="answer('uncertain projects')" class="clickable" @questionTrigger text-wrap>
               <img src="../../assets/imgs/questionaire/unknown.jpg"/>
               <div class="card-title">Nein</div>
-              <div class="card-subtitle">Ich habe h&ouml;chstens eine wage Vorstellung davon, was und wen ich unterst&uuml;tzen sollte.</div>
+              <div class="card-subtitle">Ich habe h&ouml;chstens eine vage Vorstellung davon, was und wen ich unterst&uuml;tzen sollte.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'uncertain projects'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('time scope')" class="clickable" @questionTrigger text-wrap>
               <img src="../../assets/imgs/questionaire/uncertain_projects_yes.jpg"/>
               <div class="card-title">Ja</div>
-              <div class="card-subtitle">Wir sollten tun, was auch immer den gr&ouml;&szlig;ten erwarteten Wert hat.</div>
+              <div class="card-subtitle">Wir sollten unabhängig von der Unsicherheit das tun, was im Durchschnitt den größten Effekt hat.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'uncertain projects'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
             <ion-card (click)="answer('measurable goals')" class="clickable" @questionTrigger text-wrap>
               <img src="../../assets/imgs/questionaire/uncertain_projects_no.jpg"/>
               <div class="card-title">Nein</div>
-              <div class="card-subtitle">Wir sollten sicherstellen, dass wir einen Unterschied machen.</div>
+              <div class="card-subtitle">Wir sollten sicherstellen, dass wir wirklich etwas bewirken.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'measurable goals'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
@@ -250,7 +245,7 @@
             <ion-card (click)="answer('result -> existential risks')" class="clickable" @questionTrigger text-wrap>
               <img src="../../assets/imgs/questionaire/existential_risks_yes.jpg"/>
               <div class="card-title">Ja</div>
-              <div class="card-subtitle">Wir k&ouml;nnen etwas tun, um unser &uuml;berleben langfristig wenigstens etwas wahrscheinlicher zu machen.</div>
+              <div class="card-subtitle">Wir k&ouml;nnen etwas tun, um unser &Uuml;berleben langfristig wenigstens etwas wahrscheinlicher zu machen.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'existential risks'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
@@ -341,7 +336,7 @@
             <ion-card (click)="answer('opportunity health')" class="clickable" @questionTrigger text-wrap>
               <img src="../../assets/imgs/questionaire/animals_per_human_more.jpg"/>
               <div class="card-title">&gt;100</div>
-              <div class="card-subtitle">Menschen zu helfen ist wichtiger, unter anderem weil es weitere indirekte Effekte hat.</div>
+              <div class="card-subtitle">Menschen zu helfen ist wichtiger.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'animals per human'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
@@ -367,7 +362,7 @@
             <ion-card (click)="answer('poverty education')" class="clickable" @questionTrigger text-wrap>
               <img src="../../assets/imgs/questionaire/opportunities.jpg"/>
               <div class="card-title">Chancen</div>
-              <div class="card-subtitle">Wir sollten Armut reduzieren und den &auml;rmsten neue Chancen bieten.</div>
+              <div class="card-subtitle">Wir sollten Armut reduzieren und den &Auml;rmsten neue Chancen bieten.</div>
             </ion-card>
           </ion-col>
           <ion-col *ngSwitchCase="'opportunity health'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
@@ -452,11 +447,15 @@
           <ion-card-content text-wrap>
             <ion-card-title>Deine spezifische Verantwortung</ion-card-title>
             <p>
-              Wenn du f&uuml;r dich eine &uuml;bergeordnete Berufung siehst f&uuml;r eine bestimmte Gruppe oder einen bestimmten Grund t&auml;tig zu
-              werden, dann k&ouml;nntest du dieser Berufung folgen. Falls du mehrere solcher Ziele verfolgst, oder dir nicht
-              sicher bist, ob vorhandene Organisationen dein Ziel auch unterst&uuml;tzen, hilft es dir vielleicht dir unsere
-              <u class="clickable" (click)="gotoTabSearch()">Datenbank zu effektiven Hilfsorganisationen</u> anzusehen.
+              Wenn du f&uuml;r dich eine &uuml;bergeordnete Verantwortung siehst f&uuml;r ein bestimmtes Anliegen zu
+              spenden, dann findest du in unserer <u class="clickable" (click)="gotoTabSearch()">Datenbank zu effektiven Hilfsorganisationen</u> möglicherweise einige
+			  passende Vorschläge zu Organisationen in dem entsprechenden Problembereich.
             </p>
+			<p>
+			Manchmal kann es aufschlussreich sein, sich zu fragen, warum ein bestimmtes Anliegen einen besonders hohen Stellenwert für einen hat.
+			Dadurch kann klarer werden, welche Werte und Annahmen hinter den eigenen Prioritäten stehen, und wie sich die eigenen Werte am besten praktisch umsetzen lassen. 
+			Oftmals ist dies nicht unbedingt das, was auf den ersten Blick schlüssig scheint.
+			</p>
           </ion-card-content>
         </ion-card>
       </ion-col>
@@ -466,16 +465,15 @@
           <ion-card-content text-wrap>
             <ion-card-title>Das menschliche Wissen erweitern</ion-card-title>
             <p>
-              Forschung und Entwicklung ist &uuml;blicherweise etwas, was von unterschiedlichen Parteien aus verschiedenen
-              Motiven betrieben wird, sofern es dringend oder lohnenswert erscheint. Da etwas fr&uuml;her oder sp&auml;ter also
-              von jemand anderem in diesem Bereich gemacht werden w&uuml;rde, handelt es sich hierbei in der Regel nicht um
-              langfristige Verbesserungen. Dennoch kann es manchmal einen gro&szlig;en Unterschied machen eine bestimmte
+              Forschung und Entwicklung ist etwas, was von unterschiedlichen Parteien aus verschiedenen
+              Motiven betrieben wird, sofern es wichtig oder lohnenswert erscheint. Es erscheint somit wahrscheinlich, dass oftmals auch mit weniger Spendengeldern früher oder später ähnliche Forschungsergebnisse erreicht werden würden.
+			  Es kann dennoch manchmal einen gro&szlig;en Unterschied machen eine bestimmte
               Schl&uuml;sseltechnologie oder verbessertes Wissen einige Jahre oder Dekaden fr&uuml;her zu erlangen.
               Derzeitige Beispiele hierf&uuml;r:
             </p>
             <ul>
               <li>
-                Die Entwicklung effektiverer Energiequellen, bevor die Knappheit der &ouml;l-Vorr&auml;te zu internationalen
+                Die Entwicklung effektiverer und nachhaltiger Energiequellen, bevor die Knappheit der &ouml;l-Vorr&auml;te oder katastrophale Umwelteffekte zu internationalen
                 Konflikten f&uuml;hrt.
               </li>
               <li>
@@ -497,8 +495,8 @@
           <ion-card-content text-wrap>
             <ion-card-title>Werte und Moralvorstellungen</ion-card-title>
             <p>
-              Die Werte nach denen Menschen leben, k&ouml;nnen eine signifikante Auswirkung auf den langfristige Weg der
-              Menschheit haben. Es w&auml;re m&ouml;glich, dass in den n&auml;chsten Jahrhunderten ein "value lock-in" stattfinden:
+              Die Werte nach denen Menschen leben, k&ouml;nnen eine signifikante Auswirkung auf den langfristigen Entwicklungspfad der
+              Menschheit haben. Es w&auml;re m&ouml;glich, dass in den n&auml;chsten Jahrhunderten ein "value lock-in" stattfindet:
               Durch Technologie oder Institutionen k&ouml;nnte verhindert werden, dass gesellschaftliche
               Werte einzelner Individuen stark abweichen oder sich ver&auml;ndern. Falls dies eintritt, sollten wir daf&uuml;r
               Sorge tragen, dass unsere sozialen Werte bereits zuvor so gut wie m&ouml;glich sind.
