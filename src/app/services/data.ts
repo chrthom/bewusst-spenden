@@ -47,8 +47,8 @@ export class DataService {
       questionaireResults: [ 'human death' ],
       slogan: 'Verbesserung der Prävention, Diagnose und Behandlung von vernachlässigten Tropenkrankheiten',
       shortDescription: 'Malaria Consortium ist eine der weltweit führenden Non-Profit-Organisationen, die sich auf die Prävention, Kontrolle und Behandlung von Malaria und anderen übertragbaren Krankheiten in gefährdeten Bevölkerungsgruppen spezialisiert hat.',
-      longDescription: 'Malaria Consortium ist eine der weltweit führenden Non-Profit-Organisationen, die sich auf die Prävention, Kontrolle und Behandlung von Malaria und anderen übertragbaren Krankheiten in gefährdeten Bevölkerungsgruppen spezialisiert hat. Sie schaffen maßgeschneiderte, evidenzbasierte Lösungen, die sich positiv auf das Gesundheitssystem und die Wirtschaft insgesamt auswirken. Es ist diese Kombination von Aktivitäten und die Tiefe ihrer Expertise, die sie von anderen unterscheidet.',
-      impact1000: 'Ungefähr 150 Netze könnten gekauft werden, oder 15000 Malaria Diagnostic tests gemacht, oder 250 Kinder könnten von Malaria durch Chemoprevention geschützt werden.',
+      longDescription: 'Malaria Consortium ist eine der weltweit führenden Non-Profit-Organisationen, die sich auf die Prävention, Kontrolle und Behandlung von Malaria und anderen übertragbaren Krankheiten in gefährdeten Bevölkerungsgruppen spezialisiert hat. Sie schaffen maßgeschneiderte, evidenzbasierte Lösungen, die sich positiv auf das Gesundheitssystem und die Wirtschaft insgesamt auswirken.',
+      impact1000: 'Mit 1.000€ können ungefähr 150 mit Insektiziden behandelte Netze gekauft werden, 15000 Malaria-Test gemacht werden oder 250 Kinder durch Chemoprevention vor Malaria geschützt werden.',
       donationDeficit: 10000000,
       evaluators: [
         {
@@ -71,7 +71,7 @@ export class DataService {
       questionaireResults: [ 'human health' ],
       slogan: 'Behandlung vernachlässigter Tropenkrankheiten in Subsahara-Afrika',
       shortDescription: 'SCI behandelt Kinder und Erwachsene mit Risiko für Schistosomiasis und durch den Boden übertragene Helminthen (Peitschenwurm, Hakenwurm und Spulwurm), verhindert Anämie, beeinträchtigtes Wachstum und Entwicklung bei Kindern und die Entwicklung von lebensbedrohlichen Zuständen von Blasenkrebs, Nierenfunktionsstörungen oder Leber- und Milzschäden.',
-      longDescription: 'SCI unterstützt Gesundheitsministerien in Subsahara-Afrika bei der Bekämpfung und anschließenden Eliminierung von Schistosomiasis und durch den Boden übertragenen Helminthen aus ihrer Bevölkerung unter Verwendung des Medikamentenspendeprogramms der Weltgesundheitsorganisation (WHO) für Praziquantel und Albendazol. 230 Millionen Menschen, ein Drittel der Gesamtbevölkerung Afrikas, benötigen eine regelmäßige jährliche Behandlung von Praziquantel; 400 Millionen Menschen benötigen eine regelmäßige jährliche Behandlung von Albendazol, um diese parasitären Krankheiten aus ihrem Körper zu eliminieren.',
+      longDescription: 'SCI unterstützt Gesundheitsministerien in Subsahara-Afrika bei der Bekämpfung und anschließenden Eliminierung von Schistosomiasis und durch den Boden übertragenen Helminthen aus ihrer Bevölkerung unter Verwendung des Medikamentenspendeprogramms der Weltgesundheitsorganisation (WHO) für Praziquantel und Albendazol. 230 Millionen Menschen, ein Drittel der Gesamtbevölkerung Afrikas, benötigen eine regelmäßige jährliche Behandlung von Praziquantel. 400 Millionen Menschen benötigen eine regelmäßige jährliche Behandlung von Albendazol, um diese parasitären Krankheiten aus ihrem Körper zu eliminieren.',
       impact1000: 'Mit 1.000€ können ca. 2000 Menschen behandelt werden.',
       donationDeficit: 30000000,
       evaluators: [
@@ -98,7 +98,7 @@ export class DataService {
       impactDirection: 'reaktiv',
       regions: ['Afrika', 'Südostasien', 'USA'],
       questionaireResults: [ 'human health' ],
-      slogan: 'Hilfe zum verhindern von Blindheit und Unterernährung',
+      slogan: 'Prävention von Blindheit und Unterernährung',
       shortDescription: 'Helen Keller International (HKI) bekämpft die Ursachen und Folgen von Blindheit und Mangelernährung durch Programme, die auf Evidenz und Forschung in den Bereichen Sehvermögen, Gesundheit und Ernährung basieren.',
       longDescription: 'Helen Keller International hat es sich zur Aufgabe gemacht, die Sehkraft und das Leben der Schwächsten und Benachteiligten zu retten. Sie bekämpfen die Ursachen und Folgen von Blindheit und Mangelernährung durch Programme, die auf Evidenz und Forschung in den Bereichen Sehvermögen, Gesundheit und Ernährung basieren. Derzeit laufen mehr als 100 Programme in 20 afrikanischen und asiatischen Ländern sowie in den Vereinigten Staaten.',
       impact1000: 'Von 1.000€ können derzeit ca. 1500 Vitamin A Ergänzungsmittel verteilt werden.',
@@ -129,7 +129,7 @@ export class DataService {
       questionaireResults: [ 'human health' ],
       slogan: 'Unterstützung von Entwurmungsprogrammen in Ländern mit niedrigem Einkommen',
       shortDescription: 'Der END-Fonds verwaltet Zuschüsse, stellt Finanzmittel bereit und unterstützt staatliche Programme zur Kontrolle und Beseitigung vernachlässigter Tropenkrankheiten, einschließlich der Entwurmung.',
-      longDescription: 'Mehr Text... ungefähr 3-5 Sätze.',
+      longDescription: 'Der END-Fonds verwaltet Zuschüsse, stellt Finanzmittel bereit und unterstützt staatliche Programme zur Kontrolle und Beseitigung vernachlässigter Tropenkrankheiten, einschließlich der Entwurmung.',
       impact1000: null,
       donationDeficit: 15000000,
       evaluators: [
@@ -181,8 +181,8 @@ export class DataService {
       regions: [ 'Afrika' ],
       questionaireResults: [ 'poverty' ],
       slogan: 'Geld direkt an extrem arme Menschen spenden',
-      shortDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfinding, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1000 Dollar für ein Jahr an besonders bedürftige Haushalte.',
-      longDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfinding, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1000 Dollar für ein Jahr an besonders bedürftige Haushalte. GiveDirectly forscht intensiv daran festzustellen, welche Auswirkungen die Geld-Tranfers auf teilnehmende Haushalte haben. Auf der Website https://live.givedirectly.org/ lässt sich nachvollziehen, was einzelne Individuen mit dem Geld gemacht haben.',
+      shortDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfinding, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1.000 Dollar für ein Jahr an besonders bedürftige Haushalte.',
+      longDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfinding, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1.000 Dollar für ein Jahr an besonders bedürftige Haushalte. GiveDirectly forscht intensiv daran festzustellen, welche Auswirkungen die Geld-Tranfers auf teilnehmende Haushalte haben. Auf der Website https://live.givedirectly.org/ lässt sich nachvollziehen, was einzelne Individuen mit dem Geld gemacht haben.',
       impact1000: 'GiveDirectly gibt 83% der Spenden direkt an bedürftige Haushalte weiter. Eine Untersuchung zeigt, dass dieses Geld die Nahrungsversorgung, Finanzierung von Bildung und Gesundheit verbessert und nicht für Alkohol oder Tabak ausgegeben wurde. Nach der Eintschätzung von GiveWell hat GiveDirectly verglichen mit anderen besonders effektiven Interventionen wahrscheinlich eine geringere Effektivität. Dafür ist GiveDirectly außerordentlich transparent und hat den direkten Nutzen die Armut zu reduzieren und ist somit in dieser Hinsicht wenig mit Unischerheiten behaftet.',
       donationDeficit: 200000000,
       evaluators: [
@@ -254,8 +254,8 @@ export class DataService {
       website: 'https://futureoflife.org',
       donationLink: 'https://futureoflife.org/get-involved/',
       donationKeyEAS: null,
-      category: [ 'Existenzrisiken', 'Meta' ],
-      cause: [ 'Künstliche Intelligenz', 'Biosicherheit', 'Nuklearsicherheit', 'Klimaschutz', 'Makrostrategie' ],
+      category: [ 'Existenzrisiken'],
+      cause: [ 'Künstliche Intelligenz', 'Biosicherheit', 'Nuklearsicherheit', 'Klimaschutz' ],
       impactDirection: 'proaktiv',
       regions: [],
       questionaireResults: [ 'existential risks', 'catastrophe' ],
@@ -285,7 +285,7 @@ export class DataService {
       questionaireResults: [ 'existential risks', 'human knowledge' ],
       slogan: 'Mathematische Grundsatzforschung um sicherzustellen, dass mögliche künstliche Superintelligenz eine positive Auswirkung auf die Menschheit hat',
       shortDescription: 'Wenn die Entwicklung künstlicher Intelligenz so schnell wie bisher voranschreitet, könnte künstliche Intelligenz eines Tages Menschen in jedem Bereich an Intelligenz übertreffen. Das Ziel von MIRI ist es, die Grundlagen zu legen, sichere und verlässliche Systeme im Bereich künstlicher Intelligenz zu entwickeln.',
-      longDescription: 'Wenn die Entwicklung künstlicher Intelligenz so schnell wie bisher voranschreitet, könnte künstliche Intelligenz eines Tages Menschen in jedem Bereich an Intelligenz übertreffen. Die meisten AI-Forscher erwarten diese Entwicklung schon in diesem Jahrhundert. Das Ziel von MIRI ist es, die Grundlagen zu legen, sichere und verlässliche Systeme im Bereich künstlicher Intelligenz zu entwickeln. Wichtige Aspekte dieser Forschung sind zum Beispiel Entscheidungstheorie, das Erlernen von Werten und der Umgang mit Unsicherheit.',
+      longDescription: 'Wenn die Entwicklung künstlicher Intelligenz so schnell wie bisher voranschreitet, ist es denkbar, dass künstliche Intelligenz eines Tages Menschen in jedem Bereich an Intelligenz übertreffen könnte. Die meisten AI-Forscher erwarten diese Entwicklung schon in diesem Jahrhundert. Das Ziel von MIRI ist es, die Grundlagen zu legen, sichere und verlässliche Systeme im Bereich künstlicher Intelligenz zu entwickeln. Wichtige Aspekte dieser Forschung sind zum Beispiel Entscheidungstheorie, das Erlernen von Werten und der Umgang mit Unsicherheit.',
       impact1000: null,
       donationDeficit: null,
       evaluators: [
@@ -309,7 +309,7 @@ export class DataService {
       questionaireResults: [ 'environment' ],
       slogan: 'Schutz der Welt vor den schlimmsten Auswirkungen des Klimawandels',
       shortDescription: 'Die Clean Air Task Force leistet einen Beitrag zum Schutz vor den schlimmsten Auswirkungen des Klimawandels, indem sie die rasche globale Entwicklung und den Einsatz von CO2-armer Energie und anderen klimaschutzenden Technologien durch Forschung und Analyse, öffentliche Lobbyarbeit und Partnerschaft mit dem Privatsektor beschleunigen.',
-      longDescription: 'Die Clean Air Task Force (CATF) ist eine in den USA ansässige Nichtregierungsorganisation, die sich für die Reduzierung von klimaschädlichen und nicht-klimaschädlichen Schadstoffen durch Forschung und Analyse, öffentliche Interessenvertretung und Partnerschaft mit dem Privatsektor einsetzt. Es wurde 1996 mit dem Ziel gegründet, eine föderale Politik zur Verringerung der durch amerikanische Kohlekraftwerke verursachten Luftverschmutzung einzuführen. Diese Kampagne war sehr erfolgreich und trug dazu bei, dass ein großer Teil der US-Kohleflotte in den Ruhestand ging. Sie haben zahlreiche andere erfolgreiche Kampagnen konzipiert und mitgestaltet, die beim Aufbau von CO2-Kontrollen für den US-amerikanischen Energiesektor helfen; Vorschriften für Dieselemissionen; Vorschriften für Schiffsemissionen; und Vorschriften für Methanemissionen aus der Öl- und Gasproduktion.',
+      longDescription: 'Die Clean Air Task Force (CATF) ist eine in den USA ansässige Nichtregierungsorganisation, die sich für die Reduzierung von klimaschädlichen und anderen Schadstoffen durch Forschung und Analyse, öffentliche Interessenvertretung und Partnerschaft mit dem Privatsektor einsetzt. Sie wurde 1996 mit dem Ziel gegründet, eine föderale Politik zur Verringerung der durch amerikanische Kohlekraftwerke verursachten Luftverschmutzung einzuführen. Diese Kampagne war sehr erfolgreich und trug dazu bei, dass ein großer Teil der US-Kohleflotte in den Ruhestand ging. Sie haben zahlreiche andere erfolgreiche Kampagnen konzipiert und mitgestaltet, die beim Aufbau von CO2-Kontrollen für den US-amerikanischen Energiesektor helfen, z. B. Vorschriften für Dieselemissionen, Vorschriften für Schiffsemissionen und Vorschriften für Methanemissionen aus der Öl- und Gasproduktion.',
       impact1000: null,
       donationDeficit: 2000000,
       evaluators: [
@@ -334,7 +334,7 @@ export class DataService {
       slogan: 'Verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt',
       shortDescription: 'Die Koalition für die Regenwaldnationen (Coalition for Rainforest Nations oder CfRN) bemühen sich um die verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt durch innovative Strategien, die soziale, ökonomische und wissenschaftliche Begründungen integrieren, mit dem Ziel ökologische Nachhaltigkeit zu erreichen.',
       longDescription: 'Die CfRN ist eine zwischenstaatliche Organisation von mehr als 50 Regenwaldnationen, die sich für die Förderung der ökologischen Nachhaltigkeit einsetzt und gleichzeitig Möglichkeiten für wirtschaftlichen Fortschritt in den tropisch bewaldeten Entwicklungsländern schafft. Es wurde 2004 vom Premierminister von Papua-Neuguinea und dem Präsidenten von Costa Rica gegründet. Die CfRN-Teilnehmerländer arbeiten freiwillig in gemeinsam entwickelten Initiativen zusammen, die vom CfRN-Sekretariat mit Sitz in New York geleitet werden.',
-      impact1000: 'Mit 1.000€ kann die Freisetzung von 8500 Tonnen CO2 verhindert werden.',
+      impact1000: 'Laut Evaluation von Founders Pledge kann mit 1.000€ die Freisetzung von ca. 8.000 Tonnen CO2 kompensiert werden.',
       donationDeficit: 2000000,
       evaluators: [
         {
@@ -355,9 +355,9 @@ export class DataService {
       impactDirection: 'proaktiv',
       regions: [],
       questionaireResults: [ 'existential risks' ],
-      slogan: 'Untersuchen, was wir jetzt tun können, um eine lange blühende Zukunft zu sichern',
-      shortDescription: 'Das Future of Humanity Institute ist ein multidisziplinäres Forschungsinstitut an der Universität Oxford. Akademiker am FHI nutzen die Werkzeuge der Mathematik, Philosophie und Sozialwissenschaften in Zusammenhang mit großen Fragen über die Menschheit und ihre Perspektive.',
-      longDescription: 'Das Future of Humanity Institute ist ein Forschungsinstitut an der Universität Oxford. Mithilfe von Instrumenten aus Mathematik, Philosophie und Sozialwissenschaften versuchen die Forscher potentielle Hauptbedrohungen für die Menschheit und entsprechende Strategien zu ihrer Vermeidung zu identifizieren. Zu diesen Bedrohungen gehören drastische Klimaänderungen, Atomkrieg und Nuklearterrorismus, molekulare Nanotechnologie und künstliche Intelligenz.',
+      slogan: 'Was können wir jetzt tun, um eine lange blühende Zukunft der Menschheit zu sichern?',
+      shortDescription: 'Das Future of Humanity Institute ist ein multidisziplinäres Forschungsinstitut an der Universität Oxford. Akademiker am FHI nutzen die Werkzeuge der Mathematik, Philosophie und Sozialwissenschaften in Zusammenhang mit großen Fragen über Zukunft der Menschheit.',
+      longDescription: 'Das Future of Humanity Institute ist ein Forschungsinstitut an der Universität Oxford. Mithilfe von Methoden aus Mathematik, Philosophie und Sozialwissenschaften versuchen die Forscher potentielle Hauptbedrohungen für die Menschheit und entsprechende Strategien zu ihrer Vermeidung zu identifizieren. Zu diesen Bedrohungen gehören drastische Klimaänderungen, Atomkrieg und Nuklearterrorismus, molekulare Nanotechnologie und künstliche Intelligenz.',
       impact1000: null,
       donationDeficit: null,
       evaluators: [
@@ -381,9 +381,9 @@ export class DataService {
       impactDirection: 'reaktiv',
       regions: [],
       questionaireResults: [],
-      slogan: 'Wirkungsvolle Spendenmöglichkeiten gestützt durch ausführliche Forschung',
+      slogan: 'Forschung zu effektiven Spendenmöglichkeiten',
       shortDescription: 'GiveWell ist eine Non-Profit-Organisation, die sich der Auffindung herausragender Spendenmöglichkeiten widmet und die vollständigen Details ihrer Analyse veröffentlicht, um den Spendern bei der Entscheidung zu helfen, wo sie ihre Spende tätigen möchten. Ihr derzeitiger Schwerpunkt liegt auf der Verbesserung des Lebens in den Entwicklungsländern.',
-      longDescription: 'Anders als Wohltätigkeitsgutachter die sich ausschließlich auf Finanzen konzentrieren und Verwaltungs- oder Fundraising-Kosten ermitteln, führt GiveWell eingehende Untersuchungen durch, um zu ermitteln, wie gut ein bestimmtes Programm (in Form von gerettet Leben, verbesserte Leben, etc.) pro ausgegebenem Dollar ist. Anstatt zu versuchen, so viele Wohltätigkeitsorganisationen wie möglich zu bewerten, konzentrieren sie sich auf die wenigen Wohltätigkeitsorganisationen, die am meisten herausstechen, um wirkungsvolle Spendengelegenheiten zu finden und empfehlen zu können.',
+      longDescription: 'Anders als andere Evaluatoren die sich ausschließlich auf Finanzen konzentrieren und Verwaltungs- oder Fundraising-Kosten ermitteln, führt GiveWell eingehende Untersuchungen durch, um zu ermitteln, wie vielen Menschen ein bestimmtes Programm pro ausgegebenem Dollar wie sehr helfen kann (dazu dienen z. B. Indikatoren wie disability-adjusted life years). Anstatt zu versuchen, so viele Wohltätigkeitsorganisationen wie möglich zu bewerten, konzentrieren sie sich auf die wenigen Wohltätigkeitsorganisationen, die herausragend sind, um besonders wirkungsvolle Spendengelegenheiten zu finden und empfehlen zu können.',
       impact1000: null,
       donationDeficit: null,
       evaluators: [
@@ -405,9 +405,9 @@ export class DataService {
       impactDirection: 'reaktiv',
       regions: [],
       questionaireResults: [],
-      slogan: 'Nonprofit Auditierung, um ihre philanthropischen Auswirkungen exakt einzuschätzen',
-      shortDescription: 'ImpactMatters führt "Wirksamkeits Audits" von gemeinnützigen Organisationen durch, um ihre philanthropischen Auswirkungen exakt einzuschätzen und sie und ihre Geldgeber zu evidenzbasierten Entscheidungen zu zwingen.',
-      longDescription: 'Selbst die am besten geführten gemeinnützigen Organisationen können von einer externen Perspektive profitieren,um ihre Rechenschaftspflicht und ihre Wirkung zu verbessern. ImpactMatters liefern eine objektive, unabhängige Schätzung der Auswirkungen und Kosten der gemeinnützigen Organisation und stellen spezifische, umsetzbare Leitlinien zur Verbesserung der Bewertungs- und Datensysteme zur Verfügung. Wenn die gemeinnützige Organisation der Veröffentlichung zustimmt, erstellt ImpactMatters einen Bericht mit Einschätzungen zu Auswirkungen und Kosten, Einstufungen der Qualität der Nachweise dieser Schätzungen und Bewertungen der Überwachungssysteme und Datenprotokolle. Das Impact-Audit-Team gibt dann einen privaten Management-Brief heraus, in dem dargelegt wird, wie die geprüfte Organisation ihre Effektivität verbessern kann.',
+      slogan: 'Führt Audits von wohltätigen Organisationen durch, um ihre philanthropischen Auswirkungen einzuschätzen',
+      shortDescription: 'ImpactMatters führt "Wirksamkeits-Audits" von gemeinnützigen Organisationen durch, um ihre philanthropischen Auswirkungen exakt einzuschätzen und sie und ihre Geldgeber zu evidenzbasierten Entscheidungen anzuregen.',
+      longDescription: 'Selbst die am besten geführten gemeinnützigen Organisationen können von einer externen Perspektive profitieren, um die Erfüllung ihrer Rechenschaftspflicht und ihre Wirkung zu verbessern. ImpactMatters liefern eine objektive, unabhängige Schätzung der Auswirkungen und Kosten der jeweiligen gemeinnützigen Organisation und stellt spezifische, umsetzbare Leitlinien zur Verbesserung der Bewertungs- und Datensysteme zur Verfügung. Wenn die gemeinnützige Organisation der Veröffentlichung zustimmt, erstellt ImpactMatters einen Bericht mit Einschätzungen zu Auswirkungen und Kosten, Einstufungen der Qualität der Nachweise dieser Schätzungen und Bewertungen der Überwachungssysteme und Datenprotokolle. Das Impact-Audit-Team gibt dann einen privaten Management-Brief heraus, in dem dargelegt wird, wie die geprüfte Organisation ihre Effektivität verbessern kann.',
       impact1000: null,
       donationDeficit: null,
       evaluators: [
@@ -432,42 +432,13 @@ export class DataService {
       slogan: 'Randomisierte kontrollierte Studien von Programmen und Politik für die Armen',
       shortDescription: 'Innovations for Poverty Action führt kontrollierte, stichprobenartig ausgewählte Studien zu Hilfsprogrammen durch. Ihre Studien werden in ähnlicher Weise wie wissenschaftliche Studien druchgeführt, um die Auswirkungen der getesteten Programme zu ermitteln und wirksame Methoden zur Verringerung der Armut zu finden.',
       longDescription: 'Innovations for Poverty Action (IPA) ist eine gemeinnützige Forschungs- und Politikinitiative, die effektive Lösungen für globale Armutsprobleme entdeckt und fördert. Die IPA bringt Forscher und Entscheidungsträger zusammen, um Lösungen und ihre Anwendungen zu entwerfen, diese exakt zu bewerten und zu verfeinern und sicherzustellen, dass die gewonnenen Erkenntnisse dazu genutzt werden, das Leben der Armen in der Welt zu verbessern.',
-      impact1000: 'Eine Studie wird teilweise unterstützt (Eine Studie kostet normalerweise zwischen 50 000 und 500 000 euro).',
+      impact1000: 'Eine Studie kostet normalerweise zwischen 50.000€ und 500.000€.',
       donationDeficit: 2000000,
       evaluators: [
-        {
-          evaluator: 'GiveWell',
-          link: 'https://www.givewell.org/international/charities/ipa',
-          top: true
-        },
         {
           evaluator: 'The Life You Can Save',
           link: 'https://www.thelifeyoucansave.org/where-to-donate/innovations-for-poverty-action',
           top: true
-        }
-      ]
-    },
-    {
-      name: 'Copenhagen Consensus Center',
-      thumbnail: 'copenhagen_consensus_center',
-      website: 'http://www.copenhagenconsensus.com',
-      donationLink: 'http://www.copenhagenconsensus.com/make-donation',
-      donationKeyEAS: null,
-      category: [ 'Meta' ],
-      cause: [ 'Makrostrategie' ],
-      impactDirection: 'proaktiv',
-      regions: [],
-      questionaireResults: [ 'human knowledge' ],
-      slogan: 'Expertenrat um das meiste Gute zu tun',
-      shortDescription: 'Das Copenhagen Consensus Center ist ein Think Tank, der die klügsten Lösungen für die größten Probleme der Welt erforscht und Politikern und Philanthropen dabei hilft, ihr Geld am effektivsten einzusetzen.',
-      longDescription: 'Das Copenhagen Consensus Center ist ein US-amerikanischer Non-Profit-Think-Tank, der von Bjørn Lomborg gegründet und geleitet wird. Das Zentrum organisiert den Copenhagen Consensus, eine alle vier Jahre stattfindende Konferenz prominenter Ökonomen, in der potenzielle Lösungen für globale Probleme anhand von Kosten-Nutzen-Analysen untersucht und priorisiert werden. Kürzlich hat das Copenhagen Consensus Center seine Bemühungen auf national ausgerichtete Forschung konzentriert und arbeitet derzeit intensiv in Haiti und Bangladesch, plant aber auch die Expansion nach Indien, wo es mit hochkarätigen und einflussreichen Organisationen zusammenarbeitet.',
-      impact1000: null,
-      donationDeficit: null,
-      evaluators: [
-        {
-          evaluator: 'Bewusst Spenden',
-          link: 'http://bewusstspenden.de',
-          top: false
         }
       ]
     },
@@ -483,7 +454,7 @@ export class DataService {
       regions: [],
       questionaireResults: [ 'institutions' ],
       slogan: 'Förderung und Aufrechterhaltung der Bewegung des Effektiven Altruismus',
-      shortDescription: 'Das Zentrum für effektiven Altruismus dient als Sprungbrett für die effektive Altruismus-Gemeinschaft. Es zielt darauf ab, effektiven Altruismus als eine Idee und eine Gemeinschaft zu fördern und zu stärken, herauszufinden, wie das Wohlergehen aller am besten gefördert werden kann und Menschen dazu zu inspirieren, basierend auf diesem Wissen Maßnahmen zu ergreifen.',
+      shortDescription: 'Das Zentrum für effektiven Altruismus fördert den effektiven Altruismus als Idee und als Gemeinschaft. Ziel ist es herauszufinden, wie das Wohlergehen aller am besten gefördert werden kann und Menschen dazu zu inspirieren, basierend auf diesem Wissen Maßnahmen zu ergreifen.',
       longDescription: 'Das Zentrum für effektiven Altruismus leitet und koordiniert eine Vielzahl von Projekten, die darauf abzielen, die effektive altruistische Gemeinschaft zu unterstützen und zu fördern. Es unterstützt lokale Gruppen, recherchiert, führt Konferenzen durch, erstellt einen Newsletter und sammelt und produziert effektiv altruismusbezogene Inhalte online. Es bietet auch Zuschüsse für neue Projekte innerhalb dieser Gemeinschaft, zusammen mit organisatorischer Unterstützung, um ihnen bei Wachstum und Entwicklung zu helfen.',
       impact1000: null,
       donationDeficit: null,
@@ -609,7 +580,7 @@ export class DataService {
       slogan: 'Wir arbeiten für eine bessere Welt für alle Tiere',
       shortDescription: 'Animal Equality ist eine internationale Organisation, die gemeinsam mit Gesellschaft, Politik und Unternehmen daran arbeitet, Grausamkeit in der Massentierhaltung zu beenden.',
       longDescription: 'Animal Equality arbeitet für eine gerechtere und bessere Welt für alle Lebewesen, die diesen Planeten bewohnen. Die Organisation setzt sich für die Verringerung von Ungerechtigkeiten gegenüber Tieren ein, mit der Vision jedem Tier ein Leben ohne Schmerzen und Leiden zu ermöglichen. Durch groß angelegte Bildungsprogramme, Undercover-Recherchen, medienwirksame Aktionen sowie Unternehmenskampagnen will Animal Equality einen langfristigen sozialen Wandel herbeiführen und eine Welt schaffen, in der alle Tiere Respekt und Schutz erfahren. Dabei liegt der Fokus ihrer Arbeit auf der sogenannten Nutztierindustrie, da sie international für das größte Tierleid verantwortlich ist.',
-      impact1000: 'Hilft dabei: Durchschnittliche 5000 Tiere in der Massentierhaltung vor Leid zu bewahren; oder durch Online-Kampagnen mehr als 900.000 Menschen über die Zustände in der Massentierhaltung zu informieren; oder finanziert 26 iAnimal Aktionen innerhalb des Virtual-Reality-Projects, durch das zahlreiche Menschen einen authentischen Einblick in das Leben der Tiere in der Massentierhaltung bekommen - Widerspruch zu ACE Aussage',
+      impact1000: 'Hilft dabei: Durchschnittliche 5000 Tiere in der Massentierhaltung vor Leid zu bewahren oder durch Online-Kampagnen mehr als 900.000 Menschen über die Zustände in der Massentierhaltung zu informieren. oder finanziert 26 iAnimal Aktionen innerhalb des Virtual-Reality-Projects, durch das zahlreiche Menschen einen authentischen Einblick in das Leben der Tiere in der Massentierhaltung bekommen - Widerspruch zu ACE Aussage',
       donationDeficit: 4200000,
       evaluators: [
         {
@@ -657,7 +628,7 @@ export class DataService {
       slogan: 'Appetite for a better world',
       shortDescription: 'ProVeg motiviert Menschen zu einem pflanzlichen Lebensstil und vernetzt bestehende Organisationen weltweit, um Gesundheit zu fördern, Tierleiden zu vermindern, die Umwelt zu schützen und eine gerechtere Verteilung von Nahrungsmitteln zu ermöglichen.',
       longDescription: 'Viele der weltweit dringendsten Probleme haben die individuelle Ernährungsweise eines jeden Einzelnen zur Ursache. ProVeg International motiviert die Bevölkerung durch Aufklärung und Bereitstellung praktischer Informationen zum Umstieg auf eine Ernährung unter Verwendung tierfreier Alternativen. Ziel ist, den Konsum von Tieren als Nahrungsmittel bis 2040 um 50 % zu reduzieren. Damit soll die Gesundheit der Bevölkerung gefördert und gleichzeitig das durch die Nahrungsmittelproduktion entstehende Tierleiden vermindert werden. Neben dem Umweltschutz steht dabei zudem die faire Verteilung der weltweiten Nahrungsmittelressourcen im Fokus. Dazu arbeitet ProVeg mit einflussreichen Multiplikatoren aus Politik, Wirtschaft und Medien zusammen.',
-      impact1000: 'Für 1000 Euro kann eine Aufklärungsveranstaltung in einer Schule mit gesunden Snacks und Getränken ausgestattet, ein Sprecher für einen von ProVeg International organisierten Kongress eingeladen und Informationsmaterial für 30 bis 40 Informationsveranstaltungen beschafft werden.',
+      impact1000: 'Für 1.000€ kann eine Aufklärungsveranstaltung in einer Schule mit gesunden Snacks und Getränken ausgestattet, ein Sprecher für einen von ProVeg International organisierten Kongress eingeladen und Informationsmaterial für 30 bis 40 Informationsveranstaltungen beschafft werden.',
       donationDeficit: null,
       evaluators: [
         {
@@ -680,7 +651,7 @@ export class DataService {
       questionaireResults: [ 'animal suffering' ],
       slogan: 'Empowering Change - Driving Progress',
       shortDescription: 'The Humane League will Tierleiden möglichst weitreichend verhindern. Dazu werden mit Humane League Labs die effektivsten Methoden ermittelt. Neben konkreten Kampagnen wird Aufklärungsarbeit in der Bevölkerung betrieben sowie das Wissen um den Tierschutz an Universitäten verbreitet.',
-      longDescription: 'Weltweit werden unzählige Tiere für die Nahrungsmittelproduktion unter unnatürlichen und unwürden Bedingungen gehalten, misshandelt und verletzt. Um die Haltungsbedingungen der Tiere zu verbessern und so Schmerzen, Leid, frühzeitiges Sterben, Angst und Schmerz zu verhindern, will The Humane League die Bevölkerung über die Umstände in der industriellen Tierhaltung aufklären. Neben der Bereitstellung von Informationsmaterial und Kampagnen will The Humane League insbesondere auch an Universitäten das Wissen um den Tierschutz verbreiten. Mit Humane League Labs wird untersucht, welche Methoden die effektivsten für die Einflussnahme zur Verbesserung der Haltungsbedingen sind.',
+      longDescription: 'Weltweit werden unzählige Tiere für die Nahrungsmittelproduktion unter unnatürlichen und unwürden Bedingungen gehalten, misshandelt und verletzt. Um die Haltungsbedingungen der Tiere zu verbessern und so Leid und frühzeitiges Sterben zu verhindern, will The Humane League die Bevölkerung über die Umstände in der industriellen Tierhaltung aufklären. Neben der Bereitstellung von Informationsmaterial und Kampagnen will The Humane League insbesondere auch an Universitäten das Wissen um den Tierschutz verbreiten. Im Rahmen der Humane League Labs wird untersucht, welche Methoden die effektivsten für die Einflussnahme zur Verbesserung der Haltungsbedingen sind.',
       impact1000: null,
       donationDeficit: null,
       evaluators: [
@@ -691,7 +662,7 @@ export class DataService {
         }
       ]
     },
-	  {
+    {
       name: 'Transparency International',
       thumbnail: 'transparency',
       website: 'https://www.transparency.org/',
@@ -704,8 +675,8 @@ export class DataService {
       questionaireResults: [ 'institutions' ],
       slogan: 'Die globale Koalition gegen Korruption',
       shortDescription: 'Eine globale Bewegung, die eine Vision teilt: eine Welt, in der Regierung, Wirtschaft, Zivilgesellschaft und das tägliche Leben der Menschen frei von Korruption sind.',
-      longDescription: 'Gegründet in 1993, ist die Bewegung heute in über 100 Ländern präsent und arbeitet an einem kollektiven weltweiten Bewusstsein für Korruption und Veränderungen herbeizuführen. Es werden internatinale Antikorruptionskonventionen geschaffen, die Verfolgung korrupter Führer und die Beschlagnahmung ihrer unerlaubt erworbenen Reichtümer bewegt sowie Unternehmen für ihr handeln im In- und Ausland verantwortlich gemacht. In mehre als 100 Ländern arbeiten lokale Gruppen mit Partnern aus Politik, Wirtschaft und Zivilgesellschaft zusammen, um wirksame Maßnahmen gegen Korruption zu ergreifen. Politisch unparteiisch wird Wert auf Unanhängigkeit gelegt, sodass Programme und Aktivitäten allein von International Transparency festgelegt werden. Finanzierungsquellen und Ausgaben werden jährlich von einem unabhängigen Auditor transparent gemacht.',
-      impact1000: 'Da Transparency International verschiedene Programme in den über 100 Ländern betreibt, ist eine genaue Beurteilung sehr schwierig.',
+      longDescription: 'Gegründet in 1993, ist die Bewegung heute in über 100 Ländern präsent und arbeitet daran, ein kollektives weltweites Bewusstsein für Korruption und Veränderungen herbeizuführen. Es werden internatinale Antikorruptionskonventionen geschaffen, die Verfolgung korrupter Führer und die Beschlagnahmung ihrer unerlaubt erworbenen Reichtümer unterstützt sowie Unternehmen für ihr Handeln im In- und Ausland verantwortlich gemacht. In mehre als 100 Ländern arbeiten lokale Gruppen mit Partnern aus Politik, Wirtschaft und Zivilgesellschaft zusammen, um wirksame Maßnahmen gegen Korruption zu ergreifen. Politisch unparteiisch wird Wert auf Unanhängigkeit gelegt, sodass Programme und Aktivitäten allein von International Transparency festgelegt werden. Finanzierungsquellen und Ausgaben werden jährlich von einem unabhängigen Auditor transparent gemacht.',
+      impact1000: 'Da Transparency International verschiedene Programme in den über 100 Ländern betreibt, ist eine genaue quantitative Beurteilung sehr schwierig.',
       donationDeficit: null,
       evaluators: [
         {
@@ -727,10 +698,10 @@ export class DataService {
       regions: [],
       questionaireResults: [],
       slogan: 'Facts. Analysis. Influence.',
-      shortDescription: 'The IISS has been advancing global peace and security since 1958. Carefully researched facts and incisive analysis are at the heart of all we do, helping governments, academics, journalists and businesses.',
+      shortDescription: 'Das Internationale Institut für Strategische Studien (IISS) ist ein britisches Forschungsinstitut (oder Think Tank) auf dem Gebiet internationaler Angelegenheiten. IISS ist die weltweit führende internationale Autorität in globalen Sicherheitsfragen und bietet Fakten und Analysen zu einer breiten Palette von internationalen Sicherheits- und politischen Risikofragen.',
       longDescription: 'Das Internationale Institut für Strategische Studien (IISS) ist ein britisches Forschungsinstitut (oder Think Tank) auf dem Gebiet internationaler Angelegenheiten. Das Internationale Institut für Strategische Studien (IISS) ist die weltweit führende internationale Autorität in globalen Sicherheitsfragen und bietet Fakten und Analysen zu einer breiten Palette von internationalen Sicherheits- und politischen Risikofragen. Das IISS mit Hauptsitz in London hat Büros in Washington, Singapur und Bahrain. Gremium und Mitarbeiter des Instituts sind international und kommt aus mehr als 90 Ländern. Das IISS ist eine wichtige Quelle für genaue, objektive Informationen zu internationalen strategischen Fragen für Politiker, Diplomaten, Außenpolitiker, internationale Unternehmen, Ökonomen, Militärs, Verteidigungskommentatoren, Journalisten, Wissenschaftler und die informierte Öffentlichkeit. Das Institut ist unabhängig und keiner Regierung oder irgendeiner politischen bzw. anderen Organisation verpflichtet. Das IISS forscht mit einer zukunftsorientierten Politikorientierung und legt besonderen Wert darauf, neue Perspektiven in strategische Diskussionen zu bringen. Die Arbeit des Instituts beruht auf der Einschätzung verschiedener politischer, wirtschaftlicher und sozialer Probleme, die Instabilität verursachen, sowie auf Faktoren, die zu internationaler Zusammenarbeit führen können. Sie bringt jährlich Verteidigungsminister, Außenminister und nationale Sicherheitsberater in verschiedenen Formaten privat und öffentlich zusammen, um die internationale Sicherheitspolitik zu diskutieren und zu gestalten. Jedes Jahr finden in Europa, Nordamerika, dem Nahen Osten und Asien sowie in Lateinamerika und Afrika einflussreiche Veranstaltungen statt. IISS-Publikationen werden von wichtigen Entscheidungsträgern gelesen und werden innerhalb der Regierungen auf Kabinettsebene kommentiert. Die Bandbreite der IISS-Publikationen, ihre Gestaltungskraft und die starke internationale Politik des Instituts machen das IISS zu einem wichtigen Akteur in der globalen strategischen Debatte.',
-      impact1000: 'Da das IISS verschiedene Programme in vielen verschiedenen Ländern betreibt, ist eine genaue Beurteilung sehr schwierig.',
-      donationDeficit: 0,
+      impact1000: 'Da das IISS verschiedene Programme in vielen verschiedenen Ländern betreibt, ist eine genaue quantitative Beurteilung schwierig.',
+      donationDeficit: null,
       evaluators: [
         {
           evaluator: 'Bewusst Spenden',
@@ -747,5 +718,5 @@ export class DataService {
     else return null;
   }
 
-  constructor() { }
+  constructor() {}
 }
