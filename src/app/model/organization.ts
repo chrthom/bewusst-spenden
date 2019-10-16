@@ -21,7 +21,7 @@ export class Organization {
   cause: string[];
   // Allowed values for impactDirection: proaktiv, reaktiv
   impactDirection: string;
-  // Please to not put "Weltweit" as region
+  // ISO ALPHA2 country codes
   regions: string[];
   // Allowed values: animal death, animal suffering, catastrophe, environment, existential risks, human death,
   // human health, human knowledge, human rights, institutions, values

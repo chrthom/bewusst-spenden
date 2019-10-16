@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams } from "ionic-angular";
 import { Organization } from "../../app/model/organization";
 import { Chart, MapChart } from "angular-highcharts";
@@ -75,10 +75,7 @@ export class OrganizationPage implements OnInit {
         }
       });
 
-      let countriesOfRegions = [].concat.apply([], this.organization.regions.map(r => this.mapsService.regionMapping[r])).filter(function (item, pos, self) {
-        return self.indexOf(item) == pos;
-      }).map(c => [c.toLowerCase(), 1]);
-      console.log(JSON.stringify(countriesOfRegions)); //
+      let activeInCountries = this.organization.regions.map(c => [c.toLowerCase(), 1]);
       this.worldmap = new MapChart({
         credits: {
           enabled: false
@@ -95,7 +92,7 @@ export class OrganizationPage implements OnInit {
         series: [{
           animation: true,
           name: 'Aktionsgebiet',
-          data: countriesOfRegions,
+          data: activeInCountries,
           mapData: this.mapsService.worldmap
         }],
         tooltip: {

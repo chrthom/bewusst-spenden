@@ -14,7 +14,10 @@ export class DataService {
       category: [ 'Armut' ],
       cause: [ 'Menschenleben' ],
       impactDirection: 'reaktiv',
-      regions: [ 'Afrika' ],
+      regions: [
+        'AO', 'BW', 'BF', 'BI', 'KH', 'CM', 'CD', 'ET', 'GA', 'GM', 'GH', 'GN', 'HT', 'IN', 'ID', 'KE', 'LR', 'MG', 'MW',
+        'ML', 'MZ', 'NA', 'NP', 'NI', 'NG', 'PG', 'PE', 'PH', 'RW', 'ST', 'SN', 'SL', 'SD', 'TZ', 'TG', 'UG', 'ZM', 'ZW'
+      ],
       questionaireResults: [ 'human death' ],
       slogan: 'Mit Moskitonetzen Malaria in Afrika bekämpfen.',
       shortDescription: 'Malaria ist eine der häufigsten Todesursachen von Kindern in Afrika. Mit Insektiziden behandelte Netze können Malaria wirksam verhindern und sind außerdem günstig — etwa 5 Dollar pro Netz.',
@@ -43,12 +46,12 @@ export class DataService {
       category: [ 'Armut' ],
       cause: [ 'Menschenleben' ],
       impactDirection: 'reaktiv',
-      regions: [ 'Afrika' ],
+      regions: [ 'BD', 'BF', 'KH', 'TD', 'ET', 'GH', 'MZ', 'MM', 'NP', 'NG', 'SN', 'SS', 'TH', 'UG', 'ZM' ],
       questionaireResults: [ 'human death' ],
       slogan: 'Verbesserung der Prävention, Diagnose und Behandlung von vernachlässigten Tropenkrankheiten',
       shortDescription: 'Malaria Consortium ist eine der weltweit führenden Non-Profit-Organisationen, die sich auf die Prävention, Kontrolle und Behandlung von Malaria und anderen übertragbaren Krankheiten in gefährdeten Bevölkerungsgruppen spezialisiert hat.',
       longDescription: 'Malaria Consortium ist eine der weltweit führenden Non-Profit-Organisationen, die sich auf die Prävention, Kontrolle und Behandlung von Malaria und anderen übertragbaren Krankheiten in gefährdeten Bevölkerungsgruppen spezialisiert hat. Sie schaffen maßgeschneiderte, evidenzbasierte Lösungen, die sich positiv auf das Gesundheitssystem und die Wirtschaft insgesamt auswirken.',
-      impact1000: 'Mit 1.000€ können ungefähr 150 mit Insektiziden behandelte Netze gekauft werden, 15000 Malaria-Test gemacht werden oder 250 Kinder durch Chemoprevention vor Malaria geschützt werden.',
+      impact1000: 'Mit 1.000€ können ungefähr 150 mit Insektiziden behandelte Netze gekauft, 15000 Malaria-Tests gemacht werden oder 250 Kinder durch Chemoprevention vor Malaria geschützt werden.',
       donationDeficit: 10000000,
       evaluators: [
         {
@@ -67,7 +70,7 @@ export class DataService {
       category: [ 'Armut' ],
       cause: [ 'Gesundheit' ],
       impactDirection: 'reaktiv',
-      regions: [ 'Afrika' ],
+      regions: [ 'BI', 'CI', 'CD', 'ET', 'LR', 'MG', 'MW', 'MR', 'MZ', 'NE', 'NG', 'SD', 'TZ', 'UG', 'ZM' ],
       questionaireResults: [ 'human health' ],
       slogan: 'Behandlung vernachlässigter Tropenkrankheiten in Subsahara-Afrika',
       shortDescription: 'SCI behandelt Kinder und Erwachsene mit Risiko für Schistosomiasis und durch den Boden übertragene Helminthen (Peitschenwurm, Hakenwurm und Spulwurm), verhindert Anämie, beeinträchtigtes Wachstum und Entwicklung bei Kindern und die Entwicklung von lebensbedrohlichen Zuständen von Blasenkrebs, Nierenfunktionsstörungen oder Leber- und Milzschäden.',
@@ -96,7 +99,7 @@ export class DataService {
       category: [ 'Armut' ],
       cause: [ 'Gesundheit' ],
       impactDirection: 'reaktiv',
-      regions: ['Afrika', 'Südostasien', 'USA'],
+      regions: [ 'US', 'BF', 'CM', 'CI', 'GN', 'KE', 'ML', 'MZ', 'NE', 'NG', 'SN', 'SL', 'TZ', 'BD', 'KH', 'ID', 'MM', 'NP', 'PH', 'VN' ],
       questionaireResults: [ 'human health' ],
       slogan: 'Prävention von Blindheit und Unterernährung',
       shortDescription: 'Helen Keller International (HKI) bekämpft die Ursachen und Folgen von Blindheit und Mangelernährung durch Programme, die auf Evidenz und Forschung in den Bereichen Sehvermögen, Gesundheit und Ernährung basieren.',
@@ -125,7 +128,10 @@ export class DataService {
       category: [ 'Armut' ],
       cause: [ 'Gesundheit' ],
       impactDirection: 'reaktiv',
-      regions: [ 'Afrika' ],
+      regions: [
+        'AF', 'IN', 'JE', 'MR', 'ML', 'NE', 'NG', 'SN', 'GW', 'LR', 'CI', 'TD', 'SD', 'CF', 'SD', 'ET', 'SO', 'UG', 'CD',
+        'SS', 'CG', 'KE', 'TZ', 'RW', 'BI', 'ZM', 'ZW', 'NA', 'AO'
+      ],
       questionaireResults: [ 'human health' ],
       slogan: 'Unterstützung von Entwurmungsprogrammen in Ländern mit niedrigem Einkommen',
       shortDescription: 'Der END-Fonds verwaltet Zuschüsse, stellt Finanzmittel bereit und unterstützt staatliche Programme zur Kontrolle und Beseitigung vernachlässigter Tropenkrankheiten, einschließlich der Entwurmung.',
@@ -140,6 +146,7 @@ export class DataService {
         }
       ]
     },
+    /* TODO: Replace this organization with another Evidence Actions's program
     {
       name: 'Evidence Action\'s - No Lean Season',
       thumbnail: 'evidence_action_nls',
@@ -149,7 +156,7 @@ export class DataService {
       category: [ 'Armut' ],
       cause: [ 'Gesundheit', 'Lebensstandard' ],
       impactDirection: 'reaktiv',
-      regions: [ 'Indien', "Südostasien" ],
+      regions: [ 'IN' ],
       questionaireResults: [ 'poverty' ],
       slogan: 'Eine einfache Fahrkarte genügt, um saisonale Armut zu vermindern',
       shortDescription: 'No Lean Season verringert saisionale Armut in ländlichen Region, indem sie Arbeitsmobilität ermöglicht und so Einkommen erhöht.',
@@ -169,6 +176,7 @@ export class DataService {
         }
       ]
     },
+    */
     {
       name: 'GiveDirectly',
       thumbnail: 'give_directly',
@@ -178,7 +186,7 @@ export class DataService {
       category: [ 'Armut' ],
       cause: [ 'Lebensstandard' ],
       impactDirection: 'reaktiv',
-      regions: [ 'Afrika' ],
+      regions: [ 'KE', 'UG' ],
       questionaireResults: [ 'poverty' ],
       slogan: 'Geld direkt an extrem arme Menschen spenden',
       shortDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfinding, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1.000$ für ein Jahr an besonders bedürftige Haushalte.',
@@ -207,7 +215,7 @@ export class DataService {
       category: [ 'Armut' ],
       cause: [ 'Bildung' ],
       impactDirection: 'reaktiv',
-      regions: [ 'Indien' ],
+      regions: [ 'IN' ],
       questionaireResults: [ 'education' ],
       slogan: 'Jedes Kind hat ein Anrecht auf Schule und gutes Lernen',
       shortDescription: 'Pratham ist eine innovative Lernorganisation, gegründet 1995 in Indien, um die dortige Qualität der Bildung zu verbessern. Angefangen mit dem Ziel den Kindern in den Slums von Mumbai Bildungszugang zu ermöglichen, ist die Organisation heute zu einer der größten NGOs im Bildungsbereich in Indien gewachsen. ',
@@ -231,7 +239,7 @@ export class DataService {
       category: [ 'Armut' ],
       cause: [ 'Bildung' ],
       impactDirection: 'reaktiv',
-      regions: [ 'Afrika' ],
+      regions: [ 'GH', 'MW', 'ZM', 'TZ', 'ZW' ],
       questionaireResults: [ 'education' ],
       slogan: 'Kampagne für die Bildung von Frauen',
       shortDescription: 'Camfed ist eine internationale gemeinnützige Organisation und wurde 1993 gegründet. Mit dem Ziel Armut und Ungleichheit zu bekämpfen, werden Mädchen beim Schulbesuch und -erfolg unterstützt und junge Frauen  dazu befähigt, sich als Vorkämpferinnen des Wandels zu positionieren. ',
@@ -305,7 +313,7 @@ export class DataService {
       category: [ 'Existenzrisiken' ],
       cause: [ 'Klimaschutz' ],
       impactDirection: 'reaktiv',
-      regions: [ 'USA' ],
+      regions: [ 'US' ],
       questionaireResults: [ 'environment' ],
       slogan: 'Schutz der Welt vor den schlimmsten Auswirkungen des Klimawandels',
       shortDescription: 'Die Clean Air Task Force leistet einen Beitrag zum Schutz vor den schlimmsten Auswirkungen des Klimawandels, indem sie die rasche globale Entwicklung und den Einsatz von CO2-armer Energie und anderen klimaschutzenden Technologien durch Forschung und Analyse, öffentliche Lobbyarbeit und Partnerschaft mit dem Privatsektor beschleunigen.',
@@ -329,7 +337,14 @@ export class DataService {
       category: [ 'Existenzrisiken' ],
       cause: [ 'Klimaschutz' ],
       impactDirection: 'reaktiv',
-      regions: [ 'Südamerika', 'Afrika' ],
+      regions: [
+        'BW', 'CM', 'CF', 'CD', 'GQ', 'GA', 'GM', 'GH', 'KE', 'LS', 'LR', 'MG', 'ML', 'MW', 'MZ', 'NA', 'NG', 'CG', 'SL', 'SD', 'UG', 'ZM', // Africa
+        'AR', 'EC', 'GY', 'PY', 'SR', 'UY', // South America
+        'BD', 'KH', 'LA', 'MY', 'PK', 'SG', 'TH', 'VN', // Asia
+        'DM', 'DO', 'JM', 'LC', // Carribean
+        'BZ', 'CR', 'GT', 'HN', 'NI', 'PA', // Central America
+        'FJ', 'PG', 'WS', 'SB', 'VU' // Oceania
+      ],
       questionaireResults: [ 'environment' ],
       slogan: 'Verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt',
       shortDescription: 'Die Koalition für die Regenwaldnationen (Coalition for Rainforest Nations oder CfRN) bemühen sich um die verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt durch innovative Strategien, die soziale, ökonomische und wissenschaftliche Begründungen integrieren, mit dem Ziel ökologische Nachhaltigkeit zu erreichen.',
@@ -499,7 +514,7 @@ export class DataService {
       category: [ 'Meta' ],
       cause: [ 'Öffentlichkeitsarbeit' ],
       impactDirection: 'proaktiv',
-      regions: [ 'Deutschland','Europa' ],
+      regions: [ 'DE' ],
       questionaireResults: [ 'values' ],
       slogan: 'Die Philosophie des Effektiven Altruismus weiterentwickeln, verbreiten und umsetzen',
       shortDescription: 'Die Stiftung für Effektiven Altruismus trägt zum nachhaltigen Wachstum der Bewegung des Effektiven Altruismus bei. Dabei streben sie eine Welt ohne extremes Leid an. Um die Philosophie des Effektiven Altruismus weiterzuentwickeln, zu verbreiten und umzusetzen, verfolgen sie Projekte in drei Bereichen: Forschung, Community und Philanthropie.',
@@ -549,7 +564,7 @@ export class DataService {
       category: [ 'Politik' ],
       cause: [ 'Menschenrechte' ],
       impactDirection: 'reactive',
-      regions: ['Japan und Korea'],
+      regions: [ 'KP' ],
       questionaireResults: [ 'human rights' ],
       slogan: 'ICNK setzt sich für die Menschenrechte in Nordkorea ein.',
       shortDescription: 'Das Ziel des ICNK ist es öffentliches und politsches Bewusstsein über die Meschenrechtslage in Nordkorea zu schaffen, so dass gemeinsam gezielt gegen die Menschenrechtverletzungen in Nordkorea vorgegangen wird. Um dies zu erreichen, arbeitet der ICNK eng mit über 40 Organisationen zusammen.',
@@ -567,7 +582,7 @@ export class DataService {
 
     // Tierleid
     {
-      name: 'Animal Equality International - Zur Verteidigung aller Tiere',
+      name: 'Animal Equality International',
       thumbnail: 'animal_equality',
       website: 'https://www.animalequality.de/',
       donationLink: 'https://www.animalequality.de/spenden',
@@ -575,7 +590,7 @@ export class DataService {
       category: [ 'Tierleid' ],
       cause: [ 'Tierleben', 'Haltungsbedingungen' ],
       impactDirection: 'reaktiv',
-      regions: [ 'Deutschland', 'USA', 'Europa', 'Mittelamerika', 'Südamerika', 'Indien' ],
+      regions: [ 'IN', 'US', 'IT', 'DE', 'ES', 'GB', 'MX', 'BR' ],
       questionaireResults: [ 'animal suffering' ],
       slogan: 'Wir arbeiten für eine bessere Welt für alle Tiere',
       shortDescription: 'Animal Equality ist eine internationale Organisation, die gemeinsam mit Gesellschaft, Politik und Unternehmen daran arbeitet, Grausamkeit in der Massentierhaltung zu beenden.',
@@ -647,7 +662,7 @@ export class DataService {
       category: [ 'Tierleid' ],
       cause: [ 'Haltungsbedingungen', 'Tierleben' ],
       impactDirection: 'proaktiv',
-      regions: [ 'Japan und Korea', 'Mittelamerika', 'USA', 'Europa' ],
+      regions: [ 'MX', 'GB', 'JP', 'US' ],
       questionaireResults: [ 'animal suffering' ],
       slogan: 'Empowering Change - Driving Progress',
       shortDescription: 'The Humane League will Tierleiden möglichst weitreichend verhindern. Dazu werden mit Humane League Labs die effektivsten Methoden ermittelt. Neben konkreten Kampagnen wird Aufklärungsarbeit in der Bevölkerung betrieben sowie das Wissen um den Tierschutz an Universitäten verbreitet.',
@@ -687,7 +702,7 @@ export class DataService {
       ]
     },
     {
-      name: 'International Institut for Strategic Studies',
+      name: 'International Institute for Strategic Studies',
       thumbnail: 'iiss',
       website: 'https://www.iiss.org/',
       donationLink: 'https://www.iiss.org/individual-membership',

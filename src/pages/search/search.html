@@ -50,15 +50,12 @@
         <ion-label>Region</ion-label>
         <ion-select [(ngModel)]="searchRegion" multiple="true" submitText="Suchen" cancelText="Abbrechen" (ionChange)="search()">
           <ion-option value="Afrika">Afrika</ion-option>
-          <ion-option value="Deutschland">Deutschland</ion-option>
           <ion-option value="Europa">Europa</ion-option>
-          <ion-option value="Indien">Indien</ion-option>
-          <ion-option value="Japan und Korea">Japan und Korea</ion-option>
           <ion-option value="Mittelamerika">Mittelamerika</ion-option>
           <ion-option value="Ozeanien">Ozeanien</ion-option>
           <ion-option value="Südamerika">S&uuml;damerika</ion-option>
           <ion-option value="Südostasien">S&uuml;dostasien</ion-option>
-          <ion-option value="USA">USA</ion-option>
+          <ion-option *ngFor="let country of countries" value="{{ country.code }}">{{ country.name }}</ion-option>
         </ion-select>
       </ion-item>
       <ion-item *ngIf="advancedSearch">
