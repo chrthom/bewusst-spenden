@@ -146,7 +146,7 @@ export class DataService {
         }
       ]
     },
-    /* TODO: Replace this organization with another Evidence Actions's program
+    /* TODO: Replace this organization with another Evidence Actions' program
     {
       name: 'Evidence Action\'s - No Lean Season',
       thumbnail: 'evidence_action_nls',
@@ -159,8 +159,8 @@ export class DataService {
       regions: [ 'IN' ],
       questionaireResults: [ 'poverty' ],
       slogan: 'Eine einfache Fahrkarte genügt, um saisonale Armut zu vermindern',
-      shortDescription: 'No Lean Season verringert saisionale Armut in ländlichen Region, indem sie Arbeitsmobilität ermöglicht und so Einkommen erhöht.',
-      longDescription: 'Sasionale Armut ensteht in der Zeit zwischen Saat und Ernte in denen es wenig Jobs gibt, die Nahrungvorräte ausgehen und es so zu Mangelernährung insbesondere von Schwangeren und kleinen Kindern kommt. No Lean Season unterstützt teilnehmende Haushalte mit $20, um eine Reise zu städtischen Gebieten in der Umgebung möglich zu machen, die in dieser Zeit mehr Jobs bieten. Studien der Universität Yale haben ergeben, dass diese saisonalen Arbeitsmöglichkeiten in jedem Haushalt durschnittlich eine Mahlzeit pro Kopf mehr an Tag möglich machen.',
+      shortDescription: 'No Lean Season verringert saisonale Armut in ländlichen Region, indem sie Arbeitsmobilität ermöglicht und so Einkommen erhöht.',
+      longDescription: 'Saisonale Armut entsteht in der Zeit zwischen Saat und Ernte in denen es wenig Jobs gibt, die Nahrungsvorräte ausgehen und es so zu Mangelernährung insbesondere von Schwangeren und kleinen Kindern kommt. No Lean Season unterstützt teilnehmende Haushalte mit $20, um eine Reise zu städtischen Gebieten in der Umgebung möglich zu machen, die in dieser Zeit mehr Jobs bieten. Studien der Universität Yale haben ergeben, dass diese saisonalen Arbeitsmöglichkeiten in jedem Haushalt durchschnittlich eine Mahlzeit pro Kopf mehr an Tag möglich machen.',
       impact1000: 'In Haushalt, die an dem Programm teilnehmen, konnte ein Drittel mehr für Nahrung und andere Notwendigkeiten ausgeben werden, pro Person wurden ca. 600 Kalorien mehr am Tag konsumiert.',
       donationDeficit: 0, // Im Dezember 2017 wurde von Good Ventures 11,5 Millionen Dollar zum No Lean Season Programm gegeben, welches das Programm für die nächsten drei Jahre im Wesentlichen finanziert. Zusätzliche Spenden können für Forschung und Erweiterung des Programms genutzt werden.
       evaluators: [
@@ -341,7 +341,7 @@ export class DataService {
         'BW', 'CM', 'CF', 'CD', 'GQ', 'GA', 'GM', 'GH', 'KE', 'LS', 'LR', 'MG', 'ML', 'MW', 'MZ', 'NA', 'NG', 'CG', 'SL', 'SD', 'UG', 'ZM', // Africa
         'AR', 'EC', 'GY', 'PY', 'SR', 'UY', // South America
         'BD', 'KH', 'LA', 'MY', 'PK', 'SG', 'TH', 'VN', // Asia
-        'DM', 'DO', 'JM', 'LC', // Carribean
+        'DM', 'DO', 'JM', 'LC', // Caribbean
         'BZ', 'CR', 'GT', 'HN', 'NI', 'PA', // Central America
         'FJ', 'PG', 'WS', 'SB', 'VU' // Oceania
       ],
@@ -690,7 +690,7 @@ export class DataService {
       questionaireResults: [ 'institutions' ],
       slogan: 'Die globale Koalition gegen Korruption',
       shortDescription: 'Eine globale Bewegung, die eine Vision teilt: eine Welt, in der Regierung, Wirtschaft, Zivilgesellschaft und das tägliche Leben der Menschen frei von Korruption sind.',
-      longDescription: 'Gegründet in 1993, ist die Bewegung heute in über 100 Ländern präsent und arbeitet daran, ein kollektives weltweites Bewusstsein für Korruption und Veränderungen herbeizuführen. Es werden internatinale Antikorruptionskonventionen geschaffen, die Verfolgung korrupter Führer und die Beschlagnahmung ihrer unerlaubt erworbenen Reichtümer unterstützt sowie Unternehmen für ihr Handeln im In- und Ausland verantwortlich gemacht. In mehre als 100 Ländern arbeiten lokale Gruppen mit Partnern aus Politik, Wirtschaft und Zivilgesellschaft zusammen, um wirksame Maßnahmen gegen Korruption zu ergreifen. Politisch unparteiisch wird Wert auf Unanhängigkeit gelegt, sodass Programme und Aktivitäten allein von International Transparency festgelegt werden. Finanzierungsquellen und Ausgaben werden jährlich von einem unabhängigen Auditor transparent gemacht.',
+      longDescription: 'Gegründet in 1993, ist die Bewegung heute in über 100 Ländern präsent und arbeitet daran, ein kollektives weltweites Bewusstsein für Korruption und Veränderungen herbeizuführen. Es werden internatinale Antikorruptionskonventionen geschaffen, die Verfolgung korrupter Führer und die Beschlagnahmung ihrer unerlaubt erworbenen Reichtümer unterstützt sowie Unternehmen für ihr Handeln im In- und Ausland verantwortlich gemacht. In mehre als 100 Ländern arbeiten lokale Gruppen mit Partnern aus Politik, Wirtschaft und Zivilgesellschaft zusammen, um wirksame Maßnahmen gegen Korruption zu ergreifen. Politisch unparteiisch wird Wert auf Unabhängigkeit gelegt, sodass Programme und Aktivitäten allein von International Transparency festgelegt werden. Finanzierungsquellen und Ausgaben werden jährlich von einem unabhängigen Auditor transparent gemacht.',
       impact1000: 'Da Transparency International verschiedene Programme in den über 100 Ländern betreibt, ist eine genaue quantitative Beurteilung sehr schwierig.',
       donationDeficit: null,
       evaluators: [
