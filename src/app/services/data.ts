@@ -397,9 +397,9 @@ export class DataService {
       regions: [],
       questionaireResults: [],
       slogan: 'Forschung zu effektiven Spendenmöglichkeiten',
-      shortDescription: 'GiveWell ist eine Non-Profit-Organisation, die sich der Auffindung herausragender Spendenmöglichkeiten widmet und die vollständigen Details ihrer Analyse veröffentlicht, um den Spendern bei der Entscheidung zu helfen, wo sie ihre Spende tätigen möchten. Ihr derzeitiger Schwerpunkt liegt auf der Verbesserung des Lebens in den Entwicklungsländern.',
-      longDescription: 'Anders als andere Evaluatoren die sich ausschließlich auf Finanzen konzentrieren und Verwaltungs- oder Fundraising-Kosten ermitteln, führt GiveWell eingehende Untersuchungen durch, um zu ermitteln, wie vielen Menschen ein bestimmtes Programm pro ausgegebenem Dollar wie sehr helfen kann (dazu dienen z. B. Indikatoren wie disability-adjusted life years). Anstatt zu versuchen, so viele Wohltätigkeitsorganisationen wie möglich zu bewerten, konzentrieren sie sich auf die wenigen Wohltätigkeitsorganisationen, die herausragend sind, um besonders wirkungsvolle Spendengelegenheiten zu finden und empfehlen zu können.',
-      impact1000: null,
+      shortDescription: 'GiveWell ist eine Non-Profit-Organisation, die sich der Auffindung herausragender Spendenmöglichkeiten widmet und die vollständigen Details ihrer Analyse veröffentlicht, um den Spendern bei der Entscheidung zu helfen, wo sie ihre Spende tätigen möchten. Ihr derzeitiger Schwerpunkt liegt auf der Verbesserung des Lebens in Entwicklungsländern.',
+      longDescription: 'Anders als andere Evaluatoren die sich ausschließlich auf Finanzen konzentrieren und Verwaltungs- oder Fundraising-Kosten ermitteln, führt GiveWell eingehendere Untersuchungen durch. Dabei untersuchen sie wie viel Gutes ein entsprechendes Programm bewirkt (ausgedrückt durch die Anzahl geretter bzw. verbesserter Leben). Anstatt zu versuchen, so viele Wohltätigkeitsorganisationen wie möglich zu bewerten, konzentrieren sie sich auf die wenigen Wohltätigkeitsorganisationen, die herausragend sind, um besonders wirkungsvolle Spendengelegenheiten zu finden.',
+      impact1000: 'Eine Spende an GiveWell hilft bei deren Arbeit, exzellente Spendenmöglichkeiten im Bereich Global Health und Armut zu identifizieren. Eine genaue Quantifizierung ist an dieser Stelle allerdings nicht möglich.',
       donationDeficit: null,
       evaluators: [
         {
