@@ -6,7 +6,7 @@ node_js:
 env:
   global:
     - APP_NAME_PROD=bewusstspenden
-    - APP_NAME_TEST=bewusstspenden_test
+    - APP_NAME_TEST=bewusstspenden-test
 
 build:
   ci:
