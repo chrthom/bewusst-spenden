@@ -12,7 +12,7 @@ build:
   ci:
     - npm install -g ionic
     - npm install
-    - if [ "$BRANCH" == "master" ] || [ "$BRANCH" == "prod" ]; then ionic build; else ionic build; fi
+    - if [ "$BRANCH" == "master" ] || [ "$BRANCH" == "prod" ]; then ionic build --prod; else ionic build; fi
   on_success:
     - if [ "$BRANCH" == "master" ] || [ "$BRANCH" == "prod" ]; then rm www/.gitignore; fi
     - if [ "$BRANCH" == "master" ] || [ "$BRANCH" == "prod" ]; then git add www; fi
