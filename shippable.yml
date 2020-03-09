@@ -5,15 +5,17 @@ node_js:
 
 env:
   global:
-    - APP_NAME=effective-giving
+    - APP_NAME_PROD=bewusstspenden
+    - APP_NAME_TEST=bewusstspenden_test
 
 build:
   ci:
     - npm install -g ionic
     - npm install
-    - if [ "$BRANCH" == "master" ]; then ionic build; else ionic build; fi
+    - if [ "$BRANCH" == "master" ] || [ "$BRANCH" == "production" ]; then ionic build; else ionic build; fi
   on_success:
-    - if [ "$BRANCH" == "master" ]; then rm www/.gitignore; fi
-    - if [ "$BRANCH" == "master" ]; then git add www; fi
-    - if [ "$BRANCH" == "master" ]; then git commit -m "deployment build"; fi
-    - if [ "$BRANCH" == "master" ]; then git push -f git@heroku.com:$APP_NAME.git master; fi
+    - if [ "$BRANCH" == "master" ] || [ "$BRANCH" == "production" ]; then rm www/.gitignore; fi
+    - if [ "$BRANCH" == "master" ] || [ "$BRANCH" == "production" ]; then git add www; fi
+    - if [ "$BRANCH" == "master" ] || [ "$BRANCH" == "production" ]; then git commit -m "deployment build"; fi
+    - if [ "$BRANCH" == "master" ]; then git push -f git@heroku.com:$APP_NAME_TEST.git master; fi
+    - if [ "$BRANCH" == "production" ]; then git push -f git@heroku.com:$APP_NAME_PROD.git master; fi
