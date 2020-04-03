@@ -627,30 +627,6 @@ export class DataService {
       ]
     },
     {
-      name: 'ProVeg International',
-      thumbnail: 'proveg_international',
-      website: 'https://www.proveg.com/',
-      donationLink: 'https://www.proveg.com/de/spenden/',
-      donationKeyEAS: null,
-      category: [ 'Tierleid' ],
-      cause: [ 'Tierleben' ],
-      impactDirection: 'proaktiv',
-      regions: [],
-      questionaireResults: [ 'animal death' ],
-      slogan: 'Appetite for a better world',
-      shortDescription: 'ProVeg motiviert Menschen zu einem pflanzlichen Lebensstil und vernetzt bestehende Organisationen weltweit, um Gesundheit zu fördern, Tierleiden zu vermindern, die Umwelt zu schützen und eine gerechtere Verteilung von Nahrungsmitteln zu ermöglichen.',
-      longDescription: 'Viele der weltweit dringendsten Probleme haben die individuelle Ernährungsweise eines jeden Einzelnen zur Ursache. ProVeg International motiviert die Bevölkerung durch Aufklärung und Bereitstellung praktischer Informationen zum Umstieg auf eine Ernährung unter Verwendung tierfreier Alternativen. Ziel ist, den Konsum von Tieren als Nahrungsmittel bis 2040 um 50 % zu reduzieren. Damit soll die Gesundheit der Bevölkerung gefördert und gleichzeitig das durch die Nahrungsmittelproduktion entstehende Tierleiden vermindert werden. Neben dem Umweltschutz steht dabei zudem die faire Verteilung der weltweiten Nahrungsmittelressourcen im Fokus. Dazu arbeitet ProVeg mit einflussreichen Multiplikatoren aus Politik, Wirtschaft und Medien zusammen.',
-      impact1000: 'Für 1.000€ kann eine Aufklärungsveranstaltung in einer Schule mit gesunden Snacks und Getränken ausgestattet, ein Sprecher für einen von ProVeg International organisierten Kongress eingeladen und Informationsmaterial für 30 bis 40 Informationsveranstaltungen beschafft werden.',
-      donationDeficit: null,
-      evaluators: [
-        {
-          evaluator: 'Animal Charity Evaluators',
-          link: 'https://animalcharityevaluators.org/charity-review/proveg/',
-          top: true
-        }
-      ]
-    },
-    {
       name: 'The Humane League',
       thumbnail: 'the_humane_league',
       website: 'https://www.thehumaneleague.org/',
