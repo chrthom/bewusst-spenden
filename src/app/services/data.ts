@@ -338,13 +338,10 @@ export class DataService {
       cause: [ 'Klimaschutz' ],
       impactDirection: 'reaktiv',
       regions: [
-        'BW', 'CM', 'CF', 'CD', 'GQ', 'GA', 'GM', 'GH', 'KE', 'LS', 'LR', 'MG', 'ML', 'MW', 'MZ', 'NA', 'NG', 'CG', 'SL', 'SD', 'UG', 'ZM', // Africa
-        'AR', 'EC', 'GY', 'PY', 'SR', 'UY', // South America
-        'BD', 'KH', 'LA', 'MY', 'PK', 'SG', 'TH', 'VN', // Asia
-        'DM', 'DO', 'JM', 'LC', // Caribbean
-        'BZ', 'CR', 'GT', 'HN', 'NI', 'PA', // Central America
-        'FJ', 'PG', 'WS', 'SB', 'VU' // Oceania
-      ],
+        'AR', 'GQ', 'BD', 'CL', 'CR', 'CD', 'DO', 'EC', 'GA', 'GH',
+		'GT', 'GY', 'HN', 'CM', 'KE', 'CG', 'LS', 'LR', 'MG', 'NI',
+		'NG', 'PK', 'PA', 'PY', 'PE', 'SL', 'SR', 'TH', 'UG', 'UY',
+		'VN', 'CF', 'MY', 'ID', 'PG'],
       questionaireResults: [ 'environment' ],
       slogan: 'Verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt',
       shortDescription: 'Die Koalition für die Regenwaldnationen (Coalition for Rainforest Nations oder CfRN) bemühen sich um die verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt durch innovative Strategien, die soziale, ökonomische und wissenschaftliche Begründungen integrieren, mit dem Ziel ökologische Nachhaltigkeit zu erreichen.',
@@ -686,11 +683,24 @@ export class DataService {
       category: [ 'Politik' ],
       cause: [ 'Institutionen' ],
       impactDirection: 'proaktiv',
-      regions: [],
+      regions: [
+	  'AR', 'AM', 'AU', 'AT', 'AZ', 'BS', 'BH', 'BD', 'BY', 'BE',
+	  'BJ', 'BA', 'BR', 'BG', 'BI', 'KH', 'CM', 'CA', 'CL', 'CN',
+	  'CO', 'CR', 'CI', 'CZ', 'CD', 'DK', 'DO', 'SV', 'EE', 'ET',
+	  'FI', 'FR', 'GE', 'DE', 'GH', 'GR', 'GL', 'GT', 'GY', 'HN',
+	  'HU', 'IS', 'ID', 'IE', 'IL', 'IT', 'JM', 'JP', 'JO', 'KZ',
+	  'KE', 'XK', 'KW', 'KG', 'LV', 'LB', 'LR', 'LT', 'MK', 'MG', 
+	  'MW', 'MY', 'MV', 'ML', 'MU', 'MX', 'MD', 'MN', 'ME', 'MA', 
+	  'MZ', 'NP', 'NL', 'NZ', 'NE', 'NG', 'NO', 'PK', 'PS', 'PA',
+	  'PG', 'PE', 'PL', 'PT', 'CG', 'RO', 'RU', 'RW', 'SN', 'RS',
+	  'SC', 'SL', 'SK', 'SI', 'SB', 'ZA', 'KR', 'ES', 'LK', 'SE', 
+	  'CH', 'TW', 'TG', 'TT', 'TN', 'TR', 'UG', 'UA', 'GB', 'VU',
+	  'VE', 'VN', 'ZM', 'ZW',
+	  ],
       questionaireResults: [ 'institutions' ],
       slogan: 'Die globale Koalition gegen Korruption',
       shortDescription: 'Eine globale Bewegung, die eine Vision teilt: eine Welt, in der Regierung, Wirtschaft, Zivilgesellschaft und das tägliche Leben der Menschen frei von Korruption sind.',
-      longDescription: 'Gegründet in 1993, ist die Bewegung heute in über 100 Ländern präsent und arbeitet daran, ein kollektives weltweites Bewusstsein für Korruption und Veränderungen herbeizuführen. Es werden internatinale Antikorruptionskonventionen geschaffen, die Verfolgung korrupter Führer und die Beschlagnahmung ihrer unerlaubt erworbenen Reichtümer unterstützt sowie Unternehmen für ihr Handeln im In- und Ausland verantwortlich gemacht. In mehre als 100 Ländern arbeiten lokale Gruppen mit Partnern aus Politik, Wirtschaft und Zivilgesellschaft zusammen, um wirksame Maßnahmen gegen Korruption zu ergreifen. Politisch unparteiisch wird Wert auf Unabhängigkeit gelegt, sodass Programme und Aktivitäten allein von International Transparency festgelegt werden. Finanzierungsquellen und Ausgaben werden jährlich von einem unabhängigen Auditor transparent gemacht.',
+      longDescription: '1993 gegründet, setzt sich die Bewegung für ein globales Bewusstsein für Korruption sowie für mehr Integrität und Transparenz im öffentlichen und privaten Sektor ein. Um diese Ziele zu erreichen, werden internationale Antikorruptionskonventionen erarbeitet, die Verfolgung korrupter Politiker sowie die Beschlagnahmung ihrer illegal erworbenen Vermögen unterstützt und Unternehmen für ihr Handeln im In- und Ausland verantwortlich gemacht. In über 100 Ländern arbeiten lokale Gruppen mit Partnern aus Politik, Wirtschaft und Zivilgesellschaft zusammen, um wirksame Maßnahmen gegen Korruption zu ergreifen. Die Organisation legt Wert auf politische Unabhängigkeit. Programme und Aktivitäten sowie deren Inhalte werden allein von Transparency International festgelegt. Finanzierungsquellen und Ausgaben werden jährlich von einem unabhängigen Auditor überprüft und öffentlich gemacht',
       impact1000: 'Da Transparency International verschiedene Programme in den über 100 Ländern betreibt, ist eine genaue quantitative Beurteilung sehr schwierig.',
       donationDeficit: null,
       evaluators: [
