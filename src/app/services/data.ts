@@ -135,8 +135,8 @@ export class DataService {
       questionaireResults: [ 'human health' ],
       slogan: 'Unterstützung von Entwurmungsprogrammen in Ländern mit niedrigem Einkommen',
       shortDescription: 'Der END-Fonds verwaltet Zuschüsse, stellt Finanzmittel bereit und unterstützt staatliche Programme zur Kontrolle und Beseitigung vernachlässigter Tropenkrankheiten, einschließlich der Entwurmung.',
-      longDescription: 'Der END-Fonds verwaltet Zuschüsse, stellt Finanzmittel bereit und unterstützt staatliche Programme zur Kontrolle und Beseitigung vernachlässigter Tropenkrankheiten, einschließlich der Entwurmung.',
-      impact1000: null,
+      longDescription: 'Vernachlässigte Tropenkrankheiten (Neglected Tropical Diseases, NTDs) sind eine Gruppe von parasitären und bakteriellen Infektionskrankheiten, von denen mehr als 1,5 Milliarden Menschen auf der ganzen Welt betroffen sind, die Hälfte davon sind Kinder. Der END Fund konzentriert sich auf die Bereitstellung von NTD-Behandlungen, einschließlich Entwurmung, indem er strategische Investitionen mit hoher Wirkung in NTD-Programme verwaltet, mit Partnern aus Regierung, NGOs, Pharmazie und Wissenschaft zusammenarbeitet sowie eine Gemeinschaft von Aktivisten und Philanthropen aufbaut und einbezieht. Es wird ein systematischer Ansatz verfolgt, um das breite Ökosystem von Interessenvertretern, die an der Beendigung von NTDs arbeiten, zu verstehen, sich mit ihnen auseinanderzusetzen und Einfluss zu nehmen.',
+      impact1000: 'Studien zeigen, dass die Behandlung von NTDs die kostenwirksamste Methode ist, um die Anwesenheit von Kindern in der Schule zu verbessern und ihre Lern- und Konzentrationsfähigkeit zu steigern. Mit nur 50 Cent (USD) wird ein Paket von Medikamenten mit rascher Wirkung finanziert, um eine Person gegen die fünf häufigsten NTDs zu behandeln. Mit 1.000 Euro können wir dazu beitragen, über 2.000 Menschen mit Entwurmungsmedikamenten zu versorgen.',
       donationDeficit: 15000000,
       evaluators: [
         {
