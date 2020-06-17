@@ -104,7 +104,7 @@ export class DataService {
       slogan: 'Prävention von Blindheit und Unterernährung',
       shortDescription: 'Helen Keller International (HKI) bekämpft die Ursachen und Folgen von Blindheit und Mangelernährung durch Programme, die auf Evidenz und Forschung in den Bereichen Sehvermögen, Gesundheit und Ernährung basieren.',
       longDescription: 'Helen Keller International hat es sich zur Aufgabe gemacht, die Sehkraft und das Leben der Schwächsten und Benachteiligten zu retten. Sie bekämpfen die Ursachen und Folgen von Blindheit und Mangelernährung durch Programme, die auf Evidenz und Forschung in den Bereichen Sehvermögen, Gesundheit und Ernährung basieren. Derzeit laufen mehr als 100 Programme in 20 afrikanischen und asiatischen Ländern sowie in den Vereinigten Staaten.',
-      impact1000: 'Von 1.000€ können derzeit ca. 1500 Vitamin A Ergänzungsmittel verteilt werden.',
+      impact1000: 'Mit 1.000€ können derzeit ca. 1500 Vitamin A Ergänzungsmittel verteilt werden.',
       donationDeficit: 40000000,
       evaluators: [
         {
@@ -135,8 +135,8 @@ export class DataService {
       questionaireResults: [ 'human health' ],
       slogan: 'Unterstützung von Entwurmungsprogrammen in Ländern mit niedrigem Einkommen',
       shortDescription: 'Der END-Fonds verwaltet Zuschüsse, stellt Finanzmittel bereit und unterstützt staatliche Programme zur Kontrolle und Beseitigung vernachlässigter Tropenkrankheiten, einschließlich der Entwurmung.',
-      longDescription: 'Der END-Fonds verwaltet Zuschüsse, stellt Finanzmittel bereit und unterstützt staatliche Programme zur Kontrolle und Beseitigung vernachlässigter Tropenkrankheiten, einschließlich der Entwurmung.',
-      impact1000: null,
+      longDescription: 'Vernachlässigte Tropenkrankheiten (Neglected Tropical Diseases, NTDs) sind eine Gruppe von parasitären und bakteriellen Infektionskrankheiten, von denen mehr als 1,5 Milliarden Menschen auf der ganzen Welt betroffen sind, die Hälfte davon sind Kinder. Der END Fund konzentriert sich auf die Bereitstellung von NTD-Behandlungen, einschließlich Entwurmung, indem er strategische Investitionen mit hoher Wirkung in NTD-Programme verwaltet, mit Partnern aus Regierung, NGOs, Pharmazie und Wissenschaft zusammenarbeitet sowie eine Gemeinschaft von Aktivisten und Philanthropen aufbaut und einbezieht. Es wird ein systematischer Ansatz verfolgt, um das breite Ökosystem von Interessenvertretern, die an der Beendigung von NTDs arbeiten, zu verstehen, sich mit ihnen auseinanderzusetzen und Einfluss zu nehmen.',
+      impact1000: 'Studien zeigen, dass die Behandlung von NTDs die kostenwirksamste Methode ist, um die Anwesenheit von Kindern in der Schule zu verbessern und ihre Lern- und Konzentrationsfähigkeit zu steigern. Mit nur 50 Cent (USD) wird ein Paket von Medikamenten mit rascher Wirkung finanziert, um eine Person gegen die fünf häufigsten NTDs zu behandeln. Mit 1.000 Euro können wir dazu beitragen, über 2.000 Menschen mit Entwurmungsmedikamenten zu versorgen.',
       donationDeficit: 15000000,
       evaluators: [
         {
@@ -189,9 +189,9 @@ export class DataService {
       regions: [ 'KE', 'UG' ],
       questionaireResults: [ 'poverty' ],
       slogan: 'Geld direkt an extrem arme Menschen spenden',
-      shortDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfinding, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1.000$ für ein Jahr an besonders bedürftige Haushalte.',
-      longDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfinding, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1.000$ für ein Jahr an besonders bedürftige Haushalte. GiveDirectly forscht intensiv daran festzustellen, welche Auswirkungen die Geld-Tranfers auf teilnehmende Haushalte haben. Auf der Website https://live.givedirectly.org/ lässt sich nachvollziehen, was einzelne Individuen mit dem Geld gemacht haben.',
-      impact1000: 'GiveDirectly gibt 83% der Spenden direkt an bedürftige Haushalte weiter. Eine Untersuchung zeigt, dass dieses Geld die Nahrungsversorgung, Finanzierung von Bildung und Gesundheit verbessert und nicht für Alkohol oder Tabak ausgegeben wurde. Nach der Eintschätzung von GiveWell hat GiveDirectly verglichen mit anderen besonders effektiven Interventionen wahrscheinlich eine geringere Effektivität. Dafür ist GiveDirectly außerordentlich transparent und hat den direkten Nutzen die Armut zu reduzieren und ist somit in dieser Hinsicht wenig mit Unischerheiten behaftet.',
+      shortDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfindig, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1.000$ für ein Jahr an besonders bedürftige Haushalte.',
+      longDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfindig, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1.000$ für ein Jahr an besonders bedürftige Haushalte. GiveDirectly forscht intensiv daran festzustellen, welche Auswirkungen die Geld-Tranfers auf teilnehmende Haushalte haben. Auf der Website https://live.givedirectly.org/ lässt sich nachvollziehen, was einzelne Individuen mit dem Geld gemacht haben.',
+      impact1000: 'GiveDirectly gibt 83% der Spenden direkt an bedürftige Haushalte weiter. Eine Untersuchung zeigt, dass dieses Geld die Nahrungsversorgung, Finanzierung von Bildung und Gesundheit verbessert und nicht für Alkohol oder Tabak ausgegeben wurde. Nach der Einschätzung von GiveWell hat GiveDirectly verglichen mit anderen besonders effektiven Interventionen wahrscheinlich eine geringere Effektivität. Dafür ist GiveDirectly außerordentlich transparent und hat den direkten Nutzen die Armut zu reduzieren und ist somit in dieser Hinsicht wenig mit Unsicherheiten behaftet.',
       donationDeficit: 200000000,
       evaluators: [
         {
@@ -217,9 +217,9 @@ export class DataService {
       impactDirection: 'reaktiv',
       regions: [ 'IN' ],
       questionaireResults: [ 'education' ],
-      slogan: 'Jedes Kind hat ein Anrecht auf Schule und gutes Lernen',
+      slogan: 'Jedes Kind hat ein Anrecht auf Schule und gute Bildung',
       shortDescription: 'Pratham ist eine innovative Lernorganisation, gegründet 1995 in Indien, um die dortige Qualität der Bildung zu verbessern. Angefangen mit dem Ziel den Kindern in den Slums von Mumbai Bildungszugang zu ermöglichen, ist die Organisation heute zu einer der größten NGOs im Bildungsbereich in Indien gewachsen. ',
-      longDescription: 'Der Fokus von Pratham liegt auf qualitative hochwertigen, kostengünstigen und replizierbaren Interventionen, um Lücken im vorhandenen Bildungssystem zu schließen. Programme sind auf die Anforderungen verschiedener Altergruppen angepasst. Dabei Arbeiten sie sowohl direkt mit den Schulen und der Bevölkerung als auch in Zusammenarbeit mit Regierungsstellen, wodurch jedes Jahr Millionen von Menschen erreicht werden können. Kern der Programme bildet der "Unterricht auf dem richtigen Niveau"-Ansatz (engl: Teaching at the Right Level (TaRL)), der nachweislich positive Auswirkungen auf die Lernergebnisse der Kinder hat. Im Kern des Ansatzes werden den Kindern entsprechend ihrem Niveau grundlegende Lernkompetenzen vermittelt, um ihnen ein schnelles Aufholen im "normalen" Unterricht zu ermöglichen. Der Ansatz wird auf zwei Arten umgesetzt, entweder direkt durch Ausbilder der Organisation in "Lerncamps" oder im Rahmen der Regierungspartnerschaftsprogrammen, bei dem staatliche Lehrer den Ansatz im täglichen Unterricht einbauen. Ob der Ansatz auch im Kontext außerhalb Indiens Wirkung zeigt, wird derzeit erprobt.',
+      longDescription: 'Der Fokus von Pratham liegt auf qualitativ hochwertigen, kostengünstigen und replizierbaren Interventionen, um Lücken im vorhandenen Bildungssystem zu schließen. Programme sind auf die Anforderungen verschiedener Altersgruppen angepasst. Dabei arbeiten sie sowohl direkt mit den Schulen und der Bevölkerung als auch in Zusammenarbeit mit Regierungsstellen, wodurch jedes Jahr Millionen von Menschen erreicht werden können. Kern der Programme bildet der "Unterricht auf dem richtigen Niveau"-Ansatz (engl: Teaching at the Right Level (TaRL)), der nachweislich positive Auswirkungen auf die Lernergebnisse der Kinder hat. Im Kern des Ansatzes werden den Kindern entsprechend ihrem Niveau grundlegende Lernkompetenzen vermittelt, um ihnen ein schnelles Aufholen im "normalen" Unterricht zu ermöglichen. Der Ansatz wird auf zwei Arten umgesetzt, entweder direkt durch Ausbilder der Organisation in "Lerncamps" oder im Rahmen von Regierungspartnerschaftsprogrammen, bei denen staatliche Lehrer den Ansatz im täglichen Unterricht einbauen. Ob der Ansatz auch im Kontext außerhalb Indiens Wirkung zeigt, wird derzeit erprobt.',
       impact1000: 'Je nach Programm gibt es Unterschiede. Als Referenz können aber z.B. 6 Ausbilder je 1 Jahr den Unterricht durch ein "Lerncamp" begleiten.',
       donationDeficit: null,
       evaluators: [
@@ -242,8 +242,8 @@ export class DataService {
       regions: [ 'GH', 'MW', 'ZM', 'TZ', 'ZW' ],
       questionaireResults: [ 'education' ],
       slogan: 'Kampagne für die Bildung von Frauen',
-      shortDescription: 'Camfed ist eine internationale gemeinnützige Organisation und wurde 1993 gegründet. Mit dem Ziel Armut und Ungleichheit zu bekämpfen, werden Mädchen beim Schulbesuch und -erfolg unterstützt und junge Frauen  dazu befähigt, sich als Vorkämpferinnen des Wandels zu positionieren. ',
-      longDescription: 'Das Programm investiert in Mädchen und Frauen in den ärmsten ländlichen Regionen der Subsahara-Afrika, wo Mädchen mit akuten Benachteilugungen konfrontiert sind. Ziel ist es die Frauen nicht nur als Individuen zu stärken, sondern durch ein Alumni- und Mentorprogramm einen Wandel in den Gemeiden zu bewirken und damit die Aussichten für benachteiligte Menschen zu verbessern. Dazu werden Mädchen auf verschiedenen Bildungsstufen finanziell unterstütz, um ihnen den Bildungszugang zu ermöglichen. Zusätzlich wird Frauen geholfen den Umgang mit Geld zu lernen und kleine Unternehmen zu gründen. Das Absolventen-Netzwerk bringt diese gebildeten jungen Frauen weiter zusammen, um ihnen die Möglichkeiten zu geben weitere Veränderungen auf den Weg zu bringen.',
+      shortDescription: 'Camfed ist eine internationale gemeinnützige Organisation und wurde 1993 gegründet. Mit dem Ziel, Armut und Ungleichheit zu bekämpfen, werden Mädchen beim Schulbesuch und -erfolg unterstützt und junge Frauen dazu befähigt, sich als Vorkämpferinnen des Wandels zu positionieren. ',
+      longDescription: 'Das Programm investiert in Mädchen und Frauen in den ärmsten ländlichen Regionen der Subsahara-Afrika, wo Mädchen mit akuten Benachteiligungen konfrontiert sind. Ziel ist es die Frauen nicht nur als Individuen zu stärken, sondern durch ein Alumni- und Mentoring-Programm einen Wandel in den Gemeiden zu bewirken und damit die Aussichten für benachteiligte Menschen zu verbessern. Dazu werden Mädchen auf verschiedenen Bildungsstufen finanziell unterstützt, um ihnen den Bildungszugang zu ermöglichen. Zusätzlich wird Frauen geholfen, den Umgang mit Geld zu lernen und kleine Unternehmen zu gründen. Das Absolventen-Netzwerk bringt diese gebildeten jungen Frauen weiter zusammen, um ihnen die Möglichkeiten zu geben, weitere Veränderungen auf den Weg zu bringen.',
       impact1000: 'Camfed selbst gibt an mit 1.000€ einem Mädchen ca. 4 Schuljahre finanzieren zu können. Unberücksichtigt bleiben dabei Langzeit- und Netzwerkeffekte.',
       donationDeficit: null,
       evaluators: [
@@ -267,9 +267,9 @@ export class DataService {
       impactDirection: 'proaktiv',
       regions: [],
       questionaireResults: [ 'existential risks', 'catastrophe' ],
-      slogan: 'Technologie kann die Menschheit in ein neues führen oder zur Zerstörung führen.',
-      shortDescription: 'Future of Life Institute hat sich als Ziel gesetzt, Forschung und andere Initiativen zum Thema Sicherung des Lebens und der Menschheit zu fördern. Dazu gehört das Entwickeln einer positiven Zukunftsvision in Betracht neuer Technologien und großen globalen Herausforderungen.',
-      longDescription: 'Future of Life Institute hat sich als Ziel gesetzt, Forschung und andere Initiativen zum Thema Sicherung des Lebens und der Menschheit zu fördern. Dazu gehört das Entwickeln einer positiven Zukunftsvision in Betracht neuer Technologien und großen globalen Herausforderungen. Momentaner Fokus ist die Sicherheit von Technologien im Bereich künstliche Intelligenz, zudem die Minimierung von Risiken durch nukleare Waffen und Biotechnologie.',
+      slogan: 'Technologie kann die Menschheit in ein neues Zeitalter, oder in die Zerstörung führen.',
+      shortDescription: 'Das Future of Life Institute hat sich als Ziel gesetzt, Forschung und andere Initiativen zum Thema Sicherung des Lebens und der Menschheit zu fördern. Dazu gehört das Entwickeln einer positiven Zukunftsvision in Anbetracht neuer Technologien und großen globalen Herausforderungen.',
+      longDescription: 'Das Future of Life Institute hat sich als Ziel gesetzt, Forschung und andere Initiativen zum Thema Sicherung des Lebens und der Menschheit zu fördern. Dazu gehört das Entwickeln einer positiven Zukunftsvision in Betracht neuer Technologien und großen globalen Herausforderungen. Momentaner Fokus ist die Sicherheit von Technologien im Bereich künstliche Intelligenz und zudem die Minimierung von Risiken durch nukleare Waffen und Biotechnologie.',
       impact1000: null,
       donationDeficit: null,
       evaluators: [
@@ -293,7 +293,7 @@ export class DataService {
       questionaireResults: [ 'existential risks', 'human knowledge' ],
       slogan: 'Mathematische Grundsatzforschung um sicherzustellen, dass mögliche künstliche Superintelligenz eine positive Auswirkung auf die Menschheit hat',
       shortDescription: 'Wenn die Entwicklung künstlicher Intelligenz so schnell wie bisher voranschreitet, könnte künstliche Intelligenz eines Tages Menschen in jedem Bereich an Intelligenz übertreffen. Das Ziel von MIRI ist es, die Grundlagen zu legen, sichere und verlässliche Systeme im Bereich künstlicher Intelligenz zu entwickeln.',
-      longDescription: 'Wenn die Entwicklung künstlicher Intelligenz so schnell wie bisher voranschreitet, ist es denkbar, dass künstliche Intelligenz eines Tages Menschen in jedem Bereich an Intelligenz übertreffen könnte. Die meisten AI-Forscher erwarten diese Entwicklung schon in diesem Jahrhundert. Das Ziel von MIRI ist es, die Grundlagen zu legen, sichere und verlässliche Systeme im Bereich künstlicher Intelligenz zu entwickeln. Wichtige Aspekte dieser Forschung sind zum Beispiel Entscheidungstheorie, das Erlernen von Werten und der Umgang mit Unsicherheit.',
+      longDescription: 'Wenn die Entwicklung künstlicher Intelligenz so schnell wie bisher voranschreitet, ist es denkbar, dass künstliche Intelligenz eines Tages Menschen in jedem Bereich an Intelligenz übertreffen könnte. Die meisten AI-Forscher erwarten diese Entwicklung schon in diesem Jahrhundert. Das Ziel von MIRI ist es, die Grundlagen dafür zu legen, sichere und verlässliche Systeme im Bereich künstlicher Intelligenz zu entwickeln. Wichtige Aspekte dieser Forschung sind zum Beispiel Entscheidungstheorie, das Erlernen von Werten und der Umgang mit Unsicherheit.',
       impact1000: null,
       donationDeficit: null,
       evaluators: [
@@ -316,7 +316,7 @@ export class DataService {
       regions: [ 'US' ],
       questionaireResults: [ 'environment' ],
       slogan: 'Schutz der Welt vor den schlimmsten Auswirkungen des Klimawandels',
-      shortDescription: 'Die Clean Air Task Force leistet einen Beitrag zum Schutz vor den schlimmsten Auswirkungen des Klimawandels, indem sie die rasche globale Entwicklung und den Einsatz von CO2-armer Energie und anderen klimaschutzenden Technologien durch Forschung und Analyse, öffentliche Lobbyarbeit und Partnerschaft mit dem Privatsektor beschleunigen.',
+      shortDescription: 'Die Clean Air Task Force leistet einen Beitrag zum Schutz vor den schlimmsten Auswirkungen des Klimawandels. Diesen leistet sie, indem sie die rasche globale Entwicklung und den Einsatz von CO2-armer Energie und anderen klimaschutzenden Technologien durch Forschung und Analyse, öffentliche Lobbyarbeit und Partnerschaft mit dem Privatsektor beschleunigen.',
       longDescription: 'Die Clean Air Task Force (CATF) ist eine in den USA ansässige Nichtregierungsorganisation, die sich für die Reduzierung von klimaschädlichen und anderen Schadstoffen durch Forschung und Analyse, öffentliche Interessenvertretung und Partnerschaft mit dem Privatsektor einsetzt. Sie wurde 1996 mit dem Ziel gegründet, eine föderale Politik zur Verringerung der durch amerikanische Kohlekraftwerke verursachten Luftverschmutzung einzuführen. Diese Kampagne war sehr erfolgreich und trug dazu bei, dass ein großer Teil der US-Kohleflotte in den Ruhestand ging. Sie haben zahlreiche andere erfolgreiche Kampagnen konzipiert und mitgestaltet, die beim Aufbau von CO2-Kontrollen für den US-amerikanischen Energiesektor helfen, z. B. Vorschriften für Dieselemissionen, Vorschriften für Schiffsemissionen und Vorschriften für Methanemissionen aus der Öl- und Gasproduktion.',
       impact1000: null,
       donationDeficit: 2000000,
@@ -338,16 +338,13 @@ export class DataService {
       cause: [ 'Klimaschutz' ],
       impactDirection: 'reaktiv',
       regions: [
-        'BW', 'CM', 'CF', 'CD', 'GQ', 'GA', 'GM', 'GH', 'KE', 'LS', 'LR', 'MG', 'ML', 'MW', 'MZ', 'NA', 'NG', 'CG', 'SL', 'SD', 'UG', 'ZM', // Africa
-        'AR', 'EC', 'GY', 'PY', 'SR', 'UY', // South America
-        'BD', 'KH', 'LA', 'MY', 'PK', 'SG', 'TH', 'VN', // Asia
-        'DM', 'DO', 'JM', 'LC', // Caribbean
-        'BZ', 'CR', 'GT', 'HN', 'NI', 'PA', // Central America
-        'FJ', 'PG', 'WS', 'SB', 'VU' // Oceania
-      ],
+        'AR', 'GQ', 'BD', 'CL', 'CR', 'CD', 'DO', 'EC', 'GA', 'GH',
+		'GT', 'GY', 'HN', 'CM', 'KE', 'CG', 'LS', 'LR', 'MG', 'NI',
+		'NG', 'PK', 'PA', 'PY', 'PE', 'SL', 'SR', 'TH', 'UG', 'UY',
+		'VN', 'CF', 'MY', 'ID', 'PG'],
       questionaireResults: [ 'environment' ],
       slogan: 'Verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt',
-      shortDescription: 'Die Koalition für die Regenwaldnationen (Coalition for Rainforest Nations oder CfRN) bemühen sich um die verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt durch innovative Strategien, die soziale, ökonomische und wissenschaftliche Begründungen integrieren, mit dem Ziel ökologische Nachhaltigkeit zu erreichen.',
+      shortDescription: 'Die Koalition für die Regenwaldnationen (Coalition for Rainforest Nations oder CfRN) bemüht sich um die verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt durch innovative Strategien, die soziale, ökonomische und wissenschaftliche Begründungen integrieren, mit dem Ziel ökologische Nachhaltigkeit zu erreichen.',
       longDescription: 'Die CfRN ist eine zwischenstaatliche Organisation von mehr als 50 Regenwaldnationen, die sich für die Förderung der ökologischen Nachhaltigkeit einsetzt und gleichzeitig Möglichkeiten für wirtschaftlichen Fortschritt in den tropisch bewaldeten Entwicklungsländern schafft. Es wurde 2004 vom Premierminister von Papua-Neuguinea und dem Präsidenten von Costa Rica gegründet. Die CfRN-Teilnehmerländer arbeiten freiwillig in gemeinsam entwickelten Initiativen zusammen, die vom CfRN-Sekretariat mit Sitz in New York geleitet werden.',
       impact1000: 'Laut Evaluation von Founders Pledge kann mit 1.000€ die Freisetzung von ca. 8.000 Tonnen CO2 kompensiert werden.',
       donationDeficit: 2000000,
@@ -372,7 +369,7 @@ export class DataService {
       questionaireResults: [ 'existential risks' ],
       slogan: 'Was können wir jetzt tun, um eine lange blühende Zukunft der Menschheit zu sichern?',
       shortDescription: 'Das Future of Humanity Institute ist ein multidisziplinäres Forschungsinstitut an der Universität Oxford. Akademiker am FHI nutzen die Werkzeuge der Mathematik, Philosophie und Sozialwissenschaften in Zusammenhang mit großen Fragen über Zukunft der Menschheit.',
-      longDescription: 'Das Future of Humanity Institute ist ein Forschungsinstitut an der Universität Oxford. Mithilfe von Methoden aus Mathematik, Philosophie und Sozialwissenschaften versuchen die Forscher potentielle Hauptbedrohungen für die Menschheit und entsprechende Strategien zu ihrer Vermeidung zu identifizieren. Zu diesen Bedrohungen gehören drastische Klimaänderungen, Atomkrieg und Nuklearterrorismus, molekulare Nanotechnologie und künstliche Intelligenz.',
+      longDescription: 'Das Future of Humanity Institute ist ein Forschungsinstitut an der Universität Oxford. Mithilfe von Methoden aus Mathematik, Philosophie und Sozialwissenschaften versuchen die Forscher potentielle Bedrohungen für die Menschheit zu identifizieren und entsprechende Bewältigungsstrategien zu finden. Zu diesen Bedrohungen gehören drastische Klimaveränderungen, Atomkrieg und Nuklearterrorismus, molekulare Nanotechnologie und künstliche Intelligenz.',
       impact1000: null,
       donationDeficit: null,
       evaluators: [
@@ -422,7 +419,7 @@ export class DataService {
       questionaireResults: [],
       slogan: 'Führt Audits von wohltätigen Organisationen durch, um ihre philanthropischen Auswirkungen einzuschätzen',
       shortDescription: 'ImpactMatters führt "Wirksamkeits-Audits" von gemeinnützigen Organisationen durch, um ihre philanthropischen Auswirkungen exakt einzuschätzen und sie und ihre Geldgeber zu evidenzbasierten Entscheidungen anzuregen.',
-      longDescription: 'Selbst die am besten geführten gemeinnützigen Organisationen können von einer externen Perspektive profitieren, um die Erfüllung ihrer Rechenschaftspflicht und ihre Wirkung zu verbessern. ImpactMatters liefern eine objektive, unabhängige Schätzung der Auswirkungen und Kosten der jeweiligen gemeinnützigen Organisation und stellt spezifische, umsetzbare Leitlinien zur Verbesserung der Bewertungs- und Datensysteme zur Verfügung. Wenn die gemeinnützige Organisation der Veröffentlichung zustimmt, erstellt ImpactMatters einen Bericht mit Einschätzungen zu Auswirkungen und Kosten, Einstufungen der Qualität der Nachweise dieser Schätzungen und Bewertungen der Überwachungssysteme und Datenprotokolle. Das Impact-Audit-Team gibt dann einen privaten Management-Brief heraus, in dem dargelegt wird, wie die geprüfte Organisation ihre Effektivität verbessern kann.',
+      longDescription: 'Selbst die am besten geführten gemeinnützigen Organisationen können von einer externen Perspektive profitieren, um die Erfüllung ihrer Rechenschaftspflicht und ihre Wirkung zu verbessern. ImpactMatters liefert eine objektive, unabhängige Schätzung der Auswirkungen und Kosten der jeweiligen gemeinnützigen Organisation und stellt spezifische, umsetzbare Leitlinien zur Verbesserung der Bewertungs- und Datensysteme zur Verfügung. Wenn die gemeinnützige Organisation der Veröffentlichung zustimmt, erstellt ImpactMatters einen Bericht mit Einschätzungen zu Auswirkungen und Kosten, Einstufungen der Qualität der Nachweise dieser Schätzungen und Bewertungen der Überwachungssysteme und Datenprotokolle. Das Impact-Audit-Team gibt dann einen privaten Management-Brief heraus, in dem dargelegt wird, wie die geprüfte Organisation ihre Effektivität verbessern kann.',
       impact1000: null,
       donationDeficit: null,
       evaluators: [
@@ -470,7 +467,7 @@ export class DataService {
       questionaireResults: [ 'institutions' ],
       slogan: 'Förderung und Aufrechterhaltung der Bewegung des Effektiven Altruismus',
       shortDescription: 'Das Zentrum für effektiven Altruismus fördert den effektiven Altruismus als Idee und als Gemeinschaft. Ziel ist es herauszufinden, wie das Wohlergehen aller am besten gefördert werden kann und Menschen dazu zu inspirieren, basierend auf diesem Wissen Maßnahmen zu ergreifen.',
-      longDescription: 'Das Zentrum für effektiven Altruismus leitet und koordiniert eine Vielzahl von Projekten, die darauf abzielen, die effektive altruistische Gemeinschaft zu unterstützen und zu fördern. Es unterstützt lokale Gruppen, recherchiert, führt Konferenzen durch, erstellt einen Newsletter und sammelt und produziert effektiv altruismusbezogene Inhalte online. Es bietet auch Zuschüsse für neue Projekte innerhalb dieser Gemeinschaft, zusammen mit organisatorischer Unterstützung, um ihnen bei Wachstum und Entwicklung zu helfen.',
+      longDescription: 'Das Zentrum für effektiven Altruismus leitet und koordiniert eine Vielzahl von Projekten, die darauf abzielen, die effektive altruistische Gemeinschaft zu unterstützen und zu fördern. Es unterstützt lokale Gruppen, recherchiert, führt Konferenzen durch, erstellt einen Newsletter und sammelt und produziert Online-Inhalte. Es bietet auch Zuschüsse für neue Projekte innerhalb dieser Gemeinschaft, zusammen mit organisatorischer Unterstützung, um ihnen bei Wachstum und Entwicklung zu helfen.',
       impact1000: null,
       donationDeficit: null,
       evaluators: [
@@ -492,10 +489,10 @@ export class DataService {
       impactDirection: 'proaktiv',
       regions: [],
       questionaireResults: [],
-      slogan: 'Du hast 80.000 Stunden in deiner Karrierelaufbahn, was bewirkst du damit?',
-      shortDescription: 'Mit der Wahl der richtigen Karriere kann ein großer Beitrag zur Lösung der drängensten globalen Probleme geleistet werden. 80,000 hours unterstützt Menschen dabei, den richtigen Weg einzuschlagen.',
-      longDescription: '80,000 Hours hat es sich zu der Aufgabe gemacht, möglichst viele Menschen darin zu unterstützen eine Karriere mit sehr positiver sozialer Wirkung zu gestalten. Die hauptsächliche Intervention um dies zu erreichen ist Karriereberatung für talentierte junge Leute, die solch eine Karriere anstreben. Diese Beratung gibt es sowohl für jeden online verfügbar als auch in der Form von Workshops, Einzelberatung und einer globalen Community.',
-      impact1000: '80,000 Hours betreibt Aufklärungsarbeit, daher ist die Gesamtwirkung nicht besonders genau abzuschätzen. Die Selbstevaluierung von 80,000 Hours hat ergeben, dass mit etwa 7.000€ die Umgestaltung eines Karriereplans dahingehend unterstützt werden konnte, dass eine Person einen sehr hohen positiven sozialen Einfluss hat (z.B. mit einer jährliche Spende von über 100.000€ im Jahr zu effektiven Organisationen).',
+      slogan: 'Du arbeitest 80.000 Stunden in einer Karriere, was bewirkst du damit?',
+      shortDescription: 'Mit der Wahl der richtigen Karriere kann ein großer Beitrag zur Lösung der drängendsten globalen Probleme geleistet werden. 80,000 Hours unterstützt Menschen dabei, den richtigen Weg einzuschlagen.',
+      longDescription: '80,000 Hours hat es sich zur Aufgabe gemacht, möglichst viele Menschen darin zu unterstützen eine Karriere mit sehr positiver Wirkung zu gestalten. Die hauptsächliche Intervention um dies zu erreichen, ist Karriereberatung für talentierte junge Leute, die solch eine Karriere anstreben. Diese Beratung gibt es sowohl für jeden online verfügbar als auch in der Form von Workshops, Einzelberatung und einer globalen Community.',
+      impact1000: '80,000 Hours betreibt Aufklärungsarbeit, daher ist die Gesamtwirkung nicht besonders genau abzuschätzen. Die Selbstevaluierung von 80,000 Hours hat ergeben, dass mit etwa 7.000€ die Umgestaltung eines Karriereplans dahingehend unterstützt werden konnte, dass eine Person einen sehr hohen positiven Einfluss hat (z.B. mit einer jährliche Spende von über 100.000€ im Jahr zu effektiven Organisationen).',
       donationDeficit: 500000,
       evaluators: [
         {
@@ -544,7 +541,7 @@ export class DataService {
       questionaireResults: [ 'values' ],
       slogan: 'Ethik in internationalen Angelegenheiten',
       shortDescription: 'Carnegie Council ist eine unabhängige und überparteiliche Organisation, welche das Ziel verfolgt eine der stärksten Stimmen zum Thema "Ethik in international Angelegenheiten" zu sein. Ihr Fokus liegt auf den Themen "Krieg und Frieden", "globale soziale Gerechtigkeit" und "Religion in der Politik".',
-      longDescription: 'Carnegie Council ist eine unabhängige und überparteiliche Organisation, welche das Ziel verfolgt eine der stärksten Stimmen zum Thema "Ethik in international Angelegenheiten" zu sein. Ihr Fokus liegt auf den Themen "Krieg and Frieden", "globale soziale Gerechtigkeit" und "Religion in der Politik". Die Organisation veranstaltet themenorientierte öffentliche Diskussionen und schafft weltweit Möglichkeiten zur Bildung und Informierung für Lehrer, Schüler, Studenten, Journalisten, Menschen die im Bereich intertionale Beziehungen tätig sind, und interessierte Bürger. Ihre wichtigste Publikation ist die vierteljährlich erscheinende wissenschaftliche Zeitschrift Ethics & International Affairs, welche seit 1987 publiziert wird.',
+      longDescription: 'Carnegie Council ist eine unabhängige und überparteiliche Organisation, welche das Ziel verfolgt eine der stärksten Stimmen zum Thema "Ethik in international Angelegenheiten" zu sein. Ihr Fokus liegt auf den Themen "Krieg and Frieden", "globale soziale Gerechtigkeit" und "Religion in der Politik". Die Organisation veranstaltet themenorientierte öffentliche Diskussionen und schafft weltweit Möglichkeiten zur Bildung und Informierung für Lehrer, Schüler, Studenten, Journalisten, Menschen die im Bereich internationale Beziehungen tätig sind, und interessierte Bürger. Ihre wichtigste Publikation ist die vierteljährlich erscheinende wissenschaftliche Zeitschrift Ethics & International Affairs, welche seit 1987 publiziert wird.',
       impact1000: null,
       donationDeficit: null,
       evaluators: [
@@ -568,8 +565,8 @@ export class DataService {
       questionaireResults: [ 'human rights' ],
       slogan: 'ICNK setzt sich für die Menschenrechte in Nordkorea ein.',
       shortDescription: 'Das Ziel des ICNK ist es öffentliches und politsches Bewusstsein über die Meschenrechtslage in Nordkorea zu schaffen, so dass gemeinsam gezielt gegen die Menschenrechtverletzungen in Nordkorea vorgegangen wird. Um dies zu erreichen, arbeitet der ICNK eng mit über 40 Organisationen zusammen.',
-      longDescription: 'Das Ziel des ICNK ist es öffentliches und politsches Bewusstsein über die Meschenrechtslage in Nordkorea zu schaffen, so dass gemeinsam gezielt gegen die Menschenrechtverletzungen in Nordkorea vorgegangen wird. Ursprünglich war das Ziel der Organisation eine Komission in der UN zu etablieren, welche die Menschrechtsverletzungen in Nordkorea untersucht. 2013 gelang dies, seitdem arbeitet der ICNK weiterhin an der Aufklärung über die Menschrechtsverletzungen in Nordkorea und die Vernetzung seiner Mitgliederorganisationen (z.B. mit der Organisation von Koferenzen). Über 40 Organisationen arbeiten eng mit dem ICNK zusammen, so z.B. Human Rights Watch.',
-      impact1000: 'Genaue Abschätzungen über die Effektivität der Arbeit des ICNK sind aufgrund der politischen und gesellschaftlichen Unabwägbarkeiten nicht möglich. Für die Effektivität des ICNK spricht, dass in Nordkorea extrem schwerwiegende Meschensrechtsverletzungen begangen werden, und somit durch seine Arbeit besonderes schwerwiegendes Leid verhindert werden kann. Als globale Koordinationsplattform hat der ICNK gute Möglichkeiten die Effektivität der Interventionen seiner Mitgliederorganisationen durch verbesserte Zusammenarbeit zu erhöhen.',
+      longDescription: 'Das Ziel des ICNK ist es öffentliches und politsches Bewusstsein über die Meschenrechtslage in Nordkorea zu schaffen, sodass gemeinsam gezielt gegen die Menschenrechtverletzungen in Nordkorea vorgegangen wird. Ursprünglich war das Ziel der Organisation eine Komission in der UN zu etablieren, welche die Menschrechtsverletzungen in Nordkorea untersucht. 2013 gelang dies, seitdem arbeitet der ICNK weiterhin an der Aufklärung über die Menschrechtsverletzungen in Nordkorea und die Vernetzung seiner Mitgliederorganisationen (z.B. mit der Organisation von Konferenzen). Über 40 Organisationen arbeiten eng mit dem ICNK zusammen, so z.B. Human Rights Watch.',
+      impact1000: 'Genaue Abschätzungen über die Effektivität der Arbeit des ICNK sind aufgrund der politischen und gesellschaftlichen Unabwägbarkeiten nicht möglich. Für die Effektivität des ICNK spricht, dass in Nordkorea extrem schwerwiegende Meschensrechtsverletzungen begangen werden, und somit durch seine Arbeit besonderes schwerwiegendes Leid verhindert werden kann. Als globale Koordinationsplattform hat der ICNK gute Möglichkeiten, die Effektivität der Interventionen seiner Mitgliederorganisationen durch verbesserte Zusammenarbeit zu erhöhen.',
       donationDeficit: null,
       evaluators: [
         {
@@ -595,7 +592,7 @@ export class DataService {
       slogan: 'Wir arbeiten für eine bessere Welt für alle Tiere',
       shortDescription: 'Animal Equality ist eine internationale Organisation, die gemeinsam mit Gesellschaft, Politik und Unternehmen daran arbeitet, Grausamkeit in der Massentierhaltung zu beenden.',
       longDescription: 'Animal Equality ist eine internationale Organisation, die gemeinsam mit Gesellschaft, Politik und Unternehmen daran arbeitet, Grausamkeit in der Massentierhaltung zu beenden. Sie treten als internationale Organisation für Werte wie Mitgefühl und Gerechtigkeit ein und glauben an eine Gesellschaft, in der diese Werte verbreitet und gelebt werden. Sie bilden die Basis ihrer Arbeit. Mit innovativen Projekten und Kampagnen decken sie die grausamsten Praktiken der Tierindustrie auf und arbeiten daran, diese abzuschaffen. Dabei behalten sie das große Ziel stets vor Augen: Tierleid zu verhindern.',
-      impact1000: 'Hilft dabei: Durchschnittliche 5000 Tiere in der Massentierhaltung vor Leid zu bewahren oder durch Online-Kampagnen mehr als 900.000 Menschen über die Zustände in der Massentierhaltung zu informieren. oder finanziert 26 iAnimal Aktionen innerhalb des Virtual-Reality-Projects, durch das zahlreiche Menschen einen authentischen Einblick in das Leben der Tiere in der Massentierhaltung bekommen.',
+      impact1000: 'Mit 1000 Euro können folgende Dinge erreicht werden: Durchschnittlich 5000 Tiere in der Massentierhaltung vor Leid zu bewahren, oder durch Online-Kampagnen mehr als 900.000 Menschen über die Zustände in der Massentierhaltung zu informieren, oder 26 iAnimal Aktionen zu ermöglichen, welche zahlreichen Menschen einen authentischen Einblick in das Leben der Tiere in der Massentierhaltung ermöglicht.',
       donationDeficit: 4200000,
       evaluators: [
         {
@@ -606,7 +603,7 @@ export class DataService {
       ]
     },
     {
-      name: 'The Good Food Institut',
+      name: 'The Good Food Institute',
       thumbnail: 'good_food_institute',
       website: 'https://www.gfi.org/',
       donationLink: 'https://www.gfi.org/donate',
@@ -617,38 +614,14 @@ export class DataService {
       regions: [],
       questionaireResults: [ 'animal death' ],
       slogan: 'Erzeugung eines gesunden, tiergerechten und nachhaltigen Nahrungsangebots',
-      shortDescription: 'The Good Food Institut arbeitet mit Wissenschaftlern, Investoren und Entrepreneuren zusammen, mit dem Fokus auf "clean meat" und pflanzliche Nahrungsalternativen zu tierischen Produkten.',
-      longDescription: 'The Good Food Institute (GFI) arbeitet daran, die Tierzuchtbranche zu verändern, indem es die Entwicklung von wettbewerbsfähigen Alternativen zu tierischem Fleisch, Milchprodukten und Eiern fördert. GFI sucht nach Unternehmern und Wissenschaftlern, die Start-ups in dem Marktsektor pflanzlichen und kultivierten Fleisches fördern oder beitreten. Sie bieten geschäftliche, rechtliche, wissenschaftliche und strategische Leitlinien für Unternehmen und betreiben politische (regulatorische und gesetzliche) Arbeit, um das Feld für pflanzliche und zelluläre Produkte auf dem Markt zu ebnen. GFI baut Beziehungen zu Restaurantketten, Lebensmittelgeschäfte und Foodservice-Unternehmen auf, um pflanzliche Alternativen zu Tierprodukten zu verbessern und zu fördern. Schließlich arbeitet GFI mit Fördereinrichtungen, Unternehmen und Regierungen zusammen, um Ressourcen für die Forschung in der synthetischen und pflanzlichen Biologie und Gewebetechnologie zu mobilisieren.',
-      impact1000: 'Eine Spende unterstützt GFI-Programme und hilft beim Aufbau ihrer Rücklagen für den Betriebsablauf, die für die Aufrechterhaltung der Betriebskontinuität benötigt werden. Von einer durchschnittlichen Spende von 1.000 US-Dollar, würde GFI etwa 220 US-Dollar für sein Wissenschafts- und Technologieprogramm und etwa 200 US-Dollar für den Aufbau seiner Rücklagen für den Betriebsablauf ausgeben. GFI würde außerdem 200 US-Dollar für internationales Engagement, 160 US-Dollar für ihr Innovationsprogramm, 120 US-Dollar für ihr politisches Programm und etwa 90 US-Dollar für unternehmerisches Engagement ausgeben. Die Auswirkungen von Spenden für Zuchttiere sind spekulativer und langfristiger als der Einfluss von Spenden für andere Oranisation wie Animal Equality. Angesichts des spekulativen Charakters der Auswirkungen von GFI auf Nutztiere, gibt es derzeit keine Kosten-Effektivitäts-Schätzung. Die Meinung von Animal Charity Evaluators ist dennoch, dass Spenden an GFI einen hohen Erwartungswert haben.',
+      shortDescription: 'The Good Food Institute (GFI) arbeitet mit Wissenschaftlern, Investoren und Unternehmern zusammen, mit dem Ziel die Entwicklung von "clean meat" und anderen pflanzlichen Nahrungsalternativen zu fördern.',
+      longDescription: 'The Good Food Institute (GFI) arbeitet daran, die Tierzuchtbranche zu verändern, indem es die Entwicklung von wettbewerbsfähigen Alternativen zu tierischem Fleisch, Milchprodukten und Eiern fördert. GFI sucht nach Unternehmern und Wissenschaftlern, die Start-ups in dem Marktsektor pflanzlichen und kultivierten Fleisches fördern oder beitreten. Sie bieten geschäftliche, rechtliche, wissenschaftliche und strategische Leitlinien für Unternehmen und betreiben politische (regulatorische und gesetzliche) Arbeit, um das Feld für Fleischersatzprodukte auf dem Markt zu ebnen. GFI baut Beziehungen zu Restaurantketten, Lebensmittelgeschäften und Foodservice-Unternehmen auf, um pflanzliche Alternativen zu Tierprodukten zu verbessern und zu fördern. Schließlich arbeitet GFI mit Fördereinrichtungen, Unternehmen und Regierungen zusammen, um Ressourcen für die Forschung in der synthetischen und pflanzlichen Biologie und Gewebetechnologie zu mobilisieren.',
+      impact1000: 'Eine Spende unterstützt GFI-Programme und hilft beim Aufbau ihrer Rücklagen für den Betriebsablauf, die für die Aufrechterhaltung der Betriebskontinuität benötigt werden. Von einer durchschnittlichen Spende von 1.000 US-Dollar, würde GFI etwa 220 US-Dollar für sein Wissenschafts- und Technologieprogramm und etwa 200 US-Dollar für den Aufbau seiner Rücklagen für den Betriebsablauf ausgeben. GFI würde außerdem 200 US-Dollar für internationales Engagement, 160 US-Dollar für ihr Innovationsprogramm, 120 US-Dollar für ihr politisches Programm und etwa 90 US-Dollar für unternehmerisches Engagement ausgeben. Die Auswirkungen von Spenden für GFI sind spekulativer und langfristiger als der Einfluss von Spenden für andere Oranisation wie Animal Equality. Angesichts des spekulativen Charakters der Auswirkungen von GFI auf Nutztiere, gibt es derzeit keine Kosten-Effektivitäts-Schätzung. Die Meinung von Animal Charity Evaluators ist dennoch, dass Spenden an GFI einen hohen Erwartungswert haben.',
       donationDeficit: 4400000,
       evaluators: [
         {
           evaluator: 'Animal Charity Evaluators',
           link: 'https://animalcharityevaluators.org/charity-review/the-good-food-institute/',
-          top: true
-        }
-      ]
-    },
-    {
-      name: 'ProVeg International',
-      thumbnail: 'proveg_international',
-      website: 'https://www.proveg.com/',
-      donationLink: 'https://www.proveg.com/de/spenden/',
-      donationKeyEAS: null,
-      category: [ 'Tierleid' ],
-      cause: [ 'Tierleben' ],
-      impactDirection: 'proaktiv',
-      regions: [],
-      questionaireResults: [ 'animal death' ],
-      slogan: 'Appetite for a better world',
-      shortDescription: 'ProVeg motiviert Menschen zu einem pflanzlichen Lebensstil und vernetzt bestehende Organisationen weltweit, um Gesundheit zu fördern, Tierleiden zu vermindern, die Umwelt zu schützen und eine gerechtere Verteilung von Nahrungsmitteln zu ermöglichen.',
-      longDescription: 'Viele der weltweit dringendsten Probleme haben die individuelle Ernährungsweise eines jeden Einzelnen zur Ursache. ProVeg International motiviert die Bevölkerung durch Aufklärung und Bereitstellung praktischer Informationen zum Umstieg auf eine Ernährung unter Verwendung tierfreier Alternativen. Ziel ist, den Konsum von Tieren als Nahrungsmittel bis 2040 um 50 % zu reduzieren. Damit soll die Gesundheit der Bevölkerung gefördert und gleichzeitig das durch die Nahrungsmittelproduktion entstehende Tierleiden vermindert werden. Neben dem Umweltschutz steht dabei zudem die faire Verteilung der weltweiten Nahrungsmittelressourcen im Fokus. Dazu arbeitet ProVeg mit einflussreichen Multiplikatoren aus Politik, Wirtschaft und Medien zusammen.',
-      impact1000: 'Für 1.000€ kann eine Aufklärungsveranstaltung in einer Schule mit gesunden Snacks und Getränken ausgestattet, ein Sprecher für einen von ProVeg International organisierten Kongress eingeladen und Informationsmaterial für 30 bis 40 Informationsveranstaltungen beschafft werden.',
-      donationDeficit: null,
-      evaluators: [
-        {
-          evaluator: 'Animal Charity Evaluators',
-          link: 'https://animalcharityevaluators.org/charity-review/proveg/',
           top: true
         }
       ]
@@ -666,7 +639,7 @@ export class DataService {
       questionaireResults: [ 'animal suffering' ],
       slogan: 'Empowering Change - Driving Progress',
       shortDescription: 'The Humane League will Tierleiden möglichst weitreichend verhindern. Dazu werden mit Humane League Labs die effektivsten Methoden ermittelt. Neben konkreten Kampagnen wird Aufklärungsarbeit in der Bevölkerung betrieben sowie das Wissen um den Tierschutz an Universitäten verbreitet.',
-      longDescription: 'Weltweit werden unzählige Tiere für die Nahrungsmittelproduktion unter unnatürlichen und unwürden Bedingungen gehalten, misshandelt und verletzt. Um die Haltungsbedingungen der Tiere zu verbessern und so Leid und frühzeitiges Sterben zu verhindern, will The Humane League die Bevölkerung über die Umstände in der industriellen Tierhaltung aufklären. Neben der Bereitstellung von Informationsmaterial und Kampagnen will The Humane League insbesondere auch an Universitäten das Wissen um den Tierschutz verbreiten. Im Rahmen der Humane League Labs wird untersucht, welche Methoden die effektivsten für die Einflussnahme zur Verbesserung der Haltungsbedingen sind.',
+      longDescription: 'Weltweit werden unzählige Tiere für die Nahrungsmittelproduktion unter unnatürlichen und unwürdigen Bedingungen gehalten, misshandelt und verletzt. Um die Haltungsbedingungen der Tiere zu verbessern und so Leid und frühzeitiges Sterben zu verhindern, will The Humane League die Bevölkerung über die Umstände in der industriellen Tierhaltung aufklären. Neben der Bereitstellung von Informationsmaterial und Kampagnen will The Humane League insbesondere auch an Universitäten das Wissen um den Tierschutz verbreiten. Im Rahmen der Humane League Labs wird untersucht, welche Methoden die effektivsten für die Einflussnahme zur Verbesserung der Haltungsbedingen sind.',
       impact1000: null,
       donationDeficit: null,
       evaluators: [
@@ -686,11 +659,24 @@ export class DataService {
       category: [ 'Politik' ],
       cause: [ 'Institutionen' ],
       impactDirection: 'proaktiv',
-      regions: [],
+      regions: [
+	  'AR', 'AM', 'AU', 'AT', 'AZ', 'BS', 'BH', 'BD', 'BY', 'BE',
+	  'BJ', 'BA', 'BR', 'BG', 'BI', 'KH', 'CM', 'CA', 'CL', 'CN',
+	  'CO', 'CR', 'CI', 'CZ', 'CD', 'DK', 'DO', 'SV', 'EE', 'ET',
+	  'FI', 'FR', 'GE', 'DE', 'GH', 'GR', 'GL', 'GT', 'GY', 'HN',
+	  'HU', 'IS', 'ID', 'IE', 'IL', 'IT', 'JM', 'JP', 'JO', 'KZ',
+	  'KE', 'XK', 'KW', 'KG', 'LV', 'LB', 'LR', 'LT', 'MK', 'MG', 
+	  'MW', 'MY', 'MV', 'ML', 'MU', 'MX', 'MD', 'MN', 'ME', 'MA', 
+	  'MZ', 'NP', 'NL', 'NZ', 'NE', 'NG', 'NO', 'PK', 'PS', 'PA',
+	  'PG', 'PE', 'PL', 'PT', 'CG', 'RO', 'RU', 'RW', 'SN', 'RS',
+	  'SC', 'SL', 'SK', 'SI', 'SB', 'ZA', 'KR', 'ES', 'LK', 'SE', 
+	  'CH', 'TW', 'TG', 'TT', 'TN', 'TR', 'UG', 'UA', 'GB', 'VU',
+	  'VE', 'VN', 'ZM', 'ZW',
+	  ],
       questionaireResults: [ 'institutions' ],
       slogan: 'Die globale Koalition gegen Korruption',
       shortDescription: 'Eine globale Bewegung, die eine Vision teilt: eine Welt, in der Regierung, Wirtschaft, Zivilgesellschaft und das tägliche Leben der Menschen frei von Korruption sind.',
-      longDescription: 'Gegründet in 1993, ist die Bewegung heute in über 100 Ländern präsent und arbeitet daran, ein kollektives weltweites Bewusstsein für Korruption und Veränderungen herbeizuführen. Es werden internatinale Antikorruptionskonventionen geschaffen, die Verfolgung korrupter Führer und die Beschlagnahmung ihrer unerlaubt erworbenen Reichtümer unterstützt sowie Unternehmen für ihr Handeln im In- und Ausland verantwortlich gemacht. In mehre als 100 Ländern arbeiten lokale Gruppen mit Partnern aus Politik, Wirtschaft und Zivilgesellschaft zusammen, um wirksame Maßnahmen gegen Korruption zu ergreifen. Politisch unparteiisch wird Wert auf Unabhängigkeit gelegt, sodass Programme und Aktivitäten allein von International Transparency festgelegt werden. Finanzierungsquellen und Ausgaben werden jährlich von einem unabhängigen Auditor transparent gemacht.',
+      longDescription: '1993 gegründet, setzt sich die Bewegung für ein globales Bewusstsein für Korruption sowie für mehr Integrität und Transparenz im öffentlichen und privaten Sektor ein. Um diese Ziele zu erreichen, werden internationale Antikorruptionskonventionen erarbeitet, die Verfolgung korrupter Politiker sowie die Beschlagnahmung ihrer illegal erworbenen Vermögen unterstützt und Unternehmen für ihr Handeln im In- und Ausland verantwortlich gemacht. In über 100 Ländern arbeiten lokale Gruppen mit Partnern aus Politik, Wirtschaft und Zivilgesellschaft zusammen, um wirksame Maßnahmen gegen Korruption zu ergreifen. Die Organisation legt Wert auf politische Unabhängigkeit. Programme und Aktivitäten sowie deren Inhalte werden allein von Transparency International festgelegt. Finanzierungsquellen und Ausgaben werden jährlich von einem unabhängigen Auditor überprüft und öffentlich gemacht',
       impact1000: 'Da Transparency International verschiedene Programme in den über 100 Ländern betreibt, ist eine genaue quantitative Beurteilung sehr schwierig.',
       donationDeficit: null,
       evaluators: [
@@ -713,8 +699,8 @@ export class DataService {
       regions: [],
       questionaireResults: [],
       slogan: 'Facts. Analysis. Influence.',
-      shortDescription: 'Das Internationale Institut für Strategische Studien (IISS) ist ein britisches Forschungsinstitut (oder Think Tank) auf dem Gebiet internationaler Angelegenheiten. IISS ist die weltweit führende internationale Autorität in globalen Sicherheitsfragen und bietet Fakten und Analysen zu einer breiten Palette von internationalen Sicherheits- und politischen Risikofragen.',
-      longDescription: 'Das Internationale Institut für Strategische Studien (IISS) ist ein britisches Forschungsinstitut (oder Think Tank) auf dem Gebiet internationaler Angelegenheiten. Das Internationale Institut für Strategische Studien (IISS) ist die weltweit führende internationale Autorität in globalen Sicherheitsfragen und bietet Fakten und Analysen zu einer breiten Palette von internationalen Sicherheits- und politischen Risikofragen. Das IISS mit Hauptsitz in London hat Büros in Washington, Singapur und Bahrain. Gremium und Mitarbeiter des Instituts sind international und kommt aus mehr als 90 Ländern. Das IISS ist eine wichtige Quelle für genaue, objektive Informationen zu internationalen strategischen Fragen für Politiker, Diplomaten, Außenpolitiker, internationale Unternehmen, Ökonomen, Militärs, Verteidigungskommentatoren, Journalisten, Wissenschaftler und die informierte Öffentlichkeit. Das Institut ist unabhängig und keiner Regierung oder irgendeiner politischen bzw. anderen Organisation verpflichtet. Das IISS forscht mit einer zukunftsorientierten Politikorientierung und legt besonderen Wert darauf, neue Perspektiven in strategische Diskussionen zu bringen. Die Arbeit des Instituts beruht auf der Einschätzung verschiedener politischer, wirtschaftlicher und sozialer Probleme, die Instabilität verursachen, sowie auf Faktoren, die zu internationaler Zusammenarbeit führen können. Sie bringt jährlich Verteidigungsminister, Außenminister und nationale Sicherheitsberater in verschiedenen Formaten privat und öffentlich zusammen, um die internationale Sicherheitspolitik zu diskutieren und zu gestalten. Jedes Jahr finden in Europa, Nordamerika, dem Nahen Osten und Asien sowie in Lateinamerika und Afrika einflussreiche Veranstaltungen statt. IISS-Publikationen werden von wichtigen Entscheidungsträgern gelesen und werden innerhalb der Regierungen auf Kabinettsebene kommentiert. Die Bandbreite der IISS-Publikationen, ihre Gestaltungskraft und die starke internationale Politik des Instituts machen das IISS zu einem wichtigen Akteur in der globalen strategischen Debatte.',
+      shortDescription: 'Das Internationale Institut für Strategische Studien (IISS) ist ein britisches Forschungsinstitut (oder Think Tank) auf dem Gebiet internationaler Angelegenheiten. IISS ist die weltweit führende Autorität in globalen Sicherheitsfragen und bietet Fakten und Analysen zu einer breiten Palette von internationalen Sicherheitsfragen.',
+      longDescription: 'Das Internationale Institut für Strategische Studien (IISS) ist ein britisches Forschungsinstitut auf dem Gebiet internationaler Angelegenheiten. Das Internationale Institut für Strategische Studien (IISS) ist die weltweit führende internationale Autorität in globalen Sicherheitsfragen und bietet Fakten und Analysen zu einer breiten Palette von internationalen Sicherheits- und politischen Risikofragen. Das IISS mit Hauptsitz in London hat Büros in Washington, Singapur und Bahrain. Gremium und Mitarbeiter des Instituts sind international und kommen aus mehr als 90 Ländern. Das IISS ist eine wichtige Quelle für genaue, objektive Informationen zu strategischen Fragen für Politiker, Diplomaten, internationale Unternehmen, Ökonomen, Militärs, Journalisten, Wissenschaftlern und die informierte Öffentlichkeit. Das Institut ist unabhängig und keiner Regierung oder irgendeiner politischen bzw. anderen Organisation verpflichtet. Das IISS forscht mit einer zukunftsorientierten Politikorientierung und legt besonderen Wert darauf, neue Perspektiven in strategische Diskussionen zu bringen. Die Arbeit des Instituts beruht auf der Einschätzung verschiedener politischer, wirtschaftlicher und sozialer Probleme, die Instabilität verursachen, sowie auf Faktoren, die zu internationaler Zusammenarbeit führen können. Sie bringt jährlich Verteidigungsminister, Außenminister und nationale Sicherheitsberater in verschiedenen Formaten privat und öffentlich zusammen, um die internationale Sicherheitspolitik zu diskutieren und zu gestalten. Jedes Jahr finden in Europa, Nordamerika, dem Nahen Osten und Asien sowie in Lateinamerika und Afrika einflussreiche Veranstaltungen statt. IISS-Publikationen werden von wichtigen Entscheidungsträgern gelesen und werden innerhalb der Regierungen auf Kabinettsebene kommentiert. Die Bandbreite der IISS-Publikationen, ihre Gestaltungskraft und die starke internationale Politik des Instituts machen das IISS zu einem wichtigen Akteur in der globalen strategischen Debatte.',
       impact1000: 'Da das IISS verschiedene Programme in vielen verschiedenen Ländern betreibt, ist eine genaue quantitative Beurteilung schwierig.',
       donationDeficit: null,
       evaluators: [
