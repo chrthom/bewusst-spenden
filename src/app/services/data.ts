@@ -407,30 +407,6 @@ export class DataService {
       ]
     },
     {
-      name: 'ImpactMatters',
-      thumbnail: 'impactmatters',
-      website: 'https://www.impactm.org',
-      donationLink: null,
-      donationKeyEAS: null,
-      category: [ 'Meta' ],
-      cause: [ 'Wirksamkeitsanalyse' ],
-      impactDirection: 'reaktiv',
-      regions: [],
-      questionaireResults: [],
-      slogan: 'Führt Audits von wohltätigen Organisationen durch, um ihre philanthropischen Auswirkungen einzuschätzen',
-      shortDescription: 'ImpactMatters führt "Wirksamkeits-Audits" von gemeinnützigen Organisationen durch, um ihre philanthropischen Auswirkungen exakt einzuschätzen und sie und ihre Geldgeber zu evidenzbasierten Entscheidungen anzuregen.',
-      longDescription: 'Selbst die am besten geführten gemeinnützigen Organisationen können von einer externen Perspektive profitieren, um die Erfüllung ihrer Rechenschaftspflicht und ihre Wirkung zu verbessern. ImpactMatters liefert eine objektive, unabhängige Schätzung der Auswirkungen und Kosten der jeweiligen gemeinnützigen Organisation und stellt spezifische, umsetzbare Leitlinien zur Verbesserung der Bewertungs- und Datensysteme zur Verfügung. Wenn die gemeinnützige Organisation der Veröffentlichung zustimmt, erstellt ImpactMatters einen Bericht mit Einschätzungen zu Auswirkungen und Kosten, Einstufungen der Qualität der Nachweise dieser Schätzungen und Bewertungen der Überwachungssysteme und Datenprotokolle. Das Impact-Audit-Team gibt dann einen privaten Management-Brief heraus, in dem dargelegt wird, wie die geprüfte Organisation ihre Effektivität verbessern kann.',
-      impact1000: null,
-      donationDeficit: null,
-      evaluators: [
-        {
-          evaluator: 'Effektiver Altruismus',
-          link: 'https://effektiveraltruismus.de/organisationen/',
-          top: true
-        }
-      ]
-    },
-    {
       name: 'Innovations for Poverty Action',
       thumbnail: 'innovations_for_poverty_action',
       website: 'https://www.poverty-action.org',
