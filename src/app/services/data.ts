@@ -651,6 +651,31 @@ export class DataService {
       ]
     },	
     {
+      name: 'Anima International',
+      thumbnail: 'anima_international',
+      website: 'https://animainternational.org/',
+      donationLink: 'https://animainternational.org/donate',
+      donationKeyEAS: null,
+      category: [ 'Tierleid' ],
+      cause: [ 'Haltungsbedingungen' ],
+      impactDirection: 'proaktiv',
+      regions: [ 'PL', 'GB', 'DK', 'LT', 'NW', 'RU', 'UA', 'EE', 'BY' ],
+      questionaireResults: [ 'animal suffering' ],
+      slogan: 'For a future free from animal suffering',
+      shortDescription: 'Anima nutzt vielfältige rechtliche Möglichkeiten um die Situation von Tieren zu verbessern und eine pflanzlich Ernährung voran zu bringen.',
+      longDescription: 'Anima International möchte erreichen, dass Tiere nicht mehr als Produkte gesehen und als solche behandelt werden. Deswegen organisieren sie Kampagnen z.B. gegen Käfighaltung, Konferenzen zum Thema Tierwohl und fordern Gesetzesänderung für besseren Tierschutz. Die Organisation arbeitet Open Source und sieht die internationale Vernetzung als ein Schwerpunkt ihrer Arbeit.',
+      impact1000: 'Anima International gibt davon etwa 312€ für Öffentlichkeitsarbeit aus, nutzt 279€ für Kampagnen, 185€ um seine Kapazitäten zu erweitern, 129€ für die Bewerbung pflanzlicher Produkte und 95€ für rechtliche Unterstützung. Mit einem höheren Budget will Anima International mehr wissenschaftliche Studien publizieren, mehr und größere Kampagnen starten, sowie ihr Programm zur fleischfreien Ernährung auf andere Länder ausweiten.',
+      donationDeficit: 370000, // between $0.37 million and $2.5
+      evaluators: [
+        {
+          evaluator: 'Animal Charity Evaluators',
+          link: 'https://animalcharityevaluators.org/charity-review/anima/',
+          top: true
+        }
+      ]
+    },	
+	
+    {
       name: 'Transparency International',
       thumbnail: 'transparency',
       website: 'https://www.transparency.org/',
