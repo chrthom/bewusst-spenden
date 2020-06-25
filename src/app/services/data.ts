@@ -626,6 +626,30 @@ export class DataService {
         }
       ]
     },
+	{
+      name: 'Albert Schweizer Stiftung',
+      thumbnail: 'albert_schweizer_stiftung',
+      website: 'https://albert-schweitzer-stiftung.de/',
+      donationLink: 'https://albert-schweitzer-stiftung.de/helfen/spenden',
+      donationKeyEAS: null,
+      category: [ 'Tierleid' ],
+      cause: [ 'Haltungsbedingungen', 'Tierleben' ],
+      impactDirection: 'proaktiv',
+      regions: [ 'DE', 'PL' ], 
+      questionaireResults: [ 'animal suffering' ],
+      slogan: 'Albert Schweizer Stiftung für unsere Mitwelt',
+      shortDescription: 'Die Stiftung hat es sich zur Aufgabe gemacht Tierleid zu minimieren. So setzt sie sich für eine vegane Lebensweise ein und versucht die Herstellung von Tierprodukten zu minimieren und Massentierhaltung abzuschaffen.',
+      longDescription: 'Die Stiftung hat es sich zur Aufgabe gemacht Tierleid zu minimieren. So setzt sie sich für eine vegane Lebensweise ein und versucht die Herstellung von Tierprodukten zu minimieren und Massentierhaltung abzuschaffen. Sie entwickeln Kampagnen, um Druck auf Unternehmen und Politiker auszuüben und Verbraucher aufzuklären. Weiterhin setzten sie sich rechtlich für bessere Standards ein und sorgen dafür, dass diese umgesetzt werden.',
+      impact1000: 'Von 1000€ werden etwa 617€ für die Öffentlichkeitsarbeit ausgegeben, 216€ für rechtliche Beratung und 166€ für Kampagnen. Die Albert Schweitzer Stiftung hat aktuell nicht veröffentlich, was sie tun, wenn sie mehr Geld als das veranschlagte Budget bekommen. Doch es kann davon ausgegangen werden, dass es sich um sehr ähnliche Projekte handelt.',
+      donationDeficit: 560000, // between 560.000$ and 1.900.000$
+      evaluators: [
+        {
+          evaluator: 'Animal Charity Evaluators',
+          link: 'https://animalcharityevaluators.org/charity-review/albert-schweitzer-foundation/',
+          top: true
+        }
+      ]
+    },	
     {
       name: 'Transparency International',
       thumbnail: 'transparency',
