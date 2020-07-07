@@ -502,6 +502,30 @@ export class DataService {
         }
       ]
     },
+    {
+      name: 'Global Priorities Institute',
+      thumbnail: 'global_priorities_institute',
+      website: 'https://globalprioritiesinstitute.org/',
+      donationLink: 'https://globalprioritiesinstitute.org/supporting-gpi/',
+      donationKeyEAS: null,
+      category: [ 'Meta' ],
+      cause: [ 'Wirksamkeitsanalyse' ],
+      impactDirection: 'proaktiv',
+      regions: [ 'UK' ],
+      questionaireResults: [ ],
+      slogan: 'Akademische Grundlagenforschung zur Frage, wie man am besten Gutes tun kann.',
+      shortDescription: 'Das Global Priorities Institute ist ein interdisziplinäres Forschungszentrum, welches folgende zentrale Frage beforscht: "Wie sollte man mit begrenzten Ressourcen umgehen, um soviel Gutes wie möglich zu bewirken?". Dabei beziehen sie sich auf Handlungen welche die gesamte Zukunft der Menschheit beeinflussen.',
+      longDescription: 'Das Global Priorities Institute  ist ein interdisziplinäres Forschungszentrum , welches folgende zentrale Frage beforscht: "Wie sollte man mit begrenzten Ressourcen umgehen, um soviel Gutes wie möglich zu bewirken?". Dabei beziehen sie sich auf Handlungen welche die gesamte Zukunft der Menschheit beeinflussen. Erkenntnisse zu dieser Frage werden mit Mitteln der Philosophie und der Wirtschaftswissenschaften gewonnen. Die Vision des Zentrums ist eine Welt, in der globale Prioritäten durch Evidenz und Logik festegelegt werden, mit dem Ziel so viel Gutes wie möglich zu ermöglichen.',
+      impact1000: null ,
+      donationDeficit: null,
+      evaluators: [
+        {
+          evaluator: 'Bewusst Spenden',
+          link: 'http://bewusstspenden.de',
+          top: false
+        }
+      ]
+    },
 
     // Politik
     {
