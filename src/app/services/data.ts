@@ -659,7 +659,7 @@ export class DataService {
       category: [ 'Tierleid' ],
       cause: [ 'Haltungsbedingungen', 'Tierleben' ],
       impactDirection: 'proaktiv',
-      regions: [ 'DE', 'PL' ], 
+      regions: [ 'DE', 'PL' ],
       questionaireResults: [ 'animal suffering' ],
       slogan: 'Albert Schweizer Stiftung für unsere Mitwelt',
       shortDescription: 'Die Stiftung hat es sich zur Aufgabe gemacht Tierleid zu minimieren. So setzt sie sich für eine vegane Lebensweise ein und versucht die Herstellung von Tierprodukten zu minimieren und Massentierhaltung abzuschaffen.',
@@ -673,7 +673,7 @@ export class DataService {
           top: true
         }
       ]
-    },	
+    },
     {
       name: 'Anima International',
       thumbnail: 'anima_international',
@@ -697,8 +697,8 @@ export class DataService {
           top: true
         }
       ]
-    },	
-	
+    },
+
     {
       name: 'Transparency International',
       thumbnail: 'transparency',
@@ -714,12 +714,12 @@ export class DataService {
 	  'CO', 'CR', 'CI', 'CZ', 'CD', 'DK', 'DO', 'SV', 'EE', 'ET',
 	  'FI', 'FR', 'GE', 'DE', 'GH', 'GR', 'GL', 'GT', 'GY', 'HN',
 	  'HU', 'IS', 'ID', 'IE', 'IL', 'IT', 'JM', 'JP', 'JO', 'KZ',
-	  'KE', 'XK', 'KW', 'KG', 'LV', 'LB', 'LR', 'LT', 'MK', 'MG', 
-	  'MW', 'MY', 'MV', 'ML', 'MU', 'MX', 'MD', 'MN', 'ME', 'MA', 
+	  'KE', 'XK', 'KW', 'KG', 'LV', 'LB', 'LR', 'LT', 'MK', 'MG',
+	  'MW', 'MY', 'MV', 'ML', 'MU', 'MX', 'MD', 'MN', 'ME', 'MA',
 	  'MZ', 'NP', 'NL', 'NZ', 'NE', 'NG', 'NO', 'PK', 'PS', 'PA',
 	  'PG', 'PE', 'PL', 'PT', 'CG', 'RO', 'RU', 'RW', 'SN', 'RS',
-	  'SC', 'SL', 'SK', 'SI', 'US', 'SB', 'ZA', 'KR', 'ES', 'LK', 
-    'SE', 'CH', 'TW', 'TG', 'TT', 'TN', 'TR', 'UG', 'UA', 'GB', 
+	  'SC', 'SL', 'SK', 'SI', 'US', 'SB', 'ZA', 'KR', 'ES', 'LK',
+    'SE', 'CH', 'TW', 'TG', 'TT', 'TN', 'TR', 'UG', 'UA', 'GB',
     'VU','VE', 'VN', 'ZM', 'ZW',
 	  ],
       questionaireResults: [ 'institutions' ],
