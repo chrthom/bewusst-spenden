@@ -455,7 +455,7 @@ export class DataService {
       ]
     },
     {
-      name: '80,000 hours',
+      name: '80,000 Hours',
       thumbnail: '80000_hours',
       website: 'https://80000hours.org/',
       donationLink: 'https://80000hours.org/support-us/donate/',
