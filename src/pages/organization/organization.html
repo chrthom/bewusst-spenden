@@ -66,12 +66,12 @@
       <ion-item *ngIf="organization.donationDeficit">
         <div [chart]="chart"></div>
       </ion-item>
-      <ion-item *ngIf="!organization.donationDeficit">
+      <ion-item text-wrap *ngIf="!organization.donationDeficit">
         <ion-icon name="help-buoy" item-start></ion-icon>
         <h2>Spendendefizit</h2>
         Hierzu liegen uns leider keine Informationen vor.
       </ion-item>
-      <ion-item *ngIf="organization.evaluators.length > 0">
+      <ion-item text-wrap *ngIf="organization.evaluators.length > 0">
         <h3>Empfohlen durch</h3>
         <ion-badge *ngFor="let e of organization.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
       </ion-item>
