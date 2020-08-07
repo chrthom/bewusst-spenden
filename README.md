@@ -14,8 +14,8 @@ Einmaliges Installation:
 
 1. [Installiere git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
 2. [Installiere npm](https://www.npmjs.com/get-npm)
-3. Installiere ionic durch Ausführung von `npm install -g ionic`
-4. Checke den Source Code aus Bitbucket aus: `git clone https://christopher-thomsen@bitbucket.org/_thomsen_/effective-giving.git`
+3. Installiere ionic durch Ausführung von `npm install -g @ionic/cli`
+4. Checke den Source Code aus Bitbucket aus: `git clone https://<your-bitbucket-username>@bitbucket.org/_thomsen_/effective-giving.git`
 
 Lokale Ausführung des Projektes:
 
@@ -30,11 +30,13 @@ Logos Größe: 150x150
 
 Verzeichnisse
 ------------------
-Orga Daten: \src\app\services\data.ts
-About-Seite: \src\pages\about.html
-Fragebogen: \src\pages\questionnaire.html
-Bilder: \src\assets\imgs\
+
+* Orga Daten: src/app/services/data.ts
+* About-Seite: src/pages/about.html
+* Fragebogen: src/pages/questionnaire.html
+* Bilder: src/assets/imgs/
 
 Git-Befehle
 -----------
+
 git reset --hard (bringt alles was noch nicht gestaged ist auf den Ursprungszustand)
