@@ -19,7 +19,7 @@
       <ion-item>
         <ion-row>
           <ion-col>
-            <a [href]="organization.website" target="_blank">
+            <a [href]="organization.website" (click)="webAnalyticsService.visitCharityWebsite(organization.thumbnail)" target="_blank">
               <button ion-button icon-start clear>
                 <ion-icon name="browsers"></ion-icon>
                 <div>Website</div>
@@ -27,7 +27,7 @@
             </a>
           </ion-col>
           <ion-col *ngIf="organization.donationLink">
-            <a [href]="organization.donationLink" target="_blank">
+            <a [href]="organization.donationLink" (click)="webAnalyticsService.donateToCharity(organization.thumbnail)" target="_blank">
               <button ion-button icon-start clear>
                 <ion-icon name="cash"></ion-icon>
                 <div>Spenden</div>
@@ -35,7 +35,7 @@
             </a>
           </ion-col>
           <ion-col *ngIf="organization.donationKeyEAS">
-            <a [href]="'https://effektiveraltruismus.de/spenden/?purpose=' + organization.donationKeyEAS" target="_blank">
+            <a [href]="'https://effektiveraltruismus.de/spenden/?purpose=' + organization.donationKeyEAS" (click)="webAnalyticsService.donateToCharityViaEAS(organization.thumbnail)" target="_blank">
               <button ion-button icon-start clear>
                 <ion-icon name="card"></ion-icon>
                 <div>Steuereffektiv Spenden</div>

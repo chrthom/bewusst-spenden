@@ -21,6 +21,17 @@
     if (window.location.protocol != 'https:' && location.hostname != "localhost" && location.hostname != "127.0.0.1")
       location.href = location.href.replace("http://", "https://");
   </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174490060-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-174490060-1', {
+      'page_path': 'questionaire'
+    });
+  </script>
 </head>
 <body>
 

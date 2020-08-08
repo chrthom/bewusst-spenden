@@ -4,6 +4,7 @@ import { Organization } from "../../app/model/organization";
 import { Chart, MapChart } from "angular-highcharts";
 import { MapsService } from "../../app/services/maps";
 import { DataService } from "../../app/services/data";
+import {WebAnalyticsService} from "../../app/services/webanalytics";
 
 @Component({
   selector: 'page-organization',
@@ -17,8 +18,10 @@ export class OrganizationPage implements OnInit {
   constructor(private navCtrl: NavController,
               private params: NavParams,
               private mapsService: MapsService,
+              private webAnalyticsService: WebAnalyticsService,
               private dataService: DataService) {
     this.organization = this.params.get('o');
+    this.webAnalyticsService;
   }
 
   ngOnInit() {

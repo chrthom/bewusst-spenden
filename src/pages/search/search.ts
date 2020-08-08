@@ -5,6 +5,7 @@ import { Organization } from "../../app/model/organization";
 import { OrganizationPage } from "../organization/organization";
 import { NavController, Platform } from "ionic-angular";
 import { MapsService } from "../../app/services/maps";
+import {WebAnalyticsService} from "../../app/services/webanalytics";
 
 @Component({
   selector: 'page-search',
@@ -24,10 +25,12 @@ export class SearchPage {
   constructor(private dataService: DataService,
               private mapsService: MapsService,
               private modalService: ModalService,
+              private webAnalyticsService: WebAnalyticsService,
               private navCtrl: NavController,
               private platform: Platform) {
     this.organizations = dataService.organizations;
     this.modalService;
+    this.webAnalyticsService;
     this.countries = Object.keys(mapsService.countryMapping).map(key => {
       return {
         code: key,

@@ -21,6 +21,7 @@ import { PrivacyPage } from "../pages/privacy/privacy";
 import { DataService } from "./services/data";
 import { MapsService } from "./services/maps";
 import { ModalService } from "./services/modal";
+import { WebAnalyticsService } from "./services/webanalytics";
 
 import { HttpClientModule} from "@angular/common/http";
 
@@ -59,6 +60,7 @@ import { HttpClientModule} from "@angular/common/http";
     ModalService,
     StatusBar,
     SplashScreen,
+    WebAnalyticsService,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     { provide: HIGHCHARTS_MODULES, useFactory: () => [ Highmaps ] }
   ]

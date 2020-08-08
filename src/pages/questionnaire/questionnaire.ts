@@ -5,6 +5,7 @@ import { DataService } from "../../app/services/data";
 import { Organization } from "../../app/model/organization";
 import { OrganizationPage } from "../organization/organization";
 import Stack from "ts-data.stack";
+import {WebAnalyticsService} from "../../app/services/webanalytics";
 
 @Component({
   selector: 'page-questionaire',
@@ -43,6 +44,7 @@ export class QuestionnairePage {
   constructor(private navCtrl: NavController,
               private loadingCtrl: LoadingController,
               private dataService: DataService,
+              private webAnalyticsService: WebAnalyticsService,
               private platform: Platform) {
     let params = new URLSearchParams(window.location.search);
     let directOrganization = this.dataService.getByName(params.get('o'));
@@ -85,8 +87,10 @@ export class QuestionnairePage {
     }, loadingTime());
     // Show loading screen for result
     if (toResult) {
+      let result = to.replace("result -> ", "");
+      this.webAnalyticsService.finishQuestionaire(result);
       this.organizations = this.dataService.organizations.filter( item => {
-        return item.questionaireResults.indexOf(to.replace("result -> ", "")) >= 0;
+        return item.questionaireResults.indexOf(result) >= 0;
       });
       let loader = this.loadingCtrl.create({
         content: "Ermittle Testresultat...",
@@ -101,14 +105,17 @@ export class QuestionnairePage {
   }
 
   gotoTabSearch() {
+    this.webAnalyticsService.pageView('search', 'Suche')
     this.navCtrl.parent.select(1);
   }
 
   gotoTabAboutUs() {
+    this.webAnalyticsService.pageView('about', 'Über uns')
     this.navCtrl.parent.select(2);
   }
 
   openOrganizationPage(organization: { o: Organization }) {
+    this.webAnalyticsService.pageView('organization/' + organization.o.thumbnail, organization.o.name)
     this.navCtrl.push(OrganizationPage, organization);
   }
 
