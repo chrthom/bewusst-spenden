@@ -72,7 +72,7 @@
     <ion-list>
       <div *ngIf="isMobile()">
         <ion-item-sliding *ngFor="let o of organizations">
-          <ion-item text-wrap>
+          <ion-item text-wrap (tap)="itemHelperClick()">
             <ion-thumbnail item-start>
               <img src="../../assets/imgs/organizations/{{ o.thumbnail }}.jpg"/>
             </ion-thumbnail>

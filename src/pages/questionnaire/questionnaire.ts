@@ -5,7 +5,8 @@ import { DataService } from "../../app/services/data";
 import { Organization } from "../../app/model/organization";
 import { OrganizationPage } from "../organization/organization";
 import Stack from "ts-data.stack";
-import {WebAnalyticsService} from "../../app/services/webanalytics";
+import { WebAnalyticsService } from "../../app/services/webanalytics";
+import { ToastController } from "ionic-angular";
 
 @Component({
   selector: 'page-questionaire',
@@ -45,7 +46,8 @@ export class QuestionnairePage {
               private loadingCtrl: LoadingController,
               private dataService: DataService,
               private webAnalyticsService: WebAnalyticsService,
-              private platform: Platform) {
+              private platform: Platform,
+              private toastController: ToastController) {
     let params = new URLSearchParams(window.location.search);
     let directOrganization = this.dataService.getByName(params.get('o'));
     if (directOrganization) this.openOrganizationPage({ o: directOrganization });
@@ -121,5 +123,21 @@ export class QuestionnairePage {
 
   isMobile() {
     return this.platform.is('mobile');
+  }
+
+  helperTapCount: number = 0;
+  itemHelperClick() {
+    this.helperTapCount++;
+    if (this.helperTapCount >= 5) {
+      this.toastController.create({
+        duration: 5000,
+        message: 'Swipe nach links, um mehr Optionen zu dieser Organisation zu erhalten.',
+        position: 'top'
+      }).present();
+      this.helperTapCount = 0;
+    }
+    setTimeout(() => {
+      this.helperTapCount = 0;
+    }, 5000);
   }
 }

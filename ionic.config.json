@@ -2,5 +2,5 @@
   "name": "ea",
   "integrations": {},
   "type": "ionic-angular",
-  "app_id": "bewusstspenden"
+  "id": "bewusstspenden"
 }
