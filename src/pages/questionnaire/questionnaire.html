@@ -797,7 +797,7 @@
             <p>Diese Hilfsorganisationen haben sich dem von dir pr&auml;ferierten Ziel gewidmet:</p>
           </ion-card-content>
         </ion-card>
-        <ion-list>
+        <ion-list *ngIf="organizations.length > 0">
           <div *ngIf="isMobile()">
             <ion-item text-wrap>
               <ion-thumbnail item-start>
