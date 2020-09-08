@@ -72,7 +72,7 @@
     <ion-list>
       <div *ngIf="isMobile()">
         <ion-item-sliding *ngFor="let o of organizations">
-          <ion-item text-wrap>
+          <ion-item text-wrap (tap)="itemHelperClick()">
             <ion-thumbnail item-start>
               <img src="../../assets/imgs/organizations/{{ o.thumbnail }}.jpg"/>
             </ion-thumbnail>
@@ -86,13 +86,13 @@
               <ion-icon name="information-circle"></ion-icon>
               Mehr Info
             </button>
-            <a [href]="o.website" target="_blank">
+            <a [href]="o.website" (click)="webAnalyticsService.visitCharityWebsite(o.thumbnail)" target="_blank">
               <button ion-button color="secondary">
                 <ion-icon name="browsers"></ion-icon>
                 Website
               </button>
             </a>
-            <a *ngIf="o.donationLink" [href]="o.donationLink" target="_blank">
+            <a *ngIf="o.donationLink" [href]="o.donationLink" (click)="webAnalyticsService.donateToCharity(o.thumbnail)" target="_blank">
               <button ion-button color="danger">
                 <ion-icon name="cash"></ion-icon>
                 Spenden
@@ -112,13 +112,13 @@
           <ion-badge *ngFor="let e of o.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
           <div class="buttons" item-end>
             <p>
-              <button ion-button block color="primary" (click)="openOrganizationPage({o: o})">
+              <button ion-button block color="primary" (click)="webAnalyticsService.pageView('organization/' + o.thumbnail, o.name); openOrganizationPage({o: o})">
                 <ion-icon name="information-circle"></ion-icon>
                 &nbsp;Mehr Info
               </button>
             </p>
             <p>
-              <a [href]="o.website" target="_blank">
+              <a [href]="o.website" (click)="webAnalyticsService.visitCharityWebsite(o.thumbnail)" target="_blank">
                 <button ion-button block color="secondary">
                   <ion-icon name="browsers"></ion-icon>
                   &nbsp;Website
@@ -126,7 +126,7 @@
               </a>
             </p>
             <p *ngIf="o.donationLink">
-              <a [href]="o.donationLink" target="_blank">
+              <a [href]="o.donationLink" (click)="webAnalyticsService.donateToCharity(o.thumbnail)" target="_blank">
                 <button ion-button block color="danger">
                   <ion-icon name="cash"></ion-icon>
                   &nbsp;Spenden

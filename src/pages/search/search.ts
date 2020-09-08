@@ -5,6 +5,8 @@ import { Organization } from "../../app/model/organization";
 import { OrganizationPage } from "../organization/organization";
 import { NavController, Platform } from "ionic-angular";
 import { MapsService } from "../../app/services/maps";
+import { WebAnalyticsService } from "../../app/services/webanalytics";
+import { ToastController } from "ionic-angular";
 
 @Component({
   selector: 'page-search',
@@ -24,10 +26,13 @@ export class SearchPage {
   constructor(private dataService: DataService,
               private mapsService: MapsService,
               private modalService: ModalService,
+              private webAnalyticsService: WebAnalyticsService,
               private navCtrl: NavController,
-              private platform: Platform) {
+              private platform: Platform,
+              private toastController: ToastController) {
     this.organizations = dataService.organizations;
     this.modalService;
+    this.webAnalyticsService;
     this.countries = Object.keys(mapsService.countryMapping).map(key => {
       return {
         code: key,
@@ -77,6 +82,22 @@ export class SearchPage {
 
   isMobile() {
     return this.platform.is('mobile');
+  }
+
+  helperTapCount: number = 0;
+  itemHelperClick() {
+    this.helperTapCount++;
+    if (this.helperTapCount >= 5) {
+      this.toastController.create({
+        duration: 5000,
+        message: 'Swipe nach links, um mehr Optionen zu dieser Organisation zu erhalten.',
+        position: 'top'
+      }).present();
+      this.helperTapCount = 0;
+    }
+    setTimeout(() => {
+      this.helperTapCount = 0;
+    }, 5000);
   }
 }
 

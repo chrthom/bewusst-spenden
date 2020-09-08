@@ -19,7 +19,7 @@
       <ion-item>
         <ion-row>
           <ion-col>
-            <a [href]="organization.website" target="_blank">
+            <a [href]="organization.website" (click)="webAnalyticsService.visitCharityWebsite(organization.thumbnail)" target="_blank">
               <button ion-button icon-start clear>
                 <ion-icon name="browsers"></ion-icon>
                 <div>Website</div>
@@ -27,7 +27,7 @@
             </a>
           </ion-col>
           <ion-col *ngIf="organization.donationLink">
-            <a [href]="organization.donationLink" target="_blank">
+            <a [href]="organization.donationLink" (click)="webAnalyticsService.donateToCharity(organization.thumbnail)" target="_blank">
               <button ion-button icon-start clear>
                 <ion-icon name="cash"></ion-icon>
                 <div>Spenden</div>
@@ -35,7 +35,7 @@
             </a>
           </ion-col>
           <ion-col *ngIf="organization.donationKeyEAS">
-            <a [href]="'https://effektiveraltruismus.de/spenden/?purpose=' + organization.donationKeyEAS" target="_blank">
+            <a [href]="'https://effektiveraltruismus.de/spenden/?purpose=' + organization.donationKeyEAS" (click)="webAnalyticsService.donateToCharityViaEAS(organization.thumbnail)" target="_blank">
               <button ion-button icon-start clear>
                 <ion-icon name="card"></ion-icon>
                 <div>Steuereffektiv Spenden</div>
@@ -66,12 +66,12 @@
       <ion-item *ngIf="organization.donationDeficit">
         <div [chart]="chart"></div>
       </ion-item>
-      <ion-item *ngIf="!organization.donationDeficit">
+      <ion-item text-wrap *ngIf="!organization.donationDeficit">
         <ion-icon name="help-buoy" item-start></ion-icon>
         <h2>Spendendefizit</h2>
         Hierzu liegen uns leider keine Informationen vor.
       </ion-item>
-      <ion-item *ngIf="organization.evaluators.length > 0">
+      <ion-item text-wrap *ngIf="organization.evaluators.length > 0">
         <h3>Empfohlen durch</h3>
         <ion-badge *ngFor="let e of organization.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
       </ion-item>

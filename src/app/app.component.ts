@@ -8,6 +8,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { QuestionnairePage } from '../pages/questionnaire/questionnaire';
 import { SearchPage } from '../pages/search/search';
 import { ModalService } from "./services/modal";
+import { WebAnalyticsService } from "./services/webanalytics";
 
 @Component({
   templateUrl: 'app.html'
@@ -26,8 +27,10 @@ export class EADonationApp {
   constructor(platform: Platform,
               statusBar: StatusBar,
               splashScreen: SplashScreen,
-              private modalService: ModalService) {
+              private modalService: ModalService,
+              private webAnalyticsService: WebAnalyticsService) {
     this.modalService;
+    this.webAnalyticsService;
     if (!platform.is('mobile')) {
       this.tabsPlacement = 'top';
       this.tabsLayout = 'icon-left';

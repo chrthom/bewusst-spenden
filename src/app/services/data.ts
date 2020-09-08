@@ -407,30 +407,6 @@ export class DataService {
       ]
     },
     {
-      name: 'ImpactMatters',
-      thumbnail: 'impactmatters',
-      website: 'https://www.impactm.org',
-      donationLink: null,
-      donationKeyEAS: null,
-      category: [ 'Meta' ],
-      cause: [ 'Wirksamkeitsanalyse' ],
-      impactDirection: 'reaktiv',
-      regions: [],
-      questionaireResults: [],
-      slogan: 'Führt Audits von wohltätigen Organisationen durch, um ihre philanthropischen Auswirkungen einzuschätzen',
-      shortDescription: 'ImpactMatters führt "Wirksamkeits-Audits" von gemeinnützigen Organisationen durch, um ihre philanthropischen Auswirkungen exakt einzuschätzen und sie und ihre Geldgeber zu evidenzbasierten Entscheidungen anzuregen.',
-      longDescription: 'Selbst die am besten geführten gemeinnützigen Organisationen können von einer externen Perspektive profitieren, um die Erfüllung ihrer Rechenschaftspflicht und ihre Wirkung zu verbessern. ImpactMatters liefert eine objektive, unabhängige Schätzung der Auswirkungen und Kosten der jeweiligen gemeinnützigen Organisation und stellt spezifische, umsetzbare Leitlinien zur Verbesserung der Bewertungs- und Datensysteme zur Verfügung. Wenn die gemeinnützige Organisation der Veröffentlichung zustimmt, erstellt ImpactMatters einen Bericht mit Einschätzungen zu Auswirkungen und Kosten, Einstufungen der Qualität der Nachweise dieser Schätzungen und Bewertungen der Überwachungssysteme und Datenprotokolle. Das Impact-Audit-Team gibt dann einen privaten Management-Brief heraus, in dem dargelegt wird, wie die geprüfte Organisation ihre Effektivität verbessern kann.',
-      impact1000: null,
-      donationDeficit: null,
-      evaluators: [
-        {
-          evaluator: 'Effektiver Altruismus',
-          link: 'https://effektiveraltruismus.de/organisationen/',
-          top: true
-        }
-      ]
-    },
-    {
       name: 'Innovations for Poverty Action',
       thumbnail: 'innovations_for_poverty_action',
       website: 'https://www.poverty-action.org',
@@ -479,7 +455,7 @@ export class DataService {
       ]
     },
     {
-      name: '80,000 hours',
+      name: '80,000 Hours',
       thumbnail: '80000_hours',
       website: 'https://80000hours.org/',
       donationLink: 'https://80000hours.org/support-us/donate/',
@@ -523,6 +499,30 @@ export class DataService {
           evaluator: 'Effektiver Altruismus',
           link: 'https://effektiveraltruismus.de/organisationen/',
           top: true
+        }
+      ]
+    },
+    {
+      name: 'Global Priorities Institute',
+      thumbnail: 'global_priorities_institute',
+      website: 'https://globalprioritiesinstitute.org/',
+      donationLink: 'https://globalprioritiesinstitute.org/supporting-gpi/',
+      donationKeyEAS: null,
+      category: [ 'Meta' ],
+      cause: [ 'Wirksamkeitsanalyse' ],
+      impactDirection: 'proaktiv',
+      regions: [ 'UK' ],
+      questionaireResults: [ ],
+      slogan: 'Akademische Grundlagenforschung zur Frage, wie man am besten Gutes tun kann.',
+      shortDescription: 'Das Global Priorities Institute ist ein interdisziplinäres Forschungszentrum, welches folgende zentrale Frage beforscht: "Wie sollte man mit begrenzten Ressourcen umgehen, um soviel Gutes wie möglich zu bewirken?". Dabei beziehen sie sich auf Handlungen welche die gesamte Zukunft der Menschheit beeinflussen.',
+      longDescription: 'Das Global Priorities Institute  ist ein interdisziplinäres Forschungszentrum , welches folgende zentrale Frage beforscht: "Wie sollte man mit begrenzten Ressourcen umgehen, um soviel Gutes wie möglich zu bewirken?". Dabei beziehen sie sich auf Handlungen welche die gesamte Zukunft der Menschheit beeinflussen. Erkenntnisse zu dieser Frage werden mit Mitteln der Philosophie und der Wirtschaftswissenschaften gewonnen. Die Vision des Zentrums ist eine Welt, in der globale Prioritäten durch Evidenz und Logik festegelegt werden, mit dem Ziel so viel Gutes wie möglich zu ermöglichen.',
+      impact1000: null ,
+      donationDeficit: null,
+      evaluators: [
+        {
+          evaluator: 'Bewusst Spenden',
+          link: 'http://bewusstspenden.de',
+          top: false
         }
       ]
     },
@@ -650,6 +650,55 @@ export class DataService {
         }
       ]
     },
+	{
+      name: 'Albert Schweizer Stiftung',
+      thumbnail: 'albert_schweizer_stiftung',
+      website: 'https://albert-schweitzer-stiftung.de/',
+      donationLink: 'https://albert-schweitzer-stiftung.de/helfen/spenden',
+      donationKeyEAS: null,
+      category: [ 'Tierleid' ],
+      cause: [ 'Haltungsbedingungen', 'Tierleben' ],
+      impactDirection: 'proaktiv',
+      regions: [ 'DE', 'PL' ],
+      questionaireResults: [ 'animal suffering' ],
+      slogan: 'Albert Schweizer Stiftung für unsere Mitwelt',
+      shortDescription: 'Die Stiftung hat es sich zur Aufgabe gemacht Tierleid zu minimieren. So setzt sie sich für eine vegane Lebensweise ein und versucht die Herstellung von Tierprodukten zu minimieren und Massentierhaltung abzuschaffen.',
+      longDescription: 'Die Stiftung hat es sich zur Aufgabe gemacht Tierleid zu minimieren. So setzt sie sich für eine vegane Lebensweise ein und versucht die Herstellung von Tierprodukten zu minimieren und Massentierhaltung abzuschaffen. Sie entwickeln Kampagnen, um Druck auf Unternehmen und Politiker auszuüben und Verbraucher aufzuklären. Weiterhin setzten sie sich rechtlich für bessere Standards ein und sorgen dafür, dass diese umgesetzt werden.',
+      impact1000: 'Von 1000€ werden etwa 617€ für die Öffentlichkeitsarbeit ausgegeben, 216€ für rechtliche Beratung und 166€ für Kampagnen. Die Albert Schweitzer Stiftung hat aktuell nicht veröffentlich, was sie tun, wenn sie mehr Geld als das veranschlagte Budget bekommen. Doch es kann davon ausgegangen werden, dass es sich um sehr ähnliche Projekte handelt.',
+      donationDeficit: 560000, // between 560.000$ and 1.900.000$
+      evaluators: [
+        {
+          evaluator: 'Animal Charity Evaluators',
+          link: 'https://animalcharityevaluators.org/charity-review/albert-schweitzer-foundation/',
+          top: true
+        }
+      ]
+    },
+    {
+      name: 'Anima International',
+      thumbnail: 'anima_international',
+      website: 'https://animainternational.org/',
+      donationLink: 'https://animainternational.org/donate',
+      donationKeyEAS: null,
+      category: [ 'Tierleid' ],
+      cause: [ 'Haltungsbedingungen' ],
+      impactDirection: 'proaktiv',
+      regions: [ 'PL', 'GB', 'DK', 'LT', 'NW', 'RU', 'UA', 'EE', 'BY' ],
+      questionaireResults: [ 'animal suffering' ],
+      slogan: 'For a future free from animal suffering',
+      shortDescription: 'Anima nutzt vielfältige rechtliche Möglichkeiten um die Situation von Tieren zu verbessern und eine pflanzlich Ernährung voran zu bringen.',
+      longDescription: 'Anima International möchte erreichen, dass Tiere nicht mehr als Produkte gesehen und als solche behandelt werden. Deswegen organisieren sie Kampagnen z.B. gegen Käfighaltung, Konferenzen zum Thema Tierwohl und fordern Gesetzesänderung für besseren Tierschutz. Die Organisation arbeitet Open Source und sieht die internationale Vernetzung als ein Schwerpunkt ihrer Arbeit.',
+      impact1000: 'Anima International gibt davon etwa 312€ für Öffentlichkeitsarbeit aus, nutzt 279€ für Kampagnen, 185€ um seine Kapazitäten zu erweitern, 129€ für die Bewerbung pflanzlicher Produkte und 95€ für rechtliche Unterstützung. Mit einem höheren Budget will Anima International mehr wissenschaftliche Studien publizieren, mehr und größere Kampagnen starten, sowie ihr Programm zur fleischfreien Ernährung auf andere Länder ausweiten.',
+      donationDeficit: 370000, // between $0.37 million and $2.5
+      evaluators: [
+        {
+          evaluator: 'Animal Charity Evaluators',
+          link: 'https://animalcharityevaluators.org/charity-review/anima/',
+          top: true
+        }
+      ]
+    },
+
     {
       name: 'Transparency International',
       thumbnail: 'transparency',
@@ -665,18 +714,18 @@ export class DataService {
 	  'CO', 'CR', 'CI', 'CZ', 'CD', 'DK', 'DO', 'SV', 'EE', 'ET',
 	  'FI', 'FR', 'GE', 'DE', 'GH', 'GR', 'GL', 'GT', 'GY', 'HN',
 	  'HU', 'IS', 'ID', 'IE', 'IL', 'IT', 'JM', 'JP', 'JO', 'KZ',
-	  'KE', 'XK', 'KW', 'KG', 'LV', 'LB', 'LR', 'LT', 'MK', 'MG', 
-	  'MW', 'MY', 'MV', 'ML', 'MU', 'MX', 'MD', 'MN', 'ME', 'MA', 
+	  'KE', 'XK', 'KW', 'KG', 'LV', 'LB', 'LR', 'LT', 'MK', 'MG',
+	  'MW', 'MY', 'MV', 'ML', 'MU', 'MX', 'MD', 'MN', 'ME', 'MA',
 	  'MZ', 'NP', 'NL', 'NZ', 'NE', 'NG', 'NO', 'PK', 'PS', 'PA',
 	  'PG', 'PE', 'PL', 'PT', 'CG', 'RO', 'RU', 'RW', 'SN', 'RS',
-	  'SC', 'SL', 'SK', 'SI', 'SB', 'ZA', 'KR', 'ES', 'LK', 'SE', 
-	  'CH', 'TW', 'TG', 'TT', 'TN', 'TR', 'UG', 'UA', 'GB', 'VU',
-	  'VE', 'VN', 'ZM', 'ZW',
+	  'SC', 'SL', 'SK', 'SI', 'US', 'SB', 'ZA', 'KR', 'ES', 'LK',
+    'SE', 'CH', 'TW', 'TG', 'TT', 'TN', 'TR', 'UG', 'UA', 'GB',
+    'VU','VE', 'VN', 'ZM', 'ZW',
 	  ],
       questionaireResults: [ 'institutions' ],
       slogan: 'Die globale Koalition gegen Korruption',
-      shortDescription: 'Eine globale Bewegung, die eine Vision teilt: eine Welt, in der Regierung, Wirtschaft, Zivilgesellschaft und das tägliche Leben der Menschen frei von Korruption sind.',
-      longDescription: '1993 gegründet, setzt sich die Bewegung für ein globales Bewusstsein für Korruption sowie für mehr Integrität und Transparenz im öffentlichen und privaten Sektor ein. Um diese Ziele zu erreichen, werden internationale Antikorruptionskonventionen erarbeitet, die Verfolgung korrupter Politiker sowie die Beschlagnahmung ihrer illegal erworbenen Vermögen unterstützt und Unternehmen für ihr Handeln im In- und Ausland verantwortlich gemacht. In über 100 Ländern arbeiten lokale Gruppen mit Partnern aus Politik, Wirtschaft und Zivilgesellschaft zusammen, um wirksame Maßnahmen gegen Korruption zu ergreifen. Die Organisation legt Wert auf politische Unabhängigkeit. Programme und Aktivitäten sowie deren Inhalte werden allein von Transparency International festgelegt. Finanzierungsquellen und Ausgaben werden jährlich von einem unabhängigen Auditor überprüft und öffentlich gemacht',
+      shortDescription: 'Transparency International setzt sich ein globales Bewusstsein für Korruption sowie für mehr Integrität und Transparenz im öffentlichen und privaten Sektor ein',
+      longDescription: '1993 gegründet, setzt sich die Bewegung für ein globales Bewusstsein für Korruption sowie für mehr Integrität und Transparenz im öffentlichen und privaten Sektor ein. Um diese Ziele zu erreichen, werden internationale Antikorruptionskonventionen erarbeitet, die Verfolgung korrupter Politiker sowie die Beschlagnahmung ihrer illegal erworbenen Vermögen unterstützt und Unternehmen für ihr Handeln im In- und Ausland verantwortlich gemacht. In über 100 Ländern arbeiten lokale Gruppen mit Partnern aus Politik, Wirtschaft und Zivilgesellschaft zusammen, um wirksame Maßnahmen gegen Korruption zu ergreifen. Die Organisation legt Wert auf politische Unabhängigkeit.',
       impact1000: 'Da Transparency International verschiedene Programme in den über 100 Ländern betreibt, ist eine genaue quantitative Beurteilung sehr schwierig.',
       donationDeficit: null,
       evaluators: [
