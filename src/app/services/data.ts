@@ -368,8 +368,8 @@ export class DataService {
       regions: [],
       questionaireResults: [ 'existential risks' ],
       slogan: 'Was können wir jetzt tun, um eine lange blühende Zukunft der Menschheit zu sichern?',
-      shortDescription: 'Das Future of Humanity Institute ist ein multidisziplinäres Forschungsinstitut an der Universität Oxford. Akademiker am FHI nutzen die Werkzeuge der Mathematik, Philosophie und Sozialwissenschaften in Zusammenhang mit großen Fragen über Zukunft der Menschheit.',
-      longDescription: 'Das Future of Humanity Institute ist ein Forschungsinstitut an der Universität Oxford. Mithilfe von Methoden aus Mathematik, Philosophie und Sozialwissenschaften versuchen die Forscher potentielle Bedrohungen für die Menschheit zu identifizieren und entsprechende Bewältigungsstrategien zu finden. Zu diesen Bedrohungen gehören drastische Klimaveränderungen, Atomkrieg und Nuklearterrorismus, molekulare Nanotechnologie und künstliche Intelligenz.',
+      shortDescription: 'Das Future of Humanity Institute ist ein multidisziplinäres Forschungsinstitut an der Universität Oxford. Die Forscher versuchen potenziell existentielle Bedrohungen für die Menschheit zu identifizieren und entsprechende Strategien zu ihrer Vermeidung zu entwickeln.',
+      longDescription: 'Das Future of Humanity Institute ist ein Forschungsinstitut an der Universität Oxford. Mithilfe von Methoden aus Mathematik, Philosophie, Informatik und Sozialwissenschaften versuchen die Forscher, potenziell  existentielle Bedrohungen für die Menschheit zu identifizieren und entsprechende Strategien zu ihrer Vermeidung zu entwickeln. Zu diesen Bedrohungen gehören künstliche Intelligenz, Biotechnologie sowie molekulare Nanotechnologie. Das Future of Humanity Institute gliedert sich zurzeit in vier Forschungsgruppen: Makrostrategie, Centre for the Governance of AI, Technische KI Sicherheit und Biosicherheit.',
       impact1000: null,
       donationDeficit: null,
       evaluators: [
