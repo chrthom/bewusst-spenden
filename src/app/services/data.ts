@@ -760,7 +760,7 @@ export class DataService {
         }
       ]
     }
-  ];
+  ].sort((a, b) => a.name.localeCompare(b.name));
 
   getByName(name: string): Organization {
     let foundOrganisation = this.organizations.filter(o => o.thumbnail == name);
