@@ -23,7 +23,7 @@ export class DataService {
       shortDescription: 'Malaria ist eine der häufigsten Todesursachen von Kindern in Afrika. Mit Insektiziden behandelte Netze können Malaria wirksam verhindern und sind außerdem günstig — etwa 5 Dollar pro Netz.',
       longDescription: 'Die Against Malaria Foundation (AMF) ist eine Hilfsorganisation aus Großbritannien, die sogenannte "long-lasting insecticidal nets" (LLINs) an Bevölkerungsgruppen mit hohem Malaria-Risiko verteilt, hauptsächlich in Subsahara-Afrika. Die Verteilung der Netze geschieht in Partnerschaft mit anderen Organisationen wie z.B. dem Internationalen Roten Kreuz und Malaria Consortium. Zusätzlich zur Verteilung von Netzen erfolgt auch Aufklärungsarbeit zur Prävention von Malaria. Die Verteilung wird in Schriftform, Bild und Video dokumentiert. Es erfolgen ca. 3 Jahre lang halbjährlich Überprüfungen, um die Nutzung der Netze und andere lokale Gegebenheiten zu begutachten.',
       impact1000: 'Mit 1.000€ können ungefähr 250 Netze verteilt werden: Grob geschätzt reicht die Verteilung von 900 Netzen, um ein Leben zu retten.',
-      donationDeficit: 20000000,
+      donationDeficit: 130000000,
       evaluators: [
         {
           evaluator: 'GiveWell',
@@ -52,7 +52,7 @@ export class DataService {
       shortDescription: 'Malaria Consortium ist eine der weltweit führenden Non-Profit-Organisationen, die sich auf die Prävention, Kontrolle und Behandlung von Malaria und anderen übertragbaren Krankheiten in gefährdeten Bevölkerungsgruppen spezialisiert hat.',
       longDescription: 'Malaria Consortium ist eine der weltweit führenden Non-Profit-Organisationen, die sich auf die Prävention, Kontrolle und Behandlung von Malaria und anderen übertragbaren Krankheiten in gefährdeten Bevölkerungsgruppen spezialisiert hat. Sie schaffen maßgeschneiderte, evidenzbasierte Lösungen, die sich positiv auf das Gesundheitssystem und die Wirtschaft insgesamt auswirken.',
       impact1000: 'Mit 1.000€ können ungefähr 150 mit Insektiziden behandelte Netze gekauft, 15000 Malaria-Tests gemacht werden oder 250 Kinder durch Chemoprevention vor Malaria geschützt werden.',
-      donationDeficit: 10000000,
+      donationDeficit: 36000000,
       evaluators: [
         {
           evaluator: 'GiveWell',
@@ -76,7 +76,7 @@ export class DataService {
       shortDescription: 'SCI behandelt Kinder und Erwachsene mit Risiko für Schistosomiasis und durch den Boden übertragene Helminthen (Peitschenwurm, Hakenwurm und Spulwurm), verhindert Anämie, beeinträchtigtes Wachstum und Entwicklung bei Kindern und die Entwicklung von lebensbedrohlichen Zuständen von Blasenkrebs, Nierenfunktionsstörungen oder Leber- und Milzschäden.',
       longDescription: 'SCI unterstützt Gesundheitsministerien in Subsahara-Afrika bei der Bekämpfung und anschließenden Eliminierung von Schistosomiasis und durch den Boden übertragenen Helminthen aus ihrer Bevölkerung unter Verwendung des Medikamentenspendeprogramms der Weltgesundheitsorganisation (WHO) für Praziquantel und Albendazol. 230 Millionen Menschen, ein Drittel der Gesamtbevölkerung Afrikas, benötigen eine regelmäßige jährliche Behandlung von Praziquantel. 400 Millionen Menschen benötigen eine regelmäßige jährliche Behandlung von Albendazol, um diese parasitären Krankheiten aus ihrem Körper zu eliminieren.',
       impact1000: 'Mit 1.000€ können ca. 2000 Menschen behandelt werden.',
-      donationDeficit: 30000000,
+      donationDeficit: 0,
       evaluators: [
         {
           evaluator: 'GiveWell',
@@ -105,7 +105,7 @@ export class DataService {
       shortDescription: 'Helen Keller International (HKI) bekämpft die Ursachen und Folgen von Blindheit und Mangelernährung durch Programme, die auf Evidenz und Forschung in den Bereichen Sehvermögen, Gesundheit und Ernährung basieren.',
       longDescription: 'Helen Keller International hat es sich zur Aufgabe gemacht, die Sehkraft und das Leben der Schwächsten und Benachteiligten zu retten. Sie bekämpfen die Ursachen und Folgen von Blindheit und Mangelernährung durch Programme, die auf Evidenz und Forschung in den Bereichen Sehvermögen, Gesundheit und Ernährung basieren. Derzeit laufen mehr als 100 Programme in 20 afrikanischen und asiatischen Ländern sowie in den Vereinigten Staaten.',
       impact1000: 'Mit 1.000€ können derzeit ca. 1500 Vitamin A Ergänzungsmittel verteilt werden.',
-      donationDeficit: 40000000,
+      donationDeficit: 3300000,
       evaluators: [
         {
           evaluator: 'GiveWell',
@@ -137,7 +137,7 @@ export class DataService {
       shortDescription: 'Der END-Fonds verwaltet Zuschüsse, stellt Finanzmittel bereit und unterstützt staatliche Programme zur Kontrolle und Beseitigung vernachlässigter Tropenkrankheiten, einschließlich der Entwurmung.',
       longDescription: 'Vernachlässigte Tropenkrankheiten (Neglected Tropical Diseases, NTDs) sind eine Gruppe von parasitären und bakteriellen Infektionskrankheiten, von denen mehr als 1,5 Milliarden Menschen auf der ganzen Welt betroffen sind, die Hälfte davon sind Kinder. Der END Fund konzentriert sich auf die Bereitstellung von NTD-Behandlungen, einschließlich Entwurmung, indem er strategische Investitionen mit hoher Wirkung in NTD-Programme verwaltet, mit Partnern aus Regierung, NGOs, Pharmazie und Wissenschaft zusammenarbeitet sowie eine Gemeinschaft von Aktivisten und Philanthropen aufbaut und einbezieht. Es wird ein systematischer Ansatz verfolgt, um das breite Ökosystem von Interessenvertretern, die an der Beendigung von NTDs arbeiten, zu verstehen, sich mit ihnen auseinanderzusetzen und Einfluss zu nehmen.',
       impact1000: 'Studien zeigen, dass die Behandlung von NTDs die kostenwirksamste Methode ist, um die Anwesenheit von Kindern in der Schule zu verbessern und ihre Lern- und Konzentrationsfähigkeit zu steigern. Mit nur 50 Cent (USD) wird ein Paket von Medikamenten mit rascher Wirkung finanziert, um eine Person gegen die fünf häufigsten NTDs zu behandeln. Mit 1.000 Euro können wir dazu beitragen, über 2.000 Menschen mit Entwurmungsmedikamenten zu versorgen.',
-      donationDeficit: 15000000,
+      donationDeficit: 28000000,
       evaluators: [
         {
           evaluator: 'GiveWell',
@@ -192,7 +192,7 @@ export class DataService {
       shortDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfindig, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1.000$ für ein Jahr an besonders bedürftige Haushalte.',
       longDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfindig, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1.000$ für ein Jahr an besonders bedürftige Haushalte. GiveDirectly forscht intensiv daran festzustellen, welche Auswirkungen die Geld-Tranfers auf teilnehmende Haushalte haben. Auf der Website https://live.givedirectly.org/ lässt sich nachvollziehen, was einzelne Individuen mit dem Geld gemacht haben.',
       impact1000: 'GiveDirectly gibt 83% der Spenden direkt an bedürftige Haushalte weiter. Eine Untersuchung zeigt, dass dieses Geld die Nahrungsversorgung, Finanzierung von Bildung und Gesundheit verbessert und nicht für Alkohol oder Tabak ausgegeben wurde. Nach der Einschätzung von GiveWell hat GiveDirectly verglichen mit anderen besonders effektiven Interventionen wahrscheinlich eine geringere Effektivität. Dafür ist GiveDirectly außerordentlich transparent und hat den direkten Nutzen die Armut zu reduzieren und ist somit in dieser Hinsicht wenig mit Unsicherheiten behaftet.',
-      donationDeficit: 200000000,
+      donationDeficit: 450000000,
       evaluators: [
         {
           evaluator: 'GiveWell',
