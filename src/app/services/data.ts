@@ -23,7 +23,7 @@ export class DataService {
       shortDescription: 'Malaria ist eine der häufigsten Todesursachen von Kindern in Afrika. Mit Insektiziden behandelte Netze können Malaria wirksam verhindern und sind außerdem günstig — etwa 5 Dollar pro Netz.',
       longDescription: 'Die Against Malaria Foundation (AMF) ist eine Hilfsorganisation aus Großbritannien, die sogenannte "long-lasting insecticidal nets" (LLINs) an Bevölkerungsgruppen mit hohem Malaria-Risiko verteilt, hauptsächlich in Subsahara-Afrika. Die Verteilung der Netze geschieht in Partnerschaft mit anderen Organisationen wie z.B. dem Internationalen Roten Kreuz und Malaria Consortium. Zusätzlich zur Verteilung von Netzen erfolgt auch Aufklärungsarbeit zur Prävention von Malaria. Die Verteilung wird in Schriftform, Bild und Video dokumentiert. Es erfolgen ca. 3 Jahre lang halbjährlich Überprüfungen, um die Nutzung der Netze und andere lokale Gegebenheiten zu begutachten.',
       impact1000: 'Mit 1.000€ können ungefähr 250 Netze verteilt werden: Grob geschätzt reicht die Verteilung von 900 Netzen, um ein Leben zu retten.',
-      donationDeficit: 20000000,
+      donationDeficit: 130000000,
       evaluators: [
         {
           evaluator: 'GiveWell',
@@ -52,7 +52,7 @@ export class DataService {
       shortDescription: 'Malaria Consortium ist eine der weltweit führenden Non-Profit-Organisationen, die sich auf die Prävention, Kontrolle und Behandlung von Malaria und anderen übertragbaren Krankheiten in gefährdeten Bevölkerungsgruppen spezialisiert hat.',
       longDescription: 'Malaria Consortium ist eine der weltweit führenden Non-Profit-Organisationen, die sich auf die Prävention, Kontrolle und Behandlung von Malaria und anderen übertragbaren Krankheiten in gefährdeten Bevölkerungsgruppen spezialisiert hat. Sie schaffen maßgeschneiderte, evidenzbasierte Lösungen, die sich positiv auf das Gesundheitssystem und die Wirtschaft insgesamt auswirken.',
       impact1000: 'Mit 1.000€ können ungefähr 150 mit Insektiziden behandelte Netze gekauft, 15000 Malaria-Tests gemacht werden oder 250 Kinder durch Chemoprevention vor Malaria geschützt werden.',
-      donationDeficit: 10000000,
+      donationDeficit: 36000000,
       evaluators: [
         {
           evaluator: 'GiveWell',
@@ -76,7 +76,7 @@ export class DataService {
       shortDescription: 'SCI behandelt Kinder und Erwachsene mit Risiko für Schistosomiasis und durch den Boden übertragene Helminthen (Peitschenwurm, Hakenwurm und Spulwurm), verhindert Anämie, beeinträchtigtes Wachstum und Entwicklung bei Kindern und die Entwicklung von lebensbedrohlichen Zuständen von Blasenkrebs, Nierenfunktionsstörungen oder Leber- und Milzschäden.',
       longDescription: 'SCI unterstützt Gesundheitsministerien in Subsahara-Afrika bei der Bekämpfung und anschließenden Eliminierung von Schistosomiasis und durch den Boden übertragenen Helminthen aus ihrer Bevölkerung unter Verwendung des Medikamentenspendeprogramms der Weltgesundheitsorganisation (WHO) für Praziquantel und Albendazol. 230 Millionen Menschen, ein Drittel der Gesamtbevölkerung Afrikas, benötigen eine regelmäßige jährliche Behandlung von Praziquantel. 400 Millionen Menschen benötigen eine regelmäßige jährliche Behandlung von Albendazol, um diese parasitären Krankheiten aus ihrem Körper zu eliminieren.',
       impact1000: 'Mit 1.000€ können ca. 2000 Menschen behandelt werden.',
-      donationDeficit: 30000000,
+      donationDeficit: 0,
       evaluators: [
         {
           evaluator: 'GiveWell',
@@ -105,7 +105,7 @@ export class DataService {
       shortDescription: 'Helen Keller International (HKI) bekämpft die Ursachen und Folgen von Blindheit und Mangelernährung durch Programme, die auf Evidenz und Forschung in den Bereichen Sehvermögen, Gesundheit und Ernährung basieren.',
       longDescription: 'Helen Keller International hat es sich zur Aufgabe gemacht, die Sehkraft und das Leben der Schwächsten und Benachteiligten zu retten. Sie bekämpfen die Ursachen und Folgen von Blindheit und Mangelernährung durch Programme, die auf Evidenz und Forschung in den Bereichen Sehvermögen, Gesundheit und Ernährung basieren. Derzeit laufen mehr als 100 Programme in 20 afrikanischen und asiatischen Ländern sowie in den Vereinigten Staaten.',
       impact1000: 'Mit 1.000€ können derzeit ca. 1500 Vitamin A Ergänzungsmittel verteilt werden.',
-      donationDeficit: 40000000,
+      donationDeficit: 3300000,
       evaluators: [
         {
           evaluator: 'GiveWell',
@@ -137,7 +137,7 @@ export class DataService {
       shortDescription: 'Der END-Fonds verwaltet Zuschüsse, stellt Finanzmittel bereit und unterstützt staatliche Programme zur Kontrolle und Beseitigung vernachlässigter Tropenkrankheiten, einschließlich der Entwurmung.',
       longDescription: 'Vernachlässigte Tropenkrankheiten (Neglected Tropical Diseases, NTDs) sind eine Gruppe von parasitären und bakteriellen Infektionskrankheiten, von denen mehr als 1,5 Milliarden Menschen auf der ganzen Welt betroffen sind, die Hälfte davon sind Kinder. Der END Fund konzentriert sich auf die Bereitstellung von NTD-Behandlungen, einschließlich Entwurmung, indem er strategische Investitionen mit hoher Wirkung in NTD-Programme verwaltet, mit Partnern aus Regierung, NGOs, Pharmazie und Wissenschaft zusammenarbeitet sowie eine Gemeinschaft von Aktivisten und Philanthropen aufbaut und einbezieht. Es wird ein systematischer Ansatz verfolgt, um das breite Ökosystem von Interessenvertretern, die an der Beendigung von NTDs arbeiten, zu verstehen, sich mit ihnen auseinanderzusetzen und Einfluss zu nehmen.',
       impact1000: 'Studien zeigen, dass die Behandlung von NTDs die kostenwirksamste Methode ist, um die Anwesenheit von Kindern in der Schule zu verbessern und ihre Lern- und Konzentrationsfähigkeit zu steigern. Mit nur 50 Cent (USD) wird ein Paket von Medikamenten mit rascher Wirkung finanziert, um eine Person gegen die fünf häufigsten NTDs zu behandeln. Mit 1.000 Euro können wir dazu beitragen, über 2.000 Menschen mit Entwurmungsmedikamenten zu versorgen.',
-      donationDeficit: 15000000,
+      donationDeficit: 28000000,
       evaluators: [
         {
           evaluator: 'GiveWell',
@@ -192,7 +192,7 @@ export class DataService {
       shortDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfindig, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1.000$ für ein Jahr an besonders bedürftige Haushalte.',
       longDescription: 'GiveDirectly macht extrem arme Gemeinschaften ausfindig, überprüft die individuelle Bedürftigkeit und sendet per Mobiltelefon etwa 1.000$ für ein Jahr an besonders bedürftige Haushalte. GiveDirectly forscht intensiv daran festzustellen, welche Auswirkungen die Geld-Tranfers auf teilnehmende Haushalte haben. Auf der Website https://live.givedirectly.org/ lässt sich nachvollziehen, was einzelne Individuen mit dem Geld gemacht haben.',
       impact1000: 'GiveDirectly gibt 83% der Spenden direkt an bedürftige Haushalte weiter. Eine Untersuchung zeigt, dass dieses Geld die Nahrungsversorgung, Finanzierung von Bildung und Gesundheit verbessert und nicht für Alkohol oder Tabak ausgegeben wurde. Nach der Einschätzung von GiveWell hat GiveDirectly verglichen mit anderen besonders effektiven Interventionen wahrscheinlich eine geringere Effektivität. Dafür ist GiveDirectly außerordentlich transparent und hat den direkten Nutzen die Armut zu reduzieren und ist somit in dieser Hinsicht wenig mit Unsicherheiten behaftet.',
-      donationDeficit: 200000000,
+      donationDeficit: 450000000,
       evaluators: [
         {
           evaluator: 'GiveWell',
@@ -314,9 +314,9 @@ export class DataService {
       cause: [ 'Klimaschutz' ],
       impactDirection: 'reaktiv',
       regions: [ 'US' ],
-      questionaireResults: [ 'environment' ],
+      questionaireResults: [ 'environment','human knowledge'],
       slogan: 'Schutz der Welt vor den schlimmsten Auswirkungen des Klimawandels',
-      shortDescription: 'Die Clean Air Task Force leistet einen Beitrag zum Schutz vor den schlimmsten Auswirkungen des Klimawandels. Diesen leistet sie, indem sie die rasche globale Entwicklung und den Einsatz von CO2-armer Energie und anderen klimaschutzenden Technologien durch Forschung und Analyse, öffentliche Lobbyarbeit und Partnerschaft mit dem Privatsektor beschleunigen.',
+      shortDescription: 'Die Clean Air Task Force (CATF) leistet einen Beitrag zum Schutz vor den schlimmsten Auswirkungen des Klimawandels. Dazu fördert CATF die rasche globale Entwicklung und den Einsatz von CO2-armer Energie und anderen klimaschutzenden Technologien durch Forschung und Analyse, öffentliche Lobbyarbeit und Partnerschaft mit dem Privatsektor.',
       longDescription: 'Die Clean Air Task Force (CATF) ist eine in den USA ansässige Nichtregierungsorganisation, die sich für die Reduzierung von klimaschädlichen und anderen Schadstoffen durch Forschung und Analyse, öffentliche Interessenvertretung und Partnerschaft mit dem Privatsektor einsetzt. Sie wurde 1996 mit dem Ziel gegründet, eine föderale Politik zur Verringerung der durch amerikanische Kohlekraftwerke verursachten Luftverschmutzung einzuführen. Diese Kampagne war sehr erfolgreich und trug dazu bei, dass ein großer Teil der US-Kohleflotte in den Ruhestand ging. Sie haben zahlreiche andere erfolgreiche Kampagnen konzipiert und mitgestaltet, die beim Aufbau von CO2-Kontrollen für den US-amerikanischen Energiesektor helfen, z. B. Vorschriften für Dieselemissionen, Vorschriften für Schiffsemissionen und Vorschriften für Methanemissionen aus der Öl- und Gasproduktion.',
       impact1000: null,
       donationDeficit: 2000000,
@@ -344,7 +344,7 @@ export class DataService {
 		'VN', 'CF', 'MY', 'ID', 'PG'],
       questionaireResults: [ 'environment' ],
       slogan: 'Verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt',
-      shortDescription: 'Die Koalition für die Regenwaldnationen (Coalition for Rainforest Nations oder CfRN) bemüht sich um die verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt durch innovative Strategien, die soziale, ökonomische und wissenschaftliche Begründungen integrieren, mit dem Ziel ökologische Nachhaltigkeit zu erreichen.',
+      shortDescription: 'Die Coalition for Rainforest Nations (CfRN) bemüht sich um die verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt, indem sie Regierungen und Gemeinschaften dabei unterstützt, nachhaltig mit dem Regenwald umzugehen.',
       longDescription: 'Die CfRN ist eine zwischenstaatliche Organisation von mehr als 50 Regenwaldnationen, die sich für die Förderung der ökologischen Nachhaltigkeit einsetzt und gleichzeitig Möglichkeiten für wirtschaftlichen Fortschritt in den tropisch bewaldeten Entwicklungsländern schafft. Es wurde 2004 vom Premierminister von Papua-Neuguinea und dem Präsidenten von Costa Rica gegründet. Die CfRN-Teilnehmerländer arbeiten freiwillig in gemeinsam entwickelten Initiativen zusammen, die vom CfRN-Sekretariat mit Sitz in New York geleitet werden.',
       impact1000: 'Laut Evaluation von Founders Pledge kann mit 1.000€ die Freisetzung von ca. 8.000 Tonnen CO2 kompensiert werden.',
       donationDeficit: 2000000,
@@ -368,8 +368,8 @@ export class DataService {
       regions: [],
       questionaireResults: [ 'existential risks' ],
       slogan: 'Was können wir jetzt tun, um eine lange blühende Zukunft der Menschheit zu sichern?',
-      shortDescription: 'Das Future of Humanity Institute ist ein multidisziplinäres Forschungsinstitut an der Universität Oxford. Akademiker am FHI nutzen die Werkzeuge der Mathematik, Philosophie und Sozialwissenschaften in Zusammenhang mit großen Fragen über Zukunft der Menschheit.',
-      longDescription: 'Das Future of Humanity Institute ist ein Forschungsinstitut an der Universität Oxford. Mithilfe von Methoden aus Mathematik, Philosophie und Sozialwissenschaften versuchen die Forscher potentielle Bedrohungen für die Menschheit zu identifizieren und entsprechende Bewältigungsstrategien zu finden. Zu diesen Bedrohungen gehören drastische Klimaveränderungen, Atomkrieg und Nuklearterrorismus, molekulare Nanotechnologie und künstliche Intelligenz.',
+      shortDescription: 'Das Future of Humanity Institute ist ein multidisziplinäres Forschungsinstitut an der Universität Oxford. Die Forscher versuchen potenziell existentielle Bedrohungen für die Menschheit zu identifizieren und entsprechende Strategien zu ihrer Vermeidung zu entwickeln.',
+      longDescription: 'Das Future of Humanity Institute ist ein Forschungsinstitut an der Universität Oxford. Mithilfe von Methoden aus Mathematik, Philosophie, Informatik und Sozialwissenschaften versuchen die Forscher, potenziell  existentielle Bedrohungen für die Menschheit zu identifizieren und entsprechende Strategien zu ihrer Vermeidung zu entwickeln. Zu diesen Bedrohungen gehören künstliche Intelligenz, Biotechnologie sowie molekulare Nanotechnologie. Das Future of Humanity Institute gliedert sich zurzeit in vier Forschungsgruppen: Makrostrategie, Centre for the Governance of AI, Technische KI Sicherheit und Biosicherheit.',
       impact1000: null,
       donationDeficit: null,
       evaluators: [
@@ -416,7 +416,7 @@ export class DataService {
       cause: [ 'Wirksamkeitsanalyse' ],
       impactDirection: 'reaktiv',
       regions: [],
-      questionaireResults: [],
+      questionaireResults: ['human knowledge','poverty'],
       slogan: 'Randomisierte kontrollierte Studien von Programmen und Politik für die Armen',
       shortDescription: 'Innovations for Poverty Action führt kontrollierte, stichprobenartig ausgewählte Studien zu Hilfsprogrammen durch. Ihre Studien werden in ähnlicher Weise wie wissenschaftliche Studien druchgeführt, um die Auswirkungen der getesteten Programme zu ermitteln und wirksame Methoden zur Verringerung der Armut zu finden.',
       longDescription: 'Innovations for Poverty Action (IPA) ist eine gemeinnützige Forschungs- und Politikinitiative, die effektive Lösungen für globale Armutsprobleme entdeckt und fördert. Die IPA bringt Forscher und Entscheidungsträger zusammen, um Lösungen und ihre Anwendungen zu entwerfen, diese exakt zu bewerten und zu verfeinern und sicherzustellen, dass die gewonnenen Erkenntnisse dazu genutzt werden, das Leben der Armen in der Welt zu verbessern.',
@@ -467,7 +467,7 @@ export class DataService {
       questionaireResults: [],
       slogan: 'Du arbeitest 80.000 Stunden in einer Karriere, was bewirkst du damit?',
       shortDescription: 'Mit der Wahl der richtigen Karriere kann ein großer Beitrag zur Lösung der drängendsten globalen Probleme geleistet werden. 80,000 Hours unterstützt Menschen dabei, den richtigen Weg einzuschlagen.',
-      longDescription: '80,000 Hours hat es sich zur Aufgabe gemacht, möglichst viele Menschen darin zu unterstützen eine Karriere mit sehr positiver Wirkung zu gestalten. Die hauptsächliche Intervention um dies zu erreichen, ist Karriereberatung für talentierte junge Leute, die solch eine Karriere anstreben. Diese Beratung gibt es sowohl für jeden online verfügbar als auch in der Form von Workshops, Einzelberatung und einer globalen Community.',
+      longDescription: '80,000 Hours hat es sich zur Aufgabe gemacht, möglichst viele Menschen darin zu unterstützen eine Karriere mit sehr positiver Wirkung zu gestalten. Die hauptsächliche Intervention um dies zu erreichen, ist Karriereberatung für talentierte junge Leute, die eine solche Karriere anstreben. Diese Beratung gibt es sowohl für jeden online verfügbar als auch in der Form von Workshops, Einzelberatung und einer globalen Community.',
       impact1000: '80,000 Hours betreibt Aufklärungsarbeit, daher ist die Gesamtwirkung nicht besonders genau abzuschätzen. Die Selbstevaluierung von 80,000 Hours hat ergeben, dass mit etwa 7.000€ die Umgestaltung eines Karriereplans dahingehend unterstützt werden konnte, dass eine Person einen sehr hohen positiven Einfluss hat (z.B. mit einer jährliche Spende von über 100.000€ im Jahr zu effektiven Organisationen).',
       donationDeficit: 500000,
       evaluators: [
@@ -515,7 +515,7 @@ export class DataService {
       questionaireResults: [ ],
       slogan: 'Akademische Grundlagenforschung zur Frage, wie man am besten Gutes tun kann.',
       shortDescription: 'Das Global Priorities Institute ist ein interdisziplinäres Forschungszentrum, welches folgende zentrale Frage beforscht: "Wie sollte man mit begrenzten Ressourcen umgehen, um soviel Gutes wie möglich zu bewirken?". Dabei beziehen sie sich auf Handlungen welche die gesamte Zukunft der Menschheit beeinflussen.',
-      longDescription: 'Das Global Priorities Institute  ist ein interdisziplinäres Forschungszentrum , welches folgende zentrale Frage beforscht: "Wie sollte man mit begrenzten Ressourcen umgehen, um soviel Gutes wie möglich zu bewirken?". Dabei beziehen sie sich auf Handlungen welche die gesamte Zukunft der Menschheit beeinflussen. Erkenntnisse zu dieser Frage werden mit Mitteln der Philosophie und der Wirtschaftswissenschaften gewonnen. Die Vision des Zentrums ist eine Welt, in der globale Prioritäten durch Evidenz und Logik festegelegt werden, mit dem Ziel so viel Gutes wie möglich zu ermöglichen.',
+      longDescription: 'Das Global Priorities Institute ist ein interdisziplinäres Forschungszentrum, welches folgende zentrale Frage beforscht: "Wie sollte man mit begrenzten Ressourcen umgehen, um soviel Gutes wie möglich zu bewirken?". Dabei beziehen sie sich auf Handlungen welche die gesamte Zukunft der Menschheit beeinflussen. Erkenntnisse zu dieser Frage werden mit Mitteln der Philosophie und der Wirtschaftswissenschaften gewonnen. Die Vision des Zentrums ist eine Welt, in der globale Prioritäten durch Evidenz und Logik festegelegt werden.',
       impact1000: null ,
       donationDeficit: null,
       evaluators: [
@@ -541,7 +541,7 @@ export class DataService {
       questionaireResults: [ 'values' ],
       slogan: 'Ethik in internationalen Angelegenheiten',
       shortDescription: 'Carnegie Council ist eine unabhängige und überparteiliche Organisation, welche das Ziel verfolgt eine der stärksten Stimmen zum Thema "Ethik in international Angelegenheiten" zu sein. Ihr Fokus liegt auf den Themen "Krieg und Frieden", "globale soziale Gerechtigkeit" und "Religion in der Politik".',
-      longDescription: 'Carnegie Council ist eine unabhängige und überparteiliche Organisation, welche das Ziel verfolgt eine der stärksten Stimmen zum Thema "Ethik in international Angelegenheiten" zu sein. Ihr Fokus liegt auf den Themen "Krieg and Frieden", "globale soziale Gerechtigkeit" und "Religion in der Politik". Die Organisation veranstaltet themenorientierte öffentliche Diskussionen und schafft weltweit Möglichkeiten zur Bildung und Informierung für Lehrer, Schüler, Studenten, Journalisten, Menschen die im Bereich internationale Beziehungen tätig sind, und interessierte Bürger. Ihre wichtigste Publikation ist die vierteljährlich erscheinende wissenschaftliche Zeitschrift Ethics & International Affairs, welche seit 1987 publiziert wird.',
+      longDescription: 'Carnegie Council ist eine unabhängige und überparteiliche Organisation, welche das Ziel verfolgt eine der stärksten Stimmen zum Thema "Ethik in international Angelegenheiten" zu sein. Ihr Fokus liegt auf den Themen "Krieg and Frieden", "globale soziale Gerechtigkeit" und "Religion in der Politik". Die Organisation veranstaltet themenorientierte öffentliche Diskussionen und schafft weltweit Möglichkeiten zur Bildung und Information für Lehrer, Schüler, Studenten, Journalisten, Menschen die im Bereich internationale Beziehungen tätig sind, sowie andere interessierte Bürger. Ihre wichtigste Publikation ist die vierteljährlich erscheinende wissenschaftliche Zeitschrift Ethics & International Affairs, welche seit 1987 publiziert wird.',
       impact1000: null,
       donationDeficit: null,
       evaluators: [
@@ -612,7 +612,7 @@ export class DataService {
       cause: [ 'Tierleben' ],
       impactDirection: 'proaktiv',
       regions: [],
-      questionaireResults: [ 'animal death' ],
+      questionaireResults: [ 'animal death','human knowledge'],
       slogan: 'Erzeugung eines gesunden, tiergerechten und nachhaltigen Nahrungsangebots',
       shortDescription: 'The Good Food Institute (GFI) arbeitet mit Wissenschaftlern, Investoren und Unternehmern zusammen, mit dem Ziel die Entwicklung von "clean meat" und anderen pflanzlichen Nahrungsalternativen zu fördern.',
       longDescription: 'The Good Food Institute (GFI) arbeitet daran, die Tierzuchtbranche zu verändern, indem es die Entwicklung von wettbewerbsfähigen Alternativen zu tierischem Fleisch, Milchprodukten und Eiern fördert. GFI sucht nach Unternehmern und Wissenschaftlern, die Start-ups in dem Marktsektor pflanzlichen und kultivierten Fleisches fördern oder beitreten. Sie bieten geschäftliche, rechtliche, wissenschaftliche und strategische Leitlinien für Unternehmen und betreiben politische (regulatorische und gesetzliche) Arbeit, um das Feld für Fleischersatzprodukte auf dem Markt zu ebnen. GFI baut Beziehungen zu Restaurantketten, Lebensmittelgeschäften und Foodservice-Unternehmen auf, um pflanzliche Alternativen zu Tierprodukten zu verbessern und zu fördern. Schließlich arbeitet GFI mit Fördereinrichtungen, Unternehmen und Regierungen zusammen, um Ressourcen für die Forschung in der synthetischen und pflanzlichen Biologie und Gewebetechnologie zu mobilisieren.',
@@ -746,10 +746,10 @@ export class DataService {
       cause: [ 'Institutionen' ],
       impactDirection: 'proaktiv',
       regions: [],
-      questionaireResults: [],
+      questionaireResults: ['institutions'],
       slogan: 'Facts. Analysis. Influence.',
       shortDescription: 'Das Internationale Institut für Strategische Studien (IISS) ist ein britisches Forschungsinstitut (oder Think Tank) auf dem Gebiet internationaler Angelegenheiten. IISS ist die weltweit führende Autorität in globalen Sicherheitsfragen und bietet Fakten und Analysen zu einer breiten Palette von internationalen Sicherheitsfragen.',
-      longDescription: 'Das Internationale Institut für Strategische Studien (IISS) ist ein britisches Forschungsinstitut auf dem Gebiet internationaler Angelegenheiten. Das Internationale Institut für Strategische Studien (IISS) ist die weltweit führende internationale Autorität in globalen Sicherheitsfragen und bietet Fakten und Analysen zu einer breiten Palette von internationalen Sicherheits- und politischen Risikofragen. Das IISS mit Hauptsitz in London hat Büros in Washington, Singapur und Bahrain. Gremium und Mitarbeiter des Instituts sind international und kommen aus mehr als 90 Ländern. Das IISS ist eine wichtige Quelle für genaue, objektive Informationen zu strategischen Fragen für Politiker, Diplomaten, internationale Unternehmen, Ökonomen, Militärs, Journalisten, Wissenschaftlern und die informierte Öffentlichkeit. Das Institut ist unabhängig und keiner Regierung oder irgendeiner politischen bzw. anderen Organisation verpflichtet. Das IISS forscht mit einer zukunftsorientierten Politikorientierung und legt besonderen Wert darauf, neue Perspektiven in strategische Diskussionen zu bringen. Die Arbeit des Instituts beruht auf der Einschätzung verschiedener politischer, wirtschaftlicher und sozialer Probleme, die Instabilität verursachen, sowie auf Faktoren, die zu internationaler Zusammenarbeit führen können. Sie bringt jährlich Verteidigungsminister, Außenminister und nationale Sicherheitsberater in verschiedenen Formaten privat und öffentlich zusammen, um die internationale Sicherheitspolitik zu diskutieren und zu gestalten. Jedes Jahr finden in Europa, Nordamerika, dem Nahen Osten und Asien sowie in Lateinamerika und Afrika einflussreiche Veranstaltungen statt. IISS-Publikationen werden von wichtigen Entscheidungsträgern gelesen und werden innerhalb der Regierungen auf Kabinettsebene kommentiert. Die Bandbreite der IISS-Publikationen, ihre Gestaltungskraft und die starke internationale Politik des Instituts machen das IISS zu einem wichtigen Akteur in der globalen strategischen Debatte.',
+      longDescription: 'Das Internationale Institut für Strategische Studien (IISS) ist ein britisches Forschungsinstitut auf dem Gebiet internationaler Angelegenheiten. IISS ist die weltweit führende internationale Autorität in globalen Sicherheitsfragen und bietet Fakten und Analysen zu einer breiten Palette von internationalen Sicherheits- und politischen Risikofragen. Das IISS mit Hauptsitz in London hat Büros in Washington, Singapur und Bahrain. Gremium und Mitarbeiter des Instituts sind international und kommen aus mehr als 90 Ländern. Das IISS ist eine wichtige Quelle für genaue, objektive Informationen zu strategischen Fragen für Politiker, Diplomaten, internationale Unternehmen, Ökonomen, Militärs, Journalisten, Wissenschaftlern und die informierte Öffentlichkeit. Das Institut ist unabhängig und keiner Regierung oder irgendeiner politischen bzw. anderen Organisation verpflichtet. Das IISS forscht mit einer zukunftsorientierten Politikorientierung und legt besonderen Wert darauf, neue Perspektiven in strategische Diskussionen zu bringen. Die Arbeit des Instituts beruht auf der Einschätzung verschiedener politischer, wirtschaftlicher und sozialer Probleme, die Instabilität verursachen, sowie auf Faktoren, die zu internationaler Zusammenarbeit führen können. Sie bringt jährlich Verteidigungsminister, Außenminister und nationale Sicherheitsberater in verschiedenen Formaten privat und öffentlich zusammen, um die internationale Sicherheitspolitik zu diskutieren und zu gestalten. Jedes Jahr finden in Europa, Nordamerika, dem Nahen Osten und Asien sowie in Lateinamerika und Afrika einflussreiche Veranstaltungen statt. IISS-Publikationen werden von wichtigen Entscheidungsträgern gelesen und werden innerhalb der Regierungen auf Kabinettsebene kommentiert. Die Bandbreite der IISS-Publikationen, ihre Gestaltungskraft und die starke internationale Politik des Instituts machen das IISS zu einem wichtigen Akteur in der globalen strategischen Debatte.',
       impact1000: 'Da das IISS verschiedene Programme in vielen verschiedenen Ländern betreibt, ist eine genaue quantitative Beurteilung schwierig.',
       donationDeficit: null,
       evaluators: [
@@ -760,7 +760,7 @@ export class DataService {
         }
       ]
     }
-  ];
+  ].sort((a, b) => a.name.localeCompare(b.name));
 
   getByName(name: string): Organization {
     let foundOrganisation = this.organizations.filter(o => o.thumbnail == name);
