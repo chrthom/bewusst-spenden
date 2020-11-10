@@ -73,7 +73,7 @@ export class OrganizationPage implements OnInit {
         },
         yAxis: {
           title: {
-            text: 'Spendendefizit in €'
+            text: 'Spendendefizit in € für die Jahre 2020-2022'
           }
         }
       });
