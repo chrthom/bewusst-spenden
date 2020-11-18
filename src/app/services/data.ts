@@ -535,7 +535,7 @@ export class DataService {
       category: [ 'Meta' ],
       cause: [ 'Wirksamkeitsanalyse' ],
       impactDirection: 'proaktiv',
-      regions: [ 'UK' ],
+      regions: [ 'GB' ],
       questionaireResults: [ ],
       slogan: 'Akademische Grundlagenforschung zur Frage, wie man am besten Gutes tun kann.',
       shortDescription: 'Das Global Priorities Institute ist ein interdisziplinäres Forschungszentrum, welches folgende zentrale Frage beforscht: "Wie sollte man begrenzte Ressourcen nutzen, um soviel Gutes wie möglich zu bewirken?". Dabei beziehen sie sich auf Handlungen welche die gesamte Zukunft der Menschheit beeinflussen.',
