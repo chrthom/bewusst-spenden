@@ -65,6 +65,9 @@
       </ion-item>
       <ion-item *ngIf="organization.donationDeficit">
         <div [chart]="chart"></div>
+		Das Spendendefizit wird von GiveWell ermittelt und stellt die Lücke zwischen möglicher Spendenkapazität und den erwarteten Spenden dar. 
+		Die möglichen Spendenkapazitäten berücksichtigen dabei das die Programme weiterhin in gleicher Weise durchgeführt werden und damit ihre getestete Effizienz beibehalten. 
+		Die erwarteten Spenden ergeben sich aus bereits zugesicherte Spenden sowie einer auf jede Organisation zugeschnittenen Hochrechnung.
       </ion-item>
       <ion-item text-wrap *ngIf="!organization.donationDeficit">
         <ion-icon name="help-buoy" item-start></ion-icon>
