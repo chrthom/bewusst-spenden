@@ -124,7 +124,7 @@ export class DataService {
       thumbnail: 'end_fund',
       website: 'https://end.org/',
       donationLink: 'https://end.org/engage/invest',
-      donationKeyEAS: 'END_Fund',
+	  donationKeyEAS: null,
       category: [ 'Armut' ],
       cause: [ 'Gesundheit' ],
       impactDirection: 'reaktiv',
@@ -290,7 +290,7 @@ export class DataService {
       cause: [ 'Künstliche Intelligenz' ],
       impactDirection: 'proaktiv',
       regions: [],
-      questionaireResults: [ 'existential risks', 'human knowledge' ],
+      questionaireResults: [ 'existential risks', 'human knowledge'],
       slogan: 'Mathematische Grundsatzforschung um sicherzustellen, dass mögliche künstliche Superintelligenz eine positive Auswirkung auf die Menschheit hat',
       shortDescription: 'Wenn die Entwicklung künstlicher Intelligenz so schnell wie bisher voranschreitet, könnte künstliche Intelligenz eines Tages Menschen in jedem Bereich an Intelligenz übertreffen. Das Ziel von MIRI ist es, die Grundlagen zu legen, sichere und verlässliche Systeme im Bereich künstlicher Intelligenz zu entwickeln.',
       longDescription: 'Wenn die Entwicklung künstlicher Intelligenz so schnell wie bisher voranschreitet, ist es denkbar, dass künstliche Intelligenz eines Tages Menschen in jedem Bereich an Intelligenz übertreffen könnte. Die meisten AI-Forscher erwarten diese Entwicklung schon in diesem Jahrhundert. Das Ziel von MIRI ist es, die Grundlagen dafür zu legen, sichere und verlässliche Systeme im Bereich künstlicher Intelligenz zu entwickeln. Wichtige Aspekte dieser Forschung sind zum Beispiel Entscheidungstheorie, das Erlernen von Werten und der Umgang mit Unsicherheit.',
@@ -361,7 +361,7 @@ export class DataService {
       thumbnail: 'future_of_humanity',
       website: 'https://www.fhi.ox.ac.uk',
       donationLink: 'https://effektiveraltruismus.de/spenden/?purpose=FHI',
-      donationKeyEAS: 'FHI',
+      donationKeyEAS: null,
       category: [ 'Existenzrisiken', 'Meta' ],
       cause: [ 'Künstliche Intelligenz', 'Biosicherheit', 'Makrostrategie' ],
       impactDirection: 'proaktiv',
@@ -382,6 +382,30 @@ export class DataService {
     },
 
     // Meta
+	{
+	name: 'The Life You Can Save',
+      thumbnail: 'the_life_you_can_save',
+      website: 'https://www.thelifeyoucansave.org',
+      donationLink: 'https://tlycs.networkforgood.com/causes/3949-the-life-you-can-save',
+      donationKeyEAS: null,
+      category: [ 'Meta' ],
+      cause: [ 'Wirksamkeitsanalyse' ],
+      impactDirection: 'reaktiv',
+      regions: [],
+      questionaireResults: [],
+      slogan: 'Smart giving, simplified',
+      shortDescription: 'The Life You Can Save möchte Menschen dazu anzuregen, gegen extreme Armut zu spenden. Dazu werden in einem sorgfältigen Prozess die effektivsten Organisationen in verschiedenen Bereichen durch ein Team von Experten ausgewählt und auf der Website von The Life You Can Save vorgestellt.',
+      longDescription: 'The Life You Can Save möchte Menschen dazu anzuregen, gegen extreme Armut zu spenden, z.B. indem sie sich selbst verpflichten jeden Monat einen gewissen Teil ihres Einkommens zu spenden. Dazu werden in einem sorgfältigen Prozess die effektivsten Organisationen in verschiedenen Bereichen durch ein Team von Experten ausgewählt und auf der Website von The Life You Can Save vorgestellt. Die Bereiche umfassen unter anderem Gesundheit, wirtschaftliche Chancen, und Forschung.',
+      impact1000: 'Für jeden Dollar den The Life You Can Save ausgibt, werden $13 Spenden für die von The Life You Can Save empfohlenen Hilfsorganisationen generiert.',
+      donationDeficit: null,
+      evaluators: [
+        {
+          evaluator: 'Bewusst Spenden',
+          link: 'http://bewusstspenden.de',
+          top: false
+        }
+      ]
+	},
     {
       name: 'GiveWell',
       thumbnail: 'givewell',
