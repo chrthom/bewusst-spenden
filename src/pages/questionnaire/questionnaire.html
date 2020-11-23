@@ -33,7 +33,7 @@
         <ion-grid fixed>
           <ion-row justify-content-center>
             <ion-col col-12 col-md-6 col-xl-4 @ngIfAnimation>
-              <ion-card (click)="answer(a.toId)" class="clickable" @questionTrigger text-wrap>
+              <ion-card (click)="answer(a.toId)" [className]="a.blackFont ? 'bright clickable' : 'clickable'" @questionTrigger text-wrap>
                 <img src="../../assets/imgs/questionaire/{{ a.image }}.jpg"/>
                 <div class="card-title">{{ a.title }}</div>
                 <div class="card-subtitle">{{ a.subtitle }}</div>

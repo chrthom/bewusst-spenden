@@ -3,6 +3,7 @@ export class Answer {
   image: string;
   title: string;
   subtitle: string;
+  blackFont: boolean;
 }
 
 export class Question {

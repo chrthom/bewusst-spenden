@@ -154,7 +154,8 @@ export class QuestionnairePage {
           toId: 'specific reason',
           image: 'start',
           title: 'OK, verstanden',
-          subtitle: 'Ich will so viel Gutes tun wie möglich!'
+          subtitle: 'Ich will so viel Gutes tun wie möglich!',
+          blackFont: false
         }
       ]
     },
@@ -167,13 +168,15 @@ export class QuestionnairePage {
           toId: 'result -> specific responsibility',
           image: 'specific_reason_yes',
           title: 'Ja',
-          subtitle: 'Ich weiß bereits sehr genau was und wem ich helfen will.'
+          subtitle: 'Ich weiß bereits sehr genau was und wem ich helfen will.',
+          blackFont: false
         },
         {
           toId: 'uncertain projects',
           image: 'unknown',
           title: 'Nein',
-          subtitle: 'Ich habe höchstens eine vage Vorstellung davon, was und wen ich unterstützen sollte.'
+          subtitle: 'Ich habe höchstens eine vage Vorstellung davon, was und wen ich unterstützen sollte.',
+          blackFont: false
         }
       ]
     },
@@ -188,13 +191,15 @@ export class QuestionnairePage {
           toId: 'time scope',
           image: 'uncertain_projects_yes',
           title: 'Ja',
-          subtitle: 'Wir sollten unabhängig von der Unsicherheit das tun, was im Durchschnitt den größten Effekt hat.'
+          subtitle: 'Wir sollten unabhängig von der Unsicherheit das tun, was im Durchschnitt den größten Effekt hat.',
+          blackFont: false
         },
         {
           toId: 'measurable goals',
           image: 'uncertain_projects_no',
           title: 'Nein',
-          subtitle: 'Wir sollten sicherstellen, dass wir wirklich etwas bewirken.'
+          subtitle: 'Wir sollten sicherstellen, dass wir wirklich etwas bewirken.',
+          blackFont: false
         }
       ]
     },
@@ -209,13 +214,15 @@ export class QuestionnairePage {
           toId: 'more generations',
           image: 'time_scope_longterm',
           title: 'Langfristig',
-          subtitle: 'Zukünftige Leben sind genauso wichtig wie heutige Leben, und wir können ihnen helfen.'
+          subtitle: 'Zukünftige Leben sind genauso wichtig wie heutige Leben, und wir können ihnen helfen.',
+          blackFont: false
         },
         {
           toId: 'measurable goals',
           image: 'time_scope_lifetime',
           title: 'Lebzeit',
-          subtitle: 'Wir sollten uns auf die nächsten Jahrzehnte konzentrieren.'
+          subtitle: 'Wir sollten uns auf die nächsten Jahrzehnte konzentrieren.',
+          blackFont: false
         }
       ]
     },
@@ -230,13 +237,15 @@ export class QuestionnairePage {
           toId: 'animals per human',
           image: 'measurable_goals_yes',
           title: 'Ja',
-          subtitle: 'Nur messbare Projekte ermöglichen uns, uns kontinuierlich zu verbessern.'
+          subtitle: 'Nur messbare Projekte ermöglichen uns, uns kontinuierlich zu verbessern.',
+          blackFont: true
         },
         {
           toId: 'rights catastrophe knowledge',
           image: 'measurable_goals_no',
           title: 'Nein',
-          subtitle: 'Schwer zu messende Projekte werden sehr häufig vernachlässigt.'
+          subtitle: 'Schwer zu messende Projekte werden sehr häufig vernachlässigt.',
+          blackFont: true
         }
       ]
     },
@@ -251,13 +260,15 @@ export class QuestionnairePage {
           toId: 'existential risks',
           image: 'more_generations_yes',
           title: 'Ja',
-          subtitle: 'Es wäre ein Desaster, der Menschheit nicht die Möglichkeit einer lang andauernden Zukunft zu ermöglichen.'
+          subtitle: 'Es wäre ein Desaster, der Menschheit nicht die Möglichkeit einer lang andauernden Zukunft zu ermöglichen.',
+          blackFont: false
         },
         {
           toId: 'improve society',
           image: 'more_generations_no',
           title: 'Nein',
-          subtitle: 'Sterben ist etwas schlimmes, aber nie geboren zu sein ist es nicht.'
+          subtitle: 'Sterben ist etwas schlimmes, aber nie geboren zu sein ist es nicht.',
+          blackFont: false
         }
       ]
     },
@@ -271,13 +282,15 @@ export class QuestionnairePage {
           toId: 'result -> existential risks',
           image: 'existential_risks_yes',
           title: 'Ja',
-          subtitle: 'Wir können etwas tun, um unser Überleben langfristig wenigstens etwas wahrscheinlicher zu machen.'
+          subtitle: 'Wir können etwas tun, um unser Überleben langfristig wenigstens etwas wahrscheinlicher zu machen.',
+          blackFont: false
         },
         {
           toId: 'improve society',
           image: 'existential_risks_no',
           title: 'Nein',
-          subtitle: 'Die Risiken sind so fern, dass wir keinen bedeutsamen Effekt auf diese haben können.'
+          subtitle: 'Die Risiken sind so fern, dass wir keinen bedeutsamen Effekt auf diese haben können.',
+          blackFont: false
         }
       ]
     },
@@ -291,19 +304,22 @@ export class QuestionnairePage {
           toId: 'knowledge values institutions',
           image: 'improve_society_yes',
           title: 'Ja',
-          subtitle: 'Wir können Fortschritte erzielen, die lang andauern werden.'
+          subtitle: 'Wir können Fortschritte erzielen, die lang andauern werden.',
+          blackFont: true
         },
         {
           toId: 'knowledge values institutions',
           image: 'improve_society_maybe',
           title: 'Vielleicht',
-          subtitle: 'Unsere Veränderungen könnten lange genug anhalten, um einen langfristigen Effekt zu haben.'
+          subtitle: 'Unsere Veränderungen könnten lange genug anhalten, um einen langfristigen Effekt zu haben.',
+          blackFont: false
         },
         {
           toId: 'environmental damage',
           image: 'improve_society_no',
           title: 'Nein',
-          subtitle: 'Die Veränderung wird sich mit der Zeit umkehren oder nie eintreten.'
+          subtitle: 'Die Veränderung wird sich mit der Zeit umkehren oder nie eintreten.',
+          blackFont: false
         }
       ]
     },
@@ -320,19 +336,22 @@ export class QuestionnairePage {
           toId: 'result -> human knowledge',
           image: 'knowledge',
           title: 'Wissen',
-          subtitle: ''
+          subtitle: '',
+          blackFont: false
         },
         {
           toId: 'result -> values',
           image: 'values',
           title: 'Werte',
-          subtitle: ''
+          subtitle: '',
+          blackFont: false
         },
         {
           toId: 'result -> institutions',
           image: 'institutions',
           title: 'Institutionen',
-          subtitle: ''
+          subtitle: '',
+          blackFont: false
         }
       ]
     },
@@ -347,13 +366,15 @@ export class QuestionnairePage {
           toId: 'result -> environment',
           image: 'environmental_damage_yes',
           title: 'Ja',
-          subtitle: 'Das Wohlergehen von vielen Generationen ist bedroht.'
+          subtitle: 'Das Wohlergehen von vielen Generationen ist bedroht.',
+          blackFont: false
         },
         {
           toId: 'measurable goals',
           image: 'environmental_damage_no',
           title: 'Nein',
-          subtitle: 'Die Wahrscheinlichkeit derart extremer Umweltbeeinflussung ist gering oder sie wäre nur von kurzer Dauer.'
+          subtitle: 'Die Wahrscheinlichkeit derart extremer Umweltbeeinflussung ist gering oder sie wäre nur von kurzer Dauer.',
+          blackFont: false
         }
       ]
     },
@@ -369,25 +390,29 @@ export class QuestionnairePage {
           toId: 'result -> human rights',
           image: 'human_rights',
           title: 'Menschenrechte',
-          subtitle: ''
+          subtitle: '',
+          blackFont: true
         },
         {
           toId: 'result -> catastrophe',
           image: 'catastrophe',
           title: 'Verhinderung globaler Katastrophen',
-          subtitle: ''
+          subtitle: '',
+          blackFont: false
         },
         {
           toId: 'result -> human knowledge',
           image: 'knowledge',
           title: 'Erweiterung des menschlichen Wissens',
-          subtitle: ''
+          subtitle: '',
+          blackFont: false
         },
         {
           toId: 'animals per human',
           image: 'unknown',
           title: 'Etwas Anderes',
-          subtitle: ''
+          subtitle: '',
+          blackFont: false
         }
       ]
     },
@@ -402,13 +427,15 @@ export class QuestionnairePage {
           toId: 'opportunity health',
           image: 'animals_per_human_more',
           title: 'Mehr als 100',
-          subtitle: 'Menschen zu helfen ist wichtiger.'
+          subtitle: 'Menschen zu helfen ist wichtiger.',
+          blackFont: false
         },
         {
           toId: 'farm life',
           image: 'animals_per_human_less',
           title: 'Mehr als 100',
-          subtitle: 'Tierleid ist so real wie Menschenleid und moralisch genauso relevant.'
+          subtitle: 'Tierleid ist so real wie Menschenleid und moralisch genauso relevant.',
+          blackFont: false
         }
       ]
     },
@@ -422,13 +449,15 @@ export class QuestionnairePage {
           toId: 'result -> animal suffering',
           image: 'farm_life_yes',
           title: 'Ja',
-          subtitle: 'Wir sollten die Haltungsbedingungen verbessern.'
+          subtitle: 'Wir sollten die Haltungsbedingungen verbessern.',
+          blackFont: false
         },
         {
           toId: 'result -> animal death',
           image: 'farm_life_no',
           title: 'Nein',
-          subtitle: 'Es bleibt ein unwürdiges Leben in Gefangenschaft.'
+          subtitle: 'Es bleibt ein unwürdiges Leben in Gefangenschaft.',
+          blackFont: false
         }
       ]
     },
@@ -442,19 +471,22 @@ export class QuestionnairePage {
           toId: 'poverty education',
           image: 'opportunities',
           title: 'Chancen',
-          subtitle: 'Wir sollten Armut reduzieren und den Ärmsten neue Chancen bieten.'
+          subtitle: 'Wir sollten Armut reduzieren und den Ärmsten neue Chancen bieten.',
+          blackFont: false
         },
         {
           toId: 'death suffering',
           image: 'health',
           title: 'Gesundheit',
-          subtitle: 'Wir sollten vor allem Leid verhindern.'
+          subtitle: 'Wir sollten vor allem Leid verhindern.',
+          blackFont: true
         },
         {
           toId: 'result -> other',
           image: 'unknown',
           title: 'Etwas Anderes',
-          subtitle: ''
+          subtitle: '',
+          blackFont: false
         }
       ]
     },
@@ -468,13 +500,15 @@ export class QuestionnairePage {
           toId: 'result -> poverty',
           image: 'poverty',
           title: 'Armutsbekämpfung',
-          subtitle: 'Das Einkommen von drei Familien für ein Jahr verdoppeln.'
+          subtitle: 'Das Einkommen von drei Familien für ein Jahr verdoppeln.',
+          blackFont: false
         },
         {
           toId: 'result -> education',
           image: 'education',
           title: 'Bildung',
-          subtitle: '10 Schuljahre für drei Kinder ermöglichen.'
+          subtitle: '10 Schuljahre für drei Kinder ermöglichen.',
+          blackFont: false
         }
       ]
     },
@@ -488,13 +522,15 @@ export class QuestionnairePage {
           toId: 'result -> human death',
           image: 'death',
           title: 'Tod',
-          subtitle: 'Den Tod eines Kindes durch Malaria verhindern.'
+          subtitle: 'Den Tod eines Kindes durch Malaria verhindern.',
+          blackFont: false
         },
         {
           toId: 'result -> human health',
           image: 'suffering',
           title: 'Leid',
-          subtitle: '1000 Menschen 10 Jahre lang benötigte Vitamine verabreichen.'
+          subtitle: '1000 Menschen 10 Jahre lang benötigte Vitamine verabreichen.',
+          blackFont: false
         }
       ]
     }
