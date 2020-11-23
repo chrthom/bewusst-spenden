@@ -6,6 +6,7 @@ export class Evaluator {
 
 export class Organization {
   name: string;
+  article: string;
   thumbnail: string;
   website: string;
   donationLink: string;

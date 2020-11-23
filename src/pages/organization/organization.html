@@ -46,7 +46,7 @@
       </ion-item>
       <ion-item text-wrap>
         <ion-icon name="list-box" item-start></ion-icon>
-        <h2>Was macht {{ organization.name }}?</h2>
+        <h2>Was macht <span *ngIf="organization.article">{{ organization.article }} </span>{{ organization.name }}?</h2>
         {{ organization.longDescription }}
       </ion-item>
       <ion-item *ngIf="organization.regions.length > 0">
@@ -54,20 +54,22 @@
       </ion-item>
       <ion-item text-wrap *ngIf="organization.regions.length == 0">
         <ion-icon name="globe" item-start></ion-icon>
-        <h2>Aktionsgebiete in denen {{organization.name}} t&auml;tig ist</h2>
-        Hierzu liegen uns leider keine Informationen vor oder aber "{{organization.name}}" hat kein begrenztes Aktionsgebiet.
+        <h2>Aktionsgebiete in denen <span *ngIf="organization.article">{{ organization.article }} </span>{{organization.name}} t&auml;tig ist</h2>
+        Hierzu liegen uns leider keine Informationen vor oder aber <span *ngIf="organization.article">{{ organization.article }} </span>{{organization.name}} hat kein begrenztes Aktionsgebiet.
       </ion-item>
       <ion-item text-wrap>
         <ion-icon name="medkit" item-start></ion-icon>
-        <h2>Was bewirkt {{ organization.name }} mit 1.000 €?</h2>
+        <h2>Was bewirkt <span *ngIf="organization.article">{{ organization.article }} </span>{{ organization.name }} mit 1.000 €?</h2>
         <span *ngIf="organization.impact1000">{{ organization.impact1000 }}</span>
         <span *ngIf="!organization.impact1000">Hierzu liegen uns leider keine Informationen vor.</span>
       </ion-item>
-      <ion-item *ngIf="organization.donationDeficit">
+      <ion-item *ngIf="organization.donationDeficit" text-wrap>
         <div [chart]="chart"></div>
-		Das Spendendefizit wird von GiveWell ermittelt und stellt die Lücke zwischen möglicher Spendenkapazität und den erwarteten Spenden dar.
-		Die möglichen Spendenkapazitäten berücksichtigen dabei das die Programme weiterhin in gleicher Weise durchgeführt werden und damit ihre getestete Effizienz beibehalten.
-		Die erwarteten Spenden ergeben sich aus bereits zugesicherte Spenden sowie einer auf jede Organisation zugeschnittenen Hochrechnung.
+        <p>
+          Das Spendendefizit wird von GiveWell ermittelt und stellt die Lücke zwischen möglicher Spendenkapazität und den erwarteten Spenden dar.
+          Die möglichen Spendenkapazitäten berücksichtigen dabei das die Programme weiterhin in gleicher Weise durchgeführt werden und damit ihre getestete Effizienz beibehalten.
+          Die erwarteten Spenden ergeben sich aus bereits zugesicherte Spenden sowie einer auf jede Organisation zugeschnittenen Hochrechnung.
+        </p>
       </ion-item>
       <ion-item text-wrap *ngIf="!organization.donationDeficit">
         <ion-icon name="help-buoy" item-start></ion-icon>

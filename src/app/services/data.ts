@@ -7,6 +7,7 @@ export class DataService {
     // Armut
     {
       name: 'Against Malaria Foundation',
+      article: 'die',
       thumbnail: 'against_malaria_foundation',
       website: 'https://www.againstmalaria.com',
       donationLink: 'https://www.againstmalaria.com/Donation.aspx',
@@ -39,6 +40,7 @@ export class DataService {
     },
     {
       name: 'Malaria Consortium',
+      article: 'das',
       thumbnail: 'malaria_consortium',
       website: 'https://www.malariaconsortium.org',
       donationLink: 'https://www.malariaconsortium.org/support/donate.htm',
@@ -63,6 +65,7 @@ export class DataService {
     },
     {
       name: 'Schistosomiasis Control Initiative',
+      article: 'die',
       thumbnail: 'sci',
       website: 'http://www.imperial.ac.uk/schistosomiasis-control-initiative',
       donationLink: 'http://www.imperial.ac.uk/schistosomiasis-control-initiative/donate/',
@@ -92,6 +95,7 @@ export class DataService {
     },
     {
       name: 'Helen Keller International',
+      article: null,
       thumbnail: 'helen_keller_international',
       website: 'http://www.hki.org',
       donationLink: 'http://hekein.convio.net/site/Donation2?df_id=1860&mfc_pref=T&1860.donation=form1&_ga=2.184512229.218491984.1529773877-1415190627.1529773877',
@@ -121,6 +125,7 @@ export class DataService {
     },
     {
       name: 'END Fund',
+      article: 'der',
       thumbnail: 'end_fund',
       website: 'https://end.org/',
       donationLink: 'https://end.org/engage/invest',
@@ -149,6 +154,7 @@ export class DataService {
     /* TODO: Replace this organization with another Evidence Actions' program
     {
       name: 'Evidence Action\'s - No Lean Season',
+      article: null,
       thumbnail: 'evidence_action_nls',
       website: 'https://www.evidenceaction.org/beta-no-lean-season/#intro-no-lean-season',
       donationLink: 'https://donate.evidenceaction.org/campaign/general-fundraising-page/c139764',
@@ -179,6 +185,7 @@ export class DataService {
     */
     {
       name: 'GiveDirectly',
+      article: null,
       thumbnail: 'give_directly',
       website: 'https://givedirectly.org/',
       donationLink: 'https://givedirectly.org/give-now',
@@ -208,6 +215,7 @@ export class DataService {
     },
     {
       name: 'Pratham',
+      article: null,
       thumbnail: 'pratham',
       website: 'http://pratham.org',
       donationLink: 'http://pratham.org/get-involved/donate',
@@ -232,6 +240,7 @@ export class DataService {
     },
     {
       name: 'Camfed',
+      article: null,
       thumbnail: 'camfed',
       website: 'https://camfed.org/',
       donationLink: 'https://camfed.org/donate/',
@@ -258,6 +267,7 @@ export class DataService {
     // Existenzrisiken
     {
       name: 'Future of Life Institute',
+      article: 'das',
       thumbnail: 'future_of_life',
       website: 'https://futureoflife.org',
       donationLink: 'https://futureoflife.org/get-involved/',
@@ -282,6 +292,7 @@ export class DataService {
     },
     {
       name: 'Machine Intelligence Research Institute',
+      article: 'das',
       thumbnail: 'miri',
       website: 'https://intelligence.org',
       donationLink: 'https://intelligence.org/donate/',
@@ -306,6 +317,7 @@ export class DataService {
     },
     {
       name: 'Clean Air Task Force',
+      article: 'die',
       thumbnail: 'clean_air_task_force',
       website: 'http://www.catf.us',
       donationLink: 'https://www.paypal.com/donate/?token=F4ZS1oQ2nHM-rUIneslhlDcEGxJQEnO6qUivrfyJRkFJOdtHxm-0EnGNPqJTydOW_n_IKG&country.x=US&locale.x=US',
@@ -330,6 +342,7 @@ export class DataService {
     },
     {
       name: 'Coalition for Rainforest Nations',
+      article: 'die',
       thumbnail: 'coalition_for_rainforest_nations',
       website: 'https://www.rainforestcoalition.org',
       donationLink: 'https://www.rainforestcoalition.org/donations/',
@@ -358,6 +371,7 @@ export class DataService {
     },
     {
       name: 'Future of Humanity Institute',
+      article: 'das',
       thumbnail: 'future_of_humanity',
       website: 'https://www.fhi.ox.ac.uk',
       donationLink: 'https://effektiveraltruismus.de/spenden/?purpose=FHI',
@@ -382,8 +396,9 @@ export class DataService {
     },
 
     // Meta
-	{
-	name: 'The Life You Can Save',
+	  {
+	    name: 'The Life You Can Save',
+      article: null,
       thumbnail: 'the_life_you_can_save',
       website: 'https://www.thelifeyoucansave.org',
       donationLink: 'https://tlycs.networkforgood.com/causes/3949-the-life-you-can-save',
@@ -405,9 +420,10 @@ export class DataService {
           top: false
         }
       ]
-	},
+	  },
     {
       name: 'GiveWell',
+      article: null,
       thumbnail: 'givewell',
       website: 'https://www.givewell.org',
       donationLink: 'https://secure.givewell.org/support-givewell',
@@ -432,6 +448,7 @@ export class DataService {
     },
     {
       name: 'Innovations for Poverty Action',
+      article: null,
       thumbnail: 'innovations_for_poverty_action',
       website: 'https://www.poverty-action.org',
       donationLink: 'https://www.poverty-action.org/monthly-donation',
@@ -456,6 +473,7 @@ export class DataService {
     },
     {
       name: 'Centre for Effective Altruism',
+      article: 'das',
       thumbnail: 'centre_for_effective_altruism',
       website: 'https://www.centreforeffectivealtruism.org',
       donationLink: 'https://www.centreforeffectivealtruism.org/donate/',
@@ -480,6 +498,7 @@ export class DataService {
     },
     {
       name: '80,000 Hours',
+      article: null,
       thumbnail: '80000_hours',
       website: 'https://80000hours.org/',
       donationLink: 'https://80000hours.org/support-us/donate/',
@@ -504,6 +523,7 @@ export class DataService {
     },
     {
       name: 'Stiftung für Effektiven Altruismus',
+      article: 'die',
       thumbnail: 'ea_stiftung',
       website: 'https://ea-stiftung.org',
       donationLink: 'https://ea-stiftung.org/spenden/',
@@ -528,6 +548,7 @@ export class DataService {
     },
     {
       name: 'Global Priorities Institute',
+      article: 'das',
       thumbnail: 'global_priorities_institute',
       website: 'https://globalprioritiesinstitute.org/',
       donationLink: 'https://globalprioritiesinstitute.org/supporting-gpi/',
@@ -554,6 +575,7 @@ export class DataService {
     // Politik
     {
       name: 'Carnegie Council for Ethics in International Affairs',
+      article: 'das',
       thumbnail: 'carnegie_council',
       website: 'https://www.carnegiecouncil.org',
       donationLink: 'https://www.carnegiecouncil.org/join_us/donate',
@@ -578,6 +600,7 @@ export class DataService {
     },
     {
       name: 'International Coalition to Stop Crimes against Humanity in North Korea',
+      article: 'die',
       thumbnail: 'icnk',
       website: 'http://stopnkcrimes.org/',
       donationLink: 'http://stopnkcrimes.org/donation.php',
@@ -604,6 +627,7 @@ export class DataService {
     // Tierleid
     {
       name: 'Animal Equality International',
+      article: null,
       thumbnail: 'animal_equality',
       website: 'https://www.animalequality.de/',
       donationLink: 'https://www.animalequality.de/spenden',
@@ -628,6 +652,7 @@ export class DataService {
     },
     {
       name: 'The Good Food Institute',
+      article: null,
       thumbnail: 'good_food_institute',
       website: 'https://www.gfi.org/',
       donationLink: 'https://www.gfi.org/donate',
@@ -652,6 +677,7 @@ export class DataService {
     },
     {
       name: 'The Humane League',
+      article: null,
       thumbnail: 'the_humane_league',
       website: 'https://www.thehumaneleague.org/',
       donationLink: 'https://www.thehumaneleague.org/donate/',
@@ -674,8 +700,9 @@ export class DataService {
         }
       ]
     },
-	{
+	  {
       name: 'Albert Schweizer Stiftung',
+      article: 'die',
       thumbnail: 'albert_schweizer_stiftung',
       website: 'https://albert-schweitzer-stiftung.de/',
       donationLink: 'https://albert-schweitzer-stiftung.de/helfen/spenden',
@@ -700,6 +727,7 @@ export class DataService {
     },
     {
       name: 'Anima International',
+      article: null,
       thumbnail: 'anima_international',
       website: 'https://animainternational.org/',
       donationLink: 'https://animainternational.org/donate',
@@ -722,9 +750,9 @@ export class DataService {
         }
       ]
     },
-
     {
       name: 'Transparency International',
+      article: null,
       thumbnail: 'transparency',
       website: 'https://www.transparency.org/',
       donationLink: 'https://www.transparency.org/donate',
@@ -762,6 +790,7 @@ export class DataService {
     },
     {
       name: 'International Institute for Strategic Studies',
+      article: 'das',
       thumbnail: 'iiss',
       website: 'https://www.iiss.org/',
       donationLink: 'https://www.iiss.org/individual-membership',
