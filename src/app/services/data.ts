@@ -64,31 +64,31 @@ export class DataService {
       ]
     },
     {
-      name: 'Schistosomiasis Control Initiative',
+      name: 'SCI Foundation',
       article: 'die',
       thumbnail: 'sci',
-      website: 'http://www.imperial.ac.uk/schistosomiasis-control-initiative',
-      donationLink: 'http://www.imperial.ac.uk/schistosomiasis-control-initiative/donate/',
+      website: 'https://schistosomiasiscontrolinitiative.org/',
+      donationLink: 'https://schistosomiasiscontrolinitiative.org/get-involved/donate',
       donationKeyEAS: 'SCI',
       category: [ 'Armut' ],
       cause: [ 'Gesundheit' ],
       impactDirection: 'reaktiv',
-      regions: [ 'BI', 'CI', 'CD', 'ET', 'LR', 'MG', 'MW', 'MR', 'MZ', 'NE', 'NG', 'SD', 'TZ', 'UG', 'ZM' ],
+      regions: [ 'BI', 'CI', 'CD', 'ET', 'LR', 'MG', 'MW', 'MR', 'NE', 'SD', 'TZ', 'UG' ],
       questionaireResults: [ 'human health' ],
       slogan: 'Behandlung vernachlässigter Tropenkrankheiten in Subsahara-Afrika',
-      shortDescription: 'SCI behandelt Kinder und Erwachsene mit Risiko für Schistosomiasis und durch den Boden übertragene Helminthen (Peitschenwurm, Hakenwurm und Spulwurm), verhindert Anämie, beeinträchtigtes Wachstum und Entwicklung bei Kindern und die Entwicklung von lebensbedrohlichen Zuständen von Blasenkrebs, Nierenfunktionsstörungen oder Leber- und Milzschäden.',
-      longDescription: 'SCI unterstützt Gesundheitsministerien in Subsahara-Afrika bei der Bekämpfung und anschließenden Eliminierung von Schistosomiasis und durch den Boden übertragenen Helminthen aus ihrer Bevölkerung unter Verwendung des Medikamentenspendeprogramms der Weltgesundheitsorganisation (WHO) für Praziquantel und Albendazol. 230 Millionen Menschen, ein Drittel der Gesamtbevölkerung Afrikas, benötigen eine regelmäßige jährliche Behandlung von Praziquantel. 400 Millionen Menschen benötigen eine regelmäßige jährliche Behandlung von Albendazol, um diese parasitären Krankheiten aus ihrem Körper zu eliminieren.',
-      impact1000: 'Mit 1.000€ können ca. 2000 Menschen behandelt werden.',
-      donationDeficit: 0,
+      shortDescription: 'Die  Mission der SCI-Stiftung besteht darin, vernachlässigte Infektionskrankheiten durch die Stärkung wirkungsvoller und umfassender Gesundheitsprogramme zu verhindern und zu behandeln. Durch die SCI-Stiftung werden Kinder und Erwachsene mit Risiko für Schistosomiasis und den Boden übertragene Helminthen (Peitschenwurm, Hakenwurm und Spulwurm) behandelt. Dadurch werden Anämie, beeinträchtigtes Wachstum und Entwicklung bei Kindern und die Entwicklung von lebensbedrohlichen Zuständen von Blasenkrebs, Nierenfunktionsstörungen oder Leber- und Milzschäden verhindert.',
+      longDescription: 'Die SCI-Stiftung unterstützt Gesundheitsministerien in Subsahara-Afrika bei der Bekämpfung und anschließenden Eliminierung von Schistosomiasis und durch den Boden übertragenen Helminthen aus ihrer Bevölkerung unter Verwendung des Medikamentenspendeprogramms der Weltgesundheitsorganisation (WHO) für Praziquantel und Albendazol. Weltweit sind 240 Millionen Menschen von Schistosomiasis betroffen und ca. 200.000 Menschen sterben jedes Jahr an Schistosomiasis. Mindestens 90 Prozent der behandlungsbedürftigen Menschen leben in Afrika.',
+      impact1000: 'Mit ca. 1.000€ können ca. 3000 Menschen behandelt werden.',
+      donationDeficit: 30000000,
       evaluators: [
         {
           evaluator: 'GiveWell',
-          link: 'https://www.givewell.org/charities/Schistosomiasis-Control-Initiative',
+          link: 'https://www.givewell.org/charities/sci-foundation',
           top: true
         },
         {
           evaluator: 'The Life You Can Save',
-          link: 'https://www.thelifeyoucansave.org/where-to-donate/schistosomiasis-control-initiative',
+          link: 'https://www.thelifeyoucansave.org/best-charities/schistosomiasis-control-initiative/',
           top: true
         }
       ]
@@ -165,8 +165,8 @@ export class DataService {
       regions: [ 'IN' ],
       questionaireResults: [ 'poverty' ],
       slogan: 'Eine einfache Fahrkarte genügt, um saisonale Armut zu vermindern',
-      shortDescription: 'No Lean Season verringert saisonale Armut in ländlichen Region, indem sie Arbeitsmobilität ermöglicht und so Einkommen erhöht.',
-      longDescription: 'Saisonale Armut entsteht in der Zeit zwischen Saat und Ernte in denen es wenig Jobs gibt, die Nahrungsvorräte ausgehen und es so zu Mangelernährung insbesondere von Schwangeren und kleinen Kindern kommt. No Lean Season unterstützt teilnehmende Haushalte mit $20, um eine Reise zu städtischen Gebieten in der Umgebung möglich zu machen, die in dieser Zeit mehr Jobs bieten. Studien der Universität Yale haben ergeben, dass diese saisonalen Arbeitsmöglichkeiten in jedem Haushalt durchschnittlich eine Mahlzeit pro Kopf mehr an Tag möglich machen.',
+      shortDescription: 'No Lean Season verringert saisionale Armut in ländlichen Region, indem sie Arbeitsmobilität ermöglicht und so Einkommen erhöht.',
+      longDescription: 'Sasionale Armut entsteht in der Zeit zwischen Saat und Ernte in denen es wenig Jobs gibt, die Nahrungvorräte ausgehen und es so zu Mangelernährung insbesondere von Schwangeren und kleinen Kindern kommt. No Lean Season unterstützt teilnehmende Haushalte mit $20, um eine Reise zu städtischen Gebieten in der Umgebung möglich zu machen, die in dieser Zeit mehr Jobs bieten. Studien der Universität Yale haben ergeben, dass diese saisonalen Arbeitsmöglichkeiten in jedem Haushalt durschnittlich eine Mahlzeit pro Kopf mehr an Tag möglich machen.',
       impact1000: 'In Haushalt, die an dem Programm teilnehmen, konnte ein Drittel mehr für Nahrung und andere Notwendigkeiten ausgeben werden, pro Person wurden ca. 600 Kalorien mehr am Tag konsumiert.',
       donationDeficit: 0, // Im Dezember 2017 wurde von Good Ventures 11,5 Millionen Dollar zum No Lean Season Programm gegeben, welches das Programm für die nächsten drei Jahre im Wesentlichen finanziert. Zusätzliche Spenden können für Forschung und Erweiterung des Programms genutzt werden.
       evaluators: [
@@ -802,7 +802,7 @@ export class DataService {
       questionaireResults: ['institutions'],
       slogan: 'Facts. Analysis. Influence.',
       shortDescription: 'Das Internationale Institut für Strategische Studien (IISS) ist ein britisches Forschungsinstitut (oder Think Tank) auf dem Gebiet internationaler Angelegenheiten. IISS ist die weltweit führende Autorität in globalen Sicherheitsfragen und bietet Fakten und Analysen zu einer breiten Palette von internationalen Sicherheitsfragen.',
-      longDescription: 'Das Internationale Institut für Strategische Studien (IISS) ist ein britisches Forschungsinstitut auf dem Gebiet internationaler Angelegenheiten. IISS ist die weltweit führende internationale Autorität in globalen Sicherheitsfragen und bietet Fakten und Analysen zu einer breiten Palette von internationalen Sicherheits- und politischen Risikofragen. Das IISS mit Hauptsitz in London hat Büros in Washington, Singapur und Bahrain. Gremium und Mitarbeiter des Instituts sind international und kommen aus mehr als 90 Ländern. Das IISS ist eine wichtige Quelle für genaue, objektive Informationen zu strategischen Fragen für Politiker, Diplomaten, internationale Unternehmen, Ökonomen, Militärs, Journalisten, Wissenschaftlern und die informierte Öffentlichkeit. Das Institut ist unabhängig und keiner Regierung oder irgendeiner politischen bzw. anderen Organisation verpflichtet. Das IISS forscht mit einer zukunftsorientierten Politikorientierung und legt besonderen Wert darauf, neue Perspektiven in strategische Diskussionen zu bringen. Die Arbeit des Instituts beruht auf der Einschätzung verschiedener politischer, wirtschaftlicher und sozialer Probleme, die Instabilität verursachen, sowie auf Faktoren, die zu internationaler Zusammenarbeit führen können. Sie bringt jährlich Verteidigungsminister, Außenminister und nationale Sicherheitsberater in verschiedenen Formaten privat und öffentlich zusammen, um die internationale Sicherheitspolitik zu diskutieren und zu gestalten. Jedes Jahr finden in Europa, Nordamerika, dem Nahen Osten und Asien sowie in Lateinamerika und Afrika einflussreiche Veranstaltungen statt. IISS-Publikationen werden von wichtigen Entscheidungsträgern gelesen und werden innerhalb der Regierungen auf Kabinettsebene kommentiert. Die Bandbreite der IISS-Publikationen, ihre Gestaltungskraft und die starke internationale Politik des Instituts machen das IISS zu einem wichtigen Akteur in der globalen strategischen Debatte.',
+      longDescription: 'Das IISS ist eine wichtige Quelle für genaue, objektive Informationen zu strategischen Fragen für Politiker, Diplomaten, internationale Unternehmen, Ökonomen, Militärs, Journalisten, Wissenschaftlern und die informierte Öffentlichkeit. Das unabhängige Institut forscht mit einer zukunftsorientierten Politikorientierung und legt besonderen Wert darauf, neue Perspektiven in strategische Diskussionen zu bringen. Die Arbeit des Instituts beruht auf der Einschätzung verschiedener politischer, wirtschaftlicher und sozialer Probleme, die Instabilität verursachen, sowie auf Faktoren, die zu internationaler Zusammenarbeit führen können. IISS-Publikationen werden von wichtigen Entscheidungsträgern gelesen und werden innerhalb der Regierungen auf Kabinettsebene kommentiert. Die Bandbreite der IISS-Publikationen, ihre Gestaltungskraft und die starke internationale Politik des Instituts machen das IISS zu einem wichtigen Akteur in der globalen strategischen Debatte.',
       impact1000: 'Da das IISS verschiedene Programme in vielen verschiedenen Ländern betreibt, ist eine genaue quantitative Beurteilung schwierig.',
       donationDeficit: null,
       evaluators: [
