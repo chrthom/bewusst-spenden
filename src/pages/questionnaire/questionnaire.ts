@@ -433,7 +433,7 @@ export class QuestionnairePage {
         {
           toId: 'farm life',
           image: 'animals_per_human_less',
-          title: 'Mehr als 100',
+          title: 'Weniger als 100',
           subtitle: 'Tierleid ist so real wie Menschenleid und moralisch genauso relevant.',
           blackFont: false
         }
