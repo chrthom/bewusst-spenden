@@ -29,10 +29,10 @@
       </ion-item>
     </ion-list>
     <ion-list no-lines *ngIf="!isMobile() && nav == q.id">
-      <ion-item *ngFor="let a of q.answers" class="card-background-page">
+      <ion-item class="card-background-page">
         <ion-grid fixed>
           <ion-row justify-content-center>
-            <ion-col col-12 col-md-6 col-xl-4 @ngIfAnimation>
+            <ion-col *ngFor="let a of q.answers" col-12 col-md-6 col-xl-4 @ngIfAnimation>
               <ion-card (click)="answer(a.toId)" [className]="a.blackFont ? 'bright clickable' : 'clickable'" @questionTrigger text-wrap>
                 <img src="../../assets/imgs/questionaire/{{ a.image }}.jpg"/>
                 <div class="card-title">{{ a.title }}</div>
