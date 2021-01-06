@@ -254,7 +254,7 @@ export class QuestionnairePage {
       title: 'Sind mehr Generation besser?',
       question: 'Es wird die Menschheit vermutlich nicht für immer geben. Wenn alles andere gleich bliebe, wäre es ein \n' +
                 'signifikant schlechteres Szenario, wenn die Menschheit früher aussterben würde (zum Beispiel in wenigen \n' +
-                'hunderten statt tausnden von Jahren)?',
+                'hunderten statt tausenden von Jahren)?',
       answers: [
         {
           toId: 'existential risks',
