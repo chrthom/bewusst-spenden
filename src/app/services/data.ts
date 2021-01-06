@@ -108,7 +108,7 @@ export class DataService {
       slogan: 'Prävention von Blindheit und Unterernährung',
       shortDescription: 'Helen Keller International (HKI) bekämpft die Ursachen und Folgen von Blindheit und Mangelernährung durch Programme, die auf Evidenz und Forschung in den Bereichen Sehvermögen, Gesundheit und Ernährung basieren.',
       longDescription: 'Helen Keller International hat es sich zur Aufgabe gemacht, die Sehkraft und das Leben der Schwächsten und Benachteiligten zu retten. Sie bekämpfen die Ursachen und Folgen von Blindheit und Mangelernährung durch Programme, die auf Evidenz und Forschung in den Bereichen Sehvermögen, Gesundheit und Ernährung basieren. Derzeit laufen mehr als 100 Programme in 20 afrikanischen und asiatischen Ländern sowie in den Vereinigten Staaten.',
-      impact1000: 'Mit 1.000€ können derzeit ca. 1500 Vitamin A Ergänzungsmittel verteilt werden.',
+      impact1000: 'Mit 1.000€ können derzeit ca. 1000 Vitamin A Ergänzungsmittel verteilt werden. Dies verhindert Vitamin-A-Mangel bedingte schlechte Sehkraft/Blindheit und führt zu einem intakterem Immunsystem, so dass häufige Erkankungen wie Durchfall und Masern seltener schwer verlaufen oder sogar zum Tod führen. Nach einer Schätzung von Givewell kann mit ca. 3000-5000€ statistisch so ein Menschenleben, meist das eines Kindes unter 5.',
       donationDeficit: 3300000,
       evaluators: [
         {
@@ -227,8 +227,8 @@ export class DataService {
       questionaireResults: [ 'education' ],
       slogan: 'Jedes Kind hat ein Anrecht auf Schule und gute Bildung',
       shortDescription: 'Pratham ist eine innovative Lernorganisation, gegründet 1995 in Indien, um die dortige Qualität der Bildung zu verbessern. Angefangen mit dem Ziel den Kindern in den Slums von Mumbai Bildungszugang zu ermöglichen, ist die Organisation heute zu einer der größten NGOs im Bildungsbereich in Indien gewachsen. ',
-      longDescription: 'Der Fokus von Pratham liegt auf qualitativ hochwertigen, kostengünstigen und replizierbaren Interventionen, um Lücken im vorhandenen Bildungssystem zu schließen. Programme sind auf die Anforderungen verschiedener Altersgruppen angepasst. Dabei arbeiten sie sowohl direkt mit den Schulen und der Bevölkerung als auch in Zusammenarbeit mit Regierungsstellen, wodurch jedes Jahr Millionen von Menschen erreicht werden können. Kern der Programme bildet der "Unterricht auf dem richtigen Niveau"-Ansatz (engl: Teaching at the Right Level (TaRL)), der nachweislich positive Auswirkungen auf die Lernergebnisse der Kinder hat. Im Kern des Ansatzes werden den Kindern entsprechend ihrem Niveau grundlegende Lernkompetenzen vermittelt, um ihnen ein schnelles Aufholen im "normalen" Unterricht zu ermöglichen. Der Ansatz wird auf zwei Arten umgesetzt, entweder direkt durch Ausbilder der Organisation in "Lerncamps" oder im Rahmen von Regierungspartnerschaftsprogrammen, bei denen staatliche Lehrer den Ansatz im täglichen Unterricht einbauen. Ob der Ansatz auch im Kontext außerhalb Indiens Wirkung zeigt, wird derzeit erprobt.',
-      impact1000: 'Je nach Programm gibt es Unterschiede. Als Referenz können aber z.B. 6 Ausbilder je 1 Jahr den Unterricht durch ein "Lerncamp" begleiten.',
+      longDescription: 'Der Fokus von Pratham liegt auf qualitativ hochwertigen, kostengünstigen und replizierbaren Interventionen, um Lücken im vorhandenen Bildungssystem zu schließen. Programme sind auf die Anforderungen verschiedener Altersgruppen angepasst. Dabei arbeiten sie sowohl direkt mit den Schulen und der Bevölkerung als auch in Zusammenarbeit mit Regierungsstellen, wodurch jedes Jahr Millionen von Menschen erreicht werden können. Kern der Programme bildet der "Teaching at the Right Level (TaRL)"-Ansatz, der nachweislich positive Auswirkungen auf die Lernergebnisse der Kinder hat. Im Kern des Ansatzes werden den Kindern entsprechend ihrem Niveau grundlegende Lernkompetenzen vermittelt, um ihnen ein schnelles Aufholen im "normalen" Unterricht zu ermöglichen. Der Ansatz wird auf zwei Arten umgesetzt, entweder direkt durch Ausbilder der Organisation in "Lerncamps" oder im Rahmen von Regierungspartnerschaftsprogrammen, bei denen staatliche Lehrer den Ansatz im täglichen Unterricht einbauen. Ob der Ansatz auch im Kontext außerhalb Indiens Wirkung zeigt, wird derzeit erprobt.',
+      impact1000: 'Je nach Programm sind die Kosten unterschiedlich. Als Referenz können z.B. mit 1000 € sechs Ausbilder je ein Jahr den Unterricht in Rahmen eines Lerncamps begleiten. Pratham arbeitet mit dem Forschungszentrum J-PAL zusammen, um sicherzustellen, dass die Bildungsinterventionen wirklich erfolgreich und kosteneffektiv sind, was bei vielen anderen Ansätzen nur begrenzt der Fall ist.',
       donationDeficit: null,
       evaluators: [
         {
@@ -253,7 +253,7 @@ export class DataService {
       slogan: 'Kampagne für die Bildung von Frauen',
       shortDescription: 'Camfed ist eine internationale gemeinnützige Organisation und wurde 1993 gegründet. Mit dem Ziel, Armut und Ungleichheit zu bekämpfen, werden Mädchen beim Schulbesuch und -erfolg unterstützt und junge Frauen dazu befähigt, sich als Vorkämpferinnen des Wandels zu positionieren. ',
       longDescription: 'Das Programm investiert in Mädchen und Frauen in den ärmsten ländlichen Regionen der Subsahara-Afrika, wo Mädchen mit akuten Benachteiligungen konfrontiert sind. Ziel ist es die Frauen nicht nur als Individuen zu stärken, sondern durch ein Alumni- und Mentoring-Programm einen Wandel in den Gemeiden zu bewirken und damit die Aussichten für benachteiligte Menschen zu verbessern. Dazu werden Mädchen auf verschiedenen Bildungsstufen finanziell unterstützt, um ihnen den Bildungszugang zu ermöglichen. Zusätzlich wird Frauen geholfen, den Umgang mit Geld zu lernen und kleine Unternehmen zu gründen. Das Absolventen-Netzwerk bringt diese gebildeten jungen Frauen weiter zusammen, um ihnen die Möglichkeiten zu geben, weitere Veränderungen auf den Weg zu bringen.',
-      impact1000: 'Camfed selbst gibt an mit 1.000€ einem Mädchen ca. 4 Schuljahre finanzieren zu können. Unberücksichtigt bleiben dabei Langzeit- und Netzwerkeffekte.',
+      impact1000: 'Camfed selbst gibt an mit 1.000 € einem Mädchen ca. 4 Schuljahre finanzieren zu können. Jedes zusätzliche Schuljahr an Bildung bewirkt statistisch eine deutliche Steigerung (>10%) des späteren Einkommens von Frauen - mehr als bei Männern. Es hat zudem zur Folge, dass die Frauen deutlich weniger ungeplante Schwangerschaften haben, was der Überbevölkerung sowie einem schlechtem Lebensstandard der Kinder und der folgenden Generationen entgegen wirkt. Die University of Camebridge hat in einer Analyse bestätigt, dass trotz des Fokus von Camfed auf die benachteiligsten Mädchen das Bildungsniveaus ähnlich effektiv wie bei vergleichbaren Programmen verbessert wird.',
       donationDeficit: null,
       evaluators: [
         {
@@ -330,7 +330,7 @@ export class DataService {
       slogan: 'Schutz der Welt vor den schlimmsten Auswirkungen des Klimawandels',
       shortDescription: 'Die Clean Air Task Force (CATF) leistet einen Beitrag zum Schutz vor den schlimmsten Auswirkungen des Klimawandels. Dazu fördert CATF die rasche globale Entwicklung und den Einsatz von CO2-armer Energie und anderen klimaschutzenden Technologien durch Forschung und Analyse, öffentliche Lobbyarbeit und Partnerschaft mit dem Privatsektor.',
       longDescription: 'Die Clean Air Task Force (CATF) ist eine in den USA ansässige Nichtregierungsorganisation, die sich für die Reduzierung von klimaschädlichen und anderen Schadstoffen durch Forschung und Analyse, öffentliche Interessenvertretung und Partnerschaft mit dem Privatsektor einsetzt. Sie wurde 1996 mit dem Ziel gegründet, eine föderale Politik zur Verringerung der durch amerikanische Kohlekraftwerke verursachten Luftverschmutzung einzuführen. Diese Kampagne war sehr erfolgreich und trug dazu bei, dass ein großer Teil der US-Kohleflotte in den Ruhestand ging. Sie haben zahlreiche andere erfolgreiche Kampagnen konzipiert und mitgestaltet, die beim Aufbau von CO2-Kontrollen für den US-amerikanischen Energiesektor helfen, z. B. Vorschriften für Dieselemissionen, Vorschriften für Schiffsemissionen und Vorschriften für Methanemissionen aus der Öl- und Gasproduktion.',
-      impact1000: null,
+      impact1000: 'Einer Evaluation von Founder\'s Pledge zufolge ist zu erwarten, dass eine Spende von 1000 € schätzungsweise den Ausstoß von 1000 bis zu 10.000 Tonnen CO2 verhindern kann.',
       donationDeficit: 2000000,
       evaluators: [
         {
@@ -359,7 +359,7 @@ export class DataService {
       slogan: 'Verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt',
       shortDescription: 'Die Coalition for Rainforest Nations (CfRN) bemüht sich um die verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt, indem sie Regierungen und Gemeinschaften dabei unterstützt, nachhaltig mit dem Regenwald umzugehen.',
       longDescription: 'Die CfRN ist eine zwischenstaatliche Organisation von mehr als 50 Regenwaldnationen, die sich für die Förderung der ökologischen Nachhaltigkeit einsetzt und gleichzeitig Möglichkeiten für wirtschaftlichen Fortschritt in den tropisch bewaldeten Entwicklungsländern schafft. Es wurde 2004 vom Premierminister von Papua-Neuguinea und dem Präsidenten von Costa Rica gegründet. Die CfRN-Teilnehmerländer arbeiten freiwillig in gemeinsam entwickelten Initiativen zusammen, die vom CfRN-Sekretariat mit Sitz in New York geleitet werden.',
-      impact1000: 'Laut Evaluation von Founders Pledge kann mit 1.000€ die Freisetzung von ca. 8.000 Tonnen CO2 kompensiert werden.',
+      impact1000: 'Laut Evaluation von Founder\'s Pledge könnte mit 1.000€ schätzungsweise die Freisetzung von ca. 8.000 Tonnen CO2 verhindert werden. Auf Grund der politischen Unabwägbarkeiten ist diese Einschätzung jedoch mit großer Unsicherheit behaftet, als wahrscheinliche Kostenspanne gibt Founder\'s pledge $0.02-$0.72 pro verhinderter Tonne CO2 an.',
       donationDeficit: 2000000,
       evaluators: [
         {
@@ -435,8 +435,8 @@ export class DataService {
       questionaireResults: [],
       slogan: 'Forschung zu effektiven Spendenmöglichkeiten',
       shortDescription: 'GiveWell ist eine Non-Profit-Organisation, die sich der Auffindung herausragender Spendenmöglichkeiten widmet und die vollständigen Details ihrer Analyse veröffentlicht, um den Spendern bei der Entscheidung zu helfen, wo sie ihre Spende tätigen möchten. Ihr derzeitiger Schwerpunkt liegt auf der Verbesserung des Lebens in Entwicklungsländern.',
-      longDescription: 'Anders als andere Evaluatoren die sich ausschließlich auf Finanzen konzentrieren und Verwaltungs- oder Fundraising-Kosten ermitteln, führt GiveWell eingehendere Untersuchungen durch. Dabei untersuchen sie wie viel Gutes ein entsprechendes Programm bewirkt (ausgedrückt durch die Anzahl geretter bzw. verbesserter Leben). Anstatt zu versuchen, so viele Wohltätigkeitsorganisationen wie möglich zu bewerten, konzentrieren sie sich auf die wenigen Wohltätigkeitsorganisationen, die herausragend sind, um besonders wirkungsvolle Spendengelegenheiten zu finden.',
-      impact1000: 'Eine Spende an GiveWell hilft bei deren Arbeit, exzellente Spendenmöglichkeiten im Bereich Global Health und Armut zu identifizieren. Eine genaue Quantifizierung ist an dieser Stelle allerdings nicht möglich.',
+      longDescription: 'Anders als andere Evaluatoren die sich ausschließlich auf Finanzen konzentrieren und Verwaltungs- oder Fundraising-Kosten ermitteln, führt GiveWell eingehendere Untersuchungen durch. Dabei untersuchen sie wie viel ein entsprechendes Programm bewirkt (ausgedrückt durch die Anzahl geretter bzw. verbesserter Leben). Anstatt zu versuchen, so viele Wohltätigkeitsorganisationen wie möglich zu bewerten, konzentrieren sie sich auf die wenigen Wohltätigkeitsorganisationen, die herausragend sind, um besonders wirkungsvolle Spendengelegenheiten zu finden.',
+      impact1000: 'Eine Spende an GiveWell hilft bei deren Anliegen, exzellente Interventionen im Bereich Global Health und Armut zu identifizieren und Menschen anzuregen, an solche Organisationen zu spenden. Eine genaue Quantifizierung ist schwierig, da die Effektivität von vielen Faktoren abhängt. Ein grober Anhaltspunkt ist der Vergleich zwischen den Ausgaben von Givewell und den getätigten Spenden an andere Organisationen, bei denen Givewell nach eigener Analyse einen Einfluss hatte: Im Jahr 2018 wurden etwa 30 mal mehr Spenden durch Givewell beeinflusst als Givewell Ausgaben hatte. Hierbei können wir leider nicht konkret einschätzen, wie viel dieses Geldes ohne Givewell gespendet worden wäre, oder an welche Organisationen.',
       donationDeficit: null,
       evaluators: [
         {
@@ -461,7 +461,7 @@ export class DataService {
       slogan: 'Randomisierte kontrollierte Studien von Programmen und Politik für die Armen',
       shortDescription: 'Innovations for Poverty Action führt kontrollierte, stichprobenartig ausgewählte Studien zu Hilfsprogrammen durch. Ihre Studien werden in ähnlicher Weise wie wissenschaftliche Studien druchgeführt, um die Auswirkungen der getesteten Programme zu ermitteln und wirksame Methoden zur Verringerung der Armut zu finden.',
       longDescription: 'Innovations for Poverty Action (IPA) ist eine gemeinnützige Forschungs- und Politikinitiative, die effektive Lösungen für globale Armutsprobleme entdeckt und fördert. Die IPA bringt Forscher und Entscheidungsträger zusammen, um Lösungen und ihre Anwendungen zu entwerfen, diese exakt zu bewerten und zu verfeinern und sicherzustellen, dass die gewonnenen Erkenntnisse dazu genutzt werden, das Leben der Armen in der Welt zu verbessern.',
-      impact1000: 'Eine Studie kostet normalerweise zwischen 50.000€ und 500.000€.',
+      impact1000: 'Eine Studie kostet normalerweise zwischen 50.000€ und 500.000€. Laut Givewell ist die Qualität der ausgeführten Studien mit am besten im Vergleich zu ähnlichen Untersuchungen. IPA hat auch die Organisation Evidence Action hervorgebracht, die das von Givewell als sehr effektiv betrachtete "Deworm the World"-Programm durchführt.',
       donationDeficit: 2000000,
       evaluators: [
         {
@@ -508,10 +508,10 @@ export class DataService {
       impactDirection: 'proaktiv',
       regions: [],
       questionaireResults: [],
-      slogan: 'Du arbeitest 80.000 Stunden in einer Karriere, was bewirkst du damit?',
-      shortDescription: 'Mit der Wahl der richtigen Karriere kann ein großer Beitrag zur Lösung der drängendsten globalen Probleme geleistet werden. 80,000 Hours unterstützt Menschen dabei, den richtigen Weg einzuschlagen.',
-      longDescription: '80,000 Hours hat es sich zur Aufgabe gemacht, möglichst viele Menschen darin zu unterstützen eine Karriere mit sehr positiver Wirkung zu gestalten. Die hauptsächliche Intervention um dies zu erreichen, ist Karriereberatung für talentierte junge Leute, die eine solche Karriere anstreben. Diese Beratung gibt es sowohl für jeden online verfügbar als auch in der Form von Workshops, Einzelberatung und einer globalen Community.',
-      impact1000: '80,000 Hours betreibt Aufklärungsarbeit, daher ist die Gesamtwirkung nicht besonders genau abzuschätzen. Die Selbstevaluierung von 80,000 Hours hat ergeben, dass mit etwa 7.000€ die Umgestaltung eines Karriereplans dahingehend unterstützt werden konnte, dass eine Person einen sehr hohen positiven Einfluss hat (z.B. mit einer jährliche Spende von über 100.000€ im Jahr zu effektiven Organisationen).',
+      slogan: 'Du arbeitest 80.000 Stunden in deiner Karriere, was bewirkst du damit?',
+      shortDescription: 'Mit der Wahl der richtigen Karriere kann ein großer Beitrag zur Lösung der drängendsten globalen Probleme geleistet werden. 80,000 Hours unterstützt Menschen dabei, dafür den richtigen Weg einzuschlagen.',
+      longDescription: '80,000 Hours hat es sich zur Aufgabe gemacht, möglichst viele Menschen darin zu unterstützen, eine Karriere mit sehr positiver sozialer Wirkung zu gestalten. Die hauptsächliche Intervention um dies zu erreichen, ist Karriereberatung für talentierte junge Leute, die solch eine Karriere anstreben. Diese Beratung gibt es sowohl für jeden online verfügbar als auch in der Form von Workshops, Einzelberatung und einer globalen Community.',
+      impact1000: '80,000 Hours betreibt Aufklärungsarbeit, daher ist die Gesamtwirkung nicht besonders genau abzuschätzen. Die Selbstevaluierung von 80,000 Hours hat ergeben, dass mit etwa 7.000€ die Umgestaltung eines Karriereplans dahingehend unterstützt werden konnte, dass eine Person einen sehr hohen positiven Einfluss hat (z.B. mit einer jährliche Spende von über 100.000€ im Jahr zu effektiven Organisationen - wobei natürlich eine erfolgreiche Karriere nicht unbedingt mit sehr hohem Einkommen einhergeht, diese Zahl ist hier nur als Vergleichswert zu sehen).',
       donationDeficit: 500000,
       evaluators: [
         {
@@ -588,7 +588,7 @@ export class DataService {
       slogan: 'Ethik in internationalen Angelegenheiten',
       shortDescription: 'Carnegie Council ist eine unabhängige und überparteiliche Organisation, welche das Ziel verfolgt eine der stärksten Stimmen zum Thema "Ethik in internationalen Angelegenheiten" zu sein. Ihr Fokus liegt auf den Themen "Krieg und Frieden", "globale soziale Gerechtigkeit" und "Religion in der Politik".',
       longDescription: 'Carnegie Council ist eine unabhängige und überparteiliche Organisation, welche das Ziel verfolgt eine der stärksten Stimmen zum Thema "Ethik in internationalen Angelegenheiten" zu sein. Ihr Fokus liegt auf den Themen "Krieg and Frieden", "globale soziale Gerechtigkeit" und "Religion in der Politik". Die Organisation veranstaltet themenorientierte öffentliche Diskussionen und schafft weltweit Möglichkeiten zur Bildung und Information für Lehrer, Schüler, Studenten, Journalisten, Menschen die im Bereich internationale Beziehungen tätig sind, sowie andere interessierte Bürger. Ihre wichtigste Publikation ist die vierteljährlich erscheinende wissenschaftliche Zeitschrift Ethics & International Affairs, welche seit 1987 publiziert wird.',
-      impact1000: null,
+      impact1000: 'Die Wirkung dieser Organisation ist nicht konkret einzuschätzen, da ihre Arbeit indirekte Auswirkungen hat. Wir haben Carnegie Council for Ethics in International Affairs als Organisation ausgewählt, da aus unserer Sicht eine solide ethische Basis politischen Handelns eine der zentralsten Faktoren für die globale Stabilität und Gerechtigkeit ist, und somit auch helfen könnte, existentielle Risiken (z.B. durch Krieg, Klimawandel, etc..) vorzubeugen. Unabhängige Organisationen haben der Organisation zudem ein hohes Maß an Transparenz (s. Charity Navigator) und Qualitätssicherung (TTCSP) bestätigt.',
       donationDeficit: null,
       evaluators: [
         {
@@ -613,7 +613,7 @@ export class DataService {
       slogan: 'ICNK setzt sich für die Menschenrechte in Nordkorea ein.',
       shortDescription: 'Das Ziel des ICNK ist es öffentliches und politsches Bewusstsein über die Menschenrechtslage in Nordkorea zu schaffen, so dass gemeinsam gezielt gegen die Menschenrechtverletzungen in Nordkorea vorgegangen wird. Um dies zu erreichen, arbeitet der ICNK eng mit über 40 Organisationen zusammen.',
       longDescription: 'Das Ziel des ICNK ist es öffentliches und politsches Bewusstsein über die Menschenrechtslage in Nordkorea zu schaffen, sodass gemeinsam gezielt gegen die Menschenrechtverletzungen in Nordkorea vorgegangen wird. Ursprünglich war das Ziel der Organisation eine Komission in der UN zu etablieren, welche die Menschenrechtsverletzungen in Nordkorea untersucht. 2013 gelang dies, seitdem arbeitet der ICNK weiterhin an der Aufklärung über die Menschenrechtsverletzungen in Nordkorea und die Vernetzung seiner Mitgliederorganisationen (z.B. mit der Organisation von Konferenzen). Über 40 Organisationen arbeiten eng mit dem ICNK zusammen, so z.B. Human Rights Watch.',
-      impact1000: 'Genaue Abschätzungen über die Effektivität der Arbeit des ICNK sind aufgrund der politischen und gesellschaftlichen Unabwägbarkeiten nicht möglich. Für die Effektivität des ICNK spricht, dass in Nordkorea extrem schwerwiegende Menschenrechtsverletzungen begangen werden, und somit durch seine Arbeit besonderes schwerwiegendes Leid verhindert werden kann. Als globale Koordinationsplattform hat der ICNK gute Möglichkeiten, die Effektivität der Interventionen seiner Mitgliederorganisationen durch verbesserte Zusammenarbeit zu erhöhen.',
+      impact1000: 'Genaue Abschätzungen über die Effektivität der Arbeit des ICNK sind aufgrund der politischen und gesellschaftlichen Unabwägbarkeiten nicht möglich. Für die Effektivität des ICNK spricht, dass in Nordkorea extrem schwerwiegende Meschensrechtsverletzungen begangen werden - so bezeichnet Human Rights Watch Nordkorea als eine der repressivsten Länder der Welt. Als globale Koordinationsplattform hat der ICNK gute Möglichkeiten, die Effektivität der Interventionen seiner Mitgliederorganisationen durch verbesserte Zusammenarbeit zu erhöhen.',
       donationDeficit: null,
       evaluators: [
         {
@@ -663,9 +663,9 @@ export class DataService {
       regions: [],
       questionaireResults: [ 'animal death','human knowledge'],
       slogan: 'Erzeugung eines gesunden, tiergerechten und nachhaltigen Nahrungsangebots',
-      shortDescription: 'The Good Food Institute (GFI) arbeitet mit Wissenschaftlern, Investoren und Unternehmern zusammen, mit dem Ziel die Entwicklung von "clean meat" und anderen pflanzlichen Nahrungsalternativen zu fördern.',
+      shortDescription: 'The Good Food Institute (GFI) arbeitet mit Wissenschaftlern, Investoren und Unternehmern zusammen, mit dem Ziel die Entwicklung von "clean meat" und pflanzlichen Nahrungsalternativen zu fördern.',
       longDescription: 'The Good Food Institute (GFI) arbeitet daran, die Tierzuchtbranche zu verändern, indem es die Entwicklung von wettbewerbsfähigen Alternativen zu tierischem Fleisch, Milchprodukten und Eiern fördert. GFI sucht nach Unternehmern und Wissenschaftlern, die Start-ups in dem Marktsektor pflanzlichen und kultivierten Fleisches fördern oder beitreten. Sie bieten geschäftliche, rechtliche, wissenschaftliche und strategische Leitlinien für Unternehmen und betreiben politische (regulatorische und gesetzliche) Arbeit, um das Feld für Fleischersatzprodukte auf dem Markt zu ebnen. GFI baut Beziehungen zu Restaurantketten, Lebensmittelgeschäften und Foodservice-Unternehmen auf, um pflanzliche Alternativen zu Tierprodukten zu verbessern und zu fördern. Schließlich arbeitet GFI mit Fördereinrichtungen, Unternehmen und Regierungen zusammen, um Ressourcen für die Forschung in der synthetischen und pflanzlichen Biologie und Gewebetechnologie zu mobilisieren.',
-      impact1000: 'Eine Spende unterstützt GFI-Programme und hilft beim Aufbau ihrer Rücklagen für den Betriebsablauf, die für die Aufrechterhaltung der Betriebskontinuität benötigt werden. Von einer durchschnittlichen Spende von 1.000 US-Dollar, würde GFI etwa 220 US-Dollar für sein Wissenschafts- und Technologieprogramm und etwa 200 US-Dollar für den Aufbau seiner Rücklagen für den Betriebsablauf ausgeben. GFI würde außerdem 200 US-Dollar für internationales Engagement, 160 US-Dollar für ihr Innovationsprogramm, 120 US-Dollar für ihr politisches Programm und etwa 90 US-Dollar für unternehmerisches Engagement ausgeben. Die Auswirkungen von Spenden für GFI sind spekulativer und langfristiger als der Einfluss von Spenden für andere Oranisation wie Animal Equality. Angesichts des spekulativen Charakters der Auswirkungen von GFI auf Nutztiere, gibt es derzeit keine Kosten-Effektivitäts-Schätzung. Die Meinung von Animal Charity Evaluators ist dennoch, dass Spenden an GFI einen hohen Erwartungswert haben.',
+      impact1000: 'Eine Spende unterstützt GFI-Programme und hilft beim Aufbau ihrer Rücklagen für den Betriebsablauf. Von einer durchschnittlichen Spende von 1.000 US-Dollar, würde GFI etwa 220 US-Dollar für sein Wissenschafts- und Technologieprogramm und etwa 200 US-Dollar für den Aufbau seiner Rücklagen für den Betriebsablauf ausgeben. GFI würde außerdem 200 US-Dollar für internationales Engagement, 160 US-Dollar für ihr Innovationsprogramm, 120 US-Dollar für ihr politisches Programm und etwa 90 US-Dollar für unternehmerisches Engagement ausgeben. Die Auswirkungen von Spenden für GFI sind spekulativer und langfristiger als der Einfluss von Spenden für andere Organisationen gegen Tierleid wie Animal Equality, sie haben jedoch das Potenzial große gesellschaftliche Änderung hin zu einer ethischeren Nahrungsmittelproduktion entscheidend mitzugestalten. Angesichts des Unsicherheit der Auswirkungen von der Arbeit von GFI, gibt es derzeit keine konkrete Schätzung der Kosteneffektivität. Nach Meinung von Animal Charity Evaluators haben Spenden an GFI dennoch einen hohen Erwartungswert.',
       donationDeficit: 4400000,
       evaluators: [
         {
@@ -690,8 +690,8 @@ export class DataService {
       slogan: 'Empowering Change - Driving Progress',
       shortDescription: 'The Humane League will Tierleiden möglichst weitreichend verhindern. Dazu werden mit Humane League Labs die effektivsten Methoden ermittelt. Neben konkreten Kampagnen wird Aufklärungsarbeit in der Bevölkerung betrieben sowie das Wissen um den Tierschutz an Universitäten verbreitet.',
       longDescription: 'Weltweit werden unzählige Tiere für die Nahrungsmittelproduktion unter unnatürlichen und unwürdigen Bedingungen gehalten, misshandelt und verletzt. Um die Haltungsbedingungen der Tiere zu verbessern und so Leid und frühzeitiges Sterben zu verhindern, will The Humane League die Bevölkerung über die Umstände in der industriellen Tierhaltung aufklären. Neben der Bereitstellung von Informationsmaterial und Kampagnen will The Humane League insbesondere auch an Universitäten das Wissen um den Tierschutz verbreiten. Im Rahmen der Humane League Labs wird untersucht, welche Methoden die effektivsten für die Einflussnahme zur Verbesserung der Haltungsbedingen sind.',
-      impact1000: null,
-      donationDeficit: null,
+      impact1000: 'Nach einer Analyse von Animal Charity Evaluators erfüllt The Human League die höchsten Ansprüche hinsichtlich eines systematischen Ansatz zur Überprüfung ihrer Methoden und verwendet die Spenden sehr effektiv. Mit einer Spende von 1000€ könnte potentiell Zehntausenden von Tieren Leid erspart werden.',
+      donationDeficit: 2000000,
       evaluators: [
         {
           evaluator: 'Animal Charity Evaluators',
@@ -715,7 +715,7 @@ export class DataService {
       slogan: 'Albert Schweizer Stiftung für unsere Mitwelt',
       shortDescription: 'Die Stiftung hat es sich zur Aufgabe gemacht Tierleid zu minimieren. So setzt sie sich für eine vegane Lebensweise ein und versucht die Herstellung von Tierprodukten zu minimieren und Massentierhaltung abzuschaffen.',
       longDescription: 'Die Stiftung hat es sich zur Aufgabe gemacht Tierleid zu minimieren. So setzt sie sich für eine vegane Lebensweise ein und versucht die Herstellung von Tierprodukten zu minimieren und Massentierhaltung abzuschaffen. Sie entwickeln Kampagnen, um Druck auf Unternehmen und Politiker auszuüben und Verbraucher aufzuklären. Weiterhin setzten sie sich rechtlich für bessere Standards ein und sorgen dafür, dass diese umgesetzt werden.',
-      impact1000: 'Von 1000€ werden etwa 617€ für die Öffentlichkeitsarbeit ausgegeben, 216€ für rechtliche Beratung und 166€ für Kampagnen. Die Albert Schweitzer Stiftung hat aktuell nicht veröffentlich, was sie tun, wenn sie mehr Geld als das veranschlagte Budget bekommen. Doch es kann davon ausgegangen werden, dass es sich um sehr ähnliche Projekte handelt.',
+      impact1000: 'Auf Grund der Fokussierung auf Geflügel und insbesondere Fische, die in besonders großer Anzahl gehalten werden, kann die Albert Schweizer Stiftung potentiell sehr vielen Tieren pro Spende helfen. Nach einer Evaluation von Animal Charity Evaluators können mit einer Spende von 1000 Euro die Haltungsbedinungen von 10.000 Tieren oder auch weitaus mehr verbessert werden, diese Schätzung ist aber mit großer Unsicherheit behaftet.',
       donationDeficit: 560000, // between 560.000$ and 1.900.000$
       evaluators: [
         {
@@ -740,7 +740,7 @@ export class DataService {
       slogan: 'For a future free from animal suffering',
       shortDescription: 'Anima nutzt vielfältige rechtliche Möglichkeiten um die Situation von Tieren zu verbessern und eine pflanzlich Ernährung voran zu bringen.',
       longDescription: 'Anima International möchte erreichen, dass Tiere nicht mehr als Produkte gesehen und als solche behandelt werden. Deswegen organisieren sie Kampagnen z.B. gegen Käfighaltung, Konferenzen zum Thema Tierwohl und fordern Gesetzesänderung für besseren Tierschutz. Die Organisation arbeitet Open Source und sieht die internationale Vernetzung als ein Schwerpunkt ihrer Arbeit.',
-      impact1000: 'Anima International gibt davon etwa 312€ für Öffentlichkeitsarbeit aus, nutzt 279€ für Kampagnen, 185€ um seine Kapazitäten zu erweitern, 129€ für die Bewerbung pflanzlicher Produkte und 95€ für rechtliche Unterstützung. Mit einem höheren Budget will Anima International mehr wissenschaftliche Studien publizieren, mehr und größere Kampagnen starten, sowie ihr Programm zur fleischfreien Ernährung auf andere Länder ausweiten.',
+      impact1000: 'Anima International gibt von einer Spende von 1000€ etwa 312€ für Öffentlichkeitsarbeit aus, nutzt 279€ für Kampagnen, 185€ um seine Kapazitäten zu erweitern, 129€ für die Bewerbung pflanzlicher Produkte und 95€ für rechtliche Unterstützung. Mit einem höheren Budget will Anima International mehr wissenschaftliche Studien publizieren, mehr und größere Kampagnen starten, sowie ihr Programm zur fleischfreien Ernährung auf andere Länder ausweiten. Basierend auf einer Schätzung von Animal Charity Evaluators könnte mit einer Spende von 1000€ potentiell Zehntausenden von Tieren Leid erspart werden.',
       donationDeficit: 370000, // between $0.37 million and $2.5
       evaluators: [
         {
@@ -778,7 +778,7 @@ export class DataService {
       slogan: 'Die globale Koalition gegen Korruption',
       shortDescription: 'Transparency International setzt sich ein globales Bewusstsein für Korruption sowie für mehr Integrität und Transparenz im öffentlichen und privaten Sektor ein',
       longDescription: '1993 gegründet, setzt sich die Bewegung für ein globales Bewusstsein für Korruption sowie für mehr Integrität und Transparenz im öffentlichen und privaten Sektor ein. Um diese Ziele zu erreichen, werden internationale Antikorruptionskonventionen erarbeitet, die Verfolgung korrupter Politiker sowie die Beschlagnahmung ihrer illegal erworbenen Vermögen unterstützt und Unternehmen für ihr Handeln im In- und Ausland verantwortlich gemacht. In über 100 Ländern arbeiten lokale Gruppen mit Partnern aus Politik, Wirtschaft und Zivilgesellschaft zusammen, um wirksame Maßnahmen gegen Korruption zu ergreifen. Die Organisation legt Wert auf politische Unabhängigkeit.',
-      impact1000: 'Da Transparency International verschiedene Programme in den über 100 Ländern betreibt, ist eine genaue quantitative Beurteilung sehr schwierig.',
+      impact1000: 'Da Transparency International verschiedene Programme in den über 100 Ländern betreibt und die genauen Wirkung von den Programmen oft schwer abzuschätzen ist, ist eine genaue quantitative Beurteilung sehr schwierig. Schätzungen zufolge gehen bei Auslandshilfen Gelder im zweistelligen Prozent-Bereich durch Korruption oder zweifelhafte Verwendung von Geldern verloren. Zudem ist Transparenz und Integrität Voraussetzung für eine funktionierende Demokratie und eine effektive Lösung globaler Probleme wie dem Klimawandel. Angesicht des Ausmaßes des Problems und der substantielle Erfolge von Transparency International wie die Etablierung des "Übereinkommen der Vereinten Nationen gegen Korruption" erscheinen die jährlichen Ausgaben von ca. 25 Millionen Euro im Jahr relativ gering. Beim Global Go To Think Tank Index Report 2019 wurde Transparency International als die beste Organisation im Bereich "Best Quality Assurance and Integrity Policies and Procedures" sowie "Top Transparency and Good Governance Think Tanks" ausgezeichnet.',
       donationDeficit: null,
       evaluators: [
         {
@@ -787,7 +787,7 @@ export class DataService {
           top: false
         }
       ]
-    },
+    }/*,
     {
       name: 'International Institute for Strategic Studies',
       article: 'das',
@@ -813,6 +813,7 @@ export class DataService {
         }
       ]
     }
+	*/
   ].sort((a, b) => a.name.localeCompare(b.name));
 
   getByName(name: string): Organization {

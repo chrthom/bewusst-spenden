@@ -381,9 +381,8 @@ export class QuestionnairePage {
     {
       id: 'rights catastrophe knowledge',
       title: 'Was ist wichtiger?',
-      question: 'Die ethischen und empirischen Annahmen die wir bis hierhin diskutierten, haben keinen beschränkten Fokus. Die \n' +
-                'Vielzahl der Probleme müssen gegen ihre Nachverfolgbarkeit und Vernachlässigkeit geprüft werden. Hier sind \n' +
-                'einige Vorschläge für vernachlässigte und nachverfolgbare Problemgebiete. Welches davon wäre dir am \n' +
+      question:	'Hier sind \n' +
+                'einige Vorschläge für potenziell vernachlässigte Problemgebiete. Welches davon wäre dir am \n' +
                 'wichtigsten?',
       answers: [
         {
