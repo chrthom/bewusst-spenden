@@ -308,13 +308,6 @@ export class QuestionnairePage {
           blackFont: true
         },
         {
-          toId: 'knowledge values institutions',
-          image: 'improve_society_maybe',
-          title: 'Vielleicht',
-          subtitle: 'Unsere Veränderungen könnten lange genug anhalten, um einen langfristigen Effekt zu haben.',
-          blackFont: false
-        },
-        {
           toId: 'environmental damage',
           image: 'improve_society_no',
           title: 'Nein',
