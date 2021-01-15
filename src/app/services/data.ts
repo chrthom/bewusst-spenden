@@ -411,7 +411,7 @@ export class DataService {
       slogan: 'Smart giving, simplified',
       shortDescription: 'The Life You Can Save möchte Menschen dazu anzuregen, gegen extreme Armut zu spenden. Dazu werden in einem sorgfältigen Prozess die effektivsten Organisationen in verschiedenen Bereichen durch ein Team von Experten ausgewählt und auf der Website von The Life You Can Save vorgestellt.',
       longDescription: 'The Life You Can Save macht "intelligentes Spenden einfach", indem es eine Gruppe von gemeinnützigen Organisationen zusammenstellt, die die meisten Leben pro Dollar retten oder verbessern. Ihr Ziel ist es, eine Welt zu schaffen, in der jeder die Möglichkeit hat, sich ein besseres Leben aufzubauen, und in der es kein Leid und keinen Tod durch extreme Armut gibt.',
-      impact1000: 'The Life You Can Save fördert effektive Wohltätigkeitsorganisationen, der Wirkungsrechner: www.thelifeyoucansave.org/impact-calculator kann genutzt werden um zu sehen was das Geld bewirkt.',
+      impact1000: 'Für jeden Dollar den The Life You Can Save ausgibt, werden $13 Spenden für die von The Life You Can Save empfohlenen Hilfsorganisationen generiert. The Life You Can Save fördert effektive Wohltätigkeitsorganisationen, der Wirkungsrechner: www.thelifeyoucansave.org/impact-calculator kann genutzt werden um zu sehen was das Geld bewirkt.',
       donationDeficit: null,
       evaluators: [
         {
