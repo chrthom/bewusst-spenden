@@ -22,8 +22,8 @@
         <h2>{{ a.title }}</h2>
         <p text-wrap>{{ a.subtitle }}</p>
       </ion-item>
-      <ion-item *ngIf="nav != 'start'">
-        <ion-item>
+      <ion-item *ngIf="nav != 'start'" @ngIfAnimation>
+        <ion-item @questionTrigger>
           <p text-wrap class="clickable" (click)="goBack()">&lt; Zur&uuml;ck zur vorherigen Frage</p>
         </ion-item>
       </ion-item>
@@ -42,9 +42,9 @@
           </ion-row>
         </ion-grid>
       </ion-item>
-      <ion-item *ngIf="nav != 'start'">
+      <ion-item *ngIf="nav != 'start'" @ngIfAnimation>
         <ion-grid fixed>
-          <ion-item>
+          <ion-item @questionTrigger>
             <p text-wrap class="clickable" (click)="goBack()">&lt; Zur&uuml;ck zur vorherigen Frage</p>
           </ion-item>
         </ion-grid>
@@ -131,8 +131,8 @@
             <p>
               Die Werte nach denen Menschen leben, k&ouml;nnen eine signifikante Auswirkung auf den langfristige Weg der
               Menschheit haben.
-			  Zuk&uuml;ftige gesellschaftliche und technologische Entwicklungen k&ouml;nnten die Effekte von bestehenden Werten potenzieren oder den ethischen Fortschritt behindern. 
-			  
+			  Zuk&uuml;ftige gesellschaftliche und technologische Entwicklungen k&ouml;nnten die Effekte von bestehenden Werten potenzieren oder den ethischen Fortschritt behindern.
+
 			  Deswegen sollten wir daf&uuml;r
               Sorge tragen, dass unsere sozialen Werte bereits zuvor so gut wie m&ouml;glich sind.
               Dies betrifft z.B. diese Aspekte:
