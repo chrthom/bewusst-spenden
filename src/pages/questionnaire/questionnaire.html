@@ -3,420 +3,54 @@
 <ion-content>
   <!-- QUESTIONS -->
   <ion-list no-lines *ngIf="!nav.startsWith('result ->')" [ngSwitch]="nav" @ngIfAnimation>
-    <ion-item *ngSwitchCase="'start'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Spend-O-Mat Fragebogen starten</h2>
-        <p text-wrap>
-          Du m&ouml;chtest Gutes tun mit deinen Spenden? Hier findest du Vorschl&auml;ge, wie du gem&auml;&szlig; deinen Vorstellungen und
-          deiner pers&ouml;nlichen Weltsicht am meisten Impact haben kannst. Die Sache ist komplex, wir haben keine definitiven Antworten, aber vielleicht helfen wir dir, besser zu verstehen, was du unterst&uuml;tzen willst und warum.
-        </p>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngSwitchCase="'specific reason'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Spezieller Zweck?</h2>
-        <p text-wrap>
-          Empfindest du eine vorrangige Verpflichtung dich f&uuml;r einen bestimmten Zweck oder eine bestimmte Gruppe
-          einzusetzen?
-        </p>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngSwitchCase="'uncertain projects'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Risikoreiche Projekte?</h2>
-        <p text-wrap>
-          Ist es OK f&uuml;r dich risikoreiche Projekte zu priorisieren, falls der potentielle Nutzen hoch genug ist?
-          W&uuml;rdest du z.B. eher etwas tun, von dem du denkst, dass es eine 1%-ige Change h&auml;tte 1.000 Leben zu retten,
-          als ein Leben sicher zu bewahren?
-        </p>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngSwitchCase="'time scope'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Wann willst du helfen?</h2>
-        <p text-wrap>
-          Sollten wir unsere Aufmerksamkeit auf die n&auml;chsten Jahrzehnte richten - vielleicht auf Grund unserer Pflicht
-          unserer Generation gegen&uuml;ber - oder weil wir die fernere Zukunft nicht sicher beeinflussen k&ouml;nnen?
-          Oder ist es lohnenswert sehr langfristige Ziele zu unterst&uuml;tzen?
-        </p>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngSwitchCase="'measurable goals'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Messbare Ziele?</h2>
-        <p text-wrap>
-          Sollten wir uns auf Projekte fokussieren, bei denen es m&ouml;glich ist unseren Effekt zu messen und mit anderen
-          Projekten zu vergleichen? Es ist nicht m&ouml;glich, klar zu trennen welche Projekte hierunter fallen. Daher
-          empfehlen wir, dass du dir gegebenenfalls auch den von dir nicht gew&auml;hlten Pfad nochmals ansiehst.
-        </p>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngSwitchCase="'more generations'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Sind mehr Generation besser?</h2>
-        <p text-wrap>
-          Es wird die Menschheit vermutlich nicht f&uuml;r immer geben. Wenn alles andere gleich bliebe, w&auml;re es ein
-          signifikant schlechteres Szenario, wenn die Menschheit fr&uuml;her aussterben w&uuml;rde (zum Beispiel in weniger
-          hunderten statt tausnden von Jahren)?
-        </p>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngSwitchCase="'existential risks'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Sind existentielle Risiken vermeidbar?</h2>
-        <p text-wrap>
-          K&ouml;nnen wir die die Risiken der zuk&uuml;nftigen Ausl&ouml;schung der Menschheit reduzieren (z.B. durch die Schaffung
-          entsprechender Institutionen)?
-        </p>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngSwitchCase="'improve society'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Kann man die Gesellschaft verbessern?</h2>
-        <p text-wrap>
-          K&ouml;nnen wir durch gesellschaftliche Verbesserungen einen sehr langfristigen Effekt erzielen
-          (z.B. indem neue Werte den Menschen durch schwere Zeiten helfen)?
-        </p>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngSwitchCase="'knowledge values institutions'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Wie erzielen wir den gr&ouml;&szlig;ten langfristigen Effekt?</h2>
-        <p text-wrap>
-          Die Verbesserung welchen Aspekts w&uuml;rde den gr&ouml;&szlig;ten langfristigen Nutzen bringen: Institutionen,
-          gesellschaftliche Moralvorstellungen oder das Wissen der Menschheit?
-          Diese Frage ist schwierig und h&auml;ngt von vielen Fakten ab: Werden die gesellschaftlichen Werte unabdingbar
-          fr&uuml;her oder sp&auml;ter in die gleiche Richtung driften? Werden bestimmte Technologien f&uuml;r die nahe Zukunft f&uuml;r
-          das &uuml;berleben der Menschheit bestimmend sein (z.B. k&uuml;nstliche Intelligenz oder Human-Gentechnik)?
-        </p>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngSwitchCase="'environmental damage'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Richten wir einen permanenten Schaden an der Umwelt an?</h2>
-        <p text-wrap>
-          Besteht eine hohe Wahrscheinlichkeit, dass der Mensch durch sein Handeln eine extreme, langfristige
-          Ver&auml;nderung der Umwelt herbeif&uuml;hrt (z.B. Treibhauseffekt, nuklearer Winter oder Kontamination der
-          Weltmeere), die das Leben der Menschheit &uuml;ber die n&auml;chsten Jahrhunderte deutlich beschwerlicher machen w&uuml;rde?
-        </p>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngSwitchCase="'rights catastrophe knowledge'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Was ist wichtiger?</h2>
-        <p text-wrap>
-          Die ethischen und empirischen Annahmen die wir bis hierhin diskutierten, haben keinen beschr&auml;nkten Fokus. Die
-          Vielzahl der Probleme m&uuml;ssen gegen ihre Nachverfolgbarkeit und Vernachl&auml;ssigkeit gepr&uuml;ft werden. Hier sind
-          einige Vorschl&auml;ge f&uuml;r vernachl&auml;ssigte und nachverfolgbare Problemgebiete. Welches davon w&auml;re dir am
-          wichtigsten?
-        </p>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngSwitchCase="'animals per human'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Wie viele Tierleben ist ein Menschenleben wert?</h2>
-        <p text-wrap>
-          Wie viele Jahre Leid von H&uuml;hnern m&uuml;ssten wir verhindern, um so viel Gutes zu tun wie bei der Verhinderung von einem Jahr Leid
-          eines Menschen? Wir nutzen an dieser Stelle H&uuml;hner, da diese ~95% aller Zuchttiere in
-          der Landwirtschaft ausmachen.
-        </p>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngSwitchCase="'farm life'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Ist Leben auf Bio-H&ouml;fen lebenswert?</h2>
-        <p text-wrap>
-          W&auml;re das Leben f&uuml;r ein Tier auf einem landwirtschaftlichen Betrieb nach Bio-Standard mit Freilauffl&auml;che
-          besser als nie geboren worden zu sein?
-        </p>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngSwitchCase="'opportunity health'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Chancen oder Gesundheit?</h2>
-        <p text-wrap>
-          Ganz allgemein gesprochen, ist es besser sich darauf zu konzentrieren die Armut zu reduzieren und Chancen zu
-          f&uuml;r Entwicklung zu erm&ouml;glichen oder Tod und Leid zu vermeiden?
-        </p>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngSwitchCase="'poverty education'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Lebensstandard oder Bildung?</h2>
-        <p text-wrap>
-          Nach derzeitigen statistischen Angaben existieren Hilfsorganisationen die folgendes mit 3.500$ erreichen
-          k&ouml;nnen. Was davon sollten wir vorziehen?
-        </p>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngSwitchCase="'death suffering'" @questionTrigger>
-      <ion-grid fixed>
-        <h2>Tode oder Leid verhindern?</h2>
-        <p text-wrap>
-          Nach derzeitigen statistischen Angaben existieren Hilfsorganisationen die folgendes mit 3.500$ erreichen
-          k&ouml;nnen. Was davon sollten wir vorziehen?
-        </p>
-      </ion-grid>
-    </ion-item>
+    <ng-container *ngFor="let q of questions">
+      <ion-item *ngSwitchCase="q.id" @questionTrigger>
+        <ion-grid fixed>
+          <h2>{{ q.title }}</h2>
+          <p text-wrap>{{ q.question }}</p>
+        </ion-grid>
+      </ion-item>
+    </ng-container>
   </ion-list>
-  <!-- Answers -->
-  <ion-list no-lines *ngIf="!nav.startsWith('result ->')">
-    <ion-item class="card-background-page">
-      <ion-grid fixed>
-        <ion-row [ngSwitch]="nav" justify-content-center>
-          <ion-col *ngSwitchCase="'start'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('specific reason')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/start.jpg"/>
-              <div class="card-title">OK, verstanden</div>
-              <div class="card-subtitle">Ich will so viel Gutes tun wie m&ouml;glich!</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'specific reason'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> specific responsibility')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/specific_reason_yes.jpg"/>
-              <div class="card-title">Ja</div>
-              <div class="card-subtitle">Ich wei&szlig; bereits sehr genau was und wem ich helfen will.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'specific reason'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('uncertain projects')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/unknown.jpg"/>
-              <div class="card-title">Nein</div>
-              <div class="card-subtitle">Ich habe h&ouml;chstens eine vage Vorstellung davon, was und wen ich unterst&uuml;tzen sollte.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'uncertain projects'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('time scope')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/uncertain_projects_yes.jpg"/>
-              <div class="card-title">Ja</div>
-              <div class="card-subtitle">Wir sollten unabh&auml;ngig von der Unsicherheit das tun, was im Durchschnitt den gr&ouml;&szlig;ten Effekt hat.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'uncertain projects'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('measurable goals')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/uncertain_projects_no.jpg"/>
-              <div class="card-title">Nein</div>
-              <div class="card-subtitle">Wir sollten sicherstellen, dass wir wirklich etwas bewirken.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'measurable goals'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('animals per human')" class="clickable bright" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/measurable_goals_yes.jpg"/>
-              <div class="card-title">Ja</div>
-              <div class="card-subtitle">Nur messbare Projekte erm&ouml;glichen uns, uns kontinuierlich zu verbessern.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'measurable goals'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('rights catastrophe knowledge')" class="clickable bright" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/measurable_goals_no.jpg"/>
-              <div class="card-title">Nein</div>
-              <div class="card-subtitle">Schwer zu messende Projekte werden sehr h&auml;ufig vernachl&auml;ssigt.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'time scope'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('more generations')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/time_scope_longterm.jpg"/>
-              <div class="card-title">Langfristig</div>
-              <div class="card-subtitle">Zuk&uuml;nftige Leben sind genauso wichtig wie heutige Leben, und wir k&ouml;nnen ihnen helfen.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'time scope'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('measurable goals')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/time_scope_lifetime.jpg"/>
-              <div class="card-title">Lebzeit</div>
-              <div class="card-subtitle">Wir sollten uns auf die n&auml;chsten Jahrzehnte konzentrieren.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'more generations'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('existential risks')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/more_generations_yes.jpg"/>
-              <div class="card-title">Ja</div>
-              <div class="card-subtitle">Es w&auml;re ein Desaster, der Menschheit nicht die M&ouml;glichkeit einer lang andauernden Zukunft zu erm&ouml;glichen.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'more generations'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('improve society')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/more_generations_no.jpg"/>
-              <div class="card-title">Nein</div>
-              <div class="card-subtitle">Sterben ist etwas schlimmes, aber nie geboren zu sein ist es nicht.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'existential risks'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> existential risks')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/existential_risks_yes.jpg"/>
-              <div class="card-title">Ja</div>
-              <div class="card-subtitle">Wir k&ouml;nnen etwas tun, um unser &Uuml;berleben langfristig wenigstens etwas wahrscheinlicher zu machen.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'existential risks'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('improve society')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/existential_risks_no.jpg"/>
-              <div class="card-title">Nein</div>
-              <div class="card-subtitle">Die Risiken sind so fern, dass wir keinen bedeutsamen Effekt auf diese haben k&ouml;nnen.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'improve society'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('knowledge values institutions')" class="clickable bright" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/improve_society_yes.jpg"/>
-              <div class="card-title">Ja</div>
-              <div class="card-subtitle">Wir k&ouml;nnen Fortschritte erzielen, die lang andauern werden.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'improve society'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('knowledge values institutions')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/improve_society_maybe.jpg"/>
-              <div class="card-title">Vielleicht</div>
-              <div class="card-subtitle">Unsere Ver&auml;nderungen k&ouml;nnten lange genug anhalten, um einen langfristigen Effekt zu haben.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'improve society'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('environmental damage')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/improve_society_no.jpg"/>
-              <div class="card-title">Nein</div>
-              <div class="card-subtitle">Die Ver&auml;nderung wird sich mit der Zeit umkehren oder nie eintreten.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'knowledge values institutions'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> human knowledge')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/knowledge.jpg"/>
-              <div class="card-title">Wissen</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'knowledge values institutions'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> values')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/values.jpg"/>
-              <div class="card-title">Werte</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'knowledge values institutions'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> institutions')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/institutions.jpg"/>
-              <div class="card-title">Institutionen</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'environmental damage'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> environment')" class="clickable bright" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/environmental_damage_yes.jpg"/>
-              <div class="card-title">Ja</div>
-              <div class="card-subtitle">Das Wohlergehen von hunderten Generationen ist bedroht.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'environmental damage'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('measurable goals')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/environmental_damage_no.jpg"/>
-              <div class="card-title">Nein</div>
-              <div class="card-subtitle">Die Wahrscheinlichkeit derart extremer Umweltbeeinflussung ist gering oder sie w&auml;re nur von kurzer Dauer.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'rights catastrophe knowledge'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> human rights')" class="clickable bright" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/human_rights.jpg"/>
-              <div class="card-title">Menschenrechte</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'rights catastrophe knowledge'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> catastrophe')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/catastrophe.jpg"/>
-              <div class="card-title">Verhinderung globaler Katastrophen</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'rights catastrophe knowledge'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> human knowledge')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/knowledge.jpg"/>
-              <div class="card-title">Erweiterung des menschlichen Wissens</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'rights catastrophe knowledge'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('animals per human')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/unknown.jpg"/>
-              <div class="card-title">Etwas Anderes</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'animals per human'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('opportunity health')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/animals_per_human_more.jpg"/>
-              <div class="card-title">&gt;100</div>
-              <div class="card-subtitle">Menschen zu helfen ist wichtiger.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'animals per human'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('farm life')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/animals_per_human_less.jpg"/>
-              <div class="card-title">&lt;100</div>
-              <div class="card-subtitle">Tierleid ist so real wie Menschenleid und moralisch genauso relevant.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'farm life'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> animal suffering')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/farm_life_yes.jpg"/>
-              <div class="card-title">Ja</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'farm life'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> animal death')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/farm_life_no.jpg"/>
-              <div class="card-title">Nein</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'opportunity health'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('poverty education')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/opportunities.jpg"/>
-              <div class="card-title">Chancen</div>
-              <div class="card-subtitle">Wir sollten Armut reduzieren und den &Auml;rmsten neue Chancen bieten.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'opportunity health'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('death suffering')" class="clickable bright" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/health.jpg"/>
-              <div class="card-title">Gesundheit</div>
-              <div class="card-subtitle">Wir sollten vor allem Leid verhindern.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'opportunity health'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> other')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/unknown.jpg"/>
-              <div class="card-title">Etwas Anderes</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'poverty education'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> poverty')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/poverty.jpg"/>
-              <div class="card-title">Armutsbek&auml;mpfung</div>
-              <div class="card-subtitle">Das Einkommen von drei Familien f&uuml;r ein Jahr verdoppeln.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'poverty education'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> education')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/education.jpg"/>
-              <div class="card-title">Bildung</div>
-              <div class="card-subtitle">10 Schuljahre f&uuml;r drei Kinder erm&ouml;glichen.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'death suffering'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> human death')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/death.jpg"/>
-              <div class="card-title">Tod</div>
-              <div class="card-subtitle">Den Tod eines Kindes durch Malaria verhindern.</div>
-            </ion-card>
-          </ion-col>
-          <ion-col *ngSwitchCase="'death suffering'" col-12 col-md-6 col-xl-4 @ngIfAnimation>
-            <ion-card (click)="answer('result -> human health')" class="clickable" @questionTrigger text-wrap>
-              <img src="../../assets/imgs/questionaire/suffering.jpg"/>
-              <div class="card-title">Leid</div>
-              <div class="card-subtitle">1000 Menschen 10 Jahre lang ben&ouml;tigte Vitamine verabreichen.</div>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-item>
-    <ion-item *ngIf="nav != 'start'">
-      <ion-grid fixed>
-        <ion-item>
+  <!-- ANSWERS -->
+  <ng-container *ngFor="let q of questions">
+    <ion-list *ngIf="isMobile() && nav == q.id">
+      <ion-item *ngFor="let a of q.answers" (click)="answer(a.toId)" class="clickable" @questionTrigger>
+        <ion-avatar item-start>
+          <img src="../../assets/imgs/questionaire/{{ a.image }}.jpg"/>
+        </ion-avatar>
+        <h2>{{ a.title }}</h2>
+        <p text-wrap>{{ a.subtitle }}</p>
+      </ion-item>
+      <ion-item *ngIf="nav != 'start'" @ngIfAnimation>
+        <ion-item @questionTrigger>
           <p text-wrap class="clickable" (click)="goBack()">&lt; Zur&uuml;ck zur vorherigen Frage</p>
         </ion-item>
-      </ion-grid>
-    </ion-item>
-  </ion-list>
+      </ion-item>
+    </ion-list>
+    <ion-list no-lines *ngIf="!isMobile() && nav == q.id">
+      <ion-item class="card-background-page">
+        <ion-grid fixed>
+          <ion-row justify-content-center>
+            <ion-col *ngFor="let a of q.answers" col-12 col-md-6 col-xl-4 @ngIfAnimation>
+              <ion-card (click)="answer(a.toId)" [className]="a.blackFont ? 'bright clickable' : 'clickable'" @questionTrigger text-wrap>
+                <img src="../../assets/imgs/questionaire/{{ a.image }}.jpg"/>
+                <div class="card-title">{{ a.title }}</div>
+                <div class="card-subtitle">{{ a.subtitle }}</div>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item *ngIf="nav != 'start'" @ngIfAnimation>
+        <ion-grid fixed>
+          <ion-item @questionTrigger>
+            <p text-wrap class="clickable" (click)="goBack()">&lt; Zur&uuml;ck zur vorherigen Frage</p>
+          </ion-item>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+  </ng-container>
   <!-- RESULTS -->
   <ion-grid fixed *ngIf="nav.startsWith('result ->')" [ngSwitch]="nav">
     <ion-row justify-content-center>
@@ -451,11 +85,11 @@
               spenden, dann findest du in unserer <u class="clickable" (click)="gotoTabSearch()">Datenbank zu effektiven Hilfsorganisationen</u> m&ouml;glicherweise einige
 			  passende Vorschl&auml;ge zu Organisationen in dem entsprechenden Problembereich.
             </p>
-			<p>
-			Manchmal kann es aufschlussreich sein, sich zu fragen, warum ein bestimmtes Anliegen einen besonders hohen Stellenwert f&uuml;r einen hat.
-			Dadurch kann klarer werden, welche Werte und Annahmen hinter den eigenen Priorit&auml;ten stehen, und wie sich die eigenen Werte am besten praktisch umsetzen lassen.
-			Oftmals ist dies nicht unbedingt das, was auf den ersten Blick schl&uuml;ssig scheint.
-			</p>
+            <p>
+            Manchmal kann es aufschlussreich sein, sich zu fragen, warum ein bestimmtes Anliegen einen besonders hohen Stellenwert f&uuml;r einen hat.
+            Dadurch kann klarer werden, welche Werte und Annahmen hinter den eigenen Priorit&auml;ten stehen, und wie sich die eigenen Werte am besten praktisch umsetzen lassen.
+            Oftmals ist dies nicht unbedingt das, was auf den ersten Blick schl&uuml;ssig scheint.
+            </p>
           </ion-card-content>
         </ion-card>
       </ion-col>
@@ -466,18 +100,18 @@
             <ion-card-title>Das menschliche Wissen erweitern</ion-card-title>
             <p>
               Forschung und Entwicklung ist etwas, was von unterschiedlichen Parteien aus verschiedenen
-              Motiven betrieben wird, sofern es wichtig oder lohnenswert erscheint. Es erscheint somit wahrscheinlich, dass oftmals auch mit weniger Spendengeldern fr&uuml;her oder sp&auml;ter &auml;hnliche Forschungsergebnisse erreicht werden w&uuml;rden.
+              Motiven betrieben wird. Es erscheint somit wahrscheinlich, dass oftmals auch mit weniger Spendengeldern fr&uuml;her oder sp&auml;ter &auml;hnliche Forschungsergebnisse erreicht werden w&uuml;rden.
 			  Es kann dennoch manchmal einen gro&szlig;en Unterschied machen eine bestimmte
               Schl&uuml;sseltechnologie oder verbessertes Wissen einige Jahre oder Dekaden fr&uuml;her zu erlangen.
               Derzeitige Beispiele hierf&uuml;r:
             </p>
             <ul>
               <li>
-                Die Entwicklung effektiverer und nachhaltiger Energiequellen, bevor die Knappheit der &ouml;l-Vorr&auml;te oder katastrophale Umwelteffekte zu internationalen
+                Die Entwicklung effektiverer und nachhaltiger Energiequellen, bevor die Knappheit der &Ouml;l-Vorr&auml;te oder katastrophale Umwelteffekte zu internationalen
                 Konflikten f&uuml;hrt.
               </li>
               <li>
-                Die Entwicklung besserer landwirtschaftlicher Methoden, um die Auswirkung der Landwirtschaft auf den
+                Die Entwicklung besserer Methoden in der Land- und Nahrungsmittelwirtschaft, um die Auswirkung der Landwirtschaft auf den
                 Klimawandel zu reduzieren.
               </li>
             </ul>
@@ -496,11 +130,12 @@
             <ion-card-title>Werte und Moralvorstellungen</ion-card-title>
             <p>
               Die Werte nach denen Menschen leben, k&ouml;nnen eine signifikante Auswirkung auf den langfristige Weg der
-              Menschheit haben. Es w&auml;re m&ouml;glich, dass in den n&auml;chsten Jahrhunderten ein "value lock-in" stattfindet:
-              Durch Technologien oder Institutionen k&ouml;nnte verhindert werden, dass gesellschaftliche
-              Werte einzelner Individuen stark voneinander abweichen oder sich überhaupt ver&auml;ndern. Falls dies eintritt, sollten wir daf&uuml;r
+              Menschheit haben.
+			  Zuk&uuml;ftige gesellschaftliche und technologische Entwicklungen k&ouml;nnten die Effekte von bestehenden Werten potenzieren oder den ethischen Fortschritt behindern.
+
+			  Deswegen sollten wir daf&uuml;r
               Sorge tragen, dass unsere sozialen Werte bereits zuvor so gut wie m&ouml;glich sind.
-              Dies betrifft derzeit insbesondere diese Aspekte:
+              Dies betrifft z.B. diese Aspekte:
             </p>
             <ul>
               <li>
@@ -529,7 +164,7 @@
         <ion-card>
           <ion-card-header>Dein Testresultat</ion-card-header>
           <ion-card-content text-wrap>
-            <ion-card-title>Institutionen verbessern</ion-card-title>
+            <ion-card-title>Institutionen schaffen und verbessern</ion-card-title>
             <p>
               Institutionen waren in der bisherigen Menschheitsgeschichte ein kritischer Faktor in der
               Gesellschaftsentwicklung und werden es vermutlich auch zuk&uuml;nftig sein.
@@ -542,11 +177,11 @@
               </li>
               <li>
                 Wir k&ouml;nnten die Transparenz der Regierungen und Standards der Berichterstattung verbessern, um die Entstehung
-                permanenter totalit&auml;ter Regime durch neue Technologien zu verhindern.
+                permanenter totalit&auml;ter Regime durch neue Technologien zu verhindern und eine nachhaltige Entwicklung von Demokratien zu unterst&uuml;zen.
               </li>
               <li>
                 Wir k&ouml;nnten versuchen nachhaltig handelnde Institutionen zu schaffen, die entscheidend zu einer positiven Entwicklung
-                der Gesellschaft beitragen, aber aus irgendeinem Grund bislang nicht erschaffen wurden und es vielleicht auch in Zukunft nicht w&uuml;rden.
+                der Gesellschaft beitragen, aber aus irgendeinem Grund bislang nicht erschaffen wurden und es ohne weitere F&ouml;rderung vielleicht auch in Zukunft nicht w&uuml;rden.
               </li>
             </ul>
             <strong>
@@ -564,13 +199,13 @@
             <ion-card-title>Permanente Umweltsch&auml;den verhindern</ion-card-title>
             <p>
               W&auml;hrend Zivilisationen sich von allen erdenklichen Katastrophen innerhalb von wenigen tausend Jahren
-              erholen kann, sind dies dennoch hunderte oder tausende von Generationen die auf dem Weg dorthin darunter
-              leiden m&uuml;ssen. Selbst wenn es nur eine kleine Chance gibt einen katastrophalen Schaden wie diesen zu
+              erholen kann, sind dies dennoch hunderte oder tausende von Generationen, die auf dem Weg dorthin darunter
+              leiden m&uuml;ssen. Selbst wenn es nur eine kleine Chance gibt, einen katastrophalen Schaden wie diesen zu
               verhindern, ist der potentielle Effekt es wert:
             </p>
             <ul>
               <li>
-                &uuml;ckkopplungseffekte wie das Schmelzen von Permafrost, k&ouml;nnten durch das dadurch freigesetzte
+                R&uuml;ckkopplungseffekte wie das Schmelzen von Permafrost, k&ouml;nnten durch das dadurch freigesetzte
                 Methangas den Gro&szlig;teil der Erde in eine W&uuml;ste verwandeln.
               </li>
               <li>
@@ -598,7 +233,7 @@
                 sich zu wehren oder zu entkommen.
               </li>
               <li>
-                Wir k&ouml;nnten mit nicht-totalit&auml;ren Regierungen zusammenarbeiten, um bestimmte kriminelle Handlungen zu ahnden
+                Wir k&ouml;nnten mit nicht-totalit&auml;ren Regierungen zusammenarbeiten, um bestimmte kriminelle Handlungen zu ahnden,
                 die bis dahin ignoriert wurden.
               </li>
               <li>
@@ -659,7 +294,7 @@
           <ion-card-content text-wrap>
             <ion-card-title>Tierleben retten</ion-card-title>
             <p>
-              Die Anzahl Tierleben die in Gefangenschaft geboren werden und f&uuml;r die Lebensmittelproduktion sterben ist
+              Die Anzahl der Tiere die in Gefangenschaft geboren werden und f&uuml;r die Lebensmittelproduktion sterben ist
               gewaltig.
             </p>
             <ul>
@@ -678,15 +313,15 @@
           <ion-card-content text-wrap>
             <ion-card-title>Lebensstandards</ion-card-title>
             <p>
-              Mehr als eine Milliarden Menschen leben derzeit von weniger als 1,05 &euro; am Tag. Angesichts systematische Ungleichheit
-              und derzeitiger Politk der Industrienationen k&ouml;nnten legislative &auml;nderungen oder
+              Mehr als eine Milliarden Menschen leben derzeit von weniger als 1,05 &euro; am Tag. Angesichts systematischer
+              Ungleichheit und der derzeitigen Politk der Industrienationen k&ouml;nnten legislative &Auml;nderungen oder
               direkte Interventionen die dramatische Verbesserung der Lebensqualit&auml;t dieser Menschen bei nur geringen
               Kosten bewirken.
             </p>
             <ul>
               <li>
                 Regierungen k&ouml;nnten durch Lobbyarbeit dazu gebracht werden, grundlegende Dienstleistungen und Infrastruktur
-                f&uuml;r die Menschen bereitzustellen, die es am dringendsten brauchen.
+                f&uuml;r die Menschen bereitzustellen, die sie am dringendsten brauchen.
               </li>
               <li>
                 Wichtige Dienstleistungen und Infrastruktur k&ouml;nnen direkt von nicht-kommerziellen, durch Privatspenden
@@ -694,7 +329,7 @@
               </li>
               <li>
                 Auch direkt Geld an diese benachteiligte Gemeinschaften zu geben (sofern die Verteilung korrekt umgesetzt
-                ist) kann durch dadurch m&ouml;gliche Investitionen viel zur Erh&ouml;hung des Lebensstandard beitragen.
+                wird), kann durch dadurch m&ouml;gliche Investitionen viel zur Erh&ouml;hung des Lebensstandard beitragen.
               </li>
             </ul>
           </ion-card-content>
@@ -731,13 +366,13 @@
           <ion-card-content text-wrap>
             <ion-card-title>Menschenleben retten</ion-card-title>
             <p>
-              In Entwicklungsl&auml;ndern sterben jeden Tag tausende von Menschen durch Hunger oder einfach zu verhindernde
+              In Entwicklungsl&auml;ndern sterben jeden Tag tausende von Menschen durch Hunger oder einfach zu verhindernden
               Krankheiten.
             </p>
             <ul>
               <li>
                 Anti-Moskitonetze k&ouml;nnten gekauft und in betroffenen Regionen verteilt werden.
-                Im Schnitt kann dadurch je 2.500 &euro; ein Kind davor bewahrt werden an Malaria zu sterben.
+                Im Schnitt kann dadurch je 2.500 &euro; ein Kind davor bewahrt werden, an Malaria zu sterben.
               </li>
               <li>
                 Wir k&ouml;nnten die Untersuchung von vernachl&auml;ssigten Krankheiten und Epidemien f&ouml;rdern, um gezielt

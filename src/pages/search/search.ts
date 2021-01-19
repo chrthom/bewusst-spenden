@@ -77,6 +77,7 @@ export class SearchPage {
   }
 
   openOrganizationPage(organization: { o: Organization }) {
+    this.webAnalyticsService.pageView('organization/' + organization.o.thumbnail, organization.o.name)
     this.navCtrl.push(OrganizationPage, organization);
   }
 

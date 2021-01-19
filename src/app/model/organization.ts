@@ -6,10 +6,11 @@ export class Evaluator {
 
 export class Organization {
   name: string;
+  article: string;
   thumbnail: string;
   website: string;
   donationLink: string;
-  donationKeyEAS: string;
+  donationLinkEAS: string;
   // Allowed values for category: Armut, Existenzrisiken, Meta, Politik, Tierleid
   category: string[];
   // Allowed values for cause by category:

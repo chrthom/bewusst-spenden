@@ -4,9 +4,9 @@
   <ion-grid fixed>
     <ion-list>
       <ion-item text-wrap>
-        <ion-avatar item-start>
+        <ion-thumbnail item-start>
           <img src="../../assets/imgs/organizations/{{ organization.thumbnail }}.jpg" />
-        </ion-avatar>
+        </ion-thumbnail>
         <h2>{{ organization.name }}</h2>
         <p>{{ organization.slogan }}</p>
         <button ion-button item-end (click)="dismiss()">
@@ -34,8 +34,8 @@
               </button>
             </a>
           </ion-col>
-          <ion-col *ngIf="organization.donationKeyEAS">
-            <a [href]="'https://effektiveraltruismus.de/spenden/?purpose=' + organization.donationKeyEAS" (click)="webAnalyticsService.donateToCharityViaEAS(organization.thumbnail)" target="_blank">
+          <ion-col *ngIf="organization.donationLinkEAS">
+            <a [href]="organization.donationLinkEAS" (click)="webAnalyticsService.donateToCharityViaEAS(organization.thumbnail)" target="_blank">
               <button ion-button icon-start clear>
                 <ion-icon name="card"></ion-icon>
                 <div>Steuereffektiv Spenden</div>
@@ -46,7 +46,7 @@
       </ion-item>
       <ion-item text-wrap>
         <ion-icon name="list-box" item-start></ion-icon>
-        <h2>Was macht {{ organization.name }}?</h2>
+        <h2>Was macht <span *ngIf="organization.article">{{ organization.article }} </span>{{ organization.name }}?</h2>
         {{ organization.longDescription }}
       </ion-item>
       <ion-item *ngIf="organization.regions.length > 0">
@@ -54,17 +54,22 @@
       </ion-item>
       <ion-item text-wrap *ngIf="organization.regions.length == 0">
         <ion-icon name="globe" item-start></ion-icon>
-        <h2>Aktionsgebiete in denen {{organization.name}} t&auml;tig ist</h2>
-        Hierzu liegen uns leider keine Informationen vor oder aber "{{organization.name}}" hat kein begrenztes Aktionsgebiet.
+        <h2>Aktionsgebiete in denen <span *ngIf="organization.article">{{ organization.article }} </span>{{organization.name}} t&auml;tig ist</h2>
+        Hierzu liegen uns leider keine Informationen vor oder aber <span *ngIf="organization.article">{{ organization.article }} </span>{{organization.name}} hat kein begrenztes Aktionsgebiet.
       </ion-item>
       <ion-item text-wrap>
         <ion-icon name="medkit" item-start></ion-icon>
-        <h2>Was bewirkt {{ organization.name }} mit 1.000 €?</h2>
+        <h2>Was bewirkt <span *ngIf="organization.article">{{ organization.article }} </span>{{ organization.name }} mit 1.000 €?</h2>
         <span *ngIf="organization.impact1000">{{ organization.impact1000 }}</span>
         <span *ngIf="!organization.impact1000">Hierzu liegen uns leider keine Informationen vor.</span>
       </ion-item>
-      <ion-item *ngIf="organization.donationDeficit">
+      <ion-item *ngIf="organization.donationDeficit" text-wrap>
         <div [chart]="chart"></div>
+        <p>
+          Das Spendendefizit stellt die Lücke zwischen möglicher Spendenkapazität und den erwarteten Spenden dar.
+          Die möglichen Spendenkapazitäten berücksichtigen dabei, dass die Programme weiterhin in gleicher Weise durchgeführt werden und damit ihre getestete Effizienz beibehalten.
+          Die erwarteten Spenden ergeben sich aus bereits zugesicherte Spenden sowie einer auf jede Organisation zugeschnittenen Hochrechnung.
+        </p>
       </ion-item>
       <ion-item text-wrap *ngIf="!organization.donationDeficit">
         <ion-icon name="help-buoy" item-start></ion-icon>
