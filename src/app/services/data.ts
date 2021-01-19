@@ -3,8 +3,7 @@ import { Organization } from '../model/organization';
 
 @Injectable()
 export class DataService {
-  organizations: Organization[] = [
-    // Armut
+  private poverty: Organization[] = [
     {
       name: 'Against Malaria Foundation',
       article: 'die',
@@ -262,9 +261,10 @@ export class DataService {
           top: false
         }
       ]
-    },
+    }
+  ];
 
-    // Existenzrisiken
+  private existentialRisks: Organization[] = [
     {
       name: 'Future of Life Institute',
       article: 'das',
@@ -352,9 +352,9 @@ export class DataService {
       impactDirection: 'reaktiv',
       regions: [
         'AR', 'GQ', 'BD', 'CL', 'CR', 'CD', 'DO', 'EC', 'GA', 'GH',
-		    'GT', 'GY', 'HN', 'CM', 'KE', 'CG', 'LS', 'LR', 'MG', 'NI',
-		    'NG', 'PK', 'PA', 'PY', 'PE', 'SL', 'SR', 'TH', 'UG', 'UY',
-		    'VN', 'CF', 'MY', 'ID', 'PG'
+        'GT', 'GY', 'HN', 'CM', 'KE', 'CG', 'LS', 'LR', 'MG', 'NI',
+        'NG', 'PK', 'PA', 'PY', 'PE', 'SL', 'SR', 'TH', 'UG', 'UY',
+        'VN', 'CF', 'MY', 'ID', 'PG'
       ],
       questionaireResults: [ 'environment' ],
       slogan: 'Verantwortungsvolle Verwaltung der letzten großen Regenwälder der Welt',
@@ -394,11 +394,12 @@ export class DataService {
           top: true
         }
       ]
-    },
+    }
+  ];
 
-    // Meta
-	  {
-	    name: 'The Life You Can Save',
+  private meta: Organization[] = [
+    {
+      name: 'The Life You Can Save',
       article: null,
       thumbnail: 'the_life_you_can_save',
       website: 'https://www.thelifeyoucansave.org',
@@ -421,7 +422,7 @@ export class DataService {
           top: false
         }
       ]
-	  },
+    },
     {
       name: 'GiveWell',
       article: null,
@@ -571,9 +572,10 @@ export class DataService {
           top: false
         }
       ]
-    },
+    }
+  ];
 
-    // Politik
+  private political: Organization[] = [
     {
       name: 'Carnegie Council for Ethics in International Affairs',
       article: 'das',
@@ -624,8 +626,73 @@ export class DataService {
         }
       ]
     },
+    {
+      name: 'Transparency International',
+      article: null,
+      thumbnail: 'transparency',
+      website: 'https://www.transparency.org',
+      donationLink: 'https://www.transparency.org/donate',
+      donationLinkEAS: null, // TODO: Fill correct URL again
+      category: [ 'Politik' ],
+      cause: [ 'Institutionen' ],
+      impactDirection: 'proaktiv',
+      regions: [
+        'AR', 'AM', 'AU', 'AT', 'AZ', 'BS', 'BH', 'BD', 'BY', 'BE',
+        'BJ', 'BA', 'BR', 'BG', 'BI', 'KH', 'CM', 'CA', 'CL', 'CN',
+        'CO', 'CR', 'CI', 'CZ', 'CD', 'DK', 'DO', 'SV', 'EE', 'ET',
+        'FI', 'FR', 'GE', 'DE', 'GH', 'GR', 'GL', 'GT', 'GY', 'HN',
+        'HU', 'IS', 'ID', 'IE', 'IL', 'IT', 'JM', 'JP', 'JO', 'KZ',
+        'KE', 'XK', 'KW', 'KG', 'LV', 'LB', 'LR', 'LT', 'MK', 'MG',
+        'MW', 'MY', 'MV', 'ML', 'MU', 'MX', 'MD', 'MN', 'ME', 'MA',
+        'MZ', 'NP', 'NL', 'NZ', 'NE', 'NG', 'NO', 'PK', 'PS', 'PA',
+        'PG', 'PE', 'PL', 'PT', 'CG', 'RO', 'RU', 'RW', 'SN', 'RS',
+        'SC', 'SL', 'SK', 'SI', 'US', 'SB', 'ZA', 'KR', 'ES', 'LK',
+        'SE', 'CH', 'TW', 'TG', 'TT', 'TN', 'TR', 'UG', 'UA', 'GB',
+        'VU','VE', 'VN', 'ZM', 'ZW',
+      ],
+      questionaireResults: [ 'institutions' ],
+      slogan: 'Die globale Koalition gegen Korruption',
+      shortDescription: 'Transparency International setzt sich ein globales Bewusstsein für Korruption sowie für mehr Integrität und Transparenz im öffentlichen und privaten Sektor ein',
+      longDescription: '1993 gegründet, setzt sich die Bewegung für ein globales Bewusstsein für Korruption sowie für mehr Integrität und Transparenz im öffentlichen und privaten Sektor ein. Um diese Ziele zu erreichen, werden internationale Antikorruptionskonventionen erarbeitet, die Verfolgung korrupter Politiker sowie die Beschlagnahmung ihrer illegal erworbenen Vermögen unterstützt und Unternehmen für ihr Handeln im In- und Ausland verantwortlich gemacht. In über 100 Ländern arbeiten lokale Gruppen mit Partnern aus Politik, Wirtschaft und Zivilgesellschaft zusammen, um wirksame Maßnahmen gegen Korruption zu ergreifen. Die Organisation legt Wert auf politische Unabhängigkeit.',
+      impact1000: 'Da Transparency International verschiedene Programme in den über 100 Ländern betreibt und die genauen Wirkung von den Programmen oft schwer abzuschätzen ist, ist eine genaue quantitative Beurteilung sehr schwierig. Schätzungen zufolge gehen bei Auslandshilfen Gelder im zweistelligen Prozent-Bereich durch Korruption oder zweifelhafte Verwendung von Geldern verloren. Zudem ist Transparenz und Integrität Voraussetzung für eine funktionierende Demokratie und eine effektive Lösung globaler Probleme wie dem Klimawandel. Angesicht des Ausmaßes des Problems und der substantielle Erfolge von Transparency International wie die Etablierung des "Übereinkommen der Vereinten Nationen gegen Korruption" erscheinen die jährlichen Ausgaben von ca. 25 Millionen Euro im Jahr relativ gering. Beim Global Go To Think Tank Index Report 2019 wurde Transparency International als die beste Organisation im Bereich "Best Quality Assurance and Integrity Policies and Procedures" sowie "Top Transparency and Good Governance Think Tanks" ausgezeichnet.',
+      donationDeficit: null,
+      evaluators: [
+        {
+          evaluator: 'Bewusst Spenden',
+          link: 'http://bewusstspenden.de',
+          top: false
+        }
+      ]
+    }/*,
+    {
+      name: 'International Institute for Strategic Studies',
+      article: 'das',
+      thumbnail: 'iiss',
+      website: 'https://www.iiss.org/',
+      donationLink: 'https://www.iiss.org/individual-membership',
+      donationLinkEAS: null,
+      category: [ 'Politik' ],
+      cause: [ 'Institutionen' ],
+      impactDirection: 'proaktiv',
+      regions: [],
+      questionaireResults: ['institutions'],
+      slogan: 'Facts. Analysis. Influence.',
+      shortDescription: 'Das Internationale Institut für Strategische Studien (IISS) ist ein britisches Forschungsinstitut (oder Think Tank) auf dem Gebiet internationaler Angelegenheiten. IISS ist die weltweit führende Autorität in globalen Sicherheitsfragen und bietet Fakten und Analysen zu einer breiten Palette von internationalen Sicherheitsfragen.',
+      longDescription: 'Das IISS ist eine wichtige Quelle für genaue, objektive Informationen zu strategischen Fragen für Politiker, Diplomaten, internationale Unternehmen, Ökonomen, Militärs, Journalisten, Wissenschaftlern und die informierte Öffentlichkeit. Das unabhängige Institut forscht mit einer zukunftsorientierten Politikorientierung und legt besonderen Wert darauf, neue Perspektiven in strategische Diskussionen zu bringen. Die Arbeit des Instituts beruht auf der Einschätzung verschiedener politischer, wirtschaftlicher und sozialer Probleme, die Instabilität verursachen, sowie auf Faktoren, die zu internationaler Zusammenarbeit führen können. IISS-Publikationen werden von wichtigen Entscheidungsträgern gelesen und werden innerhalb der Regierungen auf Kabinettsebene kommentiert. Die Bandbreite der IISS-Publikationen, ihre Gestaltungskraft und die starke internationale Politik des Instituts machen das IISS zu einem wichtigen Akteur in der globalen strategischen Debatte.',
+      impact1000: 'Da das IISS verschiedene Programme in vielen verschiedenen Ländern betreibt, ist eine genaue quantitative Beurteilung schwierig.',
+      donationDeficit: null,
+      evaluators: [
+        {
+          evaluator: 'Bewusst Spenden',
+          link: 'http://bewusstspenden.de',
+          top: false
+        }
+      ]
+    }
+	  */
+  ];
 
-    // Tierleid
+  private animals: Organization[] = [
     {
       name: 'Animal Equality International',
       article: null,
@@ -701,7 +768,7 @@ export class DataService {
         }
       ]
     },
-	  {
+    {
       name: 'Albert Schweizer Stiftung',
       article: 'die',
       thumbnail: 'albert_schweizer_stiftung',
@@ -750,72 +817,10 @@ export class DataService {
           top: true
         }
       ]
-    },
-    {
-      name: 'Transparency International',
-      article: null,
-      thumbnail: 'transparency',
-      website: 'https://www.transparency.org',
-      donationLink: 'https://www.transparency.org/donate',
-      donationLinkEAS: null, // TODO: Fill correct URL again
-      category: [ 'Politik' ],
-      cause: [ 'Institutionen' ],
-      impactDirection: 'proaktiv',
-      regions: [
-        'AR', 'AM', 'AU', 'AT', 'AZ', 'BS', 'BH', 'BD', 'BY', 'BE',
-        'BJ', 'BA', 'BR', 'BG', 'BI', 'KH', 'CM', 'CA', 'CL', 'CN',
-        'CO', 'CR', 'CI', 'CZ', 'CD', 'DK', 'DO', 'SV', 'EE', 'ET',
-        'FI', 'FR', 'GE', 'DE', 'GH', 'GR', 'GL', 'GT', 'GY', 'HN',
-        'HU', 'IS', 'ID', 'IE', 'IL', 'IT', 'JM', 'JP', 'JO', 'KZ',
-        'KE', 'XK', 'KW', 'KG', 'LV', 'LB', 'LR', 'LT', 'MK', 'MG',
-        'MW', 'MY', 'MV', 'ML', 'MU', 'MX', 'MD', 'MN', 'ME', 'MA',
-        'MZ', 'NP', 'NL', 'NZ', 'NE', 'NG', 'NO', 'PK', 'PS', 'PA',
-        'PG', 'PE', 'PL', 'PT', 'CG', 'RO', 'RU', 'RW', 'SN', 'RS',
-        'SC', 'SL', 'SK', 'SI', 'US', 'SB', 'ZA', 'KR', 'ES', 'LK',
-        'SE', 'CH', 'TW', 'TG', 'TT', 'TN', 'TR', 'UG', 'UA', 'GB',
-        'VU','VE', 'VN', 'ZM', 'ZW',
-	    ],
-      questionaireResults: [ 'institutions' ],
-      slogan: 'Die globale Koalition gegen Korruption',
-      shortDescription: 'Transparency International setzt sich ein globales Bewusstsein für Korruption sowie für mehr Integrität und Transparenz im öffentlichen und privaten Sektor ein',
-      longDescription: '1993 gegründet, setzt sich die Bewegung für ein globales Bewusstsein für Korruption sowie für mehr Integrität und Transparenz im öffentlichen und privaten Sektor ein. Um diese Ziele zu erreichen, werden internationale Antikorruptionskonventionen erarbeitet, die Verfolgung korrupter Politiker sowie die Beschlagnahmung ihrer illegal erworbenen Vermögen unterstützt und Unternehmen für ihr Handeln im In- und Ausland verantwortlich gemacht. In über 100 Ländern arbeiten lokale Gruppen mit Partnern aus Politik, Wirtschaft und Zivilgesellschaft zusammen, um wirksame Maßnahmen gegen Korruption zu ergreifen. Die Organisation legt Wert auf politische Unabhängigkeit.',
-      impact1000: 'Da Transparency International verschiedene Programme in den über 100 Ländern betreibt und die genauen Wirkung von den Programmen oft schwer abzuschätzen ist, ist eine genaue quantitative Beurteilung sehr schwierig. Schätzungen zufolge gehen bei Auslandshilfen Gelder im zweistelligen Prozent-Bereich durch Korruption oder zweifelhafte Verwendung von Geldern verloren. Zudem ist Transparenz und Integrität Voraussetzung für eine funktionierende Demokratie und eine effektive Lösung globaler Probleme wie dem Klimawandel. Angesicht des Ausmaßes des Problems und der substantielle Erfolge von Transparency International wie die Etablierung des "Übereinkommen der Vereinten Nationen gegen Korruption" erscheinen die jährlichen Ausgaben von ca. 25 Millionen Euro im Jahr relativ gering. Beim Global Go To Think Tank Index Report 2019 wurde Transparency International als die beste Organisation im Bereich "Best Quality Assurance and Integrity Policies and Procedures" sowie "Top Transparency and Good Governance Think Tanks" ausgezeichnet.',
-      donationDeficit: null,
-      evaluators: [
-        {
-          evaluator: 'Bewusst Spenden',
-          link: 'http://bewusstspenden.de',
-          top: false
-        }
-      ]
-    }/*,
-    {
-      name: 'International Institute for Strategic Studies',
-      article: 'das',
-      thumbnail: 'iiss',
-      website: 'https://www.iiss.org/',
-      donationLink: 'https://www.iiss.org/individual-membership',
-      donationLinkEAS: null,
-      category: [ 'Politik' ],
-      cause: [ 'Institutionen' ],
-      impactDirection: 'proaktiv',
-      regions: [],
-      questionaireResults: ['institutions'],
-      slogan: 'Facts. Analysis. Influence.',
-      shortDescription: 'Das Internationale Institut für Strategische Studien (IISS) ist ein britisches Forschungsinstitut (oder Think Tank) auf dem Gebiet internationaler Angelegenheiten. IISS ist die weltweit führende Autorität in globalen Sicherheitsfragen und bietet Fakten und Analysen zu einer breiten Palette von internationalen Sicherheitsfragen.',
-      longDescription: 'Das IISS ist eine wichtige Quelle für genaue, objektive Informationen zu strategischen Fragen für Politiker, Diplomaten, internationale Unternehmen, Ökonomen, Militärs, Journalisten, Wissenschaftlern und die informierte Öffentlichkeit. Das unabhängige Institut forscht mit einer zukunftsorientierten Politikorientierung und legt besonderen Wert darauf, neue Perspektiven in strategische Diskussionen zu bringen. Die Arbeit des Instituts beruht auf der Einschätzung verschiedener politischer, wirtschaftlicher und sozialer Probleme, die Instabilität verursachen, sowie auf Faktoren, die zu internationaler Zusammenarbeit führen können. IISS-Publikationen werden von wichtigen Entscheidungsträgern gelesen und werden innerhalb der Regierungen auf Kabinettsebene kommentiert. Die Bandbreite der IISS-Publikationen, ihre Gestaltungskraft und die starke internationale Politik des Instituts machen das IISS zu einem wichtigen Akteur in der globalen strategischen Debatte.',
-      impact1000: 'Da das IISS verschiedene Programme in vielen verschiedenen Ländern betreibt, ist eine genaue quantitative Beurteilung schwierig.',
-      donationDeficit: null,
-      evaluators: [
-        {
-          evaluator: 'Bewusst Spenden',
-          link: 'http://bewusstspenden.de',
-          top: false
-        }
-      ]
     }
-	*/
-  ].sort((a, b) => a.name.localeCompare(b.name));
+  ];
+
+  organizations: Organization[] = [].concat(this.animals, this.existentialRisks, this.meta, this.political, this.poverty).sort((a, b) => a.name.localeCompare(b.name));
 
   getByName(name: string): Organization {
     let foundOrganisation = this.organizations.filter(o => o.thumbnail == name);
