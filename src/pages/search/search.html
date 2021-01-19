@@ -73,7 +73,7 @@
       <div *ngIf="isMobile()">
         <ion-item-sliding *ngFor="let o of organizations">
           <ion-item text-wrap (tap)="itemHelperClick()">
-            <ion-thumbnail item-start>
+            <ion-thumbnail item-start (click)="openOrganizationPage({o: o})">
               <img src="../../assets/imgs/organizations/{{ o.thumbnail }}.jpg"/>
             </ion-thumbnail>
             <h2>{{ o.name }}</h2>
@@ -103,7 +103,7 @@
       </div>
       <div *ngIf="!isMobile()">
         <ion-item text-wrap *ngFor="let o of organizations">
-          <ion-thumbnail item-start>
+          <ion-thumbnail item-start class="clickable" (click)="openOrganizationPage({o: o})">
             <img src="../../assets/imgs/organizations/{{ o.thumbnail }}.jpg"/>
           </ion-thumbnail>
           <h2>{{ o.name }}</h2>
@@ -112,7 +112,7 @@
           <ion-badge *ngFor="let e of o.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
           <div class="buttons" item-end>
             <p>
-              <button ion-button block color="primary" (click)="webAnalyticsService.pageView('organization/' + o.thumbnail, o.name); openOrganizationPage({o: o})">
+              <button ion-button block color="primary" (click)="openOrganizationPage({o: o})">
                 <ion-icon name="information-circle"></ion-icon>
                 &nbsp;Mehr Info
               </button>
