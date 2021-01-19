@@ -34,8 +34,8 @@
               </button>
             </a>
           </ion-col>
-          <ion-col *ngIf="organization.donationKeyEAS">
-            <a [href]="'https://effektiveraltruismus.de/spenden/?purpose=' + organization.donationKeyEAS" (click)="webAnalyticsService.donateToCharityViaEAS(organization.thumbnail)" target="_blank">
+          <ion-col *ngIf="organization.donationLinkEAS">
+            <a [href]="organization.donationLinkEAS" (click)="webAnalyticsService.donateToCharityViaEAS(organization.thumbnail)" target="_blank">
               <button ion-button icon-start clear>
                 <ion-icon name="card"></ion-icon>
                 <div>Steuereffektiv Spenden</div>
