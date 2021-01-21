@@ -68,7 +68,7 @@ export class DataService {
       thumbnail: 'sci',
       website: 'https://schistosomiasiscontrolinitiative.org',
       donationLink: 'https://schistosomiasiscontrolinitiative.org/get-involved/donate',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: 'https://effektiveraltruismus.de/spenden/?fb_item_id_fix=33723',
       category: [ 'Armut' ],
       cause: [ 'Gesundheit' ],
       impactDirection: 'reaktiv',
@@ -98,7 +98,7 @@ export class DataService {
       thumbnail: 'helen_keller_international',
       website: 'http://www.hki.org',
       donationLink: 'http://hekein.convio.net/site/Donation2?df_id=1860&mfc_pref=T&1860.donation=form1&_ga=2.184512229.218491984.1529773877-1415190627.1529773877',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: null,
       category: [ 'Armut' ],
       cause: [ 'Gesundheit' ],
       impactDirection: 'reaktiv',
@@ -128,7 +128,7 @@ export class DataService {
       thumbnail: 'end_fund',
       website: 'https://end.org/',
       donationLink: 'https://end.org/engage/invest',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: null,
       category: [ 'Armut' ],
       cause: [ 'Gesundheit' ],
       impactDirection: 'reaktiv',
@@ -218,7 +218,7 @@ export class DataService {
       thumbnail: 'pratham',
       website: 'http://pratham.org',
       donationLink: 'http://pratham.org/get-involved/donate',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: null,
       category: [ 'Armut' ],
       cause: [ 'Bildung' ],
       impactDirection: 'reaktiv',
@@ -243,7 +243,7 @@ export class DataService {
       thumbnail: 'camfed',
       website: 'https://camfed.org/',
       donationLink: 'https://camfed.org/donate',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: null,
       category: [ 'Armut' ],
       cause: [ 'Bildung' ],
       impactDirection: 'reaktiv',
@@ -271,7 +271,7 @@ export class DataService {
       thumbnail: 'future_of_life',
       website: 'https://futureoflife.org',
       donationLink: 'https://futureoflife.org/donate-now',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: null,
       category: [ 'Existenzrisiken'],
       cause: [ 'Künstliche Intelligenz', 'Biosicherheit', 'Nuklearsicherheit', 'Klimaschutz' ],
       impactDirection: 'proaktiv',
@@ -296,7 +296,7 @@ export class DataService {
       thumbnail: 'miri',
       website: 'https://intelligence.org',
       donationLink: 'https://intelligence.org/donate',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: 'https://effektiveraltruismus.de/spenden/?fb_item_id_fix=33729',
       category: [ 'Existenzrisiken' ],
       cause: [ 'Künstliche Intelligenz' ],
       impactDirection: 'proaktiv',
@@ -346,7 +346,7 @@ export class DataService {
       thumbnail: 'coalition_for_rainforest_nations',
       website: 'https://www.rainforestcoalition.org',
       donationLink: 'https://www.rainforestcoalition.org/donations',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: null,
       category: [ 'Existenzrisiken' ],
       cause: [ 'Klimaschutz' ],
       impactDirection: 'reaktiv',
@@ -376,7 +376,7 @@ export class DataService {
       thumbnail: 'future_of_humanity',
       website: 'https://www.fhi.ox.ac.uk',
       donationLink: 'https://effektiveraltruismus.de/spenden/?purpose=FHI',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: null,
       category: [ 'Existenzrisiken', 'Meta' ],
       cause: [ 'Künstliche Intelligenz', 'Biosicherheit', 'Makrostrategie' ],
       impactDirection: 'proaktiv',
@@ -404,7 +404,7 @@ export class DataService {
       thumbnail: 'the_life_you_can_save',
       website: 'https://www.thelifeyoucansave.org',
       donationLink: 'https://tlycs.networkforgood.com/causes/3949-the-life-you-can-save',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: null,
       category: [ 'Meta' ],
       cause: [ 'Wirksamkeitsanalyse' ],
       impactDirection: 'reaktiv',
@@ -429,7 +429,7 @@ export class DataService {
       thumbnail: 'givewell',
       website: 'https://www.givewell.org',
       donationLink: 'https://secure.givewell.org/support-givewell',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: 'https://effektiveraltruismus.de/spenden/?fb_item_id_fix=33722',
       category: [ 'Meta' ],
       cause: [ 'Wirksamkeitsanalyse' ],
       impactDirection: 'reaktiv',
@@ -454,7 +454,7 @@ export class DataService {
       thumbnail: 'innovations_for_poverty_action',
       website: 'https://www.poverty-action.org',
       donationLink: 'https://www.poverty-action.org/monthly-donation',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: null,
       category: [ 'Meta' ],
       cause: [ 'Wirksamkeitsanalyse' ],
       impactDirection: 'reaktiv',
@@ -479,7 +479,7 @@ export class DataService {
       thumbnail: 'centre_for_effective_altruism',
       website: 'https://www.centreforeffectivealtruism.org',
       donationLink: 'https://www.centreforeffectivealtruism.org/donate',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: 'https://effektiveraltruismus.de/spenden/?fb_item_id_fix=33732',
       category: [ 'Meta' ],
       cause: [ 'Öffentlichkeitsarbeit' ],
       impactDirection: 'proaktiv',
@@ -504,7 +504,7 @@ export class DataService {
       thumbnail: '80000_hours',
       website: 'https://80000hours.org',
       donationLink: 'https://80000hours.org/support-us/donate',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: 'https://effektiveraltruismus.de/spenden/?fb_item_id_fix=33731',
       category: [ 'Meta' ],
       cause: [ 'Öffentlichkeitsarbeit' ],
       impactDirection: 'proaktiv',
@@ -529,7 +529,7 @@ export class DataService {
       thumbnail: 'ea_stiftung',
       website: 'https://ea-stiftung.org',
       donationLink: 'https://ea-stiftung.org/spenden',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: 'https://effektiveraltruismus.de/spenden/?fb_item_id_fix=33728',
       category: [ 'Meta' ],
       cause: [ 'Öffentlichkeitsarbeit' ],
       impactDirection: 'proaktiv',
@@ -554,7 +554,7 @@ export class DataService {
       thumbnail: 'global_priorities_institute',
       website: 'https://globalprioritiesinstitute.org',
       donationLink: 'https://globalprioritiesinstitute.org/supporting-gpi',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: null,
       category: [ 'Meta' ],
       cause: [ 'Wirksamkeitsanalyse' ],
       impactDirection: 'proaktiv',
@@ -582,7 +582,7 @@ export class DataService {
       thumbnail: 'carnegie_council',
       website: 'https://www.carnegiecouncil.org',
       donationLink: 'https://www.carnegiecouncil.org/join_us/donate',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: null,
       category: [ 'Politik' ],
       cause: [ 'Werte und Moral' ],
       impactDirection: 'reaktiv',
@@ -607,7 +607,7 @@ export class DataService {
       thumbnail: 'icnk',
       website: 'http://stopnkcrimes.org',
       donationLink: 'http://stopnkcrimes.org/donation.php',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: null,
       category: [ 'Politik' ],
       cause: [ 'Menschenrechte' ],
       impactDirection: 'reactive',
@@ -632,7 +632,7 @@ export class DataService {
       thumbnail: 'transparency',
       website: 'https://www.transparency.org',
       donationLink: 'https://www.transparency.org/donate',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: null,
       category: [ 'Politik' ],
       cause: [ 'Institutionen' ],
       impactDirection: 'proaktiv',
@@ -774,7 +774,7 @@ export class DataService {
       thumbnail: 'albert_schweizer_stiftung',
       website: 'https://albert-schweitzer-stiftung.de',
       donationLink: 'https://albert-schweitzer-stiftung.de/helfen/spenden',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: 'https://effektiveraltruismus.de/spenden/?fb_item_id_fix=34302',
       category: [ 'Tierleid' ],
       cause: [ 'Haltungsbedingungen', 'Tierleben' ],
       impactDirection: 'proaktiv',
@@ -799,7 +799,7 @@ export class DataService {
       thumbnail: 'anima_international',
       website: 'https://animainternational.org',
       donationLink: 'https://animainternational.org/donate',
-      donationLinkEAS: null, // TODO: Fill correct URL again
+      donationLinkEAS: null,
       category: [ 'Tierleid' ],
       cause: [ 'Haltungsbedingungen' ],
       impactDirection: 'proaktiv',
