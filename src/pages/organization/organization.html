@@ -78,7 +78,9 @@
       </ion-item>
       <ion-item text-wrap *ngIf="organization.evaluators.length > 0">
         <h3>Empfohlen durch</h3>
-        <ion-badge *ngFor="let e of organization.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
+        <a *ngFor="let e of organization.evaluators" [href]="e.top ? e.link : '#'" [target]="e.top ? '_blank' : '_self'">
+          <ion-badge color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
+        </a>
       </ion-item>
     </ion-list>
     <div class="bottom-space"></div>

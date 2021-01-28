@@ -30,6 +30,8 @@ export class Organization {
   slogan: string;
   shortDescription: string;
   longDescription: string;
+  // Put important search terms in 'tags', which are not included in the organization name, slogan or description
+  tags: string[];
   impact1000: string;
   donationDeficit: number;
   evaluators: Evaluator[]

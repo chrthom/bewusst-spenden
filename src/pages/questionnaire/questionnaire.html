@@ -435,7 +435,7 @@
         <ion-list *ngIf="organizations.length > 0">
           <div *ngIf="isMobile()">
             <ion-item text-wrap>
-              <ion-thumbnail item-start>
+              <ion-thumbnail item-start (click)="openOrganizationPage({o: o})">
                 <img src="../../assets/icon/drag-left.gif"/>
               </ion-thumbnail>
               Swipe nach links, um mehr Optionen zu einer dieser Organisationen zu erhalten.
@@ -448,7 +448,9 @@
                 <h2>{{ o.name }}</h2>
                 <h3>{{ o.slogan }}</h3>
                 <p>{{ o.shortDescription }}</p>
-                <ion-badge *ngFor="let e of o.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
+                <a *ngFor="let e of o.evaluators" [href]="e.top ? e.link : '#'" [target]="e.top ? '_blank' : '_self'">
+                  <ion-badge color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
+                </a>
               </ion-item>
               <ion-item-options side="right">
                 <button ion-button color="primary" (click)="openOrganizationPage({o: o})">
@@ -472,13 +474,15 @@
           </div>
           <div *ngIf="!isMobile()">
             <ion-item text-wrap *ngFor="let o of organizations">
-              <ion-thumbnail item-start>
+              <ion-thumbnail item-start (click)="openOrganizationPage({o: o})">
                 <img src="../../assets/imgs/organizations/{{ o.thumbnail }}.jpg"/>
               </ion-thumbnail>
               <h2>{{ o.name }}</h2>
               <h3>{{ o.slogan }}</h3>
               <p>{{ o.shortDescription }}</p>
-              <ion-badge *ngFor="let e of o.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
+              <a *ngFor="let e of o.evaluators" [href]="e.top ? e.link : '#'" [target]="e.top ? '_blank' : '_self'">
+                <ion-badge color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
+              </a>
               <div class="buttons" item-end>
                 <p>
                   <button ion-button block color="primary" (click)="openOrganizationPage({o: o})">

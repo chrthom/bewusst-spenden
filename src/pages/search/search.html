@@ -79,7 +79,9 @@
             <h2>{{ o.name }}</h2>
             <h3>{{ o.slogan }}</h3>
             <p>{{ o.shortDescription }}</p>
-            <ion-badge *ngFor="let e of o.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
+            <a *ngFor="let e of o.evaluators" [href]="e.top ? e.link : '#'" [target]="e.top ? '_blank' : '_self'">
+              <ion-badge color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
+            </a>
           </ion-item>
           <ion-item-options side="right">
             <button ion-button color="primary" (click)="openOrganizationPage({o: o})">
@@ -109,7 +111,9 @@
           <h2>{{ o.name }}</h2>
           <h3>{{ o.slogan }}</h3>
           <p>{{ o.shortDescription }}</p>
-          <ion-badge *ngFor="let e of o.evaluators" color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
+          <a *ngFor="let e of o.evaluators" [href]="e.top ? e.link : '#'" [target]="e.top ? '_blank' : '_self'">
+            <ion-badge color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
+          </a>
           <div class="buttons" item-end>
             <p>
               <button ion-button block color="primary" (click)="openOrganizationPage({o: o})">
