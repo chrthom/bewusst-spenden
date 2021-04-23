@@ -1,0 +1,24 @@
+os: linux
+dist: xenial
+language: node_js
+node_js:
+  - "12.18.3"
+script: "true"
+before_install:
+  - npm i -g @ionic/cli
+install:
+  - npm i
+jobs:
+  include:
+    - stage: test
+      script: ionic build --prod
+    - stage: deploy
+      script: skip
+      deploy: &heroku
+        provider: heroku
+        app:
+          travis: bewusstspenden-test
+          master: bewusstspenden-test
+          prod: bewusstspenden
+        api_key: "24e9dabb-c10b-4adb-915c-4dbd4585d75f"
+      
