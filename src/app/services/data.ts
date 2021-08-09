@@ -121,7 +121,7 @@ export class DataService {
         },
         {
           evaluator: 'The Life You Can Save',
-          link: 'https://www.thelifeyoucansave.org/where-to-donate/helen-keller-internationals-vitamin-a-supplementation',
+          link: 'https://www.thelifeyoucansave.org/best-charities/helen-keller-international/',
           top: true
         }
       ]
@@ -150,7 +150,7 @@ export class DataService {
       evaluators: [
         {
           evaluator: 'GiveWell',
-          link: 'https://www.givewell.org/charities/AMF',
+          link: 'https://www.givewell.org/charities/end-fund',
           top: true
         }
       ]
@@ -321,7 +321,7 @@ export class DataService {
       evaluators: [
         {
           evaluator: 'Effektiver Altruismus',
-          link: 'https://effektiveraltruismus.de/organisationen/',
+          link: 'https://www.effektiveraltruismus.de/bibliothek/effektiv-spenden',
           top: true
         }
       ]
@@ -404,7 +404,7 @@ export class DataService {
       evaluators: [
         {
           evaluator: 'Effektiver Altruismus',
-          link: 'https://effektiveraltruismus.de/organisationen/',
+          link: 'https://www.effektiveraltruismus.de/bibliothek/effektiv-spenden',
           top: true
         }
       ]
@@ -459,7 +459,7 @@ export class DataService {
       evaluators: [
         {
           evaluator: 'Effektiver Altruismus',
-          link: 'https://effektiveraltruismus.de/organisationen/',
+          link: 'https://www.effektiveraltruismus.de/bibliothek/effektiv-spenden',
           top: true
         }
       ]
@@ -485,7 +485,7 @@ export class DataService {
       evaluators: [
         {
           evaluator: 'The Life You Can Save',
-          link: 'https://www.thelifeyoucansave.org/where-to-donate/innovations-for-poverty-action',
+          link: 'https://www.thelifeyoucansave.org/best-charities/innovations-for-poverty-action',
           top: true
         }
       ]
@@ -511,7 +511,7 @@ export class DataService {
       evaluators: [
         {
           evaluator: 'Effektiver Altruismus',
-          link: 'https://effektiveraltruismus.de/organisationen/',
+          link: 'https://www.effektiveraltruismus.de/bibliothek/effektiv-spenden',
           top: true
         }
       ]
@@ -537,7 +537,7 @@ export class DataService {
       evaluators: [
         {
           evaluator: 'Effektiver Altruismus',
-          link: 'https://effektiveraltruismus.de/organisationen/',
+          link: 'https://www.effektiveraltruismus.de/bibliothek/effektiv-spenden',
           top: true
         }
       ]
@@ -563,7 +563,7 @@ export class DataService {
       evaluators: [
         {
           evaluator: 'Effektiver Altruismus',
-          link: 'https://effektiveraltruismus.de/organisationen/',
+          link: 'https://www.effektiveraltruismus.de/bibliothek/effektiv-spenden',
           top: true
         }
       ]
