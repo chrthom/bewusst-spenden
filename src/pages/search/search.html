@@ -4,7 +4,11 @@
   <ion-grid fixed>
     <ion-list>
       <ion-searchbar placeholder="Fang hier an zu suchen..." [(ngModel)]="searchTerm" (ionInput)="search()"></ion-searchbar>
-      <ion-item>
+      <ion-item text-wrap>
+        <ion-label>In Deutschland steuerlich absetzbar</ion-label>
+        <ion-toggle [(ngModel)]="taxDeductable" checked="false" (ionChange)="search()"></ion-toggle>
+      </ion-item>
+      <ion-item text-wrap>
         <ion-label>Erweiterte Suche</ion-label>
         <ion-toggle [(ngModel)]="advancedSearch" checked="false" (ionChange)="search()"></ion-toggle>
       </ion-item>
@@ -77,6 +81,11 @@
               <img src="../../assets/imgs/organizations/{{ o.thumbnail }}.jpg"/>
             </ion-thumbnail>
             <h2>{{ o.name }}</h2>
+            <p>
+              <sup class="primary" *ngIf="taxDeductable && o.taxDeductable">Direkt steuerlich absetzbar</sup>
+              <sup class="secondary" *ngIf="taxDeductable && !o.taxDeductable && o.donationLink3rdParty">Via Partner steuerlich absetzbar</sup>
+              <sup class="danger" *ngIf="taxDeductable && !o.taxDeductable && !o.donationLink3rdParty">Nicht steuerlich absetzbar</sup>
+            </p>
             <h3>{{ o.slogan }}</h3>
             <p>{{ o.shortDescription }}</p>
             <a *ngFor="let e of o.evaluators" [href]="e.top ? e.link : '#'" [target]="e.top ? '_blank' : '_self'">
@@ -94,7 +103,7 @@
                 Website
               </button>
             </a>
-            <a *ngIf="o.donationLink" [href]="o.donationLink" (click)="webAnalyticsService.donateToCharity(o.thumbnail)" target="_blank">
+            <a [href]="getDonationLink({o: o})" (click)="webAnalyticsService.donateToCharity(o.thumbnail)" target="_blank">
               <button ion-button color="danger">
                 <ion-icon name="cash"></ion-icon>
                 Spenden
@@ -109,6 +118,11 @@
             <img src="../../assets/imgs/organizations/{{ o.thumbnail }}.jpg"/>
           </ion-thumbnail>
           <h2>{{ o.name }}</h2>
+          <p>
+            <sup class="primary" *ngIf="taxDeductable && o.taxDeductable">Direkt steuerlich absetzbar</sup>
+            <sup class="secondary" *ngIf="taxDeductable && !o.taxDeductable && o.donationLink3rdParty">Via Partner steuerlich absetzbar</sup>
+            <sup class="danger" *ngIf="taxDeductable && !o.taxDeductable && !o.donationLink3rdParty">Nicht steuerlich absetzbar</sup>
+          </p>
           <h3>{{ o.slogan }}</h3>
           <p>{{ o.shortDescription }}</p>
           <a *ngFor="let e of o.evaluators" [href]="e.top ? e.link : '#'" [target]="e.top ? '_blank' : '_self'">
@@ -129,8 +143,8 @@
                 </button>
               </a>
             </p>
-            <p *ngIf="o.donationLink">
-              <a [href]="o.donationLink" (click)="webAnalyticsService.donateToCharity(o.thumbnail)" target="_blank">
+            <p>
+              <a [href]="getDonationLink({o: o})" (click)="webAnalyticsService.donateToCharity(o.thumbnail)" target="_blank">
                 <button ion-button block color="danger">
                   <ion-icon name="cash"></ion-icon>
                   &nbsp;Spenden

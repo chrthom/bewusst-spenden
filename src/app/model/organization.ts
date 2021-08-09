@@ -10,7 +10,8 @@ export class Organization {
   thumbnail: string;
   website: string;
   donationLink: string;
-  donationLinkEAS: string;
+  taxDeductable: boolean;
+  donationLink3rdParty: string;
   // Allowed values for category: Armut, Existenzrisiken, Meta, Politik, Tierleid
   category: string[];
   // Allowed values for cause by category:

@@ -20,6 +20,7 @@ export class SearchPage {
   searchImpactDirection: string[] = [];
   searchRegion: string[] = [];
   searchRecommendedBy: string[] = [];
+  taxDeductable: boolean;
   advancedSearch: boolean;
   countries: Country[] = [];
 
@@ -73,16 +74,28 @@ export class SearchPage {
         if (t && t.toString().toLowerCase().indexOf(this.searchTerm.toLowerCase()) > -1)
           return true;
       return false;
+    }).sort((a, b) => {
+      const taxDeductableA = a.taxDeductable || a.donationLink3rdParty;
+      const taxDeductableB = b.taxDeductable || b.donationLink3rdParty;
+      if (this.taxDeductable && taxDeductableA && !taxDeductableB) return -1;
+      else if (this.taxDeductable && !taxDeductableA && taxDeductableB) return 1;
+      else a.name.localeCompare(b.name)
     });
   }
 
   openOrganizationPage(organization: { o: Organization }) {
-    this.webAnalyticsService.pageView('organization/' + organization.o.thumbnail, organization.o.name)
+    this.webAnalyticsService.pageView('organization/' + organization.o.thumbnail, organization.o.name);
     this.navCtrl.push(OrganizationPage, organization);
   }
 
   isMobile() {
     return this.platform.is('mobile');
+  }
+
+  getDonationLink(organization: { o: Organization }) {
+    if (this.taxDeductable && !organization.o.taxDeductable && organization.o.donationLink3rdParty)
+      return organization.o.donationLink3rdParty;
+    else return organization.o.donationLink;
   }
 
   helperTapCount: number = 0;

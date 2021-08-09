@@ -2,4 +2,13 @@ page-search {
   .buttons {
     min-width: 100px;
   }
+  .primary {
+    color: map-get($colors, "primary");
+  }
+  .secondary {
+    color: map-get($colors, "secondary");
+  }
+  .danger {
+    color: map-get($colors, "danger");
+  }
 }

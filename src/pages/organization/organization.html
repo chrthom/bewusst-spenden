@@ -30,15 +30,15 @@
             <a [href]="organization.donationLink" (click)="webAnalyticsService.donateToCharity(organization.thumbnail)" target="_blank">
               <button ion-button icon-start clear>
                 <ion-icon name="cash"></ion-icon>
-                <div>Spenden</div>
+                <div>Direkte <span *ngIf="organization.taxDeductable">steuereffektive </span>Spende</div>
               </button>
             </a>
           </ion-col>
-          <ion-col *ngIf="organization.donationLinkEAS">
-            <a [href]="organization.donationLinkEAS" (click)="webAnalyticsService.donateToCharityViaEAS(organization.thumbnail)" target="_blank">
+          <ion-col *ngIf="organization.donationLink3rdParty">
+            <a [href]="organization.donationLink3rdParty" (click)="webAnalyticsService.donateToCharityViaEAS(organization.thumbnail)" target="_blank">
               <button ion-button icon-start clear>
                 <ion-icon name="card"></ion-icon>
-                <div>Steuereffektiv Spenden</div>
+                <div>Steuereffektive Spende via Partner</div>
               </button>
             </a>
           </ion-col>
@@ -77,7 +77,7 @@
         Hierzu liegen uns leider keine Informationen vor.
       </ion-item>
       <ion-item text-wrap *ngIf="organization.evaluators.length > 0">
-        <h3>Empfohlen durch</h3>
+        <h3>Empfohlen von</h3>
         <a *ngFor="let e of organization.evaluators" [href]="e.top ? e.link : '#'" [target]="e.top ? '_blank' : '_self'">
           <ion-badge color="{{ e.top && 'danger' || 'secondary' }}" style="margin-right: 3px">{{e.evaluator}}</ion-badge>
         </a>
