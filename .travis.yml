@@ -17,7 +17,6 @@ jobs:
       deploy: &heroku
         provider: heroku
         app:
-          travis: bewusstspenden-test
           master: bewusstspenden-test
           prod: bewusstspenden
         api_key: "24e9dabb-c10b-4adb-915c-4dbd4585d75f"
