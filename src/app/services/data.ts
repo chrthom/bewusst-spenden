@@ -400,7 +400,7 @@ export class DataService {
       article: 'das',
       thumbnail: 'future_of_humanity',
       website: 'https://www.fhi.ox.ac.uk',
-      donationLink: 'https://effektiveraltruismus.de/spenden/?purpose=FHI', // Workaound as there is no direct donation link
+      donationLink: 'https://www.development.ox.ac.uk/page.aspx?pid=2698&id=c53701e8-0645-489a-828d-e709be7c7e2f',
       taxDeductable: false,
       donationLink3rdParty: 'https://effektiveraltruismus.de/spenden/?purpose=FHI',
       category: [ 'Existenzrisiken', 'Meta' ],
