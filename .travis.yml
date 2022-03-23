@@ -15,7 +15,7 @@ jobs:
     - stage: deploy
       script: skip
       deploy:
-        provider: heroku
+        provider: heroku:git
         app:
           master: bewusstspenden-test
           prod: bewusstspenden
