@@ -2,7 +2,7 @@ os: linux
 dist: xenial
 language: node_js
 node_js:
-  - node
+  - 13
 script: "true"
 before_install:
   - npm i -g @ionic/cli
@@ -15,10 +15,9 @@ jobs:
     - stage: deploy
       script: skip
       deploy:
-        provider: heroku:git
+        provider: heroku
         app:
           master: bewusstspenden-test
           prod: bewusstspenden
         api_key: "24e9dabb-c10b-4adb-915c-4dbd4585d75f"
-        edge: true
       
