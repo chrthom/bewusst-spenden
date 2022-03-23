@@ -2,9 +2,13 @@ os: linux
 dist: xenial
 language: node_js
 node_js:
-  - 14
+  - node
 script: "true"
+addons:
+  apt:
+    update: true
 before_install:
+  - sudo apt-get install python2
   - npm i -g @ionic/cli
 install:
   - npm i
