@@ -1,23 +1,25 @@
-<ion-header no-border>
-  <ion-toolbar fixed color="primary" mode="md">
-    <ion-title>
-      <img id="logo" alt="logo" height="40" src="../assets/icon/logo.png"/>
-      <span id="title">{{title}}</span>
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app>
+  <ion-header no-border>
+    <ion-toolbar fixed color="primary" mode="md">
+      <ion-title>
+        <img id="logo" alt="logo" height="40" src="../assets/icon/logo.png"/>
+        <span id="title">{{title}}</span>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-<ion-tabs color="primary" [tabsPlacement]="tabsPlacement" [tabsLayout]="tabsLayout">
-  <ion-tab [root]="tab1Root" tabTitle="Spend-O-Mat" (ionSelect)="this.title ='Spend-O-Mat'" tabIcon="list-box" (ionSelect)="webAnalyticsService.pageView('questionaire', 'Spend-O-Mat')"></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="Suche" (ionSelect)="this.title ='Hilfsorganisationen'" tabIcon="search" (ionSelect)="webAnalyticsService.pageView('search', 'Suche')"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="&Uuml;ber uns" (ionSelect)="this.title ='Effektiver Altruismus'" tabIcon="school" (ionSelect)="webAnalyticsService.pageView('about', 'Über uns')"></ion-tab>
-  <ion-tab [root]="tab4Root" tabTitle="Kontakt" (ionSelect)="this.title ='Kontakt'" tabIcon="contacts" (ionSelect)="webAnalyticsService.pageView('contact', 'Kontakt')"></ion-tab>
-</ion-tabs>
+  <ion-tabs color="primary" [tabsPlacement]="tabsPlacement" [tabsLayout]="tabsLayout">
+    <ion-tab [root]="tab1Root" tabTitle="Spend-O-Mat" (ionSelect)="this.title ='Spend-O-Mat'" tabIcon="list-box" (ionSelect)="webAnalyticsService.pageView('questionaire', 'Spend-O-Mat')"></ion-tab>
+    <ion-tab [root]="tab2Root" tabTitle="Suche" (ionSelect)="this.title ='Hilfsorganisationen'" tabIcon="search" (ionSelect)="webAnalyticsService.pageView('search', 'Suche')"></ion-tab>
+    <ion-tab [root]="tab3Root" tabTitle="&Uuml;ber uns" (ionSelect)="this.title ='Effektiver Altruismus'" tabIcon="school" (ionSelect)="webAnalyticsService.pageView('about', 'Über uns')"></ion-tab>
+    <ion-tab [root]="tab4Root" tabTitle="Kontakt" (ionSelect)="this.title ='Kontakt'" tabIcon="contacts" (ionSelect)="webAnalyticsService.pageView('contact', 'Kontakt')"></ion-tab>
+  </ion-tabs>
 
-<ion-footer no-border [ngClass]="'tabs-' + tabsPlacement">
-  <ion-toolbar fixed color="dark">
-    <span class="clickable" (click)="webAnalyticsService.pageView('imprint', 'Impressum'); modalService.openImprintModal()">Impressum</span>
-    |
-    <span class="clickable" (click)="webAnalyticsService.pageView('privacy', 'Datenschutz'); modalService.openPrivacyModal()">Datenschutzerkl&auml;rung</span>
-  </ion-toolbar>
-</ion-footer>
+  <ion-footer no-border [ngClass]="'tabs-' + tabsPlacement">
+    <ion-toolbar fixed color="dark">
+      <span class="clickable" (click)="webAnalyticsService.pageView('imprint', 'Impressum'); modalService.openImprintModal()">Impressum</span>
+      |
+      <span class="clickable" (click)="webAnalyticsService.pageView('privacy', 'Datenschutz'); modalService.openPrivacyModal()">Datenschutzerkl&auml;rung</span>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>

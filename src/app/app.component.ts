@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -27,8 +25,6 @@ export class EADonationApp {
   constructor(platform: Platform,
               private modalService: ModalService,
               private webAnalyticsService: WebAnalyticsService) {
-    this.modalService;
-    this.webAnalyticsService;
     if (!platform.is('mobile')) {
       this.tabsPlacement = 'top';
       this.tabsLayout = 'icon-left';
