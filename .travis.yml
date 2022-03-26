@@ -6,6 +6,7 @@ node_js:
 script: "true"
 before_install:
   - npm i -g @ionic/cli
+  - npm i -D -E @angular/cli
 install:
   - npm i
 jobs:
@@ -20,4 +21,4 @@ jobs:
           master: bewusstspenden-test
           prod: bewusstspenden
         api_key: "24e9dabb-c10b-4adb-915c-4dbd4585d75f"
-      
+

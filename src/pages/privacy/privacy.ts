@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ViewController } from "ionic-angular";
+//import { ViewController } from "@ionic/angular"; // TODO: Fix
 
 @Component({
   selector: 'page-privacy',
@@ -7,9 +7,9 @@ import { ViewController } from "ionic-angular";
 })
 export class PrivacyPage {
 
-  constructor(public viewCtrl: ViewController) {}
+  //constructor(public viewCtrl: ViewController) {} // TODO: Fix
 
   dismiss() {
-    this.viewCtrl.dismiss();
+    //this.viewCtrl.dismiss(); // TODO: Fix
   }
 }

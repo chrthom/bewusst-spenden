@@ -3,10 +3,10 @@ import { DataService } from "../../app/services/data";
 import { ModalService } from "../../app/services/modal";
 import { Organization } from "../../app/model/organization";
 import { OrganizationPage } from "../organization/organization";
-import { NavController, Platform } from "ionic-angular";
+import { NavController, Platform } from "@ionic/angular";
 import { MapsService } from "../../app/services/maps";
 import { WebAnalyticsService } from "../../app/services/webanalytics";
-import { ToastController } from "ionic-angular";
+import { ToastController } from "@ionic/angular";
 
 @Component({
   selector: 'page-search',
@@ -85,7 +85,7 @@ export class SearchPage {
 
   openOrganizationPage(organization: { o: Organization }) {
     this.webAnalyticsService.pageView('organization/' + organization.o.thumbnail, organization.o.name);
-    this.navCtrl.push(OrganizationPage, organization);
+    //this.navCtrl.push(OrganizationPage, organization); // TODO: Fix
   }
 
   isMobile() {
@@ -106,7 +106,7 @@ export class SearchPage {
         duration: 5000,
         message: 'Swipe nach links, um mehr Optionen zu dieser Organisation zu erhalten.',
         position: 'top'
-      }).present();
+      }).then(t => t.present());
       this.helperTapCount = 0;
     }
     setTimeout(() => {

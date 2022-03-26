@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { LoadingController, NavController, Platform } from 'ionic-angular';
+import { LoadingController, NavController, Platform } from '@ionic/angular';
 import { trigger, style, transition, animate, query, animateChild } from '@angular/animations'
 import { DataService } from "../../app/services/data";
 import { Organization } from "../../app/model/organization";
 import { OrganizationPage } from "../organization/organization";
 import Stack from "ts-data.stack";
 import { WebAnalyticsService } from "../../app/services/webanalytics";
-import { ToastController } from "ionic-angular";
+import { ToastController } from "@ionic/angular";
 import { Question } from "../../app/model/question";
 
 @Component({
@@ -95,11 +95,14 @@ export class QuestionnairePage {
       this.organizations = this.dataService.organizations.filter( item => {
         return item.questionaireResults.indexOf(result) >= 0;
       });
+      // TODO: Fix
+      /*
       let loader = this.loadingCtrl.create({
         content: "Ermittle Testresultat...",
         duration: loadingTime()
       });
       loader.present();
+       */
     }
   }
 
@@ -109,17 +112,17 @@ export class QuestionnairePage {
 
   gotoTabSearch() {
     this.webAnalyticsService.pageView('search', 'Suche')
-    this.navCtrl.parent.select(1);
+    //this.navCtrl.parent.select(1); // TODO: Fix
   }
 
   gotoTabAboutUs() {
     this.webAnalyticsService.pageView('about', 'Über uns')
-    this.navCtrl.parent.select(2);
+    //this.navCtrl.parent.select(2); // TODO: Fix
   }
 
   openOrganizationPage(organization: { o: Organization }) {
     this.webAnalyticsService.pageView('organization/' + organization.o.thumbnail, organization.o.name)
-    this.navCtrl.push(OrganizationPage, organization);
+    //this.navCtrl.push(OrganizationPage, organization); // TODO: Fix
   }
 
   isMobile() {
@@ -134,7 +137,7 @@ export class QuestionnairePage {
         duration: 5000,
         message: 'Swipe nach links, um mehr Optionen zu dieser Organisation zu erhalten.',
         position: 'top'
-      }).present();
+      }).then(t => t.present());
       this.helperTapCount = 0;
     }
     setTimeout(() => {

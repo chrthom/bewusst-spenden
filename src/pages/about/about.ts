@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from "ionic-angular";
+import { NavController } from "@ionic/angular";
 import { WebAnalyticsService } from "../../app/services/webanalytics";
 
 @Component({
@@ -12,7 +12,7 @@ export class AboutPage {
 
   gotoTabContact() {
     this.webAnalyticsService.pageView('contact', 'Kontakt')
-    this.navCtrl.parent.select(3);
+    //this.navCtrl.parent.select(3); // TODO: Fix
   }
 
 }

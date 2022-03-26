@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Platform} from 'ionic-angular';
+import { Platform } from '@ionic/angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -25,8 +25,6 @@ export class EADonationApp {
   tabsLayout: string = 'icon-top';
 
   constructor(platform: Platform,
-              statusBar: StatusBar,
-              splashScreen: SplashScreen,
               private modalService: ModalService,
               private webAnalyticsService: WebAnalyticsService) {
     this.modalService;
@@ -35,9 +33,5 @@ export class EADonationApp {
       this.tabsPlacement = 'top';
       this.tabsLayout = 'icon-left';
     }
-    platform.ready().then(() => {
-      statusBar.styleDefault();
-      splashScreen.hide();
-    });
   }
 }

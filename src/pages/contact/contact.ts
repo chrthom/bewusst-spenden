@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ContactMessage } from "../../app/model/contactmessage";
-import { LoadingController } from "ionic-angular";
+import { LoadingController } from "@ionic/angular";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 
 @Component({
@@ -20,10 +20,13 @@ export class ContactPage {
   constructor(private loadingCtrl: LoadingController, private http: HttpClient) { }
 
   send(message: ContactMessage) {
+    // TODO: Fix
+    /*
     let loader = this.loadingCtrl.create({
       content: 'Deine Nachricht wird gesendet...'
     });
     loader.present();
+     */
     const slackWebhookUrl = 'https://hooks.slack.com/services/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';
     let slackMessage: any = {
       text: `Neue Kontaktaufnahme von ${message.person} (${message.mail}).`,
@@ -68,10 +71,10 @@ export class ContactPage {
     this.http.post(slackWebhookUrl, slackMessage, options).pipe().subscribe(
       o => {
         this.showResponsePage = true;
-        loader.dismissAll();
+        //loader.dismissAll(); // TODO: Fix
       }, o => {
         this.showResponsePage = true;
-        loader.dismissAll();
+        //loader.dismissAll(); // TODO: Fix
       })
   }
 }

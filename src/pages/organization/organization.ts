@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController, NavParams } from "ionic-angular";
+import { NavController, NavParams } from "@ionic/angular";
 import { Organization } from "../../app/model/organization";
 import { Chart, MapChart } from "angular-highcharts";
 import { MapsService } from "../../app/services/maps";
 import { DataService } from "../../app/services/data";
-import {WebAnalyticsService} from "../../app/services/webanalytics";
+import { WebAnalyticsService } from "../../app/services/webanalytics";
 
 @Component({
   selector: 'page-organization',
@@ -21,7 +21,6 @@ export class OrganizationPage implements OnInit {
               private webAnalyticsService: WebAnalyticsService,
               private dataService: DataService) {
     this.organization = this.params.get('o');
-    this.webAnalyticsService;
   }
 
   ngOnInit() {
@@ -55,10 +54,12 @@ export class OrganizationPage implements OnInit {
         series: [
           {
             name: 'Spendendefizit',
+            type: 'bar',
             data: organizationsOfSameCategory.map(o => o.name == this.organization.name ? 0 : o.donationDeficit)
           },
           {
             name: 'Spendendefizit',
+            type: 'bar',
             data: organizationsOfSameCategory.map(o => o.name == this.organization.name ? o.donationDeficit : 0)
           }
         ],
@@ -78,7 +79,9 @@ export class OrganizationPage implements OnInit {
         }
       });
 
-      let activeInCountries = this.organization.regions.map(c => [c.toLowerCase(), 1]);
+      let activeInCountries = this.organization.regions.map(c => {
+        return { name: c.toLowerCase(), value: 1 };
+      });
       this.worldmap = new MapChart({
         credits: {
           enabled: false
@@ -96,7 +99,8 @@ export class OrganizationPage implements OnInit {
           animation: true,
           name: 'Aktionsgebiet',
           data: activeInCountries,
-          mapData: this.mapsService.worldmap
+          mapData: this.mapsService.worldmap,
+          type: 'map' // TODO: Check if this type is correct
         }],
         tooltip: {
           enabled: false
