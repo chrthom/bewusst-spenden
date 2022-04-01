@@ -2,16 +2,15 @@ os: linux
 dist: xenial
 language: node_js
 node_js:
-  - node
+  - 16
 script: "true"
 before_install:
   - npm i -g @ionic/cli
-  - npm i -D -E @angular/cli
 install:
   - npm i
 jobs:
   include:
-    - stage: test
+    - stage: build
       script: ionic build --prod
     - stage: deploy
       script: skip

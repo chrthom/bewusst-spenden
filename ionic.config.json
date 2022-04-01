@@ -1,6 +1,7 @@
 {
-  "name": "ea",
-  "integrations": {},
-  "type": "angular",
-  "id": "bewusstspenden"
+  "name": "bewusstspenden",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
 }
