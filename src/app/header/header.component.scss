@@ -1,0 +1,18 @@
+ion-header {
+  margin: auto;
+
+  ion-toolbar {
+    font-weight: lighter;
+    font-size: 3.0rem;
+
+    #logo, #title {
+      vertical-align: middle;
+    }
+
+    #title {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
