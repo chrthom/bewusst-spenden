@@ -1,4 +1,6 @@
 <ion-app>
+  <app-header [title]="titleService.title | async"></app-header>
+
   <ion-router-outlet></ion-router-outlet>
 
   <!--

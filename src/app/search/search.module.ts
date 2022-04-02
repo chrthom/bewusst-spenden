@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { SearchPage } from './search.page';
-import { HeaderComponentModule } from '../header/header.module';
 
 import { SearchPageRoutingModule } from './search-routing.module';
 
@@ -12,7 +11,6 @@ import { SearchPageRoutingModule } from './search-routing.module';
     IonicModule,
     CommonModule,
     FormsModule,
-    HeaderComponentModule,
     SearchPageRoutingModule
   ],
   declarations: [SearchPage]

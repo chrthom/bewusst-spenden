@@ -1,25 +1,20 @@
 <ion-tabs>
-
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="questionnaire">
+  <ion-tab-bar slot="top" color="light">
+    <ion-tab-button tab="questionnaire" (click)="setTitle('Bewusst Spenden')">
       <ion-icon name="list-circle"></ion-icon>
       <ion-label>Spend-O-Mat</ion-label>
     </ion-tab-button>
-
-    <ion-tab-button tab="search">
+    <ion-tab-button tab="search" (click)="setTitle('Hilfsorganisationen')">
       <ion-icon name="search"></ion-icon>
       <ion-label>Suche</ion-label>
     </ion-tab-button>
-
-    <ion-tab-button tab="about">
+    <ion-tab-button tab="about" (click)="setTitle('Effektiver Altruismus')">
       <ion-icon name="school"></ion-icon>
       <ion-label>&Uuml;ber uns</ion-label>
     </ion-tab-button>
-
-    <ion-tab-button tab="contact">
+    <ion-tab-button tab="contact" (click)="setTitle('Kontakt')">
       <ion-icon name="chatbox-ellipses"></ion-icon>
       <ion-label>Kontakt</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
-
 </ion-tabs>

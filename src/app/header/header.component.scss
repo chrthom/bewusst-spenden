@@ -1,18 +1,21 @@
 ion-header {
   margin: auto;
-
   ion-toolbar {
-    font-weight: lighter;
-    font-size: 3.0rem;
-
     #logo, #title {
       vertical-align: middle;
     }
-
     #title {
       position: relative;
       top: 50%;
       transform: translateY(-50%);
+      font-size: 1.6rem;
+    }
+  }
+  @media (min-width: 1000px) {
+    ion-toolbar {
+      margin: 0;
+      padding-right: calc((100% - 1000px) / 2);
+      padding-left: calc((100% - 1000px) / 2);
     }
   }
 }
